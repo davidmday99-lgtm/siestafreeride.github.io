@@ -7,11 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        brand: '#0077b6',
-                        accent: '#00b4d8'
+                        brand: '#8FAABC',
+                        accent: '#C9D4DC',
+                        background: '#F5F0E8',
+                        surface: '#E8E4DC',
+                        primary: '#8FAABC',
+                        secondary: '#C9D4DC'
                     }
                 }
             }
@@ -19,7 +24,7 @@
     </script>
     <style>
         .phone-number {
-            color: #00b4d8;
+            color: #8FAABC;
             text-shadow: 
                 -1px -1px 0 #000,
                 1px -1px 0 #000,
@@ -31,7 +36,7 @@
         .cursive-text {
             font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
             font-style: italic;
-            color: #00b4d8;
+            color: #8FAABC;
         }
         @media (max-width: 768px) {
             .phone-number {
@@ -43,8 +48,8 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+<body class="bg-background">
+    <header class="sticky top-0 z-50 bg-surface shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
@@ -59,7 +64,7 @@
                 &#9776;
             </button>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+        <div id="mobile-menu" class="md:hidden hidden border-t bg-surface">
             <div class="px-4 py-3 space-y-3">
                 <a href="/" class="block hover:text-brand">Home</a>
                 <a href="/blog.html" class="block">Blog</a>
