@@ -3,72 +3,98 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Contact Siesta Free Ride</title>
+    <title>Contact Siesta Free Ride | Get in Touch</title>
+    <meta name="description" content="Contact Siesta Free Ride for airport transfers and local rides in Siesta Key. Call or text 941-600-8380."/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        brand: '#8FAABC',
-                        accent: '#C9D4DC',
-                        background: '#F5F0E8',
-                        surface: '#E8E4DC',
-                        primary: '#8FAABC',
-                        secondary: '#C9D4DC'
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
                     }
                 }
             }
         }
     </script>
+
     <style>
+        html, body { margin: 0; padding: 0; }
+        body {
+            background-image: url('/assets/background-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #1f2937;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.14);
+            z-index: -1;
+        }
         .phone-number {
-            color: #8FAABC;
-            text-shadow: 
-                -1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000;
+            color: #00b4d8;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             font-weight: bold;
             font-size: 2.5rem;
         }
         .cursive-text {
-            font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
-            font-style: italic;
-            color: #8FAABC;
+            font-family: 'Pacifico', cursive;
+            color: #00b4d8;
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
         }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        .desktop-header { display: flex; }
+        .mobile-header { display: none; }
         @media (max-width: 768px) {
-            .phone-number {
-                font-size: 2rem;
-            }
-            .cursive-text {
-                font-size: 2rem;
-            }
+            .desktop-header { display: none; }
+            .mobile-header { display: block; }
+            .phone-number { font-size: 2rem; }
+            .cursive-text { font-size: 2rem; }
         }
     </style>
 </head>
-<body class="bg-background">
-    <header class="sticky top-0 z-50 bg-surface shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
-                <span class="cursive-text text-3xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta Free Ride</span>
+<body>
+    <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
+        <div class="desktop-header max-w-6xl mx-auto px-4 py-3 items-center justify-between">
+            <div class="flex items-center gap-3 min-w-0">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24 w-auto">
+                <span class="cursive-text text-3xl font-bold">Siesta Free Ride</span>
             </div>
-            <nav class="hidden md:flex gap-6">
-                <a href="/" class="hover:text-brand">Home</a>
-                <a href="/blog.html" class="hover:text-brand">Blog</a>
-                <a href="/contact.html" class="text-brand font-medium">Contact</a>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="/" class="text-brand font-medium">Home</a>
+                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Contact</a>
             </nav>
-            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                &#9776;
-            </button>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t bg-surface">
-            <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block hover:text-brand">Home</a>
-                <a href="/blog.html" class="block">Blog</a>
-                <a href="/contact.html" class="block text-brand font-medium">Contact</a>
+        <div class="mobile-header max-w-6xl mx-auto px-4 py-3 relative">
+            <button class="md:hidden text-2xl absolute right-4 top-4" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+            <div class="flex flex-col items-center">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-20 w-auto mb-1">
+                <span class="cursive-text font-bold">Siesta Free Ride</span>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden border-t bg-white/85 backdrop-blur-md">
+                <div class="px-4 py-3 space-y-3 text-center">
+                    <a href="/" class="block text-brand font-medium">Home</a>
+                    <a href="/blog.html" class="block font-medium">Blog</a>
+                    <a href="/contact.html" class="block font-medium">Contact</a>
+                </div>
             </div>
         </div>
     </header>
@@ -77,62 +103,63 @@
         <h1 class="text-4xl font-bold mb-8 text-center">Get In Touch</h1>
         
         <div class="space-y-8">
-            <div>
+            <div class="glass-panel p-6">
                 <h2 class="text-xl font-bold mb-2">Call or Text</h2>
-                <a href="tel:9416008380" class="phone-number hover:no-underline">
-                    941‑600‑8380
-                </a>
+                <a href="tel:9416008380" class="phone-number hover:no-underline">941‑600‑8380</a>
                 <p class="text-gray-600 mt-2">We're available 7am‑11pm, 7 days a week.</p>
             </div>
 
-            <div>
+            <div class="glass-panel p-6">
                 <h2 class="text-xl font-bold mb-2">Save Our Contact</h2>
                 <p class="text-gray-600 text-sm mb-4">
                     Scan this QR code to save <strong>Siesta Free Ride</strong> with phone number 941‑600‑8380 directly to your contacts.
                 </p>
-                <img src="/assets/qr-code.png" 
-                     alt="Scan to save Siesta Free Ride contact" 
-                     class="mt-2 border rounded-lg shadow-md mx-auto">
-                <p class="text-gray-600 text-sm mt-2 text-center">
-                    <em>Scan with your phone's camera or QR app.</em>
-                </p>
+                <img src="/assets/qr-code.png" alt="QR Code to save Siesta Free Ride contact" class="mt-2 border rounded-lg shadow-md mx-auto">
+                <p class="text-gray-600 text-sm mt-2 text-center"><em>Scan with your phone's camera or QR app.</em></p>
                 <div class="mt-4 text-center">
                     <a href="/assets/contact.vcf" download class="inline-block bg-brand text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">Download Contact Card (.vcf)</a>
                     <p class="text-gray-500 text-sm mt-2">Saves with photo included. Works on iPhone and Android.</p>
                 </div>
             </div>
 
-            <div>
+            <div class="glass-panel p-6">
                 <h2 class="text-xl font-bold mb-2">Service Area</h2>
-                <p class="text-gray-700">
-                    Siesta Key, Sarasota, and surrounding areas. Airport runs to SRQ and beyond.
-                </p>
+                <p class="text-gray-700">Siesta Key, Sarasota, and surrounding areas. Airport runs to SRQ and beyond.</p>
                 <ul class="list-disc pl-5 mt-2 text-gray-600">
                     <li>Siesta Key beaches & resorts</li>
                     <li>Sarasota‑Bradenton International Airport (SRQ)</li>
                     <li>Tampa International Airport (TPA) available upon request</li>
-                    <li>Local events, weddings, corporate shuttles</li>
                 </ul>
-            </div>
-
-            <div class="pt-4">
-                <h2 class="text-xl font-bold mb-2">No Email Needed</h2>
-                <p class="text-gray-700">
-                    We keep it simple: just call or text. No forms to fill out, no waiting for email replies.
-                    Get a real person on the line in seconds.
-                </p>
             </div>
         </div>
     </main>
 
-    <footer class="bg-gray-900 text-gray-200 py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; <span id="y"></span> Siesta Free Ride. <a href="/" class="text-accent">Home</a></p>
+    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Premium Transportation in Siesta Key, FL.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
         </div>
     </footer>
 
     <script>
-        document.getElementById('y').textContent = new Date().getFullYear();
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
