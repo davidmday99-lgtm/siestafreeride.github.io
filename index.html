@@ -23,7 +23,17 @@
         .hero {
             background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/banner.png');
             background-size: cover;
-            background-position: center 30%;
+            background-position: center top;
+        }
+        @media (min-width: 768px) {
+            .hero {
+                background-position: center 20%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .hero {
+                background-position: center 15%;
+            }
         }
         .phone-number {
             color: #00b4d8;
