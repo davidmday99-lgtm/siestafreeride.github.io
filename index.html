@@ -34,13 +34,21 @@
                 1px 1px 0 #000;
             font-weight: bold;
             font-size: 3rem;
-            margin-top: 1.5rem;
+            margin-top: 0.5rem;
             margin-bottom: 1.5rem;
             display: block;
+        }
+        .hero-title {
+            text-shadow: 
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
         .cursive-text {
             font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
             font-style: italic;
+            color: #00b4d8;
         }
         @media (max-width: 768px) {
             .phone-number {
@@ -48,6 +56,9 @@
             }
             .cursive-text {
                 font-size: 2rem;
+            }
+            .hero-title {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -79,10 +90,10 @@
 
     <section class="hero h-80 md:h-80 flex items-center justify-center text-white text-center">
         <div class="p-6">
-            <h1 class="text-4xl md:text-6xl font-bold mb-2">
+            <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-title">
                 Siesta Key's #1 Free Ride — Call Now
             </h1>
-            <div class="mt-6">
+            <div class="mt-4">
                 <a href="tel:9416008380" class="phone-number hover:no-underline">
                     941‑600‑8380
                 </a>

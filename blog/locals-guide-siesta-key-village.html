@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>A Local's Guide to Siesta Key Village | Siesta Free Ride</title>
+    <meta name="description" content="Explore the best cafes, markets, and nightlife spots in Siesta Key Village. Insider tips from locals on where to eat, shop, and relax."/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cursive-text {
+            font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
+            font-style: italic;
+            color: #00b4d8;
+        }
+        @media (max-width: 768px) {
+            .cursive-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
+                <span class="cursive-text text-3xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta Free Ride</span>
+            </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="/" class="hover:text-brand">Home</a>
+                <a href="/blog.html" class="text-brand font-medium">Blog</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block hover:text-brand">Home</a>
+                <a href="/blog.html" class="block text-brand font-medium">Blog</a>
+                <a href="/contact.html" class="block">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <article>
+            <div class="mb-8">
+                <a href="/blog.html" class="text-brand font-medium">&larr; Back to Blog</a>
+            </div>
+            
+            <header class="mb-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">A Local's Guide to Siesta Key Village</h1>
+                <div class="flex items-center gap-4 text-gray-500">
+                    <span>March 30, 2026</span>
+                    <span>&bull;</span>
+                    <span>6 min read</span>
+                </div>
+            </header>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="lead text-xl text-gray-700 mb-8">Siesta Key isn't just another Florida beach town—it's a weekend paradise waiting to be explored. Whether you're visiting for the first time or you're a seasoned local looking for fresh ideas, here are our top 5 picks for an unforgettable weekend.</p>
+
+                <h2 class="text-2xl font-bold mt-10 mb-4">1. Sunset Beach Stroll at Siesta Beach</h2>
+                <p>There's a reason Siesta Beach consistently ranks among America's best beaches. The quartz‑crystal sand stays cool underfoot even on the hottest days, and the sunset views over the Gulf are nothing short of magical. Grab a blanket, pack a picnic, and arrive about 45 minutes before sunset for the full experience. Pro tip: parking fills up quickly on weekends, so consider using our <a href="/contact.html" class="text-brand font-medium">ride service</a> and let us handle the drop‑off and pick‑up.</p>
+
+                <h2 class="text-2xl font-bold mt-10 mb-4">2. Explore Siesta Key Village</h2>
+                <p>The Village is the heart of Siesta Key's dining and nightlife scene. Start with breakfast at <strong>Another Broken Egg Cafe</strong>, wander through the local boutiques, then settle in for live music at <strong>The Hub Baja Grill</strong> in the afternoon. Don't miss the fresh seafood at <strong>The Cottage</strong>—their grouper sandwich is legendary. Best of all, everything is within walking distance once you're there.</p>
+
+                <h2 class="text-2xl font-bold mt-10 mb-4">3. Kayak Through the Mangroves</h2>
+                <p>For a change of pace from the beach, head to nearby <strong>Point of Rocks</strong> or <strong>Turtle Beach</strong> for guided kayak tours through serene mangrove tunnels. You'll spot herons, ospreys, and if you're lucky, manatees. Several local outfitters offer rentals and guided tours—most include all equipment and a brief safety lesson. It's a perfect 2‑3 hour adventure that feels worlds away from the mainland.</p>
+
+                <h2 class="text-2xl font-bold mt-10 mb-4">4. Dinner with a View at The Speakeasy</h2>
+                <p>Perched on the second floor overlooking the Village, <strong>The Speakeasy</strong> offers craft cocktails and a modern American menu in a stylish, relaxed setting. Reserve a table on the balcony for people‑watching as the evening comes alive below. Their happy hour (4‑6 PM) features discounted appetizers and drinks—a great way to start your evening before moving on to other Village hotspots.</p>
+
+                <h2 class="text-2xl font-bold mt-10 mb-4">5. Sunday Morning Farmers Market</h2>
+                <p>Every Sunday from 8 AM to 1 PM, the <strong>Siesta Key Farmers Market</strong> sets up in Davidson Plaza. You'll find local honey, fresh‑baked pastries, handmade jewelry, and live acoustic music. It's the perfect low‑key way to wrap up your weekend before heading home. Pick up some local treats for the road—you'll thank yourself later.</p>
+
+                <div class="bg-gray-100 p-6 rounded-lg mt-12">
+                    <h3 class="text-xl font-bold mb-3">Need a Ride?</h3>
+                    <p>Exploring Siesta Key is easier when you don't have to worry about parking, directions, or designated drivers. <strong>Siesta Free Ride</strong> provides reliable, friendly transportation throughout the island and to/from SRQ Airport.</p>
+                    <p class="mt-3"><a href="/contact.html" class="bg-brand text-white px-6 py-3 rounded-md font-medium inline-block">Book Your Ride Today &rarr;</a></p>
+                    <p class="mt-3 text-lg font-medium">Or call/text: <a href="tel:9416008380" class="text-brand">941‑600‑8380</a></p>
+                </div>
+
+                <div class="mt-12 pt-8 border-t">
+                    <p class="text-gray-600"><strong>Next up:</strong> <a href="/blog/why-pre-booking-airport-ride-saves-stress.html" class="text-brand font-medium">Why Pre‑Booking Your Airport Ride Saves Stress</a></p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; <span id="yr"></span> Siesta Free Ride. <a href="/" class="text-accent">Home</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
