@@ -92,13 +92,6 @@
             white-space: nowrap;
         }
 
-        .header-brand {
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            min-width: 0;
-        }
-
         .glass-panel {
             background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(8px);
@@ -117,15 +110,46 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
 
+        /* Desktop header */
+        .desktop-header {
+            display: flex;
+        }
+
+        .mobile-header {
+            display: none;
+        }
+
         @media (max-width: 768px) {
-            .phone-number {
-                font-size: 2.25rem;
+            .desktop-header {
+                display: none;
             }
 
-            .header-brand {
-                font-size: 1.8rem;
+            .mobile-header {
+                display: block;
+            }
+
+            .mobile-brand {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-top: 0.25rem;
+            }
+
+            .mobile-brand img {
+                height: 72px;
+                width: auto;
+                margin-bottom: 0.35rem;
+            }
+
+            .mobile-brand .cursive-text {
+                font-size: 1.85rem;
                 white-space: nowrap;
-                line-height: 1;
+            }
+
+            .phone-number {
+                font-size: 2.25rem;
             }
 
             .hero-title {
@@ -136,28 +160,37 @@
 </head>
 <body>
     <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-            <div class="flex items-center gap-3 min-w-0 flex-1">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24 w-auto shrink-0">
-                <span class="cursive-text header-brand text-3xl font-bold">Siesta Free Ride</span>
+        <!-- Desktop Header -->
+        <div class="desktop-header max-w-6xl mx-auto px-4 py-3 items-center justify-between">
+            <div class="flex items-center gap-3 min-w-0">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24 w-auto">
+                <span class="cursive-text text-3xl font-bold">Siesta Free Ride</span>
             </div>
 
-            <nav class="hidden md:flex gap-6 items-center shrink-0">
+            <nav class="hidden md:flex gap-6 items-center">
                 <a href="/" class="text-brand font-medium">Home</a>
                 <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
+        </div>
 
+        <!-- Mobile Header -->
+        <div class="mobile-header max-w-6xl mx-auto px-4 py-3 relative">
             <button
-                class="md:hidden text-2xl shrink-0 ml-2"
+                class="md:hidden text-2xl absolute right-4 top-4"
                 aria-label="Toggle Menu"
                 onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 &#9776;
             </button>
+
+            <div class="mobile-brand">
+                <img src="/assets/logo.png" alt="Siesta Free Ride">
+                <span class="cursive-text font-bold">Siesta Free Ride</span>
+            </div>
         </div>
 
         <div id="mobile-menu" class="md:hidden hidden border-t bg-white/85 backdrop-blur-md">
-            <div class="px-4 py-3 space-y-3">
+            <div class="px-4 py-3 space-y-3 text-center">
                 <a href="/" class="block text-brand font-medium">Home</a>
                 <a href="/blog.html" class="block font-medium">Blog</a>
                 <a href="/contact.html" class="block font-medium">Book Now</a>
