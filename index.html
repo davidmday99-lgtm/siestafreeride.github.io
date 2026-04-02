@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Siesta Free Ride | Airport Runs & Rides in Siesta Key</title>
     <meta name="description" content="Siesta Free Ride provides comfortable airport transfers and local rides in Siesta Key and Sarasota. Book your stress-free ride today."/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -19,6 +22,7 @@
             }
         }
     </script>
+
     <style>
         html, body {
             margin: 0;
@@ -39,29 +43,17 @@
             content: "";
             position: fixed;
             inset: 0;
-            background: rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.14);
             z-index: -1;
         }
 
         .hero {
             background-image:
-                linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
                 url('/assets/banner.png');
             background-size: cover;
-            background-position: center bottom;
+            background-position: center 78%;
             background-repeat: no-repeat;
-        }
-
-        @media (min-width: 768px) {
-            .hero {
-                background-position: center 75%;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .hero {
-                background-position: center 80%;
-            }
         }
 
         .phone-number {
@@ -73,30 +65,32 @@
                  1px  1px 0 #000;
             font-weight: bold;
             font-size: 3rem;
-            margin-top: 0.5rem;
-            margin-bottom: 1.5rem;
+            margin-top: 0.25rem;
+            margin-bottom: 0;
             display: block;
+            line-height: 1;
         }
 
         .hero-title,
         .cursive-text {
             text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
+                -2px -2px 0 #000,
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000;
         }
 
-       .cursive-text {
-    font-family: 'Pacifico', cursive;
-    color: #00b4d8;
-    text-shadow:
-        -2px -2px 0 #000,
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-    letter-spacing: 1px;
-}
+        .hero-title {
+            line-height: 1.05;
+        }
+
+        .cursive-text {
+            font-family: 'Pacifico', cursive;
+            color: #00b4d8;
+            letter-spacing: 1px;
+            line-height: 1;
+            white-space: nowrap;
+        }
 
         .glass-panel {
             background: rgba(255, 255, 255, 0.82);
@@ -116,27 +110,28 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
 
-       @media (max-width: 768px) {
-    .phone-number {
-        font-size: 2.25rem;
-    }
+        @media (max-width: 768px) {
+            .phone-number {
+                font-size: 2.25rem;
+            }
 
-    .cursive-text {
-        font-size: 2rem;
-    }
+            .cursive-text {
+                font-size: 2.4rem;
+                white-space: nowrap;
+            }
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
-}
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 min-w-0">
                 <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
-                <span class="cursive-text text-3xl font-bold">
+                <span class="cursive-text text-3xl font-bold">Siesta Free Ride</span>
             </div>
 
             <nav class="hidden md:flex gap-6 items-center">
@@ -146,7 +141,7 @@
             </nav>
 
             <button
-                class="md:hidden text-2xl"
+                class="md:hidden text-2xl shrink-0"
                 aria-label="Toggle Menu"
                 onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 &#9776;
@@ -163,18 +158,18 @@
     </header>
 
     <section class="hero h-[420px] md:h-[560px] flex items-start justify-center text-white text-center pt-20 md:pt-28">
-    <div class="px-6">
-        <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-title">
-            Siesta Key's #1 Free Ride — Call Now
-        </h1>
+        <div class="px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-title">
+                Siesta Key's #1 Free Ride — Call Now
+            </h1>
 
-        <div class="mt-2">
-            <a href="tel:9416008380" class="phone-number hover:no-underline">
-                941-600-8380
-            </a>
+            <div class="mt-2">
+                <a href="tel:9416008380" class="phone-number hover:no-underline">
+                    941-600-8380
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="max-w-6xl mx-auto px-4 py-16">
         <div class="glass-panel p-8 md:p-10">
