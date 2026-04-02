@@ -92,6 +92,13 @@
             white-space: nowrap;
         }
 
+        .header-brand {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0;
+        }
+
         .glass-panel {
             background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(8px);
@@ -115,9 +122,10 @@
                 font-size: 2.25rem;
             }
 
-            .cursive-text {
-                font-size: 2.4rem;
+            .header-brand {
+                font-size: 1.8rem;
                 white-space: nowrap;
+                line-height: 1;
             }
 
             .hero-title {
@@ -128,20 +136,20 @@
 </head>
 <body>
     <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3 min-w-0">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
-                <span class="cursive-text text-3xl font-bold">Siesta Free Ride</span>
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3 min-w-0 flex-1">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24 w-auto shrink-0">
+                <span class="cursive-text header-brand text-3xl font-bold">Siesta Free Ride</span>
             </div>
 
-            <nav class="hidden md:flex gap-6 items-center">
+            <nav class="hidden md:flex gap-6 items-center shrink-0">
                 <a href="/" class="text-brand font-medium">Home</a>
                 <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
 
             <button
-                class="md:hidden text-2xl shrink-0"
+                class="md:hidden text-2xl shrink-0 ml-2"
                 aria-label="Toggle Menu"
                 onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 &#9776;
