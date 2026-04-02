@@ -3,235 +3,154 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Siesta Free Ride | Airport Runs & Rides in Siesta Key</title>
-    <meta name="description" content="Siesta Free Ride provides comfortable airport transfers and local rides in Siesta Key and Sarasota. Book your stress-free ride today."/>
+    <title>Siesta Free Ride</title>
 
+    <!-- Pacifico font -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#0077b6',
-                        accent: '#00b4d8'
-                    }
-                }
-            }
-        }
-    </script>
-
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            background-image: url('/assets/background-photo.jpg');
+            background-image: url('/assets/background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
             color: #1f2937;
-            position: relative;
         }
 
+        /* Light overlay so text is readable */
         body::before {
             content: "";
             position: fixed;
             inset: 0;
-            background: rgba(255, 255, 255, 0.14);
+            background: rgba(255,255,255,0.2);
             z-index: -1;
         }
 
         .hero {
             background-image:
-                linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+                linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
                 url('/assets/banner.png');
             background-size: cover;
-            background-position: center 78%;
-            background-repeat: no-repeat;
-        }
-
-        .phone-number {
-            color: #00b4d8;
-            text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
-            font-weight: bold;
-            font-size: 3rem;
-            margin-top: 0.25rem;
-            margin-bottom: 0;
-            display: block;
-            line-height: 1;
-        }
-
-        .hero-title,
-        .cursive-text {
-            text-shadow:
-                -2px -2px 0 #000,
-                 2px -2px 0 #000,
-                -2px  2px 0 #000,
-                 2px  2px 0 #000;
-        }
-
-        .hero-title {
-            line-height: 1.05;
+            background-position: center 80%;
         }
 
         .cursive-text {
             font-family: 'Pacifico', cursive;
             color: #00b4d8;
-            letter-spacing: 1px;
-            line-height: 1;
+            text-shadow:
+                -2px -2px 0 #000,
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000;
             white-space: nowrap;
         }
 
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.82);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        .phone-number {
+            color: #00b4d8;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 0.75rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        .glass {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
         }
 
         @media (max-width: 768px) {
-            .phone-number {
-                font-size: 2.25rem;
-            }
-
             .cursive-text {
                 font-size: 2.4rem;
-                white-space: nowrap;
             }
 
-            .hero-title {
-                font-size: 2.5rem;
+            .phone-number {
+                font-size: 2.2rem;
             }
         }
     </style>
 </head>
+
 <body>
-    <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3 min-w-0">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
-                <span class="cursive-text text-3xl font-bold">Siesta Free Ride</span>
-            </div>
 
-            <nav class="hidden md:flex gap-6 items-center">
-                <a href="/" class="text-brand font-medium">Home</a>
-                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
-                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
-            </nav>
-
-            <button
-                class="md:hidden text-2xl shrink-0"
-                aria-label="Toggle Menu"
-                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                &#9776;
-            </button>
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <img src="/assets/logo.png" class="h-20">
+            <span class="cursive-text text-3xl font-bold">Siesta Free Ride</span>
         </div>
 
-        <div id="mobile-menu" class="md:hidden hidden border-t bg-white/85 backdrop-blur-md">
-            <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block text-brand font-medium">Home</a>
-                <a href="/blog.html" class="block font-medium">Blog</a>
-                <a href="/contact.html" class="block font-medium">Book Now</a>
+        <nav class="hidden md:flex gap-6 items-center">
+            <a href="/" class="text-blue-600 font-medium">Home</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded">Book Now</a>
+        </nav>
+
+        <button class="md:hidden text-2xl"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            ☰
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white/80 backdrop-blur-md p-4">
+        <a href="/" class="block mb-2">Home</a>
+        <a href="/blog.html" class="block mb-2">Blog</a>
+        <a href="/contact.html" class="block">Book Now</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero h-[450px] md:h-[600px] flex items-start justify-center text-white text-center pt-24">
+    <div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-2">
+            Siesta Key's #1 Free Ride — Call Now
+        </h1>
+
+        <a href="tel:9416008380" class="phone-number block">
+            941-600-8380
+        </a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="glass p-8">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-6">
+                <h3 class="font-bold text-xl mb-2">Airport Runs</h3>
+                <p>Reliable rides to SRQ and beyond.</p>
+            </div>
+
+            <div class="glass p-6">
+                <h3 class="font-bold text-xl mb-2">Local Rides</h3>
+                <p>Quick trips around Siesta Key.</p>
+            </div>
+
+            <div class="glass p-6">
+                <h3 class="font-bold text-xl mb-2">Private Charters</h3>
+                <p>Book a driver for the whole day.</p>
             </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <section class="hero h-[420px] md:h-[560px] flex items-start justify-center text-white text-center pt-20 md:pt-28">
-        <div class="px-6">
-            <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-title">
-                Siesta Key's #1 Free Ride — Call Now
-            </h1>
+<!-- FOOTER -->
+<footer class="bg-black/80 text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <p>Siesta Free Ride</p>
+        <p>941-600-8380</p>
+    </div>
+</footer>
 
-            <div class="mt-2">
-                <a href="tel:9416008380" class="phone-number hover:no-underline">
-                    941-600-8380
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-6xl mx-auto px-4 py-16">
-        <div class="glass-panel p-8 md:p-10">
-            <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-6">
-                    <h3 class="font-bold text-xl mb-2">Airport Runs</h3>
-                    <p class="text-gray-700">
-                        Reliable pickups and drop-offs to SRQ and beyond. Real-time flight tracking,
-                        luggage assistance, and dependable service.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6">
-                    <h3 class="font-bold text-xl mb-2">Local Rides</h3>
-                    <p class="text-gray-700">
-                        Quick trips around Siesta Key and Sarasota. Beach trips, dinners, shopping,
-                        and local transportation when you need it.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6">
-                    <h3 class="font-bold text-xl mb-2">Private Charters</h3>
-                    <p class="text-gray-700">
-                        Book a dedicated driver for the day. Great for events, tours, airport pickup
-                        coordination, or multiple stops.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
-                <p>Transportation in Siesta Key, FL.</p>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-white mb-4">Contact</h4>
-                <p>941-600-8380</p>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:text-white">Home</a></li>
-                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700 text-sm text-center">
-            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
