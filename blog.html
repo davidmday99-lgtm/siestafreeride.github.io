@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Siesta Free Ride Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-10">
+                <span class="font-bold text-lg text-brand">Siesta Free Ride</span>
+            </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="/" class="hover:text-brand">Home</a>
+                <a href="/blog.html" class="text-brand font-medium">Blog</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block hover:text-brand">Home</a>
+                <a href="/blog.html" class="block text-brand font-medium">Blog</a>
+                <a href="/contact.html" class="block">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold mb-8">Blog</h1>
+        <div class="grid gap-8">
+            <article class="border-b pb-8">
+                <h2 class="text-2xl font-bold mb-2">
+                    <a href="#" class="hover:text-brand">Top 5 Things to Do in Siesta Key This Weekend</a>
+                </h2>
+                <p class="text-gray-500 mb-3">April 1, 2026</p>
+                <p class="mb-4">From sunset beach strolls to local dining gems, here are our favorite weekend activities...</p>
+                <a href="#" class="text-brand font-medium">Read more &rarr;</a>
+            </article>
+            <article class="border-b pb-8">
+                <h2 class="text-2xl font-bold mb-2">
+                    <a href="#" class="hover:text-brand">Why Pre-Booking Your Airport Ride Saves Stress</a>
+                </h2>
+                <p class="text-gray-500 mb-3">March 31, 2026</p>
+                <p class="mb-4">Arranging your airport transfer ahead of time guarantees a smooth start to your vacation...</p>
+                <a href="#" class="text-brand font-medium">Read more &rarr;</a>
+            </article>
+            <article class="border-b pb-8">
+                <h2 class="text-2xl font-bold mb-2">
+                    <a href="#" class="hover:text-brand">A Local's Guide to Siesta Key Village</a>
+                </h2>
+                <p class="text-gray-500 mb-3">March 30, 2026</p>
+                <p class="mb-4">Explore the best cafes, markets, and nightlife spots in the village...</p>
+                <a href="#" class="text-brand font-medium">Read more &rarr;</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; <span id="yr"></span> Siesta Free Ride. <a href="/" class="text-accent">Home</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

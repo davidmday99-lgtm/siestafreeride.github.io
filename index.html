@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Siesta Free Ride | Airport Runs & Rides in Siesta Key</title>
+    <meta name="description" content="Siesta Free Ride provides comfortable airport transfers and local rides in Siesta Key and Sarasota. Book your stress-free ride today."/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/banner.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .phone-number {
+            color: #00b4d8;
+            text-shadow: 
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        @media (max-width: 768px) {
+            .phone-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-10">
+                <span class="font-bold text-lg text-brand">Siesta Free Ride</span>
+            </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="/" class="text-brand font-medium">Home</a>
+                <a href="/blog.html" class="hover:text-brand">Blog</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block text-brand font-medium">Home</a>
+                <a href="/blog.html" class="block">Blog</a>
+                <a href="/contact.html" class="block">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero h-80 md:h-96 flex items-center justify-center text-white text-center">
+        <div class="p-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Premium Free Rides in Siesta Key<br>Airport Transfers Events Shuttle Services
+            </h1>
+            <p class="text-xl mb-8">
+                Call or text now for a free ride:
+            </p>
+            <a href="tel:9416008380" class="phone-number hover:no-underline">
+                941‑600‑8380
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 border rounded-lg shadow-sm">
+                <h3 class="font-bold text-xl mb-2">Airport Runs</h3>
+                <p class="text-gray-600">Reliable pickups/drop-offs to SRQ and beyond. Real-time flight tracking, luggage assistance, and fixed rates.</p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm">
+                <h3 class="font-bold text-xl mb-2">Local Rides</h3>
+                <p class="text-gray-600">Quick trips around Siesta Key and Sarasota. Beach trips, dinners, and shopping—always on time.</p>
+            </div>
+            <div class="p-6 border rounded-lg shadow-sm">
+                <h3 class="font-bold text-xl mb-2">Private Charters</h3>
+                <p class="text-gray-600">Book a dedicated driver for the whole day. Perfect for events, tours, or multiple stops.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-200 py-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Premium transportation in Siesta Key, FL.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

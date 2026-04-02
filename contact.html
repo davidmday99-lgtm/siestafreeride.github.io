@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Contact Siesta Free Ride</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .phone-number {
+            color: #00b4d8;
+            text-shadow: 
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        @media (max-width: 768px) {
+            .phone-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-10">
+                <span class="font-bold text-lg text-brand">Siesta Free Ride</span>
+            </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="/" class="hover:text-brand">Home</a>
+                <a href="/blog.html" class="hover:text-brand">Blog</a>
+                <a href="/contact.html" class="text-brand font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block hover:text-brand">Home</a>
+                <a href="/blog.html" class="block">Blog</a>
+                <a href="/contact.html" class="block text-brand font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold mb-8 text-center">Get In Touch</h1>
+        
+        <div class="space-y-8">
+            <div>
+                <h2 class="text-xl font-bold mb-2">Call or Text</h2>
+                <a href="tel:9416008380" class="phone-number hover:no-underline">
+                    941‑600‑8380
+                </a>
+                <p class="text-gray-600 mt-2">We're available 7am‑11pm, 7 days a week.</p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-2">Save Our Contact</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                    Scan this QR code to save <strong>Siesta Free Ride</strong> with phone number 941‑600‑8380 directly to your contacts.
+                </p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3ASiesta%20Free%20Ride%0ATEL%3A9416008380%0AEND%3AVCARD" 
+                     alt="QR Code to save Siesta Free Ride contact" 
+                     class="mt-2 border rounded-lg shadow-md mx-auto">
+                <p class="text-gray-600 text-sm mt-2 text-center">
+                    <em>Scan with your phone's camera or QR app.</em>
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-2">Service Area</h2>
+                <p class="text-gray-700">
+                    Siesta Key, Sarasota, and surrounding areas. Airport runs to SRQ and beyond.
+                </p>
+                <ul class="list-disc pl-5 mt-2 text-gray-600">
+                    <li>Siesta Key beaches & resorts</li>
+                    <li>Sarasota‑Bradenton International Airport (SRQ)</li>
+                    <li>Tampa International Airport (TPA) available upon request</li>
+                    <li>Local events, weddings, corporate shuttles</li>
+                </ul>
+            </div>
+
+            <div class="pt-4">
+                <h2 class="text-xl font-bold mb-2">No Email Needed</h2>
+                <p class="text-gray-700">
+                    We keep it simple: just call or text. No forms to fill out, no waiting for email replies.
+                    Get a real person on the line in seconds.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; <span id="y"></span> Siesta Free Ride. <a href="/" class="text-accent">Home</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
