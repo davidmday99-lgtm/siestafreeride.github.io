@@ -116,50 +116,22 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
 
-        /* Desktop header */
-        .desktop-header {
-            display: flex;
-        }
-
-        .mobile-header {
-            display: none;
-        }
-
         @media (max-width: 768px) {
-            .desktop-header {
-                display: none;
-            }
-
-            .mobile-header {
-                display: block;
-            }
-
-            .mobile-brand {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding-top: 0.25rem;
-            }
-
-            .mobile-brand img {
-                height: 72px;
-                width: auto;
-                margin-bottom: 0.35rem;
-            }
-
-            .mobile-brand .cursive-text {
-                font-size: 1.85rem;
-                white-space: nowrap;
-            }
-
             .phone-number {
                 font-size: 2.25rem;
             }
 
             .hero-title {
                 font-size: 2.5rem;
+            }
+
+            /* Header adjustments */
+            header img.h-40 {
+                height: 5rem; /* Reduced from h-40 (10rem) */
+            }
+
+            header .text-4xl {
+                font-size: 1.875rem; /* text-3xl */
             }
         }
     </style>
@@ -201,46 +173,28 @@
 </head>
 <body>
     <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
-        <!-- Desktop Header -->
-        <div class="desktop-header max-w-6xl mx-auto px-4 py-3 items-center justify-between">
-            <div class="flex items-center gap-3 min-w-0">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-40 w-auto">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-40">
                 <div class="flex flex-col leading-tight">
                     <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta</span>
                     <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Free Ride</span>
                 </div>
             </div>
-
-            <nav class="hidden md:flex gap-6 items-center">
+            <nav class="hidden md:flex gap-6">
                 <a href="/" class="text-brand font-medium">Home</a>
                 <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
-        </div>
-
-        <!-- Mobile Header -->
-        <div class="mobile-header max-w-6xl mx-auto px-4 py-3 relative">
-            <button
-                class="md:hidden text-2xl absolute right-4 top-4"
-                aria-label="Toggle Menu"
-                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 &#9776;
             </button>
-
-            <div class="mobile-brand">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-40">
-                <div class="flex flex-col leading-tight">
-                    <span class="font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta</span>
-                    <span class="font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Free Ride</span>
-                </div>
-            </div>
         </div>
-
         <div id="mobile-menu" class="md:hidden hidden border-t bg-white/85 backdrop-blur-md">
-            <div class="px-4 py-3 space-y-3 text-center">
+            <div class="px-4 py-3 space-y-3">
                 <a href="/" class="block text-brand font-medium">Home</a>
                 <a href="/blog.html" class="block font-medium">Blog</a>
-                <a href="/contact.html" class="block font-medium">Book Now</a>
+                <a href="/contact.html" class="block">Book Now</a>
             </div>
         </div>
     </header>
