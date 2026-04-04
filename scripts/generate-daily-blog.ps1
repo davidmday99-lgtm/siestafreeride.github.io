@@ -69,8 +69,11 @@ $html = @"
     <header class="sticky top-0 z-50 bg-surface shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-24">
-                <span class="cursive-text text-3xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta Free Ride</span>
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-40">
+                <div class="flex flex-col leading-tight">
+                    <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta</span>
+                    <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Free Ride</span>
+                </div>
             </div>
             <nav class="hidden md:flex gap-6">
                 <a href="/" class="hover:text-brand">Home</a>
