@@ -55,13 +55,14 @@ $html = @"
         }
     </script>
     <style>
-        .cursive-text {
-            font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
-            font-style: italic;
-            color: #8FAABC;
-        }
         @media (max-width: 768px) {
-            .cursive-text { font-size: 2rem; }
+            /* Header adjustments */
+            header img.h-40 {
+                height: 5rem; /* Reduced from h-40 (10rem) */
+            }
+            header .text-4xl {
+                font-size: 1.875rem; /* text-3xl */
+            }
         }
     </style>
 </head>
@@ -72,7 +73,8 @@ $html = @"
                 <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-40">
                 <div class="flex flex-col leading-tight">
                     <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Siesta</span>
-                    <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Free Ride</span>
+                    <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Free</span>
+                    <span class="text-4xl font-bold text-brand" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Ride</span>
                 </div>
             </div>
             <nav class="hidden md:flex gap-6">
