@@ -14,14 +14,14 @@
     <style>
         html, body { margin: 0; padding: 0; }
         body { background-image: url('/assets/background-photo.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; color: #1f2937; position: relative; }
-        body::before { content: ""; position: fixed; inset: 0; background: rgba(255,255,255,0.14); z-index: -1; }
-        .glass-panel { background: rgba(255,255,255,0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.06); border: 1px solid rgba(255,255,255,0.3); }
-        .glass-card { background: rgba(255,255,255,0.45); border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.2s; }
+        body::before { content: ""; position: fixed; inset: 0; background: rgba(184,221,224,0.25); z-index: -1; }
+        .glass-panel { background: rgba(184,221,224,0.65); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.06); border: 1px solid rgba(255,255,255,0.3); }
+        .glass-card { background: rgba(184,221,224,0.55); border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.2s; }
         .glass-card:hover { transform: translateY(-2px); }
     </style>
 </head>
 <body>
-    <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
+    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-80">
@@ -38,7 +38,7 @@
             </nav>
             <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t bg-white/85 backdrop-blur-md">
+        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
             <div class="px-4 py-3 space-y-3">
                 <a href="/" class="block font-medium">Home</a>
                 <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
