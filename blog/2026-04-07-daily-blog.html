@@ -40,25 +40,31 @@
     </style>
 </head>
 <body class="bg-background">
-    <header class="sticky top-0 z-50 bg-surface shadow-md">
+        <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-80">
             </div>
             <nav class="hidden md:flex gap-6">
-                <a href="/" class="hover:text-brand">Home</a>
-                <a href="/blog.html" class="text-brand font-medium">Blog</a>
-                <a href="/photos.html" class="hover:text-brand">Photos</a>
-                <a href="/advertise.html" class="hover:text-brand">Advertise</a>
+                <a href="/" class="hover:text-brand font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
+                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
+                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
+                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
+                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
+                <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
             <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t bg-surface">
+        <div id="mobile-menu" class="md:hidden hidden border-t bg-white/85 backdrop-blur-md">
             <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block hover:text-brand">Home</a>
+                <a href="/" class="block font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
+                <a href="/beaches.html" class="block font-medium">Beaches</a>
+                <a href="/events.html" class="block font-medium">Events</a>
+                <a href="/faq.html" class="block font-medium">FAQ</a>
                 <a href="/blog.html" class="block text-brand font-medium">Blog</a>
-                <a href="/photos.html" class="block font-medium">Photos</a>
                 <a href="/advertise.html" class="block font-medium">Advertise</a>
                 <a href="/contact.html" class="block">Book Now</a>
             </div>
@@ -104,12 +110,44 @@
         </article>
     </main>
 
-    <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; <span id="yr"></span> Siesta Free Ride. <a href="/" class="text-accent">Home</a></p>
+            <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Transportation in Siesta Key, FL.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/siesta-key-guide.html" class="hover:text-white">Guide</a></li>
+                    <li><a href="/beaches.html" class="hover:text-white">Beaches</a></li>
+                    <li><a href="/events.html" class="hover:text-white">Events</a></li>
+                    <li><a href="/faq.html" class="hover:text-white">FAQ</a></li>
+                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
+                    <li><a href="/advertise.html" class="hover:text-white">Advertise</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
+          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
+              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;">
+              Drive Again Secrets &mdash; License Reinstatement Guides
+            </a>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
         </div>
     </footer>
-
-    <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
