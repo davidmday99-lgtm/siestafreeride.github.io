@@ -135,6 +135,27 @@
                 font-size: 1.875rem; /* text-3xl */
             }
         }
+
+        .air-banner {
+            line-height: 0;
+            overflow: hidden;
+            background: rgba(184,221,224,0.65);
+        }
+
+        .air-banner img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .air-banner img {
+                height: 150px;
+                object-position: center;
+            }
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -221,8 +242,8 @@
     </section>
 
     <!-- Air Conditioned Banner -->
-    <div style="line-height:0;overflow:hidden;background:rgba(184,221,224,0.65);">
-        <img src="/assets/Air-Banner 1920x400.png" alt="Air Conditioned" style="width:100%;height:auto;display:block;">
+    <div class="air-banner">
+        <img src="/assets/Air-Banner 1920x400.png" alt="Air Conditioned">
     </div>
 
     <section class="w-full px-4 py-16" style="background:rgba(184,221,224,0.45);">
