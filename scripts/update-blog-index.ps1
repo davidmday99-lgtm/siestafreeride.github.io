@@ -43,6 +43,12 @@ $newArticle = @"
             </article>
 "@
 
+# Check if this href already exists in the blog index
+if ($lines -match [regex]::Escape($Href)) {
+    Write-Host "Blog index already contains an entry for $Href; skipping duplicate."
+    exit 0
+}
+
 # Insert the new article after the grid line
 $lines = @(
     $lines[0..$gridLineIndex]
@@ -51,7 +57,7 @@ $lines = @(
 )
 
 # Write back to file
-$lines | Out-File -FilePath $blogIndex -Encoding UTF8
+[System.IO.File]::WriteAllText($blogIndex, ($lines -join "`r`n"), [System.Text.Encoding]::UTF8)
 
 Write-Host "Updated blog index with new post: $Title"
 Write-Host "File: $blogIndex"

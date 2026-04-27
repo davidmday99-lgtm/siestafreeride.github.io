@@ -35,7 +35,7 @@ $html = @"
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>$title | Siesta Free Ride</title>
-    <meta name="description" content="Daily update from Siesta Free Ride – your trusted transportation in Siesta Key, FL."/>
+    <meta name="description" content="Daily update from Siesta Free Ride - your trusted transportation in Siesta Key, FL."/>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -104,13 +104,13 @@ $html = @"
             </header>
             <div class="prose prose-lg max-w-none">
                 <p class="lead text-xl text-gray-700 mb-8">Welcome to your daily Siesta Key transportation update. Whether you're visiting for Easter weekend or enjoying local spring events, Siesta Free Ride is here to get you where you need to go.</p>
-                <h2 class="text-2xl font-bold mt-10 mb-4">Today's Tip: Pre‑Book for Holiday Weekends</h2>
-                <p>Easter weekend brings more visitors to Siesta Key, which means parking can be limited and wait times longer. Save time and stress by booking your ride in advance. Our drivers cover the entire island, SRQ Airport, and even longer trips to Tampa (TPA). We operate 7 AM–11 PM daily.</p>
+                <h2 class="text-2xl font-bold mt-10 mb-4">Today's Tip: Pre-Book for Holiday Weekends</h2>
+                <p>Easter weekend brings more visitors to Siesta Key, which means parking can be limited and wait times longer. Save time and stress by booking your ride in advance. Our drivers cover the entire island, SRQ Airport, and even longer trips to Tampa (TPA). We operate 7 AM-11 PM daily.</p>
                 <div class="bg-gray-100 p-6 rounded-lg mt-12">
                     <h3 class="text-xl font-bold mb-3">Need a Ride?</h3>
                     <p>Whether you're heading to the airport, exploring the island, or need a reliable driver, <strong>Siesta Free Ride</strong> has you covered.</p>
                     <p class="mt-3"><a href="/contact.html" class="bg-brand text-white px-6 py-3 rounded-md font-medium inline-block">Book Your Ride Today &rarr;</a></p>
-                    <p class="mt-3 text-lg font-medium">Or call/text: <a href="tel:9416008380" class="text-brand">941‑600‑8380</a></p>
+                    <p class="mt-3 text-lg font-medium">Or call/text: <a href="tel:9416008380" class="text-brand">941-600-8380</a></p>
                 </div>
                 <div class="mt-12 pt-8 border-t">
                     <p class="text-gray-600"><strong>Next up:</strong> <a href="$nextUpHref" class="text-brand font-medium">$nextUpText</a></p>
@@ -130,7 +130,7 @@ $html = @"
 </html>
 "@
 
-$html | Out-File -FilePath $filename -Encoding UTF8
+[System.IO.File]::WriteAllText($filename, $html, [System.Text.Encoding]::UTF8)
 Write-Host "Created: $filename"
 
 # Update blog index
