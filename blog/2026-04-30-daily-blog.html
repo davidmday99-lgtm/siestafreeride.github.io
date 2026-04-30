@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siesta Key Weather & Beach Report - Thursday, April 30, 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .date {
+            font-size: 14px;
+            opacity: 0.95;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .intro {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #667eea;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .weather-item {
+            background: #f8f9ff;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .weather-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .weather-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+        .beach-info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #00bcd4;
+            margin-bottom: 15px;
+        }
+        .beach-info p {
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .beach-info p:last-child {
+            margin-bottom: 0;
+        }
+        .events-list {
+            background: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .event-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        .event-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .event-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        .event-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        .tip-box {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        .cta-text {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 5px;
+            transition: transform 0.2s;
+            font-size: 15px;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .phone {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☀️ Siesta Key Daily Report</h1>
+            <p class="date">Thursday, April 30, 2026</p>
+        </header>
+        
+        <div class="content">
+            <p class="intro">
+                Welcome to Thursday at Siesta Key! It's a beautiful late April day on Florida's Gulf Coast with plenty of sunshine and warm conditions. Whether you're planning beach time, running errands, or heading to the airport, here's everything you need to know before you head out.
+            </p>
+            
+            <div class="section">
+                <h2>🌡️ Weather & Conditions</h2>
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <div class="weather-label">Current Temp</div>
+                        <div class="weather-value">75°F</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">Feels Like</div>
+                        <div class="weather-value">79°F</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">High/Low</div>
+                        <div class="weather-value">85° / 70°F</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">Humidity</div>
+                        <div class="weather-value">88%</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">Wind</div>
+                        <div class="weather-value">4 mph W</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">UV Index</div>
+                        <div class="weather-value">9 (High)</div>
+                    </div>
+                </div>
+                <p style="font-size: 14px; color: #666; margin-top: 12px;">
+                    Partly cloudy skies early, transitioning to sunny conditions through midday. Peak heat around 2-3 PM. Light westerly winds keeping it pleasant. Don't forget your sunscreen—UV is strong today!
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>🌊 Water & Beach Report</h2>
+                <div class="beach-info">
+                    <p><strong>Water Temperature:</strong> 78-80°F — Perfect for swimming and water sports. Typical late April conditions in the Gulf.</p>
+                    <p><strong>Wave Height:</strong> 1-2 feet — Calm to moderate conditions. Great for paddleboarders and swimmers.</p>
+                    <p><strong>Water Clarity:</strong> Good visibility. Clear, clean water conditions expected throughout the day.</p>
+                    <p><strong>Beach Status:</strong> No active advisories. Normal rip current potential. Lifeguards on duty. Green flag conditions expected.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🎯 What's Happening Today</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-name">Siesta Key Saturday Market Setup</div>
+                        <div class="event-desc">Early vendor setup for tomorrow's market along Siesta Village — fresh local crafts, art, and food prep.</div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-name">Beach Volleyball at Siesta Beach</div>
+                        <div class="event-desc">Evening games starting at 6 PM near Tower 2. Open to all skill levels. Join in or watch!</div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-name">Sunset Dinner Specials</div>
+                        <div class="event-desc">Local restaurants offering early-bird specials. Perfect evening with sunset views around 8:03 PM.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🚗 Transportation Tips</h2>
+                <div class="tip-box">
+                    <strong>Plan Ahead:</strong> Late April brings increased visitor traffic. If you're heading to Sarasota-Bradenton International Airport (SRW), book your ride in advance. Peak times are typically 9-11 AM and 3-5 PM. Coming from Tampa International? Pre-book to avoid surge pricing. Our Siesta Free Ride service gets you there on time, every time.
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <p class="cta-text">Need a ride today? We've got you covered.</p>
+                <p class="phone">📞 941-600-8380</p>
+                <p style="font-size: 14px; margin-top: 15px; opacity: 0.95;">
+                    Available for airport transfers, local trips, and beach excursions
+                </p>
+                <a href="https://siestafreeride.com/book" class="cta-button">Book Now</a>
+                <a href="https://siestafreeride.com/contact" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Siesta Free Ride Daily Report | Updated Thursday, April 30, 2026 at 12:02 PM UTC</p>
+        </footer>
+    </div>
+</body>
+</html>
