@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -23,24 +23,56 @@
         }
     </script>
     <style>
-        body { background-image: url('/assets/background-photo.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; color: #1f2937; position: relative; }
-        .cursive-text {
-            font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
-            font-style: italic;
+        body { background: #0a0a0a; color: #ffffff; }
+        .blog-card {
+            background: #121212;
+            border: 1px solid #262626;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: border-color 0.2s ease;
+        }
+        .blog-card:hover {
+            border-color: #8FAABC;
+        }
+        .blog-card .post-date {
+            color: #8FAABC;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .blog-card h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .blog-card h2 a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .blog-card h2 a:hover {
             color: #8FAABC;
         }
+        .blog-card .post-excerpt {
+            color: #d2d2d2;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
         @media (max-width: 768px) {
-            /* Header adjustments */
             header img.h-80 {
-                height: 10rem; /* Reduced from h-80 (20rem) */
+                height: 10rem;
             }
-            header .text-4xl {
-                font-size: 1.875rem; /* text-3xl */
+            .blog-card {
+                padding: 16px;
+            }
+            .blog-card h2 {
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
-<body class="">
+<body>
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -61,7 +93,7 @@
             </button>
         </div>
         <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
-                        <div class="px-4 py-3 space-y-3">
+            <div class="px-4 py-3 space-y-3">
                 <a href="/" class="block text-brand font-medium">Home</a>
                 <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
                 <a href="/beaches.html" class="block font-medium">Beaches</a>
@@ -75,119 +107,78 @@
     </header>
 
     <main class="max-w-4xl mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold mb-8">Blog</h1>
-        <div class="grid gap-8">
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-05-01-daily-blog.html" class="hover:text-brand">☀️ Siesta Key Beach Report - Friday, May 1, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">May 1, 2026</p>
-                <p class="mb-4">Perfect Friday morning at Siesta Key! Partly cloudy transitioning to sunny skies, high of 87°F, and that perfect 76°F Gulf water calling you in. Full moon tonight, smooth seas, and what's happening around town—plus why pre-booking your ride saves the stress.</p>
-                <a href="/blog/2026-05-01-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+        <h1 class="text-4xl font-bold mb-4 text-white text-center">Siesta Key Daily Reports & Local Guide</h1>
+        <p class="text-center text-gray-400 mb-10">Click a title below to open each article.</p>
+        <div>
+            <article class="blog-card">
+                <p class="post-date">May 1, 2026</p>
+                <h2><a href="/blog/2026-05-01-daily-blog.html">&#9728;&#65039; Siesta Key Beach Report - Friday, May 1, 2026</a></h2>
+                <p class="post-excerpt">Perfect Friday morning at Siesta Key! Partly cloudy transitioning to sunny skies, high of 87&#176;F, and that perfect 76&#176;F Gulf water calling you in. Full moon tonight, smooth seas, and what's happening around town&#8212;plus why pre-booking your ride saves the stress.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-30-daily-blog.html" class="hover:text-brand">☀️ Siesta Key Daily Report: Thursday, April 30, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 30, 2026</p>
-                <p class="mb-4">Beautiful late April day with partly cloudy skies transitioning to sun. High of 85°F, perfect 78-80°F Gulf water, and calm 1-2 ft waves. Local events, beach conditions, and why pre-booking beats the parking hassle.</p>
-                <a href="/blog/2026-04-30-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 30, 2026</p>
+                <h2><a href="/blog/2026-04-30-daily-blog.html">&#9728;&#65039; Siesta Key Daily Report: Thursday, April 30, 2026</a></h2>
+                <p class="post-excerpt">Beautiful late April day with partly cloudy skies transitioning to sun. High of 85&#176;F, perfect 78-80&#176;F Gulf water, and calm 1-2 ft waves. Local events, beach conditions, and why pre-booking beats the parking hassle.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-29-daily-blog.html" class="hover:text-brand">Perfect Spring Day at Siesta Key: April 29, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 29, 2026</p>
-                <p class="mb-4">Wednesday brings brilliant sunshine, 88°F highs, and a warm 75°F Gulf. Perfect for swimming, paddleboarding, and beach days. Water conditions are smooth with excellent visibility. Explore what's happening locally and why pre-booking your ride makes sense.</p>
-                <a href="/blog/2026-04-29-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 29, 2026</p>
+                <h2><a href="/blog/2026-04-29-daily-blog.html">Perfect Spring Day at Siesta Key: April 29, 2026</a></h2>
+                <p class="post-excerpt">Wednesday brings brilliant sunshine, 88&#176;F highs, and a warm 75&#176;F Gulf. Perfect for swimming, paddleboarding, and beach days. Water conditions are smooth with excellent visibility.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-28-daily-blog.html" class="hover:text-brand">Sunny Tuesday with Extreme UV: April 28, 2026 Beach Report</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 28, 2026</p>
-                <p class="mb-4">Tuesday brings crystal-clear skies, 92°F highs, and perfect Gulf conditions at 78–80°F. Water's ideal for swimming with 1–2 ft waves. Extreme UV means pack your protection. Local events and why pre-booking your ride beats parking hassle.</p>
-                <a href="/blog/2026-04-28-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 28, 2026</p>
+                <h2><a href="/blog/2026-04-28-daily-blog.html">Sunny Tuesday with Extreme UV: April 28, 2026 Beach Report</a></h2>
+                <p class="post-excerpt">Tuesday brings crystal-clear skies, 92&#176;F highs, and perfect Gulf conditions at 78&#8211;80&#176;F. Water's ideal for swimming with 1&#8211;2 ft waves. Extreme UV means pack your protection.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-27-daily-blog.html" class="hover:text-brand">Perfect Beach Day Ahead: Monday Weather & Your Ride Guide</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 27, 2026</p>
-                <p class="mb-4">Monday brings sunny skies, 82°F highs, and perfect beach conditions to Siesta Key. Here's your weather update and why booking a ride makes sense.</p>
-                <a href="/blog/2026-04-27-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 27, 2026</p>
+                <h2><a href="/blog/2026-04-27-daily-blog.html">Perfect Beach Day Ahead: Monday Weather &amp; Your Ride Guide</a></h2>
+                <p class="post-excerpt">Monday brings sunny skies, 82&#176;F highs, and perfect beach conditions to Siesta Key. Here's your weather update and why booking a ride makes sense.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-24-daily-blog.html" class="hover:text-brand">Daily Update - April 24, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 24, 2026</p>
-                <p class="mb-4">Friday, April 24 in Siesta Key: sunny and warm at 78°F, high of 89°F. Weekend beach plans, Siesta Key Village nightlife, and tips for getting around the island without the parking hassle.</p>
-                <a href="/blog/2026-04-24-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 24, 2026</p>
+                <h2><a href="/blog/2026-04-24-daily-blog.html">Daily Update - April 24, 2026</a></h2>
+                <p class="post-excerpt">Friday, April 24 in Siesta Key: sunny and warm at 78&#176;F, high of 89&#176;F. Weekend beach plans, Siesta Key Village nightlife, and tips for getting around the island without the parking hassle.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-07-daily-blog.html" class="hover:text-brand">Daily Update - April 7, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 7, 2026</p>
-                <p class="mb-4">Tuesday, April 7 in Siesta Key: breezy and mild with a high of 73°F. Beach walks, village dining, and tips for getting around the island without the parking hassle.</p>
-                <a href="/blog/2026-04-07-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 7, 2026</p>
+                <h2><a href="/blog/2026-04-07-daily-blog.html">Daily Update - April 7, 2026</a></h2>
+                <p class="post-excerpt">Tuesday, April 7 in Siesta Key: breezy and mild with a high of 73&#176;F. Beach walks, village dining, and tips for getting around the island without the parking hassle.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-05-daily-blog.html" class="hover:text-brand">Daily Update - April 5, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 5, 2026</p>
-                <p class="mb-4">Daily transportation tips and local updates from Siesta Free Ride, Siesta Key's trusted ride service.</p>
-                <a href="/blog/2026-04-05-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 5, 2026</p>
+                <h2><a href="/blog/2026-04-05-daily-blog.html">Daily Update - April 5, 2026</a></h2>
+                <p class="post-excerpt">Daily transportation tips and local updates from Siesta Free Ride, Siesta Key's trusted ride service.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-04-daily-blog.html" class="hover:text-brand">Daily Update - April 4, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 4, 2026</p>
-                <p class="mb-4">Daily transportation tips and local updates from Siesta Free Ride.</p>
-                <a href="/blog/2026-04-04-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 4, 2026</p>
+                <h2><a href="/blog/2026-04-04-daily-blog.html">Daily Update - April 4, 2026</a></h2>
+                <p class="post-excerpt">Daily transportation tips and local updates from Siesta Free Ride.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/2026-04-03-daily-blog.html" class="hover:text-brand">Daily Update - April 3, 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 3, 2026</p>
-                <p class="mb-4">Here's your daily update from Siesta Free Ride. We're committed to keeping you informed about transportation tips, local events, and what's happening around Siesta Key.</p>
-                <a href="/blog/2026-04-03-daily-blog.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 3, 2026</p>
+                <h2><a href="/blog/2026-04-03-daily-blog.html">Daily Update - April 3, 2026</a></h2>
+                <p class="post-excerpt">Here's your daily update from Siesta Free Ride. We're committed to keeping you informed about transportation tips, local events, and what's happening around Siesta Key.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/easter-spring-events-siesta-key-2026.html" class="hover:text-brand">Easter & Spring Events in Siesta Key 2026</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 2, 2026</p>
-                <p class="mb-4">Plan your Easter weekend and spring getaway. Our guide to holiday events, beach activities, and local celebrations...</p>
-                <a href="/blog/easter-spring-events-siesta-key-2026.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 2, 2026</p>
+                <h2><a href="/blog/easter-spring-events-siesta-key-2026.html">Easter &amp; Spring Events in Siesta Key 2026</a></h2>
+                <p class="post-excerpt">Plan your Easter weekend and spring getaway. Our guide to holiday events, beach activities, and local celebrations.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/top-5-things-to-do-siesta-key.html" class="hover:text-brand">Top 5 Things to Do in Siesta Key This Weekend</a>
-                </h2>
-                <p class="text-gray-500 mb-3">April 1, 2026</p>
-                <p class="mb-4">From sunset beach strolls to local dining gems, here are our favorite weekend activities...</p>
-                <a href="/blog/top-5-things-to-do-siesta-key.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">April 1, 2026</p>
+                <h2><a href="/blog/top-5-things-to-do-siesta-key.html">Top 5 Things to Do in Siesta Key This Weekend</a></h2>
+                <p class="post-excerpt">From sunset beach strolls to local dining gems, here are our favorite weekend activities.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/why-pre-booking-airport-ride-saves-stress.html" class="hover:text-brand">Why Pre-Booking Your Airport Ride Saves Stress</a>
-                </h2>
-                <p class="text-gray-500 mb-3">March 31, 2026</p>
-                <p class="mb-4">Arranging your airport transfer ahead of time guarantees a smooth start to your vacation...</p>
-                <a href="/blog/why-pre-booking-airport-ride-saves-stress.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">March 31, 2026</p>
+                <h2><a href="/blog/why-pre-booking-airport-ride-saves-stress.html">Why Pre-Booking Your Airport Ride Saves Stress</a></h2>
+                <p class="post-excerpt">Arranging your airport transfer ahead of time guarantees a smooth start to your vacation.</p>
             </article>
-            <article class="border-b pb-8">
-                <h2 class="text-2xl font-bold mb-2">
-                    <a href="/blog/locals-guide-siesta-key-village.html" class="hover:text-brand">A Local's Guide to Siesta Key Village</a>
-                </h2>
-                <p class="text-gray-500 mb-3">March 30, 2026</p>
-                <p class="mb-4">Explore the best cafes, markets, and nightlife spots in the village...</p>
-                <a href="/blog/locals-guide-siesta-key-village.html" class="text-brand font-medium">Read more &rarr;</a>
+            <article class="blog-card">
+                <p class="post-date">March 30, 2026</p>
+                <h2><a href="/blog/locals-guide-siesta-key-village.html">A Local's Guide to Siesta Key Village</a></h2>
+                <p class="post-excerpt">Explore the best cafes, markets, and nightlife spots in the village.</p>
             </article>
         </div>
     </main>
