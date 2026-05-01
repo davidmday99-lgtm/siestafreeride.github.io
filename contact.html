@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -32,45 +32,39 @@
     <style>
         html, body { margin: 0; padding: 0; }
         body {
-            background-image: url('/assets/background-photo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: #1f2937;
-            position: relative;
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: rgba(255, 255, 255, 0.14);
-            z-index: -1;
+            background: #0a0a0a;
+            color: #ffffff;
         }
         .phone-number {
             color: #00b4d8;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             font-weight: bold;
             font-size: 2.5rem;
         }
-        .cursive-text {
-            font-family: 'Pacifico', cursive;
-            color: #00b4d8;
-            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-        }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.82);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            background: #121212;
+            border: 1px solid #262626;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            transition: border-color 0.2s ease;
+        }
+        .glass-panel:hover {
+            border-color: #00b4d8;
+        }
+        .glass-panel h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+        .glass-panel p, .glass-panel li {
+            color: #d2d2d2;
+            font-size: 1rem;
+            line-height: 1.6;
         }
         @media (max-width: 768px) {
             .phone-number { font-size: 2rem; }
-            /* Header adjustments */
+            .glass-panel { padding: 20px 16px; }
             header img.h-80 {
-                height: 10rem; /* Reduced from h-80 (20rem) */
+                height: 10rem;
             }
             header .text-4xl {
                 font-size: 1.875rem; /* text-3xl */
@@ -113,41 +107,41 @@
     </header>
 
     <main class="max-w-3xl mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold mb-8 text-center">Get In Touch</h1>
+        <h1 class="text-4xl font-bold mb-8 text-center text-white">Get In Touch</h1>
         
         <div class="space-y-8">
             <div class="glass-panel p-6">
-                <h2 class="text-xl font-bold mb-2">Call or Text</h2>
+                <h2 class="text-xl font-bold mb-2 text-white">Call or Text</h2>
                 <a href="tel:941-600-8380" class="phone-number hover:no-underline">941‑600‑8380</a>
-                <p class="text-gray-600 mt-2">We're available 8am‑1am, 7 days a week.</p>
+                <p class="text-gray-300 mt-2">We're available 8am‑1am, 7 days a week.</p>
             </div>
 
             <div class="glass-panel p-6">
-                <h2 class="text-xl font-bold mb-2">Save Our Contact</h2>
-                <p class="text-gray-600 text-sm mb-4">
+                <h2 class="text-xl font-bold mb-2 text-white">Save Our Contact</h2>
+                <p class="text-gray-300 text-sm mb-4">
                     Scan this QR code to save <strong>Siesta Free Ride</strong> with phone number 941‑600‑8380 directly to your contacts.
                 </p>
                 <img src="/assets/qr-code.png" alt="QR Code to save Siesta Free Ride contact" class="mt-2 border rounded-lg shadow-md mx-auto">
-                <p class="text-gray-600 text-sm mt-2 text-center"><em>Scan with your phone's camera or QR app.</em></p>
+                <p class="text-gray-300 text-sm mt-2 text-center"><em>Scan with your phone's camera or QR app.</em></p>
                 <div class="mt-4 text-center">
                     <a href="/assets/contact.vcf" download class="inline-block bg-brand text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">Download Contact Card (.vcf)</a>
-                    <p class="text-gray-500 text-sm mt-2">Saves with photo included. Works on iPhone and Android.</p>
+                    <p class="text-gray-400 text-sm mt-2">Saves with photo included. Works on iPhone and Android.</p>
                 </div>
             </div>
 
             <div class="glass-panel p-6">
-                <h2 class="text-xl font-bold mb-2">Service Area</h2>
-                <p class="text-gray-700">Siesta Key, Sarasota, and surrounding areas. Airport runs to SRQ and beyond.</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-600">
+                <h2 class="text-xl font-bold mb-2 text-white">Service Area</h2>
+                <p class="text-gray-300">Siesta Key, Sarasota, and surrounding areas. Airport runs to SRQ and beyond.</p>
+                <ul class="list-disc pl-5 mt-2 text-gray-300">
                     <li>Siesta Key beaches & resorts</li>
                     <li>Sarasota‑Bradenton International Airport (SRQ)</li>
                 </ul>
             </div>
 
             <div class="glass-panel p-6" id="advertise">
-                <h2 class="text-xl font-bold mb-2">Advertise on Our Shuttles & Website</h2>
-                <p class="text-gray-700">Reach thousands of tourists and locals daily with advertising space on our shuttles and website. High visibility in Siesta Key, Sarasota, and surrounding areas.</p>
-                <ul class="list-disc pl-5 mt-2 text-gray-600">
+                <h2 class="text-xl font-bold mb-2 text-white">Advertise on Our Shuttles & Website</h2>
+                <p class="text-gray-300">Reach thousands of tourists and locals daily with advertising space on our shuttles and website. High visibility in Siesta Key, Sarasota, and surrounding areas.</p>
+                <ul class="list-disc pl-5 mt-2 text-gray-300">
                     <li>4 prime ad panels per shuttle</li>
                     <li>Full‑color vinyl wrap or static cling options</li>
                     <li>30+ days of exposure per month</li>
@@ -160,12 +154,12 @@
 
         <!-- Tips Section -->
         <div class="glass-panel p-6 mt-8 text-center">
-            <h2 class="text-xl font-bold mb-2">Tips Appreciated! &#128588;</h2>
-            <p class="text-gray-600 mb-4">Our rides are free &#8212; your tips keep us rolling. Thank you for your generosity!</p>
+            <h2 class="text-xl font-bold mb-2 text-white">Tips Appreciated! &#128588;</h2>
+            <p class="text-gray-300 mb-4">Our rides are free &#8212; your tips keep us rolling. Thank you for your generosity!</p>
             <a href="https://venmo.com/u/Rooster59" target="_blank" rel="noopener">
                 <img src="/assets/Venmo.jpeg" alt="Tip us on Venmo @Rooster59" class="mx-auto rounded-xl shadow-lg" style="max-width: 350px; width: 100%;">
             </a>
-            <p class="mt-3 text-sm text-gray-500">Scan or tap to tip via Venmo <strong>@Rooster59</strong></p>
+            <p class="mt-3 text-sm text-gray-400">Scan or tap to tip via Venmo <strong>@Rooster59</strong></p>
         </div>
     </main>
 
