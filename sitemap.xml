@@ -1,9 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
   <url>
     <loc>https://siestafreeride.com/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15,7 +21,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.siestafreeride.com/advertise.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://siestafreeride.com/contact.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/contact.html</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -26,10 +44,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.siestafreeride.com/photos.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Blog Index -->
   <url>
     <loc>https://siestafreeride.com/blog.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/blog.html</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -43,7 +73,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.siestafreeride.com/blog/easter-spring-events-siesta-key-2026.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://siestafreeride.com/blog/top-5-things-to-do-siesta-key.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/blog/top-5-things-to-do-siesta-key.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -55,7 +97,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.siestafreeride.com/blog/locals-guide-siesta-key-village.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://siestafreeride.com/blog/why-pre-booking-airport-ride-saves-stress.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/blog/why-pre-booking-airport-ride-saves-stress.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -69,7 +123,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.siestafreeride.com/blog/2026-04-03-daily-blog.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://siestafreeride.com/blog/2026-04-04-daily-blog.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/blog/2026-04-04-daily-blog.html</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -81,7 +147,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.siestafreeride.com/blog/2026-04-07-daily-blog.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://siestafreeride.com/blog/2026-04-24-daily-blog.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.siestafreeride.com/blog/2026-04-24-daily-blog.html</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -92,10 +170,28 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://www.siestafreeride.com/blog/2026-04-27-daily-blog.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-  <url><loc>https://siestafreeride.com/siesta-key-guide.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://siestafreeride.com/faq.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://siestafreeride.com/events.html</loc><lastmod>2026-04-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://siestafreeride.com/beaches.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <!-- Service Pages -->
+ <url><loc>https://siestafreeride.com/siesta-key-free-beach-rides.html</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.siestafreeride.com/siesta-key-free-beach-rides.html</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://siestafreeride.com/srq-airport-shuttle.html</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.siestafreeride.com/srq-airport-shuttle.html</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://siestafreeride.com/siesta-key-transportation.html</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.siestafreeride.com/siesta-key-transportation.html</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+ <url><loc>https://siestafreeride.com/siesta-key-guide.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.siestafreeride.com/siesta-key-guide.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://siestafreeride.com/faq.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.siestafreeride.com/faq.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://siestafreeride.com/events.html</loc><lastmod>2026-04-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+ <url><loc>https://www.siestafreeride.com/events.html</loc><lastmod>2026-04-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+ <url><loc>https://siestafreeride.com/beaches.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+ <url><loc>https://www.siestafreeride.com/beaches.html</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
 </urlset>
