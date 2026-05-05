@@ -1,27 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Siesta Free Ride Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#8FAABC',
-                        accent: '#C9D4DC',
-                        background: '#F5F0E8',
-                        surface: '#E8E4DC',
-                        primary: '#8FAABC',
-                        secondary: '#C9D4DC'
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         body { background: #0a0a0a; color: #ffffff; }
         .blog-card {
@@ -60,15 +43,9 @@
             line-height: 1.6;
         }
         @media (max-width: 768px) {
-            header img.h-80 {
-                height: 10rem;
-            }
-            .blog-card {
-                padding: 16px;
-            }
-            .blog-card h2 {
-                font-size: 1.2rem;
-            }
+            header img.h-80 { height: 10rem; }
+            .blog-card { padding: 16px; }
+            .blog-card h2 { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -107,11 +84,9 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-4 py-12">
-        <h1 style="color: #ffffff; font-size: 3rem; font-weight: bold; margin-bottom: 1rem; text-align: center;">Siesta Key Daily Reports & Local Guide</h1>
+        <h1 style="color: #ffffff; font-size: 3rem; font-weight: bold; margin-bottom: 1rem; text-align: center;">Siesta Key Daily Reports &amp; Local Guide</h1>
         <p style="text-align: center; color: #999999; margin-bottom: 3rem;">Click a title below to open each article.</p>
-        <div id="blog-container">
-            <p style="color: #d2d2d2;">Loading blog posts...</p>
-        </div>
+        <div id="blog-container"></div>
     </main>
 
     <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
@@ -122,21 +97,20 @@
 
     <script>
         document.getElementById('yr').textContent = new Date().getFullYear();
-
-        // Blog posts data - all 30 posts
-        const posts = [
-            { date: '2026-05-05', title: 'Sunny Beach Day with 76°F Gulf Water | Siesta Key Daily Report', slug: '2026-05-05-daily-blog', excerpt: 'Sunday, May 5: Sunny skies, 69°F air, excellent beach conditions with warm 76°F water. Perfect day for swimming, paddleboarding, and enjoying all Siesta Key has to offer.' },
-            { date: '2026-05-04', title: 'Golden Monday at Siesta Key: Perfect Beach Day for Sunset Lovers', slug: '2026-05-04-daily-blog', excerpt: 'Monday, May 4: 90°F sunny skies, gentle breeze. Ideal conditions for beach swimming, paddleboarding, and watching the most spectacular Gulf sunset.' },
-            { date: '2026-05-03', title: 'Morning Clouds Clearing to Sunshine | Siesta Key Daily Report', slug: '2026-05-03-daily-blog', excerpt: 'Friday morning starts cloudy but clears by mid-day. 88°F high, perfect Gulf water at 80°F. Great for swimming, paddleboarding, and beach walks.' },
-            { date: '2026-05-02', title: 'Saturday Weather & Beach Report - May 2, 2026', slug: '2026-05-02-daily-blog', excerpt: 'Saturday brings partly cloudy skies, 87°F highs, and perfect Gulf conditions. Ideal for beach activities, water sports, and island exploration.' },
-            { date: '2026-05-01', title: 'Friday, May 1: Beach Weather & Your Guide to Siesta Key', slug: '2026-05-01-daily-blog', excerpt: 'Friday kicks off the long weekend with sunny skies, 84°F, and ideal Gulf conditions. Perfect for beach swimming, paddleboarding, and enjoying Siesta Key Village.' },
-            { date: '2026-04-30', title: 'Beautiful Tuesday Weather at Siesta Key | April 30 Beach Report', slug: '2026-04-30-daily-blog', excerpt: 'Tuesday brings brilliant sunshine, 85°F highs, and perfect 78-80°F Gulf water. Ideal for swimming, paddleboarding, and beach days.' },
-            { date: '2026-04-29', title: 'Perfect Spring Day at Siesta Key: April 29, 2026', slug: '2026-04-29-daily-blog', excerpt: 'Monday brings brilliant sunshine, 88°F highs, and a warm 75°F Gulf. Perfect for swimming, paddleboarding, and beach days.' },
-            { date: '2026-04-28', title: 'Sunny Tuesday with Extreme UV: April 28, 2026 Beach Report', slug: '2026-04-28-daily-blog', excerpt: 'Tuesday brings crystal-clear skies, 92°F highs, and perfect Gulf conditions at 78–80°F. Water\'s ideal for swimming with 1–2 ft waves.' },
-            { date: '2026-04-27', title: 'Perfect Beach Day Ahead: Monday Weather & Your Ride Guide', slug: '2026-04-27-daily-blog', excerpt: 'Monday brings sunny skies, 82°F highs, and perfect beach conditions to Siesta Key. Here\'s your weather update and why booking a ride makes sense.' },
+        
+        var posts = [
+            { date: '2026-05-05', title: 'Sunny Beach Day with 76F Gulf Water | Siesta Key Daily Report', slug: '2026-05-05-daily-blog', excerpt: 'Sunday, May 5: Sunny skies, 69F air, excellent beach conditions with warm 76F water. Perfect day for swimming, paddleboarding, and enjoying all Siesta Key has to offer.' },
+            { date: '2026-05-04', title: 'Golden Monday at Siesta Key: Perfect Beach Day for Sunset Lovers', slug: '2026-05-04-daily-blog', excerpt: 'Monday, May 4: 90F sunny skies, gentle breeze. Ideal conditions for beach swimming, paddleboarding, and watching the most spectacular Gulf sunset.' },
+            { date: '2026-05-03', title: 'Morning Clouds Clearing to Sunshine | Siesta Key Daily Report', slug: '2026-05-03-daily-blog', excerpt: 'Friday morning starts cloudy but clears by mid-day. 88F high, perfect Gulf water at 80F. Great for swimming, paddleboarding, and beach walks.' },
+            { date: '2026-05-02', title: 'Saturday Weather & Beach Report - May 2, 2026', slug: '2026-05-02-daily-blog', excerpt: 'Saturday brings partly cloudy skies, 87F highs, and perfect Gulf conditions. Ideal for beach activities, water sports, and island exploration.' },
+            { date: '2026-05-01', title: 'Friday, May 1: Beach Weather & Your Guide to Siesta Key', slug: '2026-05-01-daily-blog', excerpt: 'Friday kicks off the long weekend with sunny skies, 84F, and ideal Gulf conditions. Perfect for beach swimming, paddleboarding, and enjoying Siesta Key Village.' },
+            { date: '2026-04-30', title: 'Beautiful Tuesday Weather at Siesta Key | April 30 Beach Report', slug: '2026-04-30-daily-blog', excerpt: 'Tuesday brings brilliant sunshine, 85F highs, and perfect 78-80F Gulf water. Ideal for swimming, paddleboarding, and beach days.' },
+            { date: '2026-04-29', title: 'Perfect Spring Day at Siesta Key: April 29, 2026', slug: '2026-04-29-daily-blog', excerpt: 'Monday brings brilliant sunshine, 88F highs, and a warm 75F Gulf. Perfect for swimming, paddleboarding, and beach days.' },
+            { date: '2026-04-28', title: 'Sunny Tuesday with Extreme UV: April 28, 2026 Beach Report', slug: '2026-04-28-daily-blog', excerpt: 'Tuesday brings crystal-clear skies, 92F highs, and perfect Gulf conditions at 78-80F. Water is ideal for swimming with 1-2 ft waves.' },
+            { date: '2026-04-27', title: 'Perfect Beach Day Ahead: Monday Weather & Your Ride Guide', slug: '2026-04-27-daily-blog', excerpt: 'Monday brings sunny skies, 82F highs, and perfect beach conditions to Siesta Key. Here is your weather update and why booking a ride makes sense.' },
             { date: '2026-04-26', title: 'Sunday Beach Forecast - April 26, 2026', slug: '2026-04-26-daily-blog', excerpt: 'Sunday weather report with beach conditions, water temperature, and local event information for Siesta Key.' },
             { date: '2026-04-25', title: 'Friday Weather & Beach Conditions - April 25, 2026', slug: '2026-04-25-daily-blog', excerpt: 'Friday brings great beach weather with sunny skies and warm Gulf water. Perfect for all beach activities.' },
-            { date: '2026-04-24', title: 'Daily Update - April 24, 2026', slug: '2026-04-24-daily-blog', excerpt: 'Friday, April 24 in Siesta Key: sunny and warm at 78°F, high of 89°F. Weekend beach plans and tips for getting around the island.' },
+            { date: '2026-04-24', title: 'Daily Update - April 24, 2026', slug: '2026-04-24-daily-blog', excerpt: 'Friday, April 24 in Siesta Key: sunny and warm at 78F, high of 89F. Weekend beach plans and tips for getting around the island.' },
             { date: '2026-04-23', title: 'Thursday Beach Report - April 23, 2026', slug: '2026-04-23-daily-blog', excerpt: 'Thursday weather update with beach and water conditions for Siesta Key.' },
             { date: '2026-04-22', title: 'Wednesday Weather Update - April 22, 2026', slug: '2026-04-22-daily-blog', excerpt: 'Wednesday beach forecast with current conditions and local event information.' },
             { date: '2026-04-21', title: 'Tuesday Beach Conditions - April 21, 2026', slug: '2026-04-21-daily-blog', excerpt: 'Tuesday weather and beach report for Siesta Key with transportation tips.' },
@@ -153,30 +127,27 @@
             { date: '2026-04-10', title: 'Friday Conditions - April 10, 2026', slug: '2026-04-10-daily-blog', excerpt: 'Friday beach update with local information.' },
             { date: '2026-04-09', title: 'Thursday Report - April 9, 2026', slug: '2026-04-09-daily-blog', excerpt: 'Thursday weather and beach conditions.' },
             { date: '2026-04-08', title: 'Wednesday Weather - April 8, 2026', slug: '2026-04-08-daily-blog', excerpt: 'Wednesday beach forecast.' },
-            { date: '2026-04-07', title: 'Daily Update - April 7, 2026', slug: '2026-04-07-daily-blog', excerpt: 'Tuesday, April 7 in Siesta Key: breezy and mild with a high of 73°F. Beach walks, village dining, and tips for getting around.' },
+            { date: '2026-04-07', title: 'Daily Update - April 7, 2026', slug: '2026-04-07-daily-blog', excerpt: 'Tuesday, April 7 in Siesta Key: breezy and mild with a high of 73F. Beach walks, village dining, and tips for getting around.' },
             { date: '2026-04-04', title: 'Daily Update - April 4, 2026', slug: '2026-04-04-daily-blog', excerpt: 'Daily transportation tips and local updates from Siesta Free Ride.' },
-            { date: '2026-04-03', title: 'Daily Update - April 3, 2026', slug: '2026-04-03-daily-blog', excerpt: 'Here\'s your daily update from Siesta Free Ride. We\'re committed to keeping you informed about transportation tips and local events.' }
+            { date: '2026-04-03', title: 'Daily Update - April 3, 2026', slug: '2026-04-03-daily-blog', excerpt: 'Here is your daily update from Siesta Free Ride. We are committed to keeping you informed about transportation tips and local events.' }
         ];
 
-        // Render posts
-        const container = document.getElementById('blog-container');
-        const postsHtml = posts.map(post => {
-            const dateObj = new Date(post.date);
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const formattedDate = dateObj.toLocaleDateString('en-US', options);
-            
-            return `
-            <article class="blog-card">
-                <div class="post-date">${formattedDate}</div>
-                <h2>
-                    <a href="/blog/${post.slug}.html">${post.title}</a>
-                </h2>
-                <p class="post-excerpt">${post.excerpt}</p>
-            </article>
-            `;
-        }).join('');
+        var container = document.getElementById('blog-container');
+        var html = '';
         
-        container.innerHTML = postsHtml || '<p style="color: #d2d2d2;">No blog posts found.</p>';
+        for (var i = 0; i < posts.length; i++) {
+            var post = posts[i];
+            var dateObj = new Date(post.date);
+            var dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            
+            html += '<article class="blog-card">';
+            html += '<div class="post-date">' + dateStr + '</div>';
+            html += '<h2><a href="/blog/' + post.slug + '.html">' + post.title + '</a></h2>';
+            html += '<p class="post-excerpt">' + post.excerpt + '</p>';
+            html += '</article>';
+        }
+        
+        container.innerHTML = html;
     </script>
 </body>
 </html>
