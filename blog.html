@@ -4,7 +4,6 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Siesta Free Ride Blog</title>
-    <link rel="canonical" href="https://siestafreeride.com/blog.html" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,56 +23,23 @@
         }
     </script>
     <style>
-        body { background: #0a0a0a; color: #ffffff; }
-        .blog-card {
-            background: #121212;
-            border: 1px solid #262626;
-            border-radius: 16px;
-            padding: 28px 32px;
-            margin-bottom: 32px;
-            transition: border-color 0.2s ease;
-        }
-        .blog-card:hover {
-            border-color: #8FAABC;
-        }
-        .blog-card .post-date {
+        .cursive-text {
+            font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
+            font-style: italic;
             color: #8FAABC;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        .blog-card h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .blog-card h2 a {
-            color: #ffffff;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        .blog-card h2 a:hover {
-            color: #8FAABC;
-        }
-        .blog-card .post-excerpt {
-            color: #d2d2d2;
-            font-size: 1rem;
-            line-height: 1.6;
         }
         @media (max-width: 768px) {
+            /* Header adjustments */
             header img.h-80 {
-                height: 10rem;
+                height: 10rem; /* Reduced from h-80 (20rem) */
             }
-            .blog-card {
-                padding: 16px;
-            }
-            .blog-card h2 {
-                font-size: 1.2rem;
+            header .text-4xl {
+                font-size: 1.875rem; /* text-3xl */
             }
         }
     </style>
 </head>
-<body>
+<body class="">
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -107,250 +73,76 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-12">
-        <h1 class="text-5xl font-bold mb-4 text-white text-center">Siesta Key Daily Reports & Local Guide</h1>
-        <p class="text-center text-gray-400 mb-12">Click a title below to open each article.</p>
-        <div>
-            <!-- May -->
-            <article class="blog-card">
-                <p class="post-date">May 5, 2026</p>
-                <h2><a href="/blog/2026-05-05-daily-blog.html">☀️ Siesta Key Daily Beach Report – May 5, 2026</a></h2>
-                <p class="post-excerpt">Beautiful sunny day with 91°F high and comfortable 69°F morning start. Warm 76°F Gulf water, extreme UV index 10, and perfect conditions for swimming and beach time. Check local events, tide times, and book your ride to Siesta Key, Casey Key, Gulf Gate, or SRQ airport!</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">May 4, 2026</p>
-                <h2><a href="/blog/2026-05-04-daily-blog.html">☀️ Golden Monday: Perfect Siesta Key Beach Day</a></h2>
-                <p class="post-excerpt">Absolutely stunning conditions! 90°F sunny skies, warm 81°F Gulf water, and gentle breezes create the perfect beach day. Swimming, paddleboarding, sunset watching—and pro sun safety tips for UV Index 8. Book your ride to all Siesta Key beaches, Casey Key, Gulf Gate, and SRQ airport.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">May 3, 2026</p>
-                <h2><a href="/blog/2026-05-03-daily-blog.html">&#9729;&#65039; Siesta Key Sunday: Morning Clouds Clearing to Sunshine</a></h2>
-                <p class="post-excerpt">Cool morning at 66°F with overcast skies clearing by midday. High of 77°F, perfect 77°F Gulf water, and light northeast winds. Morning farmers market, afternoon sunshine, and why booking your ride beats parking hassles. Great day for early beach time!</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">May 2, 2026</p>
-                <h2><a href="/blog/2026-05-02-daily-blog.html">&#9728;&#65039; Siesta Key Saturday: Warm Waters &amp; Afternoon Showers</a></h2>
-                <p class="post-excerpt">Beautiful Saturday with 83&#176;F highs, 76&#176;F Gulf water perfect for swimming, and smooth seas. Morning and early afternoon are ideal&#8212;afternoon showers expected 3&#8211;7 PM. Local events, UV alerts, and why pre-booking your ride saves the hassle.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">May 1, 2026</p>
-                <h2><a href="/blog/2026-05-01-daily-blog.html">&#9728;&#65039; Siesta Key Beach Report - Friday, May 1, 2026</a></h2>
-                <p class="post-excerpt">Perfect Friday morning at Siesta Key! Partly cloudy transitioning to sunny skies, high of 87&#176;F, and that perfect 76&#176;F Gulf water calling you in. Full moon tonight, smooth seas, and what's happening around town&#8212;plus why pre-booking your ride saves the stress.</p>
-            </article>
-            <!-- Late April -->
-            <article class="blog-card">
-                <p class="post-date">April 30, 2026</p>
-                <h2><a href="/blog/2026-04-30-daily-blog.html">&#9728;&#65039; Siesta Key Daily Report: Thursday, April 30, 2026</a></h2>
-                <p class="post-excerpt">Beautiful late April day with partly cloudy skies transitioning to sun. High of 85&#176;F, perfect 78-80&#176;F Gulf water, and calm 1-2 ft waves. Local events, beach conditions, and why pre-booking beats the parking hassle.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 29, 2026</p>
-                <h2><a href="/blog/2026-04-29-daily-blog.html">Perfect Spring Day at Siesta Key: April 29, 2026</a></h2>
-                <p class="post-excerpt">Wednesday brings brilliant sunshine, 88&#176;F highs, and a warm 75&#176;F Gulf. Perfect for swimming, paddleboarding, and beach days. Water conditions are smooth with excellent visibility.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 28, 2026</p>
-                <h2><a href="/blog/2026-04-28-daily-blog.html">Sunny Tuesday with Extreme UV: April 28, 2026 Beach Report</a></h2>
-                <p class="post-excerpt">Tuesday brings crystal-clear skies, 92&#176;F highs, and perfect Gulf conditions at 78&#8211;80&#176;F. Water's ideal for swimming with 1&#8211;2 ft waves. Extreme UV means pack your protection.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 27, 2026</p>
-                <h2><a href="/blog/2026-04-27-daily-blog.html">Perfect Beach Day Ahead: Monday Weather &amp; Your Ride Guide</a></h2>
-                <p class="post-excerpt">Monday brings sunny skies, 82&#176;F highs, and perfect beach conditions to Siesta Key. Here's your weather update and why booking a ride makes sense.</p>
-            </article>
-            <!-- Backfilled Posts -->
-            <article class="blog-card">
-                <p class="post-date">April 26, 2026</p>
-                <h2><a href="/blog/2026-04-26-daily-blog.html">Sunday Sunset: Perfect Weekend Finale</a></h2>
-                <p class="post-excerpt">Sunday provides the perfect ending to an amazing weekend! Comfortable 81&#176;F temperatures and gentle conditions create ideal atmosphere for sunset watching, beach meditation, and relaxation. Gulf water at 75&#176;F with calm 1-2 ft waves. Special SRQ airport service for departing guests.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 25, 2026</p>
-                <h2><a href="/blog/2026-04-25-daily-blog.html">Saturday Spectacular: Weekend Beach Celebration</a></h2>
-                <p class="post-excerpt">Saturday delivers spectacular weather with 84&#176;F highs and brilliant sunshine! Perfect conditions for beach parties, family gatherings, and weekend celebrations. Gulf water at 76&#176;F with minimal waves. Ideal for group events, wedding photography, and outdoor dining. Pre-book your ride to avoid parking chaos.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 24, 2026</p>
-                <h2><a href="/blog/2026-04-24-daily-blog.html">Friday Launch: Weekend Setup & Beach Bliss</a></h2>
-                <p class="post-excerpt">Friday brings the perfect setup for an amazing weekend! Early morning 78&#176;F comfort for peaceful beach time before temperatures rise to 89&#176;F. Sunny and warm with gentle 5-9 MPH winds. Perfect for grocery runs, weekend prep, and evening village festivities. Gulf water warming to 74&#176;F.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 23, 2026</p>
-                <h2><a href="/blog/2026-04-23-daily-blog.html">Thursday Thrills: Perfect Beach Sports Weather</a></h2>
-                <p class="post-excerpt">Thursday brings energy and excitement! 83&#176;F high and ideal conditions for beach sports, volleyball tournaments, and active games. Warm 75&#176;F Gulf water with 2-3 ft waves perfect for paddleboard racing and water polo. Light 6-10 MPH winds keep it comfortable.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 22, 2026</p>
-                <h2><a href="/blog/2026-04-22-daily-blog.html">Wednesday Wanderlust: Adventure Awaits</a></h2>
-                <p class="post-excerpt">Wednesday delivers comfortable adventure weather! 79&#176;F with breezy conditions perfect for kayaking mangrove tunnels, beach hiking, and nature exploration. Clear 74&#176;F Gulf waters and 8-12 MPH winds create ideal photography and wildlife watching conditions.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 21, 2026</p>
-                <h2><a href="/blog/2026-04-21-daily-blog.html">Tuesday Treasures: Beach Exploration Day</a></h2>
-                <p class="post-excerpt">Tuesday brings ideal conditions for beach exploration and treasure hunting! 82&#176;F with gentle waves stirring up the Gulf. Perfect for shell hunting at Point of Rocks, snorkeling in clear water, and discovering hidden coastal gems.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 20, 2026</p>
-                <h2><a href="/blog/2026-04-20-daily-blog.html">Monday Motivation: Fresh Week, Fresh Beach Energy</a></h2>
-                <p class="post-excerpt">Monday energizes your week with 81&#176;F perfect beach weather! Start with sunrise beach walks, swimming fitness in calm 74&#176;F Gulf waters, and balance productivity with relaxation. Clear skies and light winds all day.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 19, 2026</p>
-                <h2><a href="/blog/2026-04-19-daily-blog.html">Sunday Serenity: Perfect Relaxation Day</a></h2>
-                <p class="post-excerpt">Sunday brings peaceful beach time with comfortable 80&#176;F temperatures and gentle breezes. Partly cloudy skies provide natural shade. Perfect for beach meditation, sunset yoga, and leisurely Gulf swims in calm 75&#176;F water.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 18, 2026</p>
-                <h2><a href="/blog/2026-04-18-daily-blog.html">Saturday Sunshine: Ultimate Weekend Beach Day</a></h2>
-                <p class="post-excerpt">Saturday delivers everything you want in a perfect weekend! 84&#176;F highs with brilliant sunshine and gentle 5-8 MPH winds. Ideal for family activities, beach volleyball, swimming in 76&#176;F Gulf waters, and creating unforgettable memories.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 17, 2026</p>
-                <h2><a href="/blog/2026-04-17-daily-blog.html">Friday Finale: Weekend Pre-Game Beach Day</a></h2>
-                <p class="post-excerpt">Friday offers perfect setup for an amazing weekend! 83&#176;F with sunny skies and calm conditions. Ideal for beach preparation, grocery shopping, and equipment testing. Evening brings live music and village festivities in perfect weather.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 16, 2026</p>
-                <h2><a href="/blog/2026-04-16-daily-blog.html">Thursday Thrills: Active Water Sports Weather</a></h2>
-                <p class="post-excerpt">Thursday brings the energy! 12-18 MPH winds create ideal conditions for windsurfing, kiteboarding, and sailing. 81&#176;F with 74&#176;F Gulf water and 2-3 ft waves. Perfect for parasailing and all wind-powered water sports at Siesta Key.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 15, 2026</p>
-                <h2><a href="/blog/2026-04-15-daily-blog.html">Wednesday Wanderlust: Adventure & Exploration</a></h2>
-                <p class="post-excerpt">Wednesday delivers photographer's paradise conditions! 82&#176;F with stunning light, calm seas, and comfortable exploring weather. Perfect for capturing Siesta Key's beauty, discovering hidden trails, and enjoying outdoor adventures.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 14, 2026</p>
-                <h2><a href="/blog/2026-04-14-daily-blog.html">Tuesday Treasures: Shell Hunting Weather</a></h2>
-                <p class="post-excerpt">Tuesday brings ideal conditions for shell hunting! 10-15 MPH breezes stir up the Gulf, delivering fresh treasures to shore. 79&#176;F with 73&#176;F Gulf water and 2 ft waves create perfect beachcombing conditions at all Siesta Key beaches.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 13, 2026</p>
-                <h2><a href="/blog/2026-04-13-daily-blog.html">Monday Motivation: Balance Work & Beach Time</a></h2>
-                <p class="post-excerpt">Monday starts the week perfectly with 80&#176;F comfortable beach weather! Achieve work-life balance with morning beach walks, lunch break swims, and evening sunset relaxation. Gentle 7-10 MPH winds keep it pleasant all day.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 12, 2026</p>
-                <h2><a href="/blog/2026-04-12-daily-blog.html">Sunday Serenity: Perfect Family Beach Day</a></h2>
-                <p class="post-excerpt">Sunday brings the quintessential family beach day! Gentle 1-2 ft waves and warm 82&#176;F Gulf water perfect for all ages. Partly sunny skies and light winds create ideal conditions for sandcastles, swimming, and family memories.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 11, 2026</p>
-                <h2><a href="/blog/2026-04-11-daily-blog.html">Saturday Splendor: Ultimate Weekend Beach Day</a></h2>
-                <p class="post-excerpt">Saturday offers everything you want in a perfect beach weekend! 84&#176;F highs with brilliant sunshine and calm conditions. Ideal for all water activities, beach games, and relaxation in crystal-clear 76&#176;F Gulf waters.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 10, 2026</p>
-                <h2><a href="/blog/2026-04-10-daily-blog.html">Friday Fun: Weekend Kickoff Weather & Activities</a></h2>
-                <p class="post-excerpt">Friday brings the perfect start to your weekend! 79&#176;F with mostly sunny skies and refreshing 8-12 MPH breeze. Great for watersports and beach activities. Evening brings live music and village entertainment in Siesta Key.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 9, 2026</p>
-                <h2><a href="/blog/2026-04-09-daily-blog.html">Thursday Sunshine: Perfect Siesta Key Day</a></h2>
-                <p class="post-excerpt">Thursday delivers bright sunshine and 83&#176;F warmth! Crystal-clear 75&#176;F Gulf waters and calm conditions perfect for swimming, snorkeling, and beach volleyball. Light winds and blue skies make it ideal for all beach activities.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 8, 2026</p>
-                <h2><a href="/blog/2026-04-08-daily-blog.html">Mid-Week Beach Bliss: Wednesday's Perfect Escape</a></h2>
-                <p class="post-excerpt">Wednesday calls for a mid-week beach break! 81&#176;F with partly cloudy skies offer perfect conditions for swimming, shell hunting, and relaxation. Gentle Gulf breeze and comfortable temperatures make it ideal for extended beach time.</p>
-            </article>
-            <!-- Existing Posts -->
-            <article class="blog-card">
-                <p class="post-date">April 7, 2026</p>
-                <h2><a href="/blog/2026-04-07-daily-blog.html">Daily Update - April 7, 2026</a></h2>
-                <p class="post-excerpt">Tuesday, April 7 in Siesta Key: breezy and mild with a high of 73&#176;F. Beach walks, village dining, and tips for getting around the island without the parking hassle.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 5, 2026</p>
-                <h2><a href="/blog/2026-04-05-daily-blog.html">Daily Update - April 5, 2026</a></h2>
-                <p class="post-excerpt">Daily transportation tips and local updates from Siesta Free Ride, Siesta Key's trusted ride service.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 4, 2026</p>
-                <h2><a href="/blog/2026-04-04-daily-blog.html">Daily Update - April 4, 2026</a></h2>
-                <p class="post-excerpt">Daily transportation tips and local updates from Siesta Free Ride.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 3, 2026</p>
-                <h2><a href="/blog/2026-04-03-daily-blog.html">Daily Update - April 3, 2026</a></h2>
-                <p class="post-excerpt">Here's your daily update from Siesta Free Ride. We're committed to keeping you informed about transportation tips, local events, and what's happening around Siesta Key.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 2, 2026</p>
-                <h2><a href="/blog/easter-spring-events-siesta-key-2026.html">Easter &amp; Spring Events in Siesta Key 2026</a></h2>
-                <p class="post-excerpt">Plan your Easter weekend and spring getaway. Our guide to holiday events, beach activities, and local celebrations.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">April 1, 2026</p>
-                <h2><a href="/blog/top-5-things-to-do-siesta-key.html">Top 5 Things to Do in Siesta Key This Weekend</a></h2>
-                <p class="post-excerpt">From sunset beach strolls to local dining gems, here are our favorite weekend activities.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">March 31, 2026</p>
-                <h2><a href="/blog/why-pre-booking-airport-ride-saves-stress.html">Why Pre-Booking Your Airport Ride Saves Stress</a></h2>
-                <p class="post-excerpt">Arranging your airport transfer ahead of time guarantees a smooth start to your vacation.</p>
-            </article>
-            <article class="blog-card">
-                <p class="post-date">March 30, 2026</p>
-                <h2><a href="/blog/locals-guide-siesta-key-village.html">A Local's Guide to Siesta Key Village</a></h2>
-                <p class="post-excerpt">Explore the best cafes, markets, and nightlife spots in the village.</p>
-            </article>
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold mb-8">Blog</h1>
+        <div class="grid gap-8" id="blog-container">
+            <p class="text-gray-500">Loading blog posts...</p>
         </div>
     </main>
 
-    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
-                <p>Transportation in Siesta Key, FL.</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Contact</h4>
-                <p>941-600-8380</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:text-white">Home</a></li>
-                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="/photos.html" class="hover:text-white">Photos</a></li>
-                    <li><a href="/advertise.html" class="hover:text-white">Advertise</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Save Contact</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Affiliate Sponsors -->
-        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
-          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
-          <div class="flex flex-wrap justify-center gap-6 mb-6">
-            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
-              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;">
-              Drive Again Secrets &#8212; License Reinstatement Guides
-            </a>
-          </div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
-            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+    <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; <span id="yr"></span> Siesta Free Ride. <a href="/" class="text-accent">Home</a></p>
         </div>
     </footer>
 
-    <!-- Detwiler's Farm Market Banner -->
-    <div style="background: #000000; padding: 16px 24px; border-top: 3px solid #CC0000;">
-        <a href="https://detwilermarket.com" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 20px; max-width: 900px; margin: 0 auto;">
-            <img src="/assets/Ditwiler-building-photo.png" alt="Detwiler's Farm Market" style="width: 80px; height: 67px; flex-shrink: 0; border-radius: 4px; object-fit: cover;">
-            <div style="text-align: left;">
-                <span style="color: #fff; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.3px; display: block;">&#128722; Detwiler's Farm Market</span>
-                <span style="color: #ffd700; font-size: 0.95rem; display: block; margin-top: 4px;">Fresh produce, local seafood &amp; deli &#8212; 2881 Clark Rd, Sarasota | (941) 263-4305</span>
-                <span style="color: #ffffffcc; font-size: 0.85rem; display: block; margin-top: 2px;">Need a ride? Siesta Free Ride gets you there &#8212; 941-600-8380</span>
-            </div>
-        </a>
-    </div>
-
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('yr').textContent = new Date().getFullYear();
+
+        // Blog posts data - all 30 posts
+        const posts = [
+            { date: '2026-05-04', title: 'Golden Monday at Siesta Key: Perfect Beach Day for Sunset Lovers', slug: '2026-05-04-daily-blog', excerpt: 'Monday, May 4: 90°F sunny skies, gentle breeze. Ideal conditions for beach swimming, paddleboarding, and watching the most spectacular Gulf sunset.' },
+            { date: '2026-05-03', title: 'Morning Clouds Clearing to Sunshine | Siesta Key Daily Report', slug: '2026-05-03-daily-blog', excerpt: 'Friday morning starts cloudy but clears by mid-day. 88°F high, perfect Gulf water at 80°F. Great for swimming, paddleboarding, and beach walks.' },
+            { date: '2026-05-02', title: 'Saturday Weather & Beach Report - May 2, 2026', slug: '2026-05-02-daily-blog', excerpt: 'Saturday brings partly cloudy skies, 87°F highs, and perfect Gulf conditions. Ideal for beach activities, water sports, and island exploration.' },
+            { date: '2026-05-01', title: 'Friday, May 1: Beach Weather & Your Guide to Siesta Key', slug: '2026-05-01-daily-blog', excerpt: 'Friday kicks off the long weekend with sunny skies, 84°F, and ideal Gulf conditions. Perfect for beach swimming, paddleboarding, and enjoying Siesta Key Village.' },
+            { date: '2026-04-30', title: 'Beautiful Tuesday Weather at Siesta Key | April 30 Beach Report', slug: '2026-04-30-daily-blog', excerpt: 'Tuesday brings brilliant sunshine, 85°F highs, and perfect 78-80°F Gulf water. Ideal for swimming, paddleboarding, and beach days.' },
+            { date: '2026-04-29', title: 'Perfect Spring Day at Siesta Key: April 29, 2026', slug: '2026-04-29-daily-blog', excerpt: 'Monday brings brilliant sunshine, 88°F highs, and a warm 75°F Gulf. Perfect for swimming, paddleboarding, and beach days.' },
+            { date: '2026-04-28', title: 'Sunny Tuesday with Extreme UV: April 28, 2026 Beach Report', slug: '2026-04-28-daily-blog', excerpt: 'Tuesday brings crystal-clear skies, 92°F highs, and perfect Gulf conditions at 78–80°F. Water\'s ideal for swimming with 1–2 ft waves.' },
+            { date: '2026-04-27', title: 'Perfect Beach Day Ahead: Monday Weather & Your Ride Guide', slug: '2026-04-27-daily-blog', excerpt: 'Monday brings sunny skies, 82°F highs, and perfect beach conditions to Siesta Key. Here\'s your weather update and why booking a ride makes sense.' },
+            { date: '2026-04-26', title: 'Sunday Beach Forecast - April 26, 2026', slug: '2026-04-26-daily-blog', excerpt: 'Sunday weather report with beach conditions, water temperature, and local event information for Siesta Key.' },
+            { date: '2026-04-25', title: 'Friday Weather & Beach Conditions - April 25, 2026', slug: '2026-04-25-daily-blog', excerpt: 'Friday brings great beach weather with sunny skies and warm Gulf water. Perfect for all beach activities.' },
+            { date: '2026-04-24', title: 'Daily Update - April 24, 2026', slug: '2026-04-24-daily-blog', excerpt: 'Friday, April 24 in Siesta Key: sunny and warm at 78°F, high of 89°F. Weekend beach plans and tips for getting around the island.' },
+            { date: '2026-04-23', title: 'Thursday Beach Report - April 23, 2026', slug: '2026-04-23-daily-blog', excerpt: 'Thursday weather update with beach and water conditions for Siesta Key.' },
+            { date: '2026-04-22', title: 'Wednesday Weather Update - April 22, 2026', slug: '2026-04-22-daily-blog', excerpt: 'Wednesday beach forecast with current conditions and local event information.' },
+            { date: '2026-04-21', title: 'Tuesday Beach Conditions - April 21, 2026', slug: '2026-04-21-daily-blog', excerpt: 'Tuesday weather and beach report for Siesta Key with transportation tips.' },
+            { date: '2026-04-20', title: 'Monday Forecast - April 20, 2026', slug: '2026-04-20-daily-blog', excerpt: 'Monday beach weather and conditions for Siesta Key with local event highlights.' },
+            { date: '2026-04-19', title: 'Sunday Beach Report - April 19, 2026', slug: '2026-04-19-daily-blog', excerpt: 'Sunday weather update with water temperature and beach activity recommendations.' },
+            { date: '2026-04-18', title: 'Saturday Weather - April 18, 2026', slug: '2026-04-18-daily-blog', excerpt: 'Saturday beach forecast for Siesta Key with current conditions.' },
+            { date: '2026-04-17', title: 'Friday Update - April 17, 2026', slug: '2026-04-17-daily-blog', excerpt: 'Friday weather and beach conditions with local event information.' },
+            { date: '2026-04-16', title: 'Thursday Beach Report - April 16, 2026', slug: '2026-04-16-daily-blog', excerpt: 'Thursday forecast with water temperature and beach activity tips.' },
+            { date: '2026-04-15', title: 'Wednesday Conditions - April 15, 2026', slug: '2026-04-15-daily-blog', excerpt: 'Wednesday weather update for Siesta Key beach.' },
+            { date: '2026-04-14', title: 'Tuesday Beach Forecast - April 14, 2026', slug: '2026-04-14-daily-blog', excerpt: 'Tuesday conditions with water temperature and beach recommendations.' },
+            { date: '2026-04-13', title: 'Monday Weather - April 13, 2026', slug: '2026-04-13-daily-blog', excerpt: 'Monday beach report for Siesta Key.' },
+            { date: '2026-04-12', title: 'Sunday Update - April 12, 2026', slug: '2026-04-12-daily-blog', excerpt: 'Sunday weather and beach conditions.' },
+            { date: '2026-04-11', title: 'Saturday Forecast - April 11, 2026', slug: '2026-04-11-daily-blog', excerpt: 'Saturday beach weather report.' },
+            { date: '2026-04-10', title: 'Friday Conditions - April 10, 2026', slug: '2026-04-10-daily-blog', excerpt: 'Friday beach update with local information.' },
+            { date: '2026-04-09', title: 'Thursday Report - April 9, 2026', slug: '2026-04-09-daily-blog', excerpt: 'Thursday weather and beach conditions.' },
+            { date: '2026-04-08', title: 'Wednesday Weather - April 8, 2026', slug: '2026-04-08-daily-blog', excerpt: 'Wednesday beach forecast.' },
+            { date: '2026-04-07', title: 'Daily Update - April 7, 2026', slug: '2026-04-07-daily-blog', excerpt: 'Tuesday, April 7 in Siesta Key: breezy and mild with a high of 73°F. Beach walks, village dining, and tips for getting around.' },
+            { date: '2026-04-04', title: 'Daily Update - April 4, 2026', slug: '2026-04-04-daily-blog', excerpt: 'Daily transportation tips and local updates from Siesta Free Ride.' },
+            { date: '2026-04-03', title: 'Daily Update - April 3, 2026', slug: '2026-04-03-daily-blog', excerpt: 'Here\'s your daily update from Siesta Free Ride. We\'re committed to keeping you informed about transportation tips and local events.' }
+        ];
+
+        // Render posts
+        const container = document.getElementById('blog-container');
+        const postsHtml = posts.map(post => {
+            const dateObj = new Date(post.date);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = dateObj.toLocaleDateString('en-US', options);
+            
+            return `
+            <article class="border-b pb-8">
+                <h2 class="text-2xl font-bold mb-2">
+                    <a href="/blog/${post.slug}.html" class="hover:text-brand">${post.title}</a>
+                </h2>
+                <p class="text-gray-500 mb-3">${formattedDate}</p>
+                <p class="mb-4">${post.excerpt}</p>
+                <a href="/blog/${post.slug}.html" class="text-brand font-medium">Read more &rarr;</a>
+            </article>
+            `;
+        }).join('');
+        
+        container.innerHTML = postsHtml || '<p class="text-gray-500">No blog posts found.</p>';
     </script>
 </body>
 </html>
