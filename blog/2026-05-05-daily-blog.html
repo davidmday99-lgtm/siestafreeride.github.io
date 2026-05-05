@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siesta Key Weather & Beach Report - May 5, 2026 | Siesta Free Ride</title>
+    <meta name="description" content="Your daily Siesta Key beach weather report, water conditions, and local events. Plus, pre-book your Siesta Free Ride to get around town!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #00a8e8 0%, #0077b6 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        header .date {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .intro {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-of-type {
+            border-bottom: none;
+        }
+        .section h2 {
+            color: #0077b6;
+            font-size: 22px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .section h2:before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: #00a8e8;
+            margin-right: 12px;
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .weather-item {
+            background: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #00a8e8;
+        }
+        .weather-item-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .weather-item-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0077b6;
+        }
+        .water-report {
+            background: #e8f5f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #00c9a7;
+        }
+        .water-report p {
+            margin-bottom: 10px;
+        }
+        .event-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+        .event-list li {
+            background: #fff9e6;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+        }
+        .transport-tip {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #2196f3;
+        }
+        .transport-tip h3 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .cta p {
+            margin-bottom: 15px;
+        }
+        .phone-number {
+            font-size: 24px;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 20px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            border-top: 1px solid #eee;
+        }
+        @media (max-width: 600px) {
+            .weather-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 22px;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☀️ Siesta Key Daily Beach Report</h1>
+            <div class="date">Monday, May 5, 2026</div>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <p>Good morning, Siesta Key! Welcome to your daily beach and local conditions report for <strong>May 5, 2026</strong>. Whether you're planning a morning swim, a beach walk, or a day of water sports, here's everything you need to know about conditions on the Gulf today.</p>
+            </div>
+
+            <div class="section">
+                <h2>Weather & Air Conditions</h2>
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <div class="weather-item-label">Current Temperature</div>
+                        <div class="weather-item-value">69°F</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-item-label">Feels Like</div>
+                        <div class="weather-item-value">69°F</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-item-label">High / Low</div>
+                        <div class="weather-item-value">91°F / 65°F</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-item-label">Humidity</div>
+                        <div class="weather-item-value">84%</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-item-label">Wind</div>
+                        <div class="weather-item-value">11 mph (East)</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-item-label">UV Index</div>
+                        <div class="weather-item-value">10 (Extreme)</div>
+                    </div>
+                </div>
+                <p><strong>Forecast:</strong> Sunny skies all day! Clear conditions make today perfect for the beach. It's a crisp morning, but expect it to heat up nicely by midday. Please wear sunscreen — the UV index is extreme today!</p>
+            </div>
+
+            <div class="section">
+                <h2>Water & Beach Report</h2>
+                <div class="water-report">
+                    <p><strong>Gulf Water Temperature:</strong> 76°F (24.6°C)</p>
+                    <p>The water is warm and inviting today — perfect for swimming without a wetsuit. At 76°F, you'll feel comfortable floating and enjoying the Gulf for extended periods.</p>
+                    <p><strong>Conditions:</strong> Sea state is <em>slight</em> with calm conditions. Excellent visibility for snorkeling and underwater exploration.</p>
+                    <p><strong>Advisories:</strong> No current rip current warnings or red tide alerts reported. Standard beach safety applies — always swim near lifeguard stations and check signage before entering the water.</p>
+                    <p><strong>Tide Times:</strong> High tide at 1:59 PM (peak beach depth). Perfect timing for afternoon swimmers and paddleboarders!</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>What's Happening Around Siesta Key</h2>
+                <p>May is one of the best times to visit Siesta Key — the weather is beautiful, the water is perfect, and there's plenty to do! Here's what's happening this week:</p>
+                <ul class="event-list">
+                    <li><strong>Siesta Key Beach</strong> — Open year-round with lifeguards. Water sports rentals (paddleboards, kayaks) available daily.</li>
+                    <li><strong>Local Farmers Markets</strong> — Fresh produce, local crafts, and coffee at various Gulf Gate venues through the week.</li>
+                    <li><strong>Evening Beach Walks</strong> — Sunset starts around 8:06 PM. Perfect for a romantic stroll or evening photography along the pristine white sand.</li>
+                </ul>
+            </div>
+
+            <div class="transport-tip">
+                <h3>💡 Transportation Tip: Pre-Book Your Siesta Free Ride</h3>
+                <p>Planning to visit Siesta Key, Casey Key, or Gulf Gate? Don't worry about parking or driving — <strong>pre-book your Siesta Free Ride</strong> and relax from pickup to drop-off. We offer:</p>
+                <ul style="margin-left: 20px; margin-bottom: 10px;">
+                    <li><strong>Beach Day Rides</strong> — Get to Siesta Key, Casey Key, or Gulf Gate hassle-free</li>
+                    <li><strong>Grocery Runs</strong> — Shopping in the Gulf Gate area? We've got you covered</li>
+                    <li><strong>SRQ Airport Transfers</strong> — Flying into Sarasota-Bradenton International (SRQ)? We offer reliable, friendly airport shuttle service right to your door or hotel</li>
+                </ul>
+            </div>
+
+            <div class="cta">
+                <h3>Ready for Your Siesta Key Adventure?</h3>
+                <p>Book a ride today and explore Siesta Key the easy way!</p>
+                <div class="phone-number">941-600-8380</div>
+                <p style="font-size: 14px; margin-top: 15px;">
+                    Or visit our <a href="https://siestafreeride.com/contact" style="color: white; text-decoration: underline;">Contact Page</a> to request a ride.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Siesta Free Ride. Local transportation for Siesta Key, Casey Key, Gulf Gate, and SRQ Airport.</p>
+            <p>Weather data updated daily. Water temperature from NOAA. Tide information for Siesta Key, FL.</p>
+        </footer>
+    </div>
+</body>
+</html>
