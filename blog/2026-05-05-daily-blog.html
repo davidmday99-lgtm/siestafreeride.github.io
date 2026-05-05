@@ -151,6 +151,31 @@
             display: inline-block;
             margin-bottom: 12px;
         }
+        .nav-header {
+            background: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-header a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .nav-header a:hover {
+            background: #f0f7ff;
+        }
+        .nav-header .logo {
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+        }
         footer {
             background: #f5f5f5;
             padding: 20px;
@@ -158,6 +183,43 @@
             font-size: 14px;
             color: #999;
             border-top: 1px solid #eee;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .footer-nav a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: white;
+            border: 2px solid #0077b6;
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .footer-nav a:hover {
+            background: #0077b6;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .nav-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .footer-nav {
+                flex-direction: column;
+            }
+            .footer-nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
         }
         @media (max-width: 600px) {
             .weather-grid {
@@ -257,6 +319,10 @@
         </div>
 
         <footer>
+            <div class="footer-nav">
+                <a href="https://siestafreeride.com/blog.html" onclick="window.location.href='https://siestafreeride.com/blog.html'; return false;">← Back to Blog</a>
+                <a href="https://siestafreeride.com/" onclick="window.location.href='https://siestafreeride.com/'; return false;">← Home</a>
+            </div>
             <p>&copy; 2026 Siesta Free Ride. Local transportation for Siesta Key, Casey Key, Gulf Gate, and SRQ Airport.</p>
             <p>Weather data updated daily. Water temperature from NOAA. Tide information for Siesta Key, FL.</p>
         </footer>
