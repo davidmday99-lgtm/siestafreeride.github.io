@@ -136,8 +136,7 @@
         var i;
         for (i = 0; i < posts.length; i++) {
             var post = posts[i];
-            var dateObj = new Date(post.date);
-            var dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            var dateStr = post.date;
             html += '<article class="blog-card"><div class="post-date">' + dateStr + '</div>';
             html += '<h2><a href="/blog/' + post.slug + '.html">' + post.title + '</a></h2>';
             html += '<p class="post-excerpt">' + post.excerpt + '</p></article>';
