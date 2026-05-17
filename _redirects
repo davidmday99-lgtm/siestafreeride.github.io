@@ -1,0 +1,9 @@
+# Redirect HTTP to HTTPS
+http://siestafreeride.com/* https://siestafreeride.com/:splat 301!
+http://www.siestafreeride.com/* https://siestafreeride.com/:splat 301!
+
+# Redirect WWW to non-WWW
+https://www.siestafreeride.com/* https://siestafreeride.com/:splat 301!
+
+# Catch-all
+/* /index.html 200
