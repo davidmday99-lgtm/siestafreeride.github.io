@@ -3,260 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friday Sunshine & Perfect Beach Day - Siesta Key Beach Guide</title>
-    <meta name="description" content="Enjoy today's perfect beach weather at Siesta Key. Sunny skies, 88°F, calm waters, and free shuttle options for getting around Siesta Key.">
-    <meta name="keywords" content="Siesta Key beach, free rides on Siesta Key, how to get around in Siesta Key, free shuttle, getting around Siesta Key">
+    <title>Perfect Beach Day at Siesta Key - May 22, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f4f4f4;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
         }
-        header {
-            border-bottom: 4px solid #00a8cc;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
-        h1 {
-            color: #00a8cc;
+        .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
-        .date {
-            color: #888;
-            font-size: 0.9em;
-            font-style: italic;
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 40px 30px;
         }
         .weather-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
+            background: #f8f9ff;
+            border-left: 5px solid #667eea;
             padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
+            margin: 25px 0;
+            border-radius: 8px;
         }
         .weather-box h3 {
-            color: #856404;
+            color: #667eea;
             margin-bottom: 10px;
         }
-        .weather-details {
+        .weather-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             margin-top: 15px;
         }
-        .weather-item {
+        .stat {
             background: white;
-            padding: 12px;
-            border-radius: 4px;
+            padding: 10px;
+            border-radius: 6px;
             text-align: center;
         }
-        .weather-label {
+        .stat-value {
+            font-size: 1.5em;
             font-weight: bold;
-            color: #00a8cc;
-            font-size: 0.9em;
+            color: #667eea;
         }
-        .weather-value {
-            font-size: 1.8em;
-            color: #333;
+        .stat-label {
+            font-size: 0.85em;
+            color: #666;
             margin-top: 5px;
         }
         h2 {
-            color: #00a8cc;
-            font-size: 1.8em;
-            margin-top: 35px;
+            color: #333;
+            margin-top: 30px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid #667eea;
             padding-bottom: 10px;
         }
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        .highlight {
-            background: #e8f4f8;
-            padding: 2px 6px;
-            border-radius: 3px;
-            color: #00a8cc;
-            font-weight: 600;
-        }
-        .tip-box {
-            background: #e8f5e9;
-            border-left: 5px solid #4caf50;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .tip-box strong {
-            color: #2e7d32;
+        h2:first-of-type {
+            margin-top: 0;
         }
         ul {
-            margin: 15px 0 15px 30px;
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
         li {
             margin-bottom: 10px;
         }
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 2px solid #e0e0e0;
-            text-align: center;
-            color: #888;
-            font-size: 0.9em;
-        }
-        .footer-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .footer-nav a {
-            color: #00a8cc;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .footer-nav a:hover {
-            text-decoration: underline;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #00a8cc;
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 24px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 10px 5px;
-            font-weight: 600;
-            transition: background 0.3s;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 35px;
         }
-        .cta-button:hover {
-            background: #0086a0;
+        .cta-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .cta-phone {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 15px 0;
+            letter-spacing: 2px;
+        }
+        .cta-text {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background: #f8f9ff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>☀️ Friday's Perfect Beach Day at Siesta Key!</h1>
-            <p class="date">May 22, 2026 • Daily Beach Guide</p>
-        </header>
-
-        <div class="weather-box">
-            <h3>🌊 Today's Beach Conditions</h3>
-            <div class="weather-details">
-                <div class="weather-item">
-                    <div class="weather-label">Temperature</div>
-                    <div class="weather-value">88°F</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Feels Like</div>
-                    <div class="weather-value">100°F</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Conditions</div>
-                    <div class="weather-value">Sunny</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Wind</div>
-                    <div class="weather-value">10-14 mph</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Humidity</div>
-                    <div class="weather-value">69%</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Water Temp</div>
-                    <div class="weather-value">82°F</div>
-                </div>
-            </div>
+        <div class="header">
+            <h1>☀️ Perfect Beach Day at Siesta Key</h1>
+            <p>Thursday, May 22, 2026 - Your Complete Guide</p>
         </div>
-
-        <h2>Your Perfect Friday Beach Day Awaits</h2>
-        <p>
-            Friday is shaping up to be an absolutely gorgeous day at Siesta Key Beach! With sunny skies, warm 88-degree temperatures, and gentle 10-14 mph winds from the south, today offers ideal conditions for swimming, paddleboarding, shelling, and beach relaxation. The water sits at a comfortable 82°F, perfect for extended time in the Gulf.
-        </p>
-
-        <h2>Getting Around Siesta Key This Friday</h2>
-        <p>
-            Want to maximize your beach day? One of the best-kept secrets to enjoying Siesta Key is understanding <span class="highlight">how to get around in Siesta Key</span> without the hassle of parking or driving. Whether you're staying in the village or just visiting for the day, there are several excellent options available.
-        </p>
-
-        <p>
-            The smart choice for many visitors and locals is taking advantage of the <span class="highlight">free shuttle</span> services available throughout the area. Getting around Siesta Key has never been easier with <span class="highlight">free rides on Siesta Key</span> offered through select accommodations and the Siesta Key Free Rider program. These services connect you to the best beach spots, local restaurants, shops, and attractions—all without the stress of navigating traffic or searching for parking.
-        </p>
-
-        <div class="tip-box">
-            <strong>💡 Pro Tip:</strong> Check with your hotel or beachfront lodging about <span class="highlight">free rides on Siesta Key</span>. Many properties partner with the community to offer complimentary shuttle services to guests. This is a fantastic way to reduce your carbon footprint while enjoying the convenience of flexible transportation throughout your stay.
-        </div>
-
-        <h2>Summer Vibes Are Here</h2>
-        <p>
-            With Memorial Day weekend just behind us, Friday marks the true start of summer beach season. The Siesta Key community is buzzing with energy as locals and tourists alike flock to enjoy the pristine white sand beaches. Today's combination of sunny weather, warm water temperatures, and light winds makes it an ideal day for:
-        </p>
-
-        <ul>
-            <li><strong>Swimming & Wading:</strong> The 82-degree water is refreshing without being cold—perfect for extended water time</li>
-            <li><strong>Shelling:</strong> Siesta Key is world-famous for its shells. Friday's conditions provide excellent visibility for finding treasures</li>
-            <li><strong>Water Sports:</strong> Stand-up paddleboarding, kayaking, and surfing conditions are favorable with moderate wind</li>
-            <li><strong>Beachcombing:</strong> The calm waters mean better conditions for exploring tide pools and spotting seabirds</li>
-            <li><strong>Sunset Picnics:</strong> With sunset at 8:15 PM, you'll have plenty of daylight for a perfect beach picnic</li>
-        </ul>
-
-        <h2>Smart Beach Planning for Today</h2>
-        <p>
-            Before heading out, keep these practical tips in mind. Apply sunscreen with at least SPF 30—the UV index is at 8 today, which is very high. Bring plenty of water to stay hydrated in the heat. Consider visiting early morning (before 10 AM) or late afternoon (after 4 PM) to avoid peak crowds and intense midday sun. If you're bringing children, the warm water temperature and calm conditions make today ideal for family beach time.
-        </p>
-
-        <p>
-            And remember—if you're wondering about <span class="highlight">how to get around in Siesta Key</span>, don't overlook the convenience factor. By using the <span class="highlight">free shuttle</span> services available, you can focus on enjoying the beach rather than worrying about parking, driving, or traffic. Many visitors report that having <span class="highlight">free rides on Siesta Key</span> actually enhanced their experience by allowing them to explore multiple beach areas throughout the day.
-        </p>
-
-        <h2>Evening Plans</h2>
-        <p>
-            As the afternoon transitions to evening, watch for patchy rain showers possible after 9 PM. Sunset occurs at 8:15 PM, so plan your beach time accordingly. Whether you're catching the sunset from the sand or enjoying dinner at one of Siesta Key's excellent beachfront restaurants, Friday evening promises to be memorable.
-        </p>
-
-        <div class="tip-box">
-            <strong>🌅 Don't Miss:</strong> Friday's sunset will be spectacular with partly cloudy skies. Position yourself at the beach around 7:30 PM for golden-hour photography and the perfect end to your beach day. Use the free shuttle to get back to your accommodations afterward—convenient and safe!
-        </div>
-
-        <h2>Looking Ahead to the Weekend</h2>
-        <p>
-            Tomorrow (Saturday) remains pleasant with highs near 84°F and partly cloudy skies. There's a chance of patchy rain, but overall it's another beautiful beach day in the making. Sunday follows a similar pattern, so if you can't make Friday, the weekend is shaping up nicely as well.
-        </p>
-
-        <h2>Final Thoughts</h2>
-        <p>
-            Siesta Key on May 22nd is calling your name. With today's ideal weather, warm water, and all the transportation solutions you need—especially when you take advantage of <span class="highlight">free rides on Siesta Key</span>—there's no reason to stay away. Whether you're a seasoned beachgoer or planning your first Siesta Key visit, today offers everything a perfect beach day should have. Come enjoy the sun, sand, and Gulf breeze. See you at the beach!
-        </p>
-
-        <footer>
-            <p><strong>Siesta Free Ride Daily Beach Report</strong></p>
-            <p>Your guide to perfect beach days and smart transportation around Siesta Key</p>
-            <p>Last updated: May 22, 2026 | Weather data from wttr.in | © Siesta Free Ride</p>
-            
-            <div class="footer-nav">
-                <div>
-                    <p><strong>Quick Links:</strong></p>
-                    <a href="/">← Previous Post</a> | <a href="/">All Posts</a> | <a href="/">Next Post →</a>
+        
+        <div class="content">
+            <div class="weather-box">
+                <h3>Today's Weather Forecast</h3>
+                <p>Siesta Key is looking absolutely beautiful today! Starting with clear skies at sunrise and transitioning to mostly sunny conditions throughout the afternoon.</p>
+                <div class="weather-stats">
+                    <div class="stat">
+                        <div class="stat-value">85°F</div>
+                        <div class="stat-label">High Temperature</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">72°F</div>
+                        <div class="stat-label">Low Temperature</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">9 mph</div>
+                        <div class="stat-label">Wind Speed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">68%</div>
+                        <div class="stat-label">Humidity</div>
+                    </div>
                 </div>
             </div>
 
-            <p style="margin-top: 20px; font-size: 0.85em;">
-                Have a question about getting around Siesta Key or today's beach conditions? 
-                <a href="mailto:info@siestafreeride.com" style="color: #00a8cc;">Contact us</a> for more information 
-                about our free shuttle services and local beach knowledge.
-            </p>
-        </footer>
+            <h2>🏖️ Best Beach Activities Today</h2>
+            <ul>
+                <li><strong>Swimming & Wading:</strong> Excellent conditions with calm to moderate waves. Water temperature is refreshing and perfect for cooling off.</li>
+                <li><strong>Shelling & Beachcombing:</strong> With 13.8 hours of sunshine predicted, this is an ideal day to search for those famous Siesta Key shells.</li>
+                <li><strong>Paddleboarding & Kayaking:</strong> Light winds make today perfect for water sports. The 9 mph breeze is gentle enough for beginners.</li>
+                <li><strong>Sunset Watching:</strong> Clear skies tonight mean spectacular sunset colors. Sunset is at 8:15 PM – don't miss it!</li>
+                <li><strong>Beach Volleyball & Fitness:</strong> Sunshine and comfortable temperatures make this ideal for active beach recreation.</li>
+            </ul>
+
+            <h2>🚗 Getting to Siesta Key</h2>
+            <ul>
+                <li><strong>By Car:</strong> Take I-75 to exit 210, then head west toward Sarasota. Follow signs to Siesta Key Beach. Plenty of parking available today.</li>
+                <li><strong>Public Parking:</strong> Multiple paid parking lots are available. Arrive early to secure premium beachfront spots.</li>
+                <li><strong>Beach Access:</strong> Siesta Key has accessible beach entry points with lifeguard stations throughout the day.</li>
+            </ul>
+
+            <h2>💡 Pro Tips for Today</h2>
+            <ul>
+                <li>Apply sunscreen generously – UV index is 8 today, indicating strong sun exposure.</li>
+                <li>Peak hours are typically 12 PM – 3 PM. Come early morning or late afternoon for a quieter experience.</li>
+                <li>Bring plenty of water and snacks. Stay hydrated in the Florida heat.</li>
+                <li>The beach maintains a family-friendly atmosphere with amenities throughout the day.</li>
+            </ul>
+
+            <div class="cta-box">
+                <h3>Need Transportation or Beach Services?</h3>
+                <p class="cta-text">Book your Siesta Freeride experience today!</p>
+                <div class="cta-phone">📞 941-600-8380</div>
+                <p class="cta-text">Professional, reliable transportation to Siesta Key</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Weather data updated May 22, 2026 • Siesta Key, Sarasota, Florida • Your guide to the perfect beach day</p>
+        </div>
     </div>
 </body>
 </html>
