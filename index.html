@@ -379,17 +379,56 @@
     </footer>
 
     <!-- Sponsor Banner -->
-    <div style="background: #000000; padding: 30px 24px; border-top: 3px solid #ff6700;">
-        <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
-            <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="width: 320px; height: 320px; flex-shrink: 0; border-radius: 8px; object-fit: contain;" loading="lazy" width="320" height="320">
-            <div style="text-align: left;">
-                <span style="color: #ff6700; font-size: 1.8rem; font-weight: 800; letter-spacing: 0.3px; display: block;">🏠 Cash For Keys Properties</span>
-                <span style="color: #ff6700; font-size: 1.5rem; font-weight: 700; display: block; margin-top: 8px; white-space: nowrap;">Sarasota's #1 Home Buyer & Rental Management Company</span>
-                <span style="color: #ff6700; font-size: 1.2rem; font-weight: 600; display: block; margin-top: 8px;">We buy houses fast for cash!</span>
-                <span style="color: #ffffffcc; font-size: 1rem; display: block; margin-top: 6px;">No repairs, no fees, no hassle. Get a fair offer in 24 hours.</span>
+    <div class="cfk-banner" style="background: #000000; padding: 30px 24px; border-top: 3px solid #ff6700;">
+        <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" class="cfk-link">
+            <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" class="cfk-logo" loading="lazy" width="320" height="320">
+            <div class="cfk-text">
+                <span class="cfk-title">🏠 Cash For Keys Properties</span>
+                <span class="cfk-subtitle">Sarasota's #1 Home Buyer & Rental Management Company</span>
+                <span class="cfk-tagline">We buy houses fast for cash!</span>
+                <span class="cfk-desc">No repairs, no fees, no hassle. Get a fair offer in 24 hours.</span>
             </div>
         </a>
     </div>
+    <style>
+        .cfk-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .cfk-logo {
+            width: 320px;
+            height: 320px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+        .cfk-text { text-align: left; }
+        .cfk-title { color: #ff6700; font-size: 1.8rem; font-weight: 800; letter-spacing: 0.3px; display: block; }
+        .cfk-subtitle { color: #ff6700; font-size: 1.5rem; font-weight: 700; display: block; margin-top: 8px; }
+        .cfk-tagline { color: #ff6700; font-size: 1.2rem; font-weight: 600; display: block; margin-top: 8px; }
+        .cfk-desc { color: #ffffffcc; font-size: 1rem; display: block; margin-top: 6px; }
+        @media (max-width: 768px) {
+            .cfk-link {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+            .cfk-logo {
+                width: 120px;
+                height: 120px;
+            }
+            .cfk-text { text-align: center; }
+            .cfk-title { font-size: 1.25rem; }
+            .cfk-subtitle { font-size: 1rem; }
+            .cfk-tagline { font-size: 0.95rem; }
+            .cfk-desc { font-size: 0.85rem; }
+        }
+    </style>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
