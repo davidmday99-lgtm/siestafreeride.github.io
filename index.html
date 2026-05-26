@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Free Ride Siesta Key | Transportation & Beach Shuttle Service</title>
-    <meta name="description" content="Siesta Key free ride service — beach transportation, island shuttle, airport runs to SRQ, and Casey Key. Get around Siesta Key free. Tips only! Call 941-600-8380."/>
+    <meta name="description" content="Siesta Key free ride service - beach transportation, island shuttle, airport runs to SRQ, and Casey Key. Get around Siesta Key free. Tips only! Call 941-600-8380."/>
     <meta name="keywords" content="free ride siesta key, siesta key free ride, free beach ride siesta key, siesta key shuttle, siesta key transportation, siesta key taxi, SRQ airport shuttle, siesta key beach shuttle, getting around siesta key, siesta key village shuttle, casey key ride" />
     <link rel="canonical" href="https://siestafreeride.com/" />
     <meta name="google-site-verification" content="GgQsefEyzLZ1jWn74BeCAuWtOCAK-arFzdm9XqU-m2M" />
@@ -75,14 +75,18 @@
             padding: 0;
         }
 
-        body {
-            background-image: url('/assets/background-photo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: #1f2937;
-            position: relative;
+        body { 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat; 
+            color: #1f2937; 
+            position: relative; 
+        } 
+        
+        /* Fallback background for JS-disabled browsers */ 
+        .no-js body { 
+            background-image: url('/assets/background-photo.jpg'); 
         }
 
         body::before {
@@ -223,7 +227,7 @@
     <section class="hero h-[420px] md:h-[560px] flex items-start justify-center text-white text-center pt-4 md:pt-6">
         <div class="px-6">
             <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-title">
-                Free Ride on Siesta Key — Call Now 📞
+                Free Ride on Siesta Key - Call Now 📞
             </h1>
 
             <div class="mt-2">
@@ -361,14 +365,14 @@
           <div class="flex flex-wrap justify-center gap-6 mb-6">
             <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
               <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Drive Again Secrets — License Reinstatement Guides
+              Drive Again Secrets - License Reinstatement Guides
             </a>
             <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
               <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Cash For Keys Properties — We Buy Houses Fast
+              Cash For Keys Properties - We Buy Houses Fast
             </a>
-            <a href="https://moondoggys.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#9333ea;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#9333ea'">
-              🌙 Moondoggy's Saloon — Gulf Gate's Hottest Nightclub
+            <a href="https://moondoggys.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#FFD700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#FFD700'">
+              🌙 Moondoggy's Saloon - Gulf Gate's Hottest Nightclub
             </a>
           </div>
         </div>
@@ -432,6 +436,38 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+<!-- Daily Background Photo Rotation -->
+    <script>
+        // Array of background photos for daily rotation
+        const backgroundPhotos = [
+            '/assets/siesta-beach1.jpg',
+            '/assets/siesta-beach2.jpg',
+            '/assets/siesta-beach3.jpg',
+            '/assets/siesta-beach4.jpg',
+            '/assets/siesta-beach5.jpg',
+            '/assets/siesta-beach6.jpg',
+            '/assets/siesta-beach7.jpg',
+            '/assets/siesta-beach8.jpg',
+            '/assets/siesta-beach9.jpg',
+            '/assets/siesta-beach10.jpg',
+            '/assets/siesta-beach11.jpg',
+            '/assets/siesta-beach12.jpg',
+            '/assets/siesta-beach13.jpg',
+            '/assets/siesta-beach14.jpg',
+            '/assets/siesta-beach15.jpg',
+            '/assets/siesta-beach16.jpg',
+            '/assets/siesta-beach17.jpg'
+        ];
+
+        // Get today's date to determine which photo to show
+        // This ensures the same photo shows all day (resets at midnight)
+        const today = new Date();
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (24 * 60 * 60 * 1000));
+        const photoIndex = dayOfYear % backgroundPhotos.length;
+        
+        // Set the background photo
+        document.body.style.backgroundImage = `url(${backgroundPhotos[photoIndex]})`;
     </script>
 </body>
 </html>
