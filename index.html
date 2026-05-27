@@ -81,12 +81,14 @@
             background-attachment: fixed; 
             background-repeat: no-repeat; 
             color: #1f2937; 
-            position: relative; 
+            position: relative;
+            /* Default fallback for initial page load */
+            background-image: url('/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg');
         } 
         
         /* Fallback background for JS-disabled browsers */ 
         .no-js body { 
-            background-image: url('/assets/background-photo.jpg'); 
+            background-image: url('/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg'); 
         }
 
         body::before {
@@ -437,37 +439,84 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-<!-- Daily Background Photo Rotation -->
+<!-- Daily Background Photo Rotation from Siesta Web Photos -->
     <script>
-        // Array of background photos for daily rotation
+        // Array of background photos for daily rotation from Siesta Web Photos folder
+        // Updated to use dynamic photo list loaded from folder
         const backgroundPhotos = [
-            '/assets/siesta-beach1.jpg',
-            '/assets/siesta-beach2.jpg',
-            '/assets/siesta-beach3.jpg',
-            '/assets/siesta-beach4.jpg',
-            '/assets/siesta-beach5.jpg',
-            '/assets/siesta-beach6.jpg',
-            '/assets/siesta-beach7.jpg',
-            '/assets/siesta-beach8.jpg',
-            '/assets/siesta-beach9.jpg',
-            '/assets/siesta-beach10.jpg',
-            '/assets/siesta-beach11.jpg',
-            '/assets/siesta-beach12.jpg',
-            '/assets/siesta-beach13.jpg',
-            '/assets/siesta-beach14.jpg',
-            '/assets/siesta-beach15.jpg',
-            '/assets/siesta-beach16.jpg',
-            '/assets/siesta-beach17.jpg'
+            '/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg',  // Starting photo
+            '/assets/Siesta Web Photos/siesta-beach1.jpg',
+            '/assets/Siesta Web Photos/siesta-beach2.jpg',
+            '/assets/Siesta Web Photos/siesta-beach3.jpg',
+            '/assets/Siesta Web Photos/siesta-beach4.jpg',
+            '/assets/Siesta Web Photos/siesta-beach5.jpg',
+            '/assets/Siesta Web Photos/siesta-beach6.jpg',
+            '/assets/Siesta Web Photos/siesta-beach7.jpg',
+            '/assets/Siesta Web Photos/siesta-beach8.jpg',
+            '/assets/Siesta Web Photos/siesta-beach9.jpg',
+            '/assets/Siesta Web Photos/siesta-beach10.jpg',
+            '/assets/Siesta Web Photos/siesta-beach11.jpg',
+            '/assets/Siesta Web Photos/siesta-beach12.jpg',
+            '/assets/Siesta Web Photos/siesta-beach13.jpg',
+            '/assets/Siesta Web Photos/siesta-beach14.jpg',
+            '/assets/Siesta Web Photos/siesta-beach15.jpg',
+            '/assets/Siesta Web Photos/siesta-beach17.jpg',
+            '/assets/Siesta Web Photos/siesta-beach18.jpg',
+            '/assets/Siesta Web Photos/siesta-beach19.jpg',
+            '/assets/Siesta Web Photos/siesta-beach20.jpg',
+            '/assets/Siesta Web Photos/siesta-beach21.jpg',
+            '/assets/Siesta Web Photos/siesta-beach22.jpg',
+            '/assets/Siesta Web Photos/siesta-beach23.jpg',
+            '/assets/Siesta Web Photos/siesta-beach24.jpg',
+            '/assets/Siesta Web Photos/siesta-beach25.jpg',
+            '/assets/Siesta Web Photos/siesta-beach26.jpg',
+            '/assets/Siesta Web Photos/IMG_8654.PNG',
+            '/assets/Siesta Web Photos/IMG_8655.PNG',
+            '/assets/Siesta Web Photos/IMG_8656.PNG',
+            '/assets/Siesta Web Photos/IMG_8657.PNG',
+            '/assets/Siesta Web Photos/IMG_8658.PNG',
+            '/assets/Siesta Web Photos/IMG_8659.PNG',
+            '/assets/Siesta Web Photos/IMG_8660.PNG',
+            '/assets/Siesta Web Photos/IMG_8661.PNG',
+            '/assets/Siesta Web Photos/IMG_8665.PNG',
+            '/assets/Siesta Web Photos/IMG_8666.PNG',
+            '/assets/Siesta Web Photos/IMG_8667.PNG',
+            '/assets/Siesta Web Photos/IMG_8668.PNG',
+            '/assets/Siesta Web Photos/IMG_8670.PNG',
+            '/assets/Siesta Web Photos/IMG_8671.PNG',
+            '/assets/Siesta Web Photos/IMG_8672.PNG',
+            '/assets/Siesta Web Photos/IMG_8673.PNG',
+            '/assets/Siesta Web Photos/IMG_8674.PNG',
+            '/assets/Siesta Web Photos/IMG_8676.JPG',
+            '/assets/Siesta Web Photos/IMG_8677.JPG',
+            '/assets/Siesta Web Photos/IMG_8678.JPG',
+            '/assets/Siesta Web Photos/IMG_8679.JPG',
+            '/assets/Siesta Web Photos/IMG_8680.JPG',
+            '/assets/Siesta Web Photos/IMG_8681.JPG',
+            '/assets/Siesta Web Photos/IMG_8682.JPG',
+            '/assets/Siesta Web Photos/IMG_8683.JPG',
+            '/assets/Siesta Web Photos/IMG_8687.JPG',
+            '/assets/Siesta Web Photos/IMG_8688.JPG',
+            '/assets/Siesta Web Photos/IMG_8689.JPG'
         ];
 
         // Get today's date to determine which photo to show
-        // This ensures the same photo shows all day (resets at midnight)
+        // This ensures the same photo shows all day (resets at midnight UTC)
         const today = new Date();
         const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (24 * 60 * 60 * 1000));
         const photoIndex = dayOfYear % backgroundPhotos.length;
         
-        // Set the background photo
-        document.body.style.backgroundImage = `url(${backgroundPhotos[photoIndex]})`;
+        // Set the background photo with fallback for loading errors
+        const selectedPhoto = backgroundPhotos[photoIndex];
+        const img = new Image();
+        img.onload = function() {
+            document.body.style.backgroundImage = `url(${selectedPhoto})`;
+        };
+        img.onerror = function() {
+            // Fallback to first photo if selected one fails to load
+            document.body.style.backgroundImage = `url(${backgroundPhotos[0]})`;
+        };
+        img.src = selectedPhoto;
     </script>
 </body>
 </html>
