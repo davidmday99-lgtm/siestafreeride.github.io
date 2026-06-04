@@ -1,496 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-    <title>Siesta Free Ride - June 3, 2026 Beach Report</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Daily Update - June 3, 2026 | Siesta Free Ride</title>
+    <meta name="description" content="Daily update from Siesta Free Ride — your trusted transportation in Siesta Key, FL."/>
+    <link rel="canonical" href="https://siestafreeride.com/blog/2026-06-03-daily-blog.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#8FAABC',
+                        accent: '#C9D4DC',
+                        background: '#F5F0E8',
+                        surface: '#E8E4DC',
+                        primary: '#8FAABC',
+                        secondary: '#C9D4DC'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .cursive-text {
+            font-family: cursive, "Brush Script MT", "Lucida Handwriting", serif;
+            font-style: italic;
+            color: #8FAABC;
         }
-        .container {
-            background: white;
-            border-radius: 8px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .header {
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #667eea;
-            margin: 0 0 10px 0;
-        }
-        .date {
-            color: #888;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin: 25px 0;
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 6px;
-        }
-        .weather-item {
-            padding: 10px;
-            background: white;
-            border-radius: 4px;
-            border-left: 4px solid #667eea;
-        }
-        .weather-label {
-            font-weight: bold;
-            color: #667eea;
-            font-size: 12px;
-            text-transform: uppercase;
-        }
-        .weather-value {
-            font-size: 18px;
-            color: #333;
-            margin-top: 5px;
-        }
-        section {
-            margin: 30px 0;
-        }
-        h2 {
-            color: #667eea;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        .highlight {
-            background: #f0f4ff;
-            padding: 15px;
-            border-left: 4px solid #667eea;
-            border-radius: 4px;
-            margin: 15px 0;
-        }
-        .footer {
-            border-top: 2px solid #667eea;
-            margin-top: 40px;
-            padding-top: 20px;
-            text-align: center;
-            color: #888;
-            font-size: 14px;
-        }
-        .nav-links {
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .cta {
-            background: #667eea;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-top: 15px;
-=======
-    <meta name="description" content="Siesta Key beach report for June 3, 2026. Weather, water conditions, activities, and transportation tips for a perfect day at Florida's most perfect beach.">
-    <title>June 3, 2026 - Siesta Key Beach Report | Siesta Free Ride</title>
-    <meta property="og:title" content="June 3, 2026 - Siesta Key Beach Report">
-    <meta property="og:description" content="Hot summer day with 90°F temperatures and very warm Gulf waters at 84°F. Scattered afternoon thunderstorms. Find out how to get around in Siesta Key without a car.">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="https://siestafreeride.com/assets/siesta-key-beach.jpg">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0d1b2a;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-        .blog-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .blog-header {
-            border-bottom: 3px solid #ff6b35;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .blog-header h1 {
-            font-size: 2.5em;
-            color: #ff6b35;
-            margin-bottom: 10px;
-        }
-        .blog-meta {
-            font-size: 0.9em;
-            color: #888;
-        }
-        .weather-summary {
-            background: #1a2635;
-            border-left: 4px solid #00d4ff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .weather-card {
-            background: #0d1b2a;
-            padding: 15px;
-            border-radius: 4px;
-            text-align: center;
-        }
-        .weather-card strong {
-            color: #00d4ff;
-        }
-        .section {
-            margin: 30px 0;
-        }
-        .section h2 {
-            font-size: 1.8em;
-            color: #00d4ff;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ff6b35;
-            padding-bottom: 10px;
-        }
-        .section h3 {
-            color: #ff6b35;
-            margin-top: 15px;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        .highlight {
-            background: rgba(255, 107, 53, 0.1);
-            border-left: 3px solid #ff6b35;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 3px;
-        }
-        .transportation {
-            background: #1a2635;
-            padding: 20px;
-            border-radius: 4px;
-            margin: 20px 0;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #ff6b35;
-            color: #0d1b2a;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin: 10px 10px 10px 0;
-        }
-        .cta-button:hover {
-            background: #ff8555;
-        }
-        .footer-nav {
-            border-top: 3px solid #ff6b35;
-            margin-top: 40px;
-            padding-top: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .footer-nav a {
-            color: #00d4ff;
-            text-decoration: none;
-            margin: 5px;
-        }
-        .footer-nav a:hover {
-            color: #ff6b35;
-        }
-        .share-icons {
-            display: flex;
-            gap: 10px;
-        }
-        .share-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: #1a2635;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            color: #00d4ff;
->>>>>>> Stashed changes
+        @media (max-width: 768px) {
+            header img.h-80 {
+                height: 10rem;
+            }
+            header .text-4xl {
+                font-size: 1.875rem;
+            }
         }
     </style>
 </head>
-<body>
-<<<<<<< Updated upstream
-    <div class="container">
-        <div class="header">
-            <h1>🏖️ Siesta Key Beach Report</h1>
-            <p class="date">Wednesday, June 3, 2026</p>
+<body class="bg-background">
+    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-60" loading="eager" style="width: auto;" width="200" height="100">
+            </div>
+            <nav class="hidden md:flex gap-6 text-lg font-semibold">
+                <a href="/" class="hover:text-brand font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
+                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
+                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
+                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
+                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
+                <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
         </div>
-
-        <p><strong>Perfect beach day on Siesta Key!</strong> Whether you're looking for free rides on Siesta Key or planning how to get around in Siesta Key, here's everything you need to know about today at Florida's finest white-sand paradise.</p>
-
-        <section>
-            <h2>Today's Weather</h2>
-            <div class="weather-grid">
-                <div class="weather-item">
-                    <div class="weather-label">High Temperature</div>
-                    <div class="weather-value">88°F</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Low Temperature</div>
-                    <div class="weather-value">73°F</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Conditions</div>
-                    <div class="weather-value">Partly Cloudy</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Wind</div>
-                    <div class="weather-value">ENE 18 mph</div>
-                </div>
-            </div>
-            <p>Early morning conditions show clear skies with temperatures starting around 77°F. By midday, expect sunny intervals with afternoon cloud cover. Humidity sits at a comfortable 62-70% with minimal rain chance. Perfect conditions for a full day of beach activities!</p>
-        </section>
-
-        <section>
-            <h2>Water Conditions</h2>
-            <div class="highlight">
-                <p><strong>Water Temperature: 82°F</strong> — Warm and inviting! Crystal-clear Gulf waters with gentle wave activity make today ideal for swimming, paddleboarding, and water sports. The warm water at this time of year brings out the best of Siesta Key's famous fine, white quartz sand.</p>
-            </div>
-            <p>Current water conditions are excellent with visibility at around 40-50 feet. The gentle ENE breeze creates light to moderate wave sets perfect for beginner paddleboarders and seasoned surfers alike.</p>
-        </section>
-
-        <section>
-            <h2>Beach Recommendations</h2>
-            <ul>
-                <li>🧴 Apply sunscreen liberally — UV index reaching 5 by midday</li>
-                <li>⛱️ Arrive early to secure premium beach spots near the lifeguards</li>
-                <li>💧 Bring plenty of water — stay hydrated in the summer heat</li>
-                <li>🌊 Best swimming: 10 AM-3 PM during peak water conditions</li>
-                <li>📱 Download tide charts — low tide around 2 PM gives access to more beach</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Getting Around Siesta Key</h2>
-            <p>Planning how to get around in Siesta Key? We've got you covered! Siesta Key offers several convenient transportation options:</p>
-            
-            <div class="highlight">
-                <p><strong>Free Rides on Siesta Key:</strong> Take advantage of our community beach shuttle! The Siesta Key free shuttle runs continuously from 8 AM-6 PM, stopping at major beach access points, the pavilion, and downtown attractions. No parking hassles — hop on and enjoy your day!</p>
-            </div>
-
-            <p><strong>Getting Around Siesta Key Tips:</strong></p>
-            <ul>
-                <li><strong>Free Shuttle Service:</strong> Perfect for exploring the beach without worrying about parking. The free shuttle makes it easy to visit different sections of this 2-mile beach paradise</li>
-                <li><strong>Bike Rentals:</strong> Popular option for getting around Siesta Key leisurely. Multiple rental shops along Midnight Pass Road</li>
-                <li><strong>Walking:</strong> Most amenities are within walking distance along the main beach corridor</li>
-                <li><strong>Trolley Tours:</strong> Guided tours offering how to get around in Siesta Key while learning local history</li>
-                <li><strong>Parking:</strong> Multiple lots offer hourly rates; arrive early during summer season</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Local Happenings Today</h2>
-            <p>Check out what's happening at Siesta Key this Wednesday:</p>
-            <ul>
-                <li>🎵 <strong>Beach Yoga:</strong> Morning session 9 AM at the pavilion (all levels welcome)</li>
-                <li>🍽️ <strong>Sunset Dining:</strong> Peak dinner hours 6-8 PM at beachfront restaurants</li>
-                <li>🏐 <strong>Volleyball Games:</strong> Pickup games throughout the day on designated courts</li>
-                <li>🚴 <strong>Evening Beach Stroll:</strong> Perfect golden hour opportunity 7-8:30 PM</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Plan Your Visit</h2>
-            <div class="highlight">
-                <p>Take advantage of free rides on Siesta Key to maximize your beach experience! With our convenient free shuttle service, you can focus on relaxation and fun instead of navigation and parking. Whether it's your first time learning how to get around in Siesta Key or you're a regular, the free shuttle makes getting around Siesta Key effortless.</p>
-                <p><a href="#" class="cta">Book Your Free Shuttle Now</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Beach Safety Reminders</h2>
-            <ul>
-                <li>🩹 Lifeguards on duty 10 AM-sunset</li>
-                <li>⚠️ Check rip current advisories on the beach bulletin boards</li>
-                <li>🌊 Respect all posted warnings and beach regulations</li>
-                <li>👶 Family facilities: restrooms, showers, and changing rooms available</li>
-                <li>🐕 Dogs welcome on designated sections before 10 AM and after 6 PM</li>
-            </ul>
-        </section>
-
-        <div class="footer">
-            <p>&copy; 2026 Siesta Free Ride | Your Guide to Beach Transportation</p>
-            <p>Serving the Siesta Key community with free rides and convenient beach access</p>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Shuttle Schedule</a>
-                <a href="#">Contact</a>
-                <a href="#">Next Report →</a>
-=======
-    <div class="blog-container">
-        <div class="blog-header">
-            <h1>🔥 Peak Summer Heat!</h1>
-            <p class="blog-meta">Posted on June 3, 2026 | Siesta Key Beach Report</p>
-        </div>
-
-        <div class="weather-summary">
-            <strong>🌊 TODAY'S CONDITIONS</strong>
-            <div class="weather-grid">
-                <div class="weather-card">
-                    <strong>90°F</strong><br>Air Temp
-                </div>
-                <div class="weather-card">
-                    <strong>84°F</strong><br>Water Temp
-                </div>
-                <div class="weather-card">
-                    <strong>9-12 mph</strong><br>Wind Speed
-                </div>
-                <div class="weather-card">
-                    <strong>Partly Cloudy with Scattered Storms</strong><br>Conditions
-                </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
+                <a href="/beaches.html" class="block font-medium">Beaches</a>
+                <a href="/events.html" class="block font-medium">Events</a>
+                <a href="/faq.html" class="block font-medium">FAQ</a>
+                <a href="/blog.html" class="block text-brand font-medium">Blog</a>
+                <a href="/advertise.html" class="block font-medium">Advertise</a>
+                <a href="/contact.html" class="block">Book Now</a>
             </div>
         </div>
+    </header>
 
-        <div class="section">
-            <h2>Today at Siesta Key</h2>
-            <p>
-                June 3 brings peak summer heat to Siesta Key! Temperatures will climb to a hot 90°F with high humidity, creating heat index values that feel like 98-102°F. The Gulf water has warmed to a very comfortable 84°F—providing excellent relief from the intense heat. Winds increase to 9-12 mph throughout the day, often preceding scattered afternoon thunderstorms that are typical for early June in Florida.
-            </p>
-            <p>
-                This represents classic peak summer weather, when hot, humid air masses create ideal conditions for brief but intense afternoon thunderstorms. The key to enjoying today safely is strategic planning—maximize your morning beach time and be prepared to seek shelter if afternoon storms develop.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>🏖️ Water & Beach Conditions</h2>
-            <p>
-                At 84°F, the Gulf water feels like a warm bath—perfect for extended swimming sessions to escape the 90°F air temperatures. Morning conditions will be relatively calm with gentle 2-3 foot waves, but wave height may increase slightly in the afternoon as winds pick up ahead of potential storm activity. Water clarity remains good in the morning but may become temporarily reduced if storms stir up sediment.
-            </p>
-            <div class="highlight">
-                <strong>Pro Tip:</strong> Heat safety is absolutely critical today! Plan your main beach activities for early morning hours (6 AM - 1 PM) when conditions are most manageable. Stay well-hydrated with 3+ liters of water per person, use high-SPF waterproof sunscreen every 60-90 minutes, and seek substantial shade frequently. For afternoon storms, have a backup indoor plan and remember to wait 30 minutes after the last thunder before returning to water activities.
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <article>
+            <div class="mb-8"><a href="/blog.html" class="text-brand font-medium">&larr; Back to Blog</a></div>
+            <header class="mb-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Daily Update - June 3, 2026</h1>
+                <div class="flex items-center gap-4 text-gray-500">
+                    <span>June 3, 2026</span><span>&bull;</span><span>3 min read</span>
+                </div>
+            </header>
+            <div class="prose prose-lg max-w-none">
+                <p class="lead text-xl text-gray-700 mb-8">Good morning, Siesta Key! It's Wednesday, June 3, 2026—almost time for the weekend festival! Here's your daily update from Siesta Free Ride with weather, beach conditions, and festival prep info.</p>
+                
+                <h2 class="text-2xl font-bold mt-10 mb-4">Wednesday Pre-Festival Weather</h2>
+                
+                <h3 class="text-xl font-bold mt-6 mb-2">☀️ Weather</h3>
+                <p>Mostly sunny this morning at <strong>80°F</strong> with 72% humidity and light E breezes at 3 mph. Another hot summer day brewing. High reaches <strong>91°F</strong>—the heat is building. Afternoon storms possible 2–4 PM; then clearing for evening. Evening low drops to 75°F. Sunrise at 6:17 AM; sunset at 8:35 PM.</p>
+                
+                <h3 class="text-xl font-bold mt-6 mb-2">🌊 Water & Beach Conditions</h3>
+                <p>Gulf water at <strong>84°F</strong>—warm and inviting! Swells 1-2 feet with good visibility. The water is perfect for swimming and water sports. The beach will be moderately busy as families plan their festival weekend.</p>
+                
+                <h3 class="text-xl font-bold mt-6 mb-2">🎉 Siesta Key Beach Festival This Weekend!</h3>
+                <p><strong>June 4–6 (Thursday–Saturday)</strong> — Mark your calendars! The annual Siesta Key Beach Festival returns with:</p>
+                
+                <ul class="list-disc list-inside">
+                    <li><strong>Live Music:</strong> Local and regional bands performing all weekend</li>
+                    <li><strong>Food Vendors:</strong> Beach eats, fresh seafood, tropical drinks</li>
+                    <li><strong>Sand Sculpture Competition:</strong> Incredible artistry on Friday afternoon</li>
+                    <li><strong>Family Activities:</strong> Games, contests, beach Olympics</li>
+                    <li><strong>Craft Booths:</strong> Local artists and vendors</li>
+                    <li><strong>Sunset Celebrations:</strong> Special evening events each night</li>
+                </ul>
+                
+                <p><strong>Hours:</strong> Thursday & Friday 4 PM–10 PM; Saturday 10 AM–10 PM</p>
+                
+                <p><strong>Location:</strong> Main Beach Pavilion & surrounding area</p>
+                
+                <h3 class="text-xl font-bold mt-6 mb-2">🎯 Festival Tips & Planning</h3>
+                <p><strong>When to Go:</strong></p>
+                <ul class="list-disc list-inside">
+                    <li>Thursday: Less crowded, perfect for families with kids</li>
+                    <li>Friday: Mid-week energy, sand sculpture competition at 2 PM</li>
+                    <li>Saturday: Most crowded, peak energy, best entertainment lineup</li>
+                </ul>
+                
+                <p><strong>What to Bring:</strong></p>
+                <ul class="list-disc list-inside">
+                    <li>Sunscreen (SPF 50+) and reapply frequently</li>
+                    <li>Hat and sunglasses</li>
+                    <li>Cash and cards for vendors</li>
+                    <li>Water and electrolyte drinks</li>
+                    <li>Comfortable shoes (you'll be walking)</li>
+                    <li>Light jacket for evening (cools down after sunset)</li>
+                </ul>
+                
+                <p><strong>Parking:</strong> Arrive before 5 PM Thursday/Friday, or before 9 AM Saturday for better parking. Otherwise, use shuttle parking or our transportation service.</p>
+                
+                <h3 class="text-xl font-bold mt-6 mb-2">📅 Wednesday Preparation</h3>
+                <p>Tonight: <strong>Farmers Market</strong> in Siesta Key Village 3 PM–sunset. Great spot for fresh produce and evening shopping.</p>
+                
+                <p>Tomorrow: <strong>Siesta Sunset Yoga</strong> at Crescent Beach 6:30 PM—stretch before the festival weekend!</p>
+                
+                <h3 class="text-xl font-bold mt-6 mb-2">🚗 Festival Transportation — Smart Move</h3>
+                <p><strong>Festival weekend = maximum traffic and parking challenges.</strong> <strong>Book Siesta Free Ride for:</strong></p>
+                <ul class="list-disc list-inside">
+                    <li>Beach drop-off directly to the festival</li>
+                    <li>Safe pickup after evening festivities</li>
+                    <li>Restaurant runs during the festival</li>
+                    <li>Hotel shuttles for festival-goers</li>
+                    <li>Group transportation for families and friends</li>
+                </ul>
+                
+                <p><strong>Skip the parking lottery. Arrive refreshed, leave safely, enjoy the festival stress-free.</strong></p>
+                
+                <div class="bg-[#d4eef0] p-6 rounded-lg mt-12">
+                    <h3 class="text-xl font-bold mb-3">Book Your Festival Weekend Ride</h3>
+                    <p><strong>Siesta Free Ride</strong> is your perfect festival partner. Safe, reliable, on-time service every time.</p>
+                    <p class="mt-3"><a href="/contact.html" class="bg-brand text-white px-6 py-3 rounded-md font-medium inline-block">Book Your Ride Today &rarr;</a></p>
+                    <p class="mt-3 text-lg font-medium">Or call/text: <a href="tel:941-600-8380" class="text-brand">941-600-8380</a></p>
+                </div>
+                
+                <div class="mt-12 pt-8 border-t">
+                    <p class="text-gray-600"><strong>See you at the festival this weekend! Get ready for three days of beach fun!</strong></p>
+                </div>
             </div>
-            <p>
-                Sunset tonight is at 8:19 PM. If afternoon storms clear out, you'll be rewarded with spectacular sunset colors. Always monitor local weather radar and be prepared to adjust your plans quickly if storm conditions develop.
-            </p>
-        </div>
+        </article>
+    </main>
 
-        <div class="section">
-            <h2>🎯 Things to Do Today</h2>
-            <h3>Water Activities</h3>
-            <p>
-                Early morning is prime time for swimming, paddleboarding, and all water activities. The warm 84°F water provides welcome relief from the heat. Avoid all water activities during afternoon thunderstorms due to lightning danger—water is an excellent conductor of electricity, making it extremely hazardous during storms.
-            </p>
-            <h3>Beach Relaxation</h3>
-            <p>
-                Set up your beach camp with maximum shade—a large umbrella, pop-up tent, or natural dune vegetation. Early morning beach time is ideal for reading, light sunbathing (with proper protection), and beach games. Have a solid backup plan for indoor activities like visiting Siesta Key Village shops, art galleries, museums, or air-conditioned restaurants if afternoon storms develop.
-            </p>
-            <h3>Local Events & Activities</h3>
-            <p>
-                Many businesses offer flexible scheduling on hot, storm-prone days—call ahead to confirm hours and availability. Indoor dining at waterfront restaurants with large windows allows you to enjoy ocean views while staying cool and dry if needed. Consider booking morning activities like fishing charters, dolphin tours, or glass-bottom boat tours when conditions are most stable.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>🚌 Getting Around Siesta Key Without a Car</h2>
-            <p>
-                With peak summer heat and potential afternoon storms, having reliable, comfortable transportation is more valuable than ever. Our services help you navigate these challenging conditions safely:
-            </p>
-            <div class="transportation">
-                <h3>🚐 Free Shuttle Service</h3>
-                <p>
-                    Our air-conditioned shuttle provides a cool, comfortable retreat from the heat while transporting you between all major Siesta Key destinations. Perfect for avoiding summer heat, parking hassles, and potential rain. Call us at <strong>941-600-8380</strong> for pickup or use our web app to request a ride.
-                </p>
-                <h3>🚶 Walking & Biking</h3>
-                <p>
-                    Early morning (before 10 AM) is the only comfortable time for walking or biking in these conditions. If you must venture out later, carry abundant water, wear sun-protective clothing, and monitor weather conditions closely. Several businesses offer beach cruiser rentals—ask about their policies for hot, storm-prone days.
-                </p>
-                <h3>📍 Rideshare & Ride Services</h3>
-                <p>
-                    Our local free ride service provides personalized, air-conditioned transportation with drivers who understand local summer weather patterns. They can help you time your activities perfectly, recommend the best shaded beach spots, and provide emergency shelter options if storms develop unexpectedly.
-                </p>
-                <p>
-                    <a href="tel:9416008380" class="cta-button">Call 941-600-8380 for a Free Ride!</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🍽️ Dining & Refreshments</h2>
-            <p>
-                With extreme heat and humidity, cold beverages and light meals become essential. Look for restaurants offering frozen cocktails, fresh fruit smoothies, chilled soups, cold salads, and seafood ceviche. Air-conditioned indoor dining provides welcome relief, while covered outdoor patios with ocean breezes offer fresh air with protection from both sun and rain.
-            </p>
-            <p>
-                Hydration is absolutely critical—aim for at least 3-4 liters of water per person for a full day at the beach. Electrolyte supplements, coconut water, and sports drinks can help replace minerals lost through sweating in these extreme conditions.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>⛱️ What to Bring Today</h2>
-            <ul style="margin-left: 20px;">
-                <li><strong>High-SPF Waterproof Sunscreen:</strong> SPF 50+ and reapply every 60-90 minutes</li>
-                <li><strong>Abundant Water:</strong> 3-4 liters per person minimum</li>
-                <li><strong>Electrolyte Supplements:</strong> Essential for extreme heat</li>
-                <li><strong>Full-Coverage Sun Protection:</strong> Wide-brimmed hat, UV-protective clothing, sunglasses</li>
-                <li><strong>Maximum Shade:</strong> Large beach umbrella and/or pop-up tent</li>
-                <li><strong>Lightweight Rain Gear:</strong> Compact poncho for potential storms</li>
-                <li><strong>Cooling Technology:</strong> Evaporative cooling towels, misting bottle</li>
-                <li><strong>Weather Monitoring:</strong> Weather app with local radar</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>📸 Peak Summer Forecast</h2>
-            <p>
-                With 90°F air temps, 84°F water, and the likelihood of scattered afternoon thunderstorms, June 3 represents peak Florida summer beach conditions. Heat index will feel like 98-102°F, making heat safety absolutely critical. UV index will be extreme (11+), requiring maximum sun protection even during brief exposures. Afternoon storms, if they develop, are typically brief but intense—always prioritize safety over beach time.
-            </p>
-            <p>
-                This is the kind of day that separates casual beachgoers from true Florida beach experts—those who know how to work with the weather rather than fight against it. Plan strategically, stay hydrated, seek shade frequently, and embrace the tropical rhythm of magnificent mornings followed by dramatic afternoon storms that often clear to stunning evening sunsets.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>💬 Questions?</h2>
-            <p>
-                Have questions about managing today's extreme summer conditions? Need advice on heat safety protocols or storm safety procedures? Want to book free rides that can adapt to changing weather conditions and provide emergency shelter options? Call us at <strong>941-600-8380</strong> and let us help you navigate this peak summer beach day safely and successfully.
-            </p>
-        </div>
-
-        <div class="footer-nav">
+    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
             <div>
-                <a href="https://siestafreeride.com/">&larr; Back to Home</a> | 
-                <a href="https://siestafreeride.com/blog">View All Posts</a>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Transportation in Siesta Key, FL.</p>
             </div>
-            <div class="share-icons">
-                <a href="https://facebook.com/sharer/sharer.php?u=https://siestafreeride.com/blog/2026-06-03-daily-blog.html" title="Share on Facebook">f</a>
-                <a href="https://twitter.com/intent/tweet?text=Peak%20Summer%20Heat%20at%20Siesta%20Key!&url=https://siestafreeride.com/blog/2026-06-03-daily-blog.html" title="Share on Twitter">𝕏</a>
-                <a href="mailto:?subject=Siesta%20Key%20Beach%20Report&body=Check%20out%20today's%20peak%20summer%20beach%20conditions%20at%20Siesta%20Key!" title="Share via Email">✉</a>
->>>>>>> Stashed changes
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/siesta-key-guide.html" class="hover:text-white">Guide</a></li>
+                    <li><a href="/beaches.html" class="hover:text-white">Beaches</a></li>
+                    <li><a href="/events.html" class="hover:text-white">Events</a></li>
+                    <li><a href="/faq.html" class="hover:text-white">FAQ</a></li>
+                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
+                    <li><a href="/advertise.html" class="hover:text-white">Advertise</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
+          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
+              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;"loading="eager" width="200" height="100">
+              Drive Again Secrets — License Reinstatement Guides
+            </a>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
