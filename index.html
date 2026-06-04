@@ -76,19 +76,9 @@
         }
 
         body { 
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
-            background-repeat: no-repeat; 
+            background: rgba(184,221,224,0.55);
             color: #1f2937; 
             position: relative;
-            /* Default fallback for initial page load */
-            background-image: url('/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg');
-        } 
-        
-        /* Fallback background for JS-disabled browsers */ 
-        .no-js body { 
-            background-image: url('/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg'); 
         }
 
         body::before {
@@ -100,12 +90,34 @@
         }
 
         .hero {
-            background-image:
-                linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
-                url('/assets/banner.png');
-            background-size: cover;
-            background-position: center 78%;
-            background-repeat: no-repeat;
+            position: relative;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.7);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30));
+            z-index: -1;
         }
 
         .phone-number {
@@ -228,7 +240,9 @@
         </div>
     </header>
 
-    <section class="hero h-[420px] md:h-[560px] flex items-start justify-center text-white text-center pt-4 md:pt-6">
+    <section class="hero">
+        <img id="hero-image" class="hero-image" src="/assets/Siesta Web Photos/siesta-beach1.jpg" alt="Siesta Key Beach">
+        <div class="hero-overlay"></div>
         <div class="px-6">
             <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-title">
                 Free Ride on Siesta Key - Call Now 📞
@@ -444,10 +458,8 @@
     </script>
 <!-- Daily Background Photo Rotation from Siesta Web Photos -->
     <script>
-        // Array of background photos for daily rotation from Siesta Web Photos folder
-        // Updated to use dynamic photo list loaded from folder
-        const backgroundPhotos = [
-            '/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg',  // Starting photo
+        // Array of hero photos for daily rotation from Siesta Web Photos folder
+        const heroPhotos = [
             '/assets/Siesta Web Photos/siesta-beach1.jpg',
             '/assets/Siesta Web Photos/siesta-beach2.jpg',
             '/assets/Siesta Web Photos/siesta-beach3.jpg',
@@ -503,23 +515,28 @@
             '/assets/Siesta Web Photos/IMG_8689.JPG'
         ];
 
-        // Get today's date to determine which photo to show
+        // Get today's date to determine which hero photo to show
         // This ensures the same photo shows all day (resets at midnight UTC)
         const today = new Date();
         const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (24 * 60 * 60 * 1000));
-        const photoIndex = dayOfYear % backgroundPhotos.length;
+        const photoIndex = dayOfYear % heroPhotos.length;
         
-        // Set the background photo with fallback for loading errors
-        const selectedPhoto = backgroundPhotos[photoIndex];
-        const img = new Image();
-        img.onload = function() {
-            document.body.style.backgroundImage = `url(${selectedPhoto})`;
-        };
-        img.onerror = function() {
-            // Fallback to first photo if selected one fails to load
-            document.body.style.backgroundImage = `url(${backgroundPhotos[0]})`;
-        };
-        img.src = selectedPhoto;
+        // Set the hero photo with fallback for loading errors
+        const selectedPhoto = heroPhotos[photoIndex];
+        const heroImg = document.getElementById('hero-image');
+        if (heroImg) {
+            const img = new Image();
+            img.onload = function() {
+                heroImg.src = selectedPhoto;
+                heroImg.alt = 'Siesta Key Beach - Daily Photo';
+            };
+            img.onerror = function() {
+                // Fallback to first photo if selected one fails to load
+                heroImg.src = heroPhotos[0];
+                heroImg.alt = 'Siesta Key Beach - Default Photo';
+            };
+            img.src = selectedPhoto;
+        }
     </script>
 </body>
 </html>
