@@ -251,10 +251,11 @@
                     Since our rides are free (tips only!), your Google review is the best way to show your appreciation!
                 </p>
                 
-                <!-- Main Google Review Button -->
-                <a href="https://search.google.com/local/writereview?placeid=ChIJVVVVVVVVVVVVVVVVVVVVVVV" target="_blank" rel="noopener" class="review-link">
+                <!-- Main Google Review Button - IMPORTANT: Update with actual Google Place ID -->
+                <a href="https://search.google.com/local/writereview?placeid=YOUR_ACTUAL_PLACE_ID" target="_blank" rel="noopener" class="review-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.818 18.434l-4.889-4.224 1.392-1.606 3.534 3.057 7.279-8.399 1.818 1.575-9.093 10.5z"/>
+                    </svg>
                     Leave a Google Review
                 </a>
             </div>
@@ -263,72 +264,77 @@
             <div class="mt-12">
                 <h3 class="text-2xl font-bold text-center mb-6">Review Us on Multiple Platforms</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <a href="https://search.google.com/local/writereview?placeid=ChIJVVVVVVVVVVVVVVVVVVVVVVV" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
+                    <a href="https://search.google.com/local/writereview?placeid=YOUR_ACTUAL_PLACE_ID" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow border-2 border-blue-400/20">
                         <div class="platform-icon google-icon mx-auto mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.818 18.434l-4.889-4.224 1.392-1.606 3.534 3.057 7.279-8.399 1.818 1.575-9.093 10.5z"/>
                             </svg>
                         </div>
-                        <h4 class="font-bold mb-2">Google</h4>
-                        <p class="text-sm text-gray-600">Leave a 5-star review</p>
+                        <h4 class="font-bold mb-2">Google <span class="text-xs bg-gradient-to-r from-blue-400 to-green-400 text-white px-2 py-1 rounded">RECOMMENDED</span></h4>
+                        <p class="text-sm text-gray-600">⭐ Most helpful for new visitors</p>
                     </a>
                     
-                    <a href="#" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
+                    <a href="https://www.facebook.com/siestafreeride" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
                         <div class="platform-icon facebook-icon mx-auto mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </div>
                         <h4 class="font-bold mb-2">Facebook</h4>
-                        <p class="text-sm text-gray-600">Like our page</p>
+                        <p class="text-sm text-gray-600">👍 Like & follow for updates</p>
                     </a>
                     
-                    <a href="#" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
+                    <a href="https://www.yelp.com/biz/siesta-free-ride" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
                         <div class="platform-icon yelp-icon mx-auto mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.5 2c-5.79 0-10.5 4.71-10.5 10.5S6.71 23 12.5 23 23 18.29 23 12.5 18.29 2 12.5 2m0 19c-4.69 0-8.5-3.81-8.5-8.5S7.81 4 12.5 4 21 7.81 21 12.5 17.19 21 12.5 21"/>
                             </svg>
                         </div>
                         <h4 class="font-bold mb-2">Yelp</h4>
-                        <p class="text-sm text-gray-600">Add your review</p>
+                        <p class="text-sm text-gray-600">💬 Share your experience</p>
                     </a>
                     
-                    <a href="#" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
+                    <a href="https://www.tripadvisor.com/Search?q=Siesta+Free+Ride" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
                         <div class="platform-icon tripadvisor-icon mx-auto mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"/>
                             </svg>
                         </div>
                         <h4 class="font-bold mb-2">TripAdvisor</h4>
-                        <p class="text-sm text-gray-600">Share your experience</p>
+                        <p class="text-sm text-gray-600">🌍 Help travelers discover us</p>
                     </a>
                 </div>
             </div>
 
-            <!-- Why Reviews Matter Section -->
-            <div class="glass-panel p-6 mt-8 border-2" style="border-color: rgba(0,119,182,0.3)">
-                <h3 class="text-xl font-bold mb-4 text-center">Why Your Review Matters</h3>
-                <div class="grid md:grid-cols-3 gap-4 text-sm">
-                    <div class="text-center">
-                        <div class="text-2xl mb-2">🌟</div>
-                        <p><strong>Helps Others</strong><br>Visitors find our free service</p>
+            <!-- Why Reviews Matter Section - Enhanced CTA -->
+            <div class="glass-panel p-6 mt-8 border-2" style="border-color: rgba(0,119,182,0.5); background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(0,180,216,0.05));">
+                <h3 class="text-2xl font-bold mb-6 text-center text-brand">Why Your Review Matters 💬</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-sm mb-6">
+                    <div class="text-center p-4 rounded-lg" style="background: rgba(66,165,245,0.08);">
+                        <div class="text-4xl mb-3">🌟</div>
+                        <p><strong class="text-lg text-brand">Helps Visitors</strong><br><span class="text-gray-700">Beach travelers & locals discover our free service through Google search</span></p>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl mb-2">🚌</div>
-                        <p><strong>Improves Service</strong><br>Your feedback helps us grow</p>
+                    <div class="text-center p-4 rounded-lg" style="background: rgba(76,175,80,0.08);">
+                        <div class="text-4xl mb-3">🚌</div>
+                        <p><strong class="text-lg text-brand">Drives Growth</strong><br><span class="text-gray-700">Your honest feedback helps us improve and expand services</span></p>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl mb-2">❤️</div>
-                        <p><strong>Shows Appreciation</strong><br>Since rides are free, reviews are everything!</p>
+                    <div class="text-center p-4 rounded-lg" style="background: rgba(233,30,99,0.08);">
+                        <div class="text-4xl mb-3">❤️</div>
+                        <p><strong class="text-lg text-brand">Shows Appreciation</strong><br><span class="text-gray-700">Free rides = reviews are our best reward! 🙏</span></p>
                     </div>
                 </div>
+                <p class="text-center text-gray-600 italic">⭐ Every 5-star review helps another visitor find us on Google Maps</p>
             </div>
 
             <!-- Call to Action -->
-            <div class="text-center mt-8">
-                <p class="text-lg font-semibold mb-4">Ready to leave your review?</p>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJVVVVVVVVVVVVVVVVVVVVVVV" target="_blank" rel="noopener" class="review-link">
+            <div class="text-center mt-12 pt-8 border-t-2 border-gray-300/30">
+                <p class="text-xl font-bold mb-4 text-brand">⏱️ It takes just 60 seconds!</p>
+                <p class="text-lg font-semibold mb-6 text-gray-700">Leave your review and help us grow</p>
+                <a href="https://search.google.com/local/writereview?placeid=YOUR_ACTUAL_PLACE_ID" target="_blank" rel="noopener" class="review-link inline-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.818 18.434l-4.889-4.224 1.392-1.606 3.534 3.057 7.279-8.399 1.818 1.575-9.093 10.5z"/>
                     </svg>
-                    Click Here to Review on Google
+                    Leave Your Google Review Now
                 </a>
             </div>
         </div>
