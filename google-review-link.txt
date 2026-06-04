@@ -1,0 +1,12 @@
+To get the correct Google Business Profile review link for Siesta Free Ride:
+
+1. Go to Google Maps and search for "Siesta Free Ride Siesta Key FL"
+2. Click on your business listing
+3. Click "Write a review" 
+4. Copy the URL from your browser's address bar
+5. Replace the placeholder link in reviews.html with the actual URL
+
+The current placeholder link in reviews.html is:
+https://search.google.com/local/writereview?placeid=ChIJVVVVVVVVVVVVVVVVVVVVVVV
+
+Replace "ChIJVVVVVVVVVVVVVVVVVVVVVVV" with your actual Google Place ID, or replace the entire URL with the direct review URL you get from step 4.
