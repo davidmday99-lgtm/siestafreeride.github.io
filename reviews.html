@@ -3,49 +3,11 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Leave a Review - Siesta Free Ride | Google Reviews & More</title>
+    <title>Leave a Review - Siesta Free Ride | Google Reviews</title>
     <meta name="description" content="Leave a Google review for Siesta Free Ride! Your feedback helps us provide better free transportation service on Siesta Key. Tips only! Call 941-600-8380."/>
-    <meta name="keywords" content="siesta free ride reviews, google reviews siesta key, leave review free ride, siesta key transportation reviews, beach shuttle reviews" />
     <link rel="canonical" href="https://siestafreeride.com/reviews.html" />
-    <meta name="google-site-verification" content="GgQsefEyzLZ1jWn74BeCAuWtOCAK-arFzdm9XqU-m2M" />
-    <meta property="og:title" content="Leave a Review - Siesta Free Ride" />
-    <meta property="og:description" content="Help us improve! Leave a Google review for our free Siesta Key transportation service. Tips only! Call 941-600-8380." />
-    <meta property="og:image" content="https://siestafreeride.com/assets/logo.png" />
-    <meta property="og:url" content="https://siestafreeride.com/reviews.html" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Leave a Review - Siesta Free Ride" />
-    <meta name="twitter:description" content="Your Google review helps us provide better free transportation on Siesta Key!" />
-    <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/png" href="/assets/logo.png" />
     <link rel="apple-touch-icon" href="/assets/logo.png" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Siesta Free Ride",
-      "description": "Free ride and shuttle service on Siesta Key, Florida. Beach rides, island transportation, grocery runs, Casey Key, and SRQ airport transfers.",
-      "url": "https://siestafreeride.com",
-      "telephone": "+1-941-600-8380",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Siesta Key",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "100+"
-      },
-      "image": "https://siestafreeride.com/assets/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/siestafreeride",
-        "https://www.yelp.com/biz/siesta-free-ride",
-        "https://www.tripadvisor.com"
-      ]
-    }
-    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -71,65 +33,28 @@
         }
 
         body { 
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
-            background-repeat: no-repeat; 
+            background: rgba(184,221,224,0.55);
             color: #1f2937; 
             position: relative;
-        } 
-        
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: rgba(184,221,224,0.55);
-            z-index: -1;
         }
 
         .hero {
-            background-image:
-                linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
-                url('/assets/banner.png');
-            background-size: cover;
-            background-position: center 78%;
-            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);
+            overflow: hidden;
         }
-
-        .phone-number {
-            color: #12a5b0;
-            text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin-top: 0.25rem;
-            margin-bottom: 0;
+        
+        .hero-image {
+            height: 100%;
+            width: auto;
+            max-width: none;
             display: block;
-            line-height: 1;
-        }
-
-        .hero-title,
-        .cursive-text {
-            text-shadow:
-                -2px -2px 0 #000,
-                 2px -2px 0 #000,
-                -2px  2px 0 #000,
-                 2px  2px 0 #000;
-        }
-
-        .hero-title {
-            line-height: 1.05;
-        }
-
-        .cursive-text {
-            font-family: 'Pacifico', cursive;
-            color: #00b4d8;
-            letter-spacing: 1px;
-            line-height: 1;
-            white-space: nowrap;
+            object-fit: contain;
         }
 
         .glass-panel {
@@ -148,75 +73,57 @@
             border: 1px solid rgba(255, 255, 255, 0.35);
             border-radius: 0.75rem;
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .review-link {
-            display: flex;
+        .glass-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+
+        .review-btn {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            padding: 16px 24px;
+            padding: 16px 32px;
             background: linear-gradient(135deg, #4285F4, #34A853);
             color: white;
             text-decoration: none;
             border-radius: 12px;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .review-link:hover {
+        .review-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.25);
         }
 
-        .review-link i {
-            font-size: 1.5rem;
-        }
-
-        .platform-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .google-icon { background: linear-gradient(135deg, #4285F4, #34A853); color: white; }
-        .facebook-icon { background: linear-gradient(135deg, #4267B2, #3b5998); color: white; }
-        .yelp-icon { background: linear-gradient(135deg, #ff0000, #d42626); color: white; }
-        .tripadvisor-icon { background: linear-gradient(135deg, #589442, #2a5c1d); color: white; }
-
         @media (max-width: 768px) {
-            .phone-number {
-                font-size: 2rem;
-            }
-            .hero-title {
-                font-size: 2rem;
+            header img.h-52 {
+                height: 10rem;
             }
         }
     </style>
-
 </head>
 <body>
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-52 md:h-60" loading="eager" style="width: auto;">
+                <a href="/"><img src="/assets/logo.png" alt="Siesta Free Ride" class="h-52 md:h-60" loading="eager" style="width: auto;"></a>
             </div>
             <nav class="hidden md:flex gap-6 text-lg font-semibold">
-                <a href="/" class="text-brand font-medium">Home</a>
+                <a href="/" class="hover:text-brand font-medium">Home</a>
                 <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
                 <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
                 <a href="/events.html" class="hover:text-brand font-medium">Events</a>
                 <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
                 <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
+                <a href="/reviews.html" class="text-brand font-bold">Reviews</a>
                 <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
-                <a href="/reviews.html" class="bg-accent text-white px-4 py-1.5 rounded-md font-bold">Reviews</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
             <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
@@ -225,307 +132,78 @@
         </div>
         <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
             <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block text-brand font-medium">Home</a>
+                <a href="/" class="block font-medium">Home</a>
                 <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
                 <a href="/beaches.html" class="block font-medium">Beaches</a>
                 <a href="/events.html" class="block font-medium">Events</a>
                 <a href="/faq.html" class="block font-medium">FAQ</a>
                 <a href="/blog.html" class="block font-medium">Blog</a>
+                <a href="/reviews.html" class="block text-brand font-bold">Reviews</a>
                 <a href="/advertise.html" class="block font-medium">Advertise</a>
-                <a href="/reviews.html" class="block bg-accent text-white px-4 py-1.5 rounded-md font-bold">Reviews</a>
                 <a href="/contact.html" class="block">Book Now</a>
             </div>
         </div>
     </header>
 
-    <section class="hero min-h-[500px] md:min-h-[600px] flex items-center justify-center text-white text-center py-8 md:py-12 relative overflow-hidden">
-        <!-- Enhanced Hero with Logo -->
-        <div class="px-6 max-w-3xl">
-            <!-- Logo as Hero Element -->
-            <div class="mb-8 flex justify-center">
-                <img src="/assets/review-logo.png" alt="Siesta Free Ride Logo" class="h-48 md:h-64 w-auto drop-shadow-2xl" loading="eager">
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 hero-title">
-                Leave a Review 🌟
-            </h1>
-            <p class="text-xl md:text-2xl mb-6 font-semibold">Your feedback helps us provide better service!</p>
-            <p class="text-lg md:text-xl mb-6 opacity-95">Tell other visitors about your Siesta Free Ride experience</p>
-            
-            <div class="mt-8">
-                <a href="tel:941-600-8380" class="phone-number hover:no-underline">
-                    941-600-8380
-                </a>
-            </div>
-        </div>
+    <!-- Hero with Review Logo -->
+    <section class="hero">
+        <img class="hero-image" src="/assets/review-logo.png" alt="Leave a Review - Siesta Free Ride">
     </section>
 
+    <!-- Main Content -->
     <section class="w-full px-4 py-16" style="background:rgba(184,221,224,0.45);">
         <div class="glass-panel p-8 md:p-10 max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Thank You for Riding with Us! 🚌</h2>
+            <h2 class="text-3xl font-bold text-center mb-4">Thank You for Riding with Us! 🚌</h2>
+            <p class="text-center text-gray-600 mb-8 text-lg">Your review helps other visitors discover our free ride service!</p>
             
-            <!-- Social Proof Section -->
-            <div class="mb-8 pb-6 border-b-2 border-gray-200">
-                <div class="flex items-center justify-center gap-8 mb-6 flex-wrap">
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-brand">100+</div>
-                        <p class="text-sm text-gray-600">Google Reviews ⭐</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-yellow-400">★★★★★</div>
-                        <p class="text-sm text-gray-600">5-Star Rating</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-brand">1000+</div>
-                        <p class="text-sm text-gray-600">Happy Riders</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mb-8">
-                <p class="text-lg text-gray-700 mb-6">
-                    Your reviews help us improve our free ride service and let others know about our commitment to Siesta Key transportation.
-                    Since our rides are free (tips only!), your Google review is the best way to show your appreciation!
-                </p>
-                
-                <!-- Main Google Review Button - IMPORTANT: Update with actual Google Place ID -->
-                <a href="https://search.google.com/local/writereview?placeid=ChIJr54Wy6az1YgRmSGGF43-Zws" target="_blank" rel="noopener" class="review-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.818 18.434l-4.889-4.224 1.392-1.606 3.534 3.057 7.279-8.399 1.818 1.575-9.093 10.5z"/>
-                    </svg>
-                    Leave a Google Review
-                </a>
-            </div>
-
-            <!-- Review Link Tree -->
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold text-center mb-6">Review Us on Multiple Platforms</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <a href="https://search.google.com/local/writereview?placeid=ChIJr54Wy6az1YgRmSGGF43-Zws" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow border-2 border-blue-400/20">
-                        <div class="platform-icon google-icon mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.818 18.434l-4.889-4.224 1.392-1.606 3.534 3.057 7.279-8.399 1.818 1.575-9.093 10.5z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold mb-2">Google <span class="text-xs bg-gradient-to-r from-blue-400 to-green-400 text-white px-2 py-1 rounded">RECOMMENDED</span></h4>
-                        <p class="text-sm text-gray-600">⭐ Most helpful for new visitors</p>
-                    </a>
-                    
-                    <a href="https://www.facebook.com/siestafreeride" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
-                        <div class="platform-icon facebook-icon mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold mb-2">Facebook</h4>
-                        <p class="text-sm text-gray-600">👍 Like & follow for updates</p>
-                    </a>
-                    
-                    <a href="https://www.yelp.com/biz/siesta-free-ride" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
-                        <div class="platform-icon yelp-icon mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12.5 2c-5.79 0-10.5 4.71-10.5 10.5S6.71 23 12.5 23 23 18.29 23 12.5 18.29 2 12.5 2m0 19c-4.69 0-8.5-3.81-8.5-8.5S7.81 4 12.5 4 21 7.81 21 12.5 17.19 21 12.5 21"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold mb-2">Yelp</h4>
-                        <p class="text-sm text-gray-600">💬 Share your experience</p>
-                    </a>
-                    
-                    <a href="https://www.tripadvisor.com/Search?q=Siesta+Free+Ride" target="_blank" rel="noopener" class="glass-card p-6 text-center hover:shadow-lg transition-shadow">
-                        <div class="platform-icon tripadvisor-icon mx-auto mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold mb-2">TripAdvisor</h4>
-                        <p class="text-sm text-gray-600">🌍 Help travelers discover us</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Why Reviews Matter Section - Enhanced CTA -->
-            <div class="glass-panel p-6 mt-8 border-2" style="border-color: rgba(0,119,182,0.5); background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(0,180,216,0.05));">
-                <h3 class="text-2xl font-bold mb-6 text-center text-brand">Why Your Review Matters 💬</h3>
-                <div class="grid md:grid-cols-3 gap-6 text-sm mb-6">
-                    <div class="text-center p-4 rounded-lg" style="background: rgba(66,165,245,0.08);">
-                        <div class="text-4xl mb-3">🌟</div>
-                        <p><strong class="text-lg text-brand">Helps Visitors</strong><br><span class="text-gray-700">Beach travelers & locals discover our free service through Google search</span></p>
-                    </div>
-                    <div class="text-center p-4 rounded-lg" style="background: rgba(76,175,80,0.08);">
-                        <div class="text-4xl mb-3">🚌</div>
-                        <p><strong class="text-lg text-brand">Drives Growth</strong><br><span class="text-gray-700">Your honest feedback helps us improve and expand services</span></p>
-                    </div>
-                    <div class="text-center p-4 rounded-lg" style="background: rgba(233,30,99,0.08);">
-                        <div class="text-4xl mb-3">❤️</div>
-                        <p><strong class="text-lg text-brand">Shows Appreciation</strong><br><span class="text-gray-700">Free rides = reviews are our best reward! 🙏</span></p>
-                    </div>
-                </div>
-                <p class="text-center text-gray-600 italic">⭐ Every 5-star review helps another visitor find us on Google Maps</p>
-            </div>
-
-            <!-- Call to Action -->
-            <div class="text-center mt-12 pt-8 border-t-2 border-gray-300/30">
-                <p class="text-xl font-bold mb-4 text-brand">⏱️ It takes just 60 seconds!</p>
-                <p class="text-lg font-semibold mb-6 text-gray-700">Leave your review and help us grow</p>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJr54Wy6az1YgRmSGGF43-Zws" target="_blank" rel="noopener" class="review-link inline-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.818 18.434l-4.889-4.224 1.392-1.606 3.534 3.057 7.279-8.399 1.818 1.575-9.093 10.5z"/>
-                    </svg>
-                    Leave Your Google Review Now
+            <!-- Main Google Review Button -->
+            <div class="text-center">
+                <a href="https://g.page/r/CZOcRPGBLcloEBI/review" target="_blank" rel="noopener" class="review-btn">
+                    ⭐ Leave a Google Review
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Tips Appreciated Section -->
+    <!-- Tips Section -->
     <section class="py-8 text-center" style="background: rgba(0,119,182,0.08);">
         <div class="max-w-md mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-2">Tips Appreciated! 😊</h3>
-            <p class="text-gray-600 mb-4">Our rides are free — your tips keep us rolling. Thank you for your generosity!</p>
+            <h3 class="text-2xl font-bold mb-2">Tips Appreciated! 🙏</h3>
+            <p class="text-gray-600 mb-4">Our rides are free — your tips keep us rolling!</p>
             <a href="https://venmo.com/u/Rooster59" target="_blank" rel="noopener">
-                <img src="/assets/Venmo.jpeg" alt="Tip us on Venmo @Rooster59" class="mx-auto rounded-xl shadow-lg" style="max-width: 350px; width: 100%;"loading="lazy" width="1080" height="720">
+                <img src="/assets/Venmo.jpeg" alt="Tip us on Venmo @Rooster59" class="mx-auto rounded-xl shadow-lg" style="max-width: 300px; width: 100%;" loading="lazy">
             </a>
-            <p class="mt-3 text-sm text-gray-500">Scan or tap to tip via Venmo <strong>@Rooster59</strong></p>
+            <p class="mt-3 text-sm text-gray-500">Venmo <strong>@Rooster59</strong></p>
         </div>
     </section>
 
-    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
+    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
             <div>
                 <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
                 <p>Transportation in Siesta Key, FL.</p>
             </div>
-
             <div>
                 <h4 class="font-bold text-white mb-4">Contact</h4>
                 <p>941-600-8380</p>
             </div>
-
             <div>
                 <h4 class="font-bold text-white mb-4">Quick Links</h4>
                 <ul class="space-y-2">
                     <li><a href="/" class="hover:text-white">Home</a></li>
                     <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="/photos.html" class="hover:text-white">Photos</a></li>
-                    <li><a href="/reviews.html" class="text-accent hover:text-white font-bold">Reviews</a></li>
-                    <li><a href="/advertise.html" class="hover:text-white">Advertise</a></li>
+                    <li><a href="/reviews.html" class="text-accent font-bold">Reviews</a></li>
                     <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
                 </ul>
             </div>
         </div>
-
-        <!-- Affiliate Sponsors -->
-        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
-          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
-          <div class="flex flex-wrap justify-center gap-6 mb-6">
-            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
-              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Drive Again Secrets - License Reinstatement Guides
-            </a>
-            <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
-              <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Cash For Keys Properties - We Buy Houses Fast
-            </a>
-            <a href="https://moondoggys.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#FFD700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#FFD700'">
-              🌙 Moondoggy's Saloon - Gulf Gate's Hottest Nightclub
-            </a>
-          </div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
+        <div class="max-w-6xl mx-auto px-4 pt-6 mt-6 border-t border-gray-700 text-sm text-center">
             &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
         </div>
     </footer>
 
-    <!-- Sponsor Banner -->
-    <div class="cfk-banner" style="background: #000000; padding: 30px 24px; border-top: 3px solid #ff6700;">
-        <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" class="cfk-link">
-            <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" class="cfk-logo" loading="lazy" width="320" height="320">
-            <div class="cfk-text">
-                <span class="cfk-title">🏠 Cash For Keys Properties</span>
-                <span class="cfk-subtitle">Sarasota's #1 Home Buyer & Rental Management Company</span>
-                <span class="cfk-tagline">We buy houses fast for cash!</span>
-                <span class="cfk-desc">No repairs, no fees, no hassle. Get a fair offer in 24 hours.</span>
-            </div>
-        </a>
-    </div>
-
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    
-    <!-- Daily Background Photo Rotation from Siesta Web Photos -->
-    <script>
-        const backgroundPhotos = [
-            '/assets/Siesta Web Photos/siesta-beach1 - Copy.jpg',
-            '/assets/Siesta Web Photos/siesta-beach1.jpg',
-            '/assets/Siesta Web Photos/siesta-beach2.jpg',
-            '/assets/Siesta Web Photos/siesta-beach3.jpg',
-            '/assets/Siesta Web Photos/siesta-beach4.jpg',
-            '/assets/Siesta Web Photos/siesta-beach5.jpg',
-            '/assets/Siesta Web Photos/siesta-beach6.jpg',
-            '/assets/Siesta Web Photos/siesta-beach7.jpg',
-            '/assets/Siesta Web Photos/siesta-beach8.jpg',
-            '/assets/Siesta Web Photos/siesta-beach9.jpg',
-            '/assets/Siesta Web Photos/siesta-beach10.jpg',
-            '/assets/Siesta Web Photos/siesta-beach11.jpg',
-            '/assets/Siesta Web Photos/siesta-beach12.jpg',
-            '/assets/Siesta Web Photos/siesta-beach13.jpg',
-            '/assets/Siesta Web Photos/siesta-beach14.jpg',
-            '/assets/Siesta Web Photos/siesta-beach15.jpg',
-            '/assets/Siesta Web Photos/siesta-beach17.jpg',
-            '/assets/Siesta Web Photos/siesta-beach18.jpg',
-            '/assets/Siesta Web Photos/siesta-beach19.jpg',
-            '/assets/Siesta Web Photos/siesta-beach20.jpg',
-            '/assets/Siesta Web Photos/siesta-beach21.jpg',
-            '/assets/Siesta Web Photos/siesta-beach22.jpg',
-            '/assets/Siesta Web Photos/siesta-beach23.jpg',
-            '/assets/Siesta Web Photos/siesta-beach24.jpg',
-            '/assets/Siesta Web Photos/siesta-beach25.jpg',
-            '/assets/Siesta Web Photos/siesta-beach26.jpg',
-            '/assets/Siesta Web Photos/IMG_8654.PNG',
-            '/assets/Siesta Web Photos/IMG_8655.PNG',
-            '/assets/Siesta Web Photos/IMG_8656.PNG',
-            '/assets/Siesta Web Photos/IMG_8657.PNG',
-            '/assets/Siesta Web Photos/IMG_8658.PNG',
-            '/assets/Siesta Web Photos/IMG_8659.PNG',
-            '/assets/Siesta Web Photos/IMG_8660.PNG',
-            '/assets/Siesta Web Photos/IMG_8661.PNG',
-            '/assets/Siesta Web Photos/IMG_8665.PNG',
-            '/assets/Siesta Web Photos/IMG_8666.PNG',
-            '/assets/Siesta Web Photos/IMG_8667.PNG',
-            '/assets/Siesta Web Photos/IMG_8668.PNG',
-            '/assets/Siesta Web Photos/IMG_8670.PNG',
-            '/assets/Siesta Web Photos/IMG_8671.PNG',
-            '/assets/Siesta Web Photos/IMG_8672.PNG',
-            '/assets/Siesta Web Photos/IMG_8673.PNG',
-            '/assets/Siesta Web Photos/IMG_8674.PNG',
-            '/assets/Siesta Web Photos/IMG_8676.JPG',
-            '/assets/Siesta Web Photos/IMG_8677.JPG',
-            '/assets/Siesta Web Photos/IMG_8678.JPG',
-            '/assets/Siesta Web Photos/IMG_8679.JPG',
-            '/assets/Siesta Web Photos/IMG_8680.JPG',
-            '/assets/Siesta Web Photos/IMG_8681.JPG',
-            '/assets/Siesta Web Photos/IMG_8682.JPG',
-            '/assets/Siesta Web Photos/IMG_8683.JPG',
-            '/assets/Siesta Web Photos/IMG_8687.JPG',
-            '/assets/Siesta Web Photos/IMG_8688.JPG',
-            '/assets/Siesta Web Photos/IMG_8689.JPG'
-        ];
-
-        const today = new Date();
-        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (24 * 60 * 60 * 1000));
-        const photoIndex = dayOfYear % backgroundPhotos.length;
-        
-        const selectedPhoto = backgroundPhotos[photoIndex];
-        const img = new Image();
-        img.onload = function() {
-            document.body.style.backgroundImage = `url(${selectedPhoto})`;
-        };
-        img.onerror = function() {
-            document.body.style.backgroundImage = `url(${backgroundPhotos[0]})`;
-        };
-        img.src = selectedPhoto;
     </script>
 </body>
 </html>
