@@ -179,6 +179,18 @@
             header .text-4xl {
                 font-size: 1.875rem; /* text-3xl */
             }
+
+            /* Hero mobile fix - show full width, no side clipping */
+            .hero {
+                height: auto;
+                min-height: 50vh;
+            }
+
+            .hero-image {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
         }
 
         .air-banner {
