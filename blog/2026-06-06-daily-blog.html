@@ -57,72 +57,77 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
 
-        /* NEON TEXT EFFECTS */
+        /* NEON TEXT EFFECTS - Blue, Purple, Red, Orange */
         .neon-title {
             font-family: 'Pacifico', cursive;
-            color: #fff;
+            color: #00d4ff;
             text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #00b4d8,
-                0 0 40px #00b4d8,
-                0 0 60px #00b4d8,
-                0 0 80px #0077b6,
-                0 0 100px #0077b6;
+                0 0 5px #00d4ff,
+                0 0 10px #00d4ff,
+                0 0 20px #0099ff,
+                0 0 40px #0077b6,
+                0 0 60px #0066cc,
+                0 0 80px #0055aa;
             animation: neon-pulse 2s ease-in-out infinite alternate;
         }
 
         @keyframes neon-pulse {
             from {
                 text-shadow:
-                    0 0 5px #fff,
-                    0 0 10px #fff,
-                    0 0 20px #00b4d8,
-                    0 0 40px #00b4d8,
-                    0 0 60px #00b4d8,
-                    0 0 80px #0077b6,
-                    0 0 100px #0077b6;
+                    0 0 5px #00d4ff,
+                    0 0 10px #00d4ff,
+                    0 0 20px #0099ff,
+                    0 0 40px #0077b6,
+                    0 0 60px #0066cc;
             }
             to {
                 text-shadow:
-                    0 0 2px #fff,
-                    0 0 5px #fff,
-                    0 0 10px #00b4d8,
-                    0 0 20px #00b4d8,
-                    0 0 30px #00b4d8,
-                    0 0 40px #0077b6,
-                    0 0 50px #0077b6;
+                    0 0 2px #00d4ff,
+                    0 0 5px #00b4d8,
+                    0 0 15px #0099ff,
+                    0 0 25px #0077b6,
+                    0 0 35px #0066cc;
             }
         }
 
-        .neon-pink {
-            color: #fff;
+        .neon-purple {
+            color: #bf5fff;
             text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #ff6b9d,
-                0 0 40px #ff6b9d,
-                0 0 60px #ff1493;
+                0 0 5px #bf5fff,
+                0 0 10px #a855f7,
+                0 0 20px #9333ea,
+                0 0 40px #7c3aed,
+                0 0 60px #6d28d9;
+        }
+
+        .neon-red {
+            color: #ff4d6d;
+            text-shadow:
+                0 0 5px #ff4d6d,
+                0 0 10px #ff3355,
+                0 0 20px #ef233c,
+                0 0 40px #d90429,
+                0 0 60px #c1121f;
         }
 
         .neon-orange {
-            color: #fff;
+            color: #ff9f1c;
             text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #f4a460,
-                0 0 40px #f4a460,
-                0 0 60px #ff6b35;
+                0 0 5px #ff9f1c,
+                0 0 10px #ff8c00,
+                0 0 20px #f77f00,
+                0 0 40px #e85d04,
+                0 0 60px #dc2f02;
         }
 
-        .neon-cyan {
-            color: #fff;
+        .neon-blue {
+            color: #00d4ff;
             text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #00b4d8,
-                0 0 40px #00b4d8,
-                0 0 60px #20B2AA;
+                0 0 5px #00d4ff,
+                0 0 10px #00b4d8,
+                0 0 20px #0099ff,
+                0 0 40px #0077b6,
+                0 0 60px #0066cc;
         }
 
         .neon-box {
@@ -204,7 +209,7 @@
             <div class="neon-box p-10 mb-8 text-center">
                 <p class="text-cyan-300 mb-3 text-lg">Saturday, June 6, 2026</p>
                 <h1 class="neon-title text-4xl md:text-6xl mb-4">Hot Saturday Beach Day!</h1>
-                <p class="neon-pink text-xl">Your Daily Siesta Key Guide</p>
+                <p class="neon-purple text-xl">Your Daily Siesta Key Guide</p>
             </div>
 
             <!-- Weather Card with Neon -->
@@ -237,7 +242,7 @@
 
             <!-- Beach Conditions -->
             <div class="glass-panel p-8 mb-8">
-                <h2 class="text-2xl font-bold mb-4 neon-cyan inline-block bg-gray-900 px-4 py-2 rounded-lg">🏖️ Beach Conditions</h2>
+                <h2 class="text-2xl font-bold mb-4 neon-blue inline-block bg-gray-900 px-4 py-2 rounded-lg">🏖️ Beach Conditions</h2>
                 <p class="text-gray-700 mb-4 mt-4">
                     It's Saturday on Siesta Key and the weather is absolutely spectacular! Clear, sunny skies all day with temperatures reaching a sizzling <strong>95°F</strong> this afternoon. With humidity around 60%, it'll feel like a true Florida summer day.
                 </p>
@@ -282,7 +287,7 @@
 
             <!-- Tips Section -->
             <div class="glass-panel p-8 mb-8">
-                <h2 class="text-2xl font-bold mb-4 neon-pink inline-block bg-gray-900 px-4 py-2 rounded-lg">💡 Tips for Today</h2>
+                <h2 class="text-2xl font-bold mb-4 neon-red inline-block bg-gray-900 px-4 py-2 rounded-lg">💡 Tips for Today</h2>
                 <ul class="space-y-3 mt-4">
                     <li class="flex items-start gap-3">
                         <span class="text-xl">🧴</span>
