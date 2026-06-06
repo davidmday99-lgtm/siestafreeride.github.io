@@ -57,29 +57,101 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
 
-        .cursive-text {
+        /* NEON TEXT EFFECTS */
+        .neon-title {
             font-family: 'Pacifico', cursive;
-            color: #00b4d8;
+            color: #fff;
             text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #00b4d8,
+                0 0 40px #00b4d8,
+                0 0 60px #00b4d8,
+                0 0 80px #0077b6,
+                0 0 100px #0077b6;
+            animation: neon-pulse 2s ease-in-out infinite alternate;
         }
 
-        .phone-number {
-            color: #12a5b0;
+        @keyframes neon-pulse {
+            from {
+                text-shadow:
+                    0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 20px #00b4d8,
+                    0 0 40px #00b4d8,
+                    0 0 60px #00b4d8,
+                    0 0 80px #0077b6,
+                    0 0 100px #0077b6;
+            }
+            to {
+                text-shadow:
+                    0 0 2px #fff,
+                    0 0 5px #fff,
+                    0 0 10px #00b4d8,
+                    0 0 20px #00b4d8,
+                    0 0 30px #00b4d8,
+                    0 0 40px #0077b6,
+                    0 0 50px #0077b6;
+            }
+        }
+
+        .neon-pink {
+            color: #fff;
             text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #ff6b9d,
+                0 0 40px #ff6b9d,
+                0 0 60px #ff1493;
+        }
+
+        .neon-orange {
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #f4a460,
+                0 0 40px #f4a460,
+                0 0 60px #ff6b35;
+        }
+
+        .neon-cyan {
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #00b4d8,
+                0 0 40px #00b4d8,
+                0 0 60px #20B2AA;
+        }
+
+        .neon-box {
+            background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(20,20,40,0.9) 100%);
+            border: 2px solid #00b4d8;
+            box-shadow: 
+                0 0 10px #00b4d8,
+                0 0 20px rgba(0,180,216,0.5),
+                inset 0 0 30px rgba(0,180,216,0.1);
+            border-radius: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
             font-weight: bold;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #00b4d8,
+                0 0 20px #00b4d8,
+                0 0 30px #0077b6;
         }
 
         @media (max-width: 768px) {
             header img {
                 height: 10rem !important;
+            }
+            .neon-title {
+                font-size: 2rem;
             }
         }
     </style>
@@ -128,16 +200,16 @@
                 <a href="/blog.html" class="text-brand font-medium hover:underline">&larr; Back to All Posts</a>
             </div>
 
-            <!-- Title Section -->
-            <div class="glass-panel p-8 mb-8 text-center">
-                <p class="text-gray-500 mb-2">Saturday, June 6, 2026</p>
-                <h1 class="cursive-text text-4xl md:text-5xl mb-4">Hot Saturday Beach Day!</h1>
-                <p class="text-gray-600 text-lg">Your Daily Siesta Key Guide</p>
+            <!-- NEON Title Section -->
+            <div class="neon-box p-10 mb-8 text-center">
+                <p class="text-cyan-300 mb-3 text-lg">Saturday, June 6, 2026</p>
+                <h1 class="neon-title text-4xl md:text-6xl mb-4">Hot Saturday Beach Day!</h1>
+                <p class="neon-pink text-xl">Your Daily Siesta Key Guide</p>
             </div>
 
-            <!-- Weather Card -->
-            <div class="glass-panel p-8 mb-8">
-                <h2 class="text-2xl font-bold text-center mb-6">🌤️ Today's Beach Weather</h2>
+            <!-- Weather Card with Neon -->
+            <div class="neon-box p-8 mb-8">
+                <h2 class="section-title text-center mb-6">🌤️ Today's Beach Weather</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="glass-card p-4 text-center">
                         <p class="text-gray-600 text-sm">Temperature</p>
@@ -156,17 +228,17 @@
                         <p class="text-3xl font-bold text-brand">10 mph</p>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center gap-6 mt-6 text-gray-600">
+                <div class="flex flex-wrap justify-center gap-6 mt-6 text-cyan-300">
                     <span>🌅 Sunrise: 6:35 AM</span>
                     <span>🌇 Sunset: 8:22 PM</span>
-                    <span>🌙 Moon: 74% Waning Gibbous</span>
+                    <span>🌙 Moon: 74%</span>
                 </div>
             </div>
 
             <!-- Beach Conditions -->
             <div class="glass-panel p-8 mb-8">
-                <h2 class="text-2xl font-bold mb-4">🏖️ Beach Conditions</h2>
-                <p class="text-gray-700 mb-4">
+                <h2 class="text-2xl font-bold mb-4 neon-cyan inline-block bg-gray-900 px-4 py-2 rounded-lg">🏖️ Beach Conditions</h2>
+                <p class="text-gray-700 mb-4 mt-4">
                     It's Saturday on Siesta Key and the weather is absolutely spectacular! Clear, sunny skies all day with temperatures reaching a sizzling <strong>95°F</strong> this afternoon. With humidity around 60%, it'll feel like a true Florida summer day.
                 </p>
                 <p class="text-gray-700 mb-4">
@@ -180,8 +252,8 @@
 
             <!-- Getting Around -->
             <div class="glass-panel p-8 mb-8">
-                <h2 class="text-2xl font-bold mb-4">🚐 Getting Around Siesta Key</h2>
-                <p class="text-gray-700 mb-4">
+                <h2 class="text-2xl font-bold mb-4 neon-orange inline-block bg-gray-900 px-4 py-2 rounded-lg">🚐 Getting Around Siesta Key</h2>
+                <p class="text-gray-700 mb-4 mt-4">
                     Planning your Saturday adventure? Understanding <strong>how to get around in Siesta Key</strong> efficiently can make or break your day. With weekend crowds expected, smart transportation choices are key!
                 </p>
                 <p class="text-gray-700 mb-6">
@@ -210,8 +282,8 @@
 
             <!-- Tips Section -->
             <div class="glass-panel p-8 mb-8">
-                <h2 class="text-2xl font-bold mb-4">💡 Tips for Today</h2>
-                <ul class="space-y-3">
+                <h2 class="text-2xl font-bold mb-4 neon-pink inline-block bg-gray-900 px-4 py-2 rounded-lg">💡 Tips for Today</h2>
+                <ul class="space-y-3 mt-4">
                     <li class="flex items-start gap-3">
                         <span class="text-xl">🧴</span>
                         <div><strong>Sunscreen is Critical:</strong> UV index hits 9-10—apply SPF 50+ and reapply every 2 hours</div>
@@ -235,14 +307,14 @@
                 </ul>
             </div>
 
-            <!-- CTA Section -->
-            <div class="glass-panel p-8 text-center" style="border: 2px solid rgba(0,119,182,0.3);">
-                <h2 class="text-2xl font-bold mb-2">🌴 Need a Ride?</h2>
-                <p class="text-gray-700 mb-4">Skip the parking hassle. We'll get you to the beach, the Village, or anywhere on the Key!</p>
-                <a href="tel:9416008380" class="inline-block bg-brand text-white text-2xl font-bold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors">
+            <!-- CTA Section - Neon Style -->
+            <div class="neon-box p-8 text-center">
+                <h2 class="neon-title text-3xl mb-4">🌴 Need a Ride?</h2>
+                <p class="text-gray-300 mb-6 text-lg">Skip the parking hassle. We'll get you to the beach, the Village, or anywhere on the Key!</p>
+                <a href="tel:9416008380" class="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-3xl font-bold px-10 py-5 rounded-xl hover:from-cyan-300 hover:to-blue-400 transition-all shadow-lg shadow-cyan-500/50">
                     941-600-8380
                 </a>
-                <p class="text-gray-600 mt-3">Free Transportation • Tips Appreciated!</p>
+                <p class="text-cyan-300 mt-4 text-lg">Free Transportation • Tips Appreciated!</p>
             </div>
 
         </div>
