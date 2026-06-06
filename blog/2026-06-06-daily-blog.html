@@ -5,604 +5,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siesta Key Daily Guide - June 6, 2026 | Siesta Free Ride</title>
     <meta name="description" content="Your daily guide to Siesta Key. Today's weather, beach conditions, and tips for getting around Siesta Key.">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
         body { 
-            font-family: 'Poppins', 'Segoe UI', sans-serif;
-            line-height: 1.7;
-            color: #1a1a2e;
-            background: linear-gradient(180deg, #FFDAB9 0%, #FFE4C9 15%, #B8E0E6 40%, #87CEEB 70%, #20B2AA 100%);
-            background-attachment: fixed;
-            min-height: 100vh;
-        }
-
-        /* Sticky Header */
-        .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(184, 221, 224, 0.95);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            padding: 12px 0;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo-link {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .logo-link img {
-            height: 80px;
-            width: auto;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: #0077b6;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: #00b4d8;
-        }
-
-        .nav-cta {
-            background: #0077b6;
-            color: white !important;
-            padding: 10px 20px;
-            border-radius: 8px;
-        }
-
-        .nav-cta:hover {
-            background: #005f8a;
-        }
-
-        /* Hero Section - Neon Style */
-        .hero-section {
+            background: rgba(184,221,224,0.55);
+            color: #1f2937; 
             position: relative;
-            padding: 60px 20px 80px;
-            text-align: center;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(184,221,224,0.55);
+            z-index: -1;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);
             overflow: hidden;
         }
+        
+        .hero-image {
+            height: 100%;
+            width: auto;
+            max-width: none;
+            display: block;
+            object-fit: contain;
+        }
 
-        .hero-section::before {
-            content: '';
+        .hero-overlay {
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 30% 70%, rgba(255, 107, 107, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 70% 30%, rgba(78, 205, 196, 0.15) 0%, transparent 50%);
-            animation: float 15s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            50% { transform: translate(-2%, 2%) rotate(2deg); }
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #ff6b6b, #feca57);
-            color: white;
-            padding: 8px 24px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(255, 107, 107, 0.4);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
         }
 
         .hero-title {
             font-family: 'Pacifico', cursive;
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
-            color: #0077b6;
-            text-shadow: 
-                3px 3px 0 #fff,
-                -1px -1px 0 #fff,
-                1px -1px 0 #fff,
-                -1px 1px 0 #fff,
-                0 0 30px rgba(0, 180, 216, 0.5);
-            margin-bottom: 16px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: #2d3436;
-            font-weight: 500;
-            opacity: 0.9;
-        }
-
-        .hero-date {
-            font-size: 1.1rem;
-            color: #636e72;
-            margin-top: 8px;
-        }
-
-        /* Main Content */
-        .main-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px 60px;
-        }
-
-        /* Weather Card - Retro Glass */
-        .weather-card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 24px;
-            padding: 32px;
-            margin-bottom: 40px;
-            box-shadow: 
-                0 20px 60px rgba(0, 119, 182, 0.15),
-                inset 0 1px 0 rgba(255,255,255,0.8);
-            border: 1px solid rgba(255,255,255,0.5);
-        }
-
-        .weather-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 24px;
-        }
-
-        .weather-header h2 {
-            font-size: 1.5rem;
-            color: #0077b6;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .weather-icon {
-            font-size: 2rem;
-        }
-
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 16px;
-        }
-
-        .weather-item {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 20px;
-            border-radius: 16px;
-            text-align: center;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .weather-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .weather-label {
-            font-size: 0.85rem;
-            color: #636e72;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: #00b4d8;
+            text-shadow:
+                -2px -2px 0 #000,
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000;
             margin-bottom: 8px;
         }
 
-        .weather-value {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0077b6;
+        .hero-subtitle {
+            color: white;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
 
-        .weather-value.temp {
-            background: linear-gradient(135deg, #ff6b6b, #feca57);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Content Sections - Neon Accents */
-        .content-section {
-            background: rgba(255, 255, 255, 0.8);
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
-            border-radius: 20px;
-            padding: 32px;
-            margin-bottom: 32px;
-            border: 1px solid rgba(255,255,255,0.6);
-            box-shadow: 0 10px 40px rgba(0, 119, 182, 0.1);
-            position: relative;
-            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
         }
 
-        .content-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, #00b4d8, #0077b6, #ff6b6b);
-            border-radius: 4px 0 0 4px;
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
         }
 
-        .content-section h2 {
-            font-size: 1.6rem;
-            color: #0077b6;
-            margin-bottom: 20px;
-            padding-bottom: 12px;
-            border-bottom: 2px dashed rgba(0, 180, 216, 0.3);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .content-section h2 .emoji {
-            font-size: 1.4rem;
-        }
-
-        .content-section p {
-            color: #2d3436;
-            margin-bottom: 16px;
-            font-size: 1.05rem;
-        }
-
-        .content-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .content-section li {
-            padding: 12px 0 12px 32px;
-            position: relative;
-            border-bottom: 1px solid rgba(0, 180, 216, 0.1);
-        }
-
-        .content-section li:last-child {
-            border-bottom: none;
-        }
-
-        .content-section li::before {
-            content: '🌴';
-            position: absolute;
-            left: 0;
-            top: 12px;
-        }
-
-        .highlight {
-            background: linear-gradient(135deg, rgba(255, 214, 165, 0.6), rgba(255, 236, 179, 0.6));
-            padding: 3px 10px;
-            border-radius: 6px;
-            font-weight: 600;
-        }
-
-        /* CTA Box - Retro Neon */
-        .cta-box {
-            background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #48cae4 100%);
-            border-radius: 24px;
-            padding: 40px;
-            text-align: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 
-                0 20px 60px rgba(0, 119, 182, 0.4),
-                0 0 0 2px rgba(255,255,255,0.2) inset;
-        }
-
-        .cta-box::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 0.5; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
-        }
-
-        .cta-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 16px;
-            position: relative;
-            z-index: 1;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-
-        .cta-box p {
-            font-size: 1.1rem;
-            margin-bottom: 24px;
-            opacity: 0.95;
-            position: relative;
-            z-index: 1;
-        }
-
-        .cta-phone {
-            display: inline-block;
-            background: white;
-            color: #0077b6;
-            font-size: 2rem;
-            font-weight: 700;
-            padding: 16px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .cta-phone:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-
-        .cta-sub {
-            margin-top: 16px;
-            font-size: 1rem;
-            opacity: 0.85;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Footer */
-        .site-footer {
-            background: rgba(26, 26, 46, 0.95);
-            color: #b2bec3;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-
-        .footer-nav a {
+        .cursive-text {
+            font-family: 'Pacifico', cursive;
             color: #00b4d8;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
         }
 
-        .footer-nav a:hover {
-            color: #48cae4;
-        }
-
-        .footer-copy {
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-
-        /* Sun/Moon Info Bar */
-        .astro-bar {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px dashed rgba(0, 180, 216, 0.3);
-        }
-
-        .astro-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1rem;
-            color: #636e72;
-        }
-
-        .astro-item .emoji {
-            font-size: 1.3rem;
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: #0077b6;
+        .phone-number {
+            color: #12a5b0;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
+            font-weight: bold;
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
+            .hero {
+                height: auto;
+                min-height: 50vh;
             }
 
-            .hero-title {
-                font-size: 2.5rem;
+            .hero-image {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
             }
 
-            .weather-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .cta-phone {
-                font-size: 1.5rem;
-                padding: 14px 28px;
-            }
-
-            .content-section {
-                padding: 24px;
-            }
-
-            .logo-link img {
-                height: 60px;
+            header img {
+                height: 10rem !important;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Sticky Header -->
-    <header class="site-header">
-        <div class="header-content">
-            <a href="/" class="logo-link">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" loading="eager">
-            </a>
-            <nav class="nav-links">
-                <a href="/">Home</a>
-                <a href="/siesta-key-guide.html">Guide</a>
-                <a href="/beaches.html">Beaches</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/reviews.html">Reviews</a>
-                <a href="/contact.html" class="nav-cta">Book Now</a>
+    <!-- Header - Same as main site -->
+    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="/"><img src="/assets/logo.png" alt="Siesta Free Ride" class="h-52 md:h-60" loading="eager" style="width: auto;"></a>
+            </div>
+            <nav class="hidden md:flex gap-6 text-lg font-semibold">
+                <a href="/" class="hover:text-brand font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
+                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
+                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
+                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
+                <a href="/blog.html" class="text-brand font-medium">Blog</a>
+                <a href="/reviews.html" class="hover:text-brand font-medium">Reviews</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
-            <button class="mobile-menu-btn" onclick="alert('Menu')">☰</button>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
+                <a href="/beaches.html" class="block font-medium">Beaches</a>
+                <a href="/events.html" class="block font-medium">Events</a>
+                <a href="/faq.html" class="block font-medium">FAQ</a>
+                <a href="/blog.html" class="block text-brand font-medium">Blog</a>
+                <a href="/reviews.html" class="block font-medium">Reviews</a>
+                <a href="/contact.html" class="block">Book Now</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <span class="hero-badge">☀️ Daily Beach Report</span>
-        <h1 class="hero-title">Hot Saturday Beach Day!</h1>
-        <p class="hero-subtitle">Your Gateway to Gulf Coast Paradise</p>
-        <p class="hero-date">Saturday, June 6, 2026</p>
+    <!-- Hero Section with Beach Photo -->
+    <section class="hero">
+        <img id="hero-image" class="hero-image" src="/assets/Siesta Web Photos/siesta-beach1.jpg" alt="Siesta Key Beach">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Hot Saturday Beach Day!</h1>
+            <p class="hero-subtitle">Saturday, June 6, 2026 • Your Daily Siesta Key Guide</p>
+        </div>
     </section>
 
     <!-- Main Content -->
-    <main class="main-content">
-        <!-- Weather Card -->
-        <div class="weather-card">
-            <div class="weather-header">
-                <span class="weather-icon">🌤️</span>
-                <h2>Today's Beach Weather</h2>
+    <section class="w-full px-4 py-12" style="background:rgba(184,221,224,0.45);">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Back to Blog Link -->
+            <div class="mb-6">
+                <a href="/blog.html" class="text-brand font-medium hover:underline">&larr; Back to All Posts</a>
             </div>
-            <div class="weather-grid">
-                <div class="weather-item">
-                    <div class="weather-label">Temperature</div>
-                    <div class="weather-value temp">95°F</div>
+
+            <!-- Weather Card -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold text-center mb-6">🌤️ Today's Beach Weather</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Temperature</p>
+                        <p class="text-3xl font-bold text-brand">95°F</p>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Water Temp</p>
+                        <p class="text-3xl font-bold text-brand">84°F</p>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Conditions</p>
+                        <p class="text-3xl font-bold">☀️</p>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Wind</p>
+                        <p class="text-3xl font-bold text-brand">10 mph</p>
+                    </div>
                 </div>
-                <div class="weather-item">
-                    <div class="weather-label">Water Temp</div>
-                    <div class="weather-value">84°F</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Conditions</div>
-                    <div class="weather-value">☀️</div>
-                </div>
-                <div class="weather-item">
-                    <div class="weather-label">Wind</div>
-                    <div class="weather-value">10 mph</div>
+                <div class="flex flex-wrap justify-center gap-6 mt-6 text-gray-600">
+                    <span>🌅 Sunrise: 6:35 AM</span>
+                    <span>🌇 Sunset: 8:22 PM</span>
+                    <span>🌙 Moon: 74% Waning Gibbous</span>
                 </div>
             </div>
-            <div class="astro-bar">
-                <div class="astro-item">
-                    <span class="emoji">🌅</span>
-                    <span>Sunrise: 6:35 AM</span>
+
+            <!-- Beach Conditions -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4">🏖️ Beach Conditions</h2>
+                <p class="text-gray-700 mb-4">
+                    It's Saturday on Siesta Key and the weather is absolutely spectacular! Clear, sunny skies all day with temperatures reaching a sizzling <strong>95°F</strong> this afternoon. With humidity around 60%, it'll feel like a true Florida summer day.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Gulf water temperatures are a perfect <strong>84°F</strong>—ideal for swimming, snorkeling, or just floating the day away. The east winds at 10 mph provide a nice breeze to keep things comfortable on that famous #1 rated white quartz sand!
+                </p>
+                <div class="glass-card p-4 border-l-4 border-orange-400">
+                    <p class="font-semibold text-orange-600">⚠️ UV Index: 9-10 (Very High)</p>
+                    <p class="text-gray-600 text-sm">Sunscreen is absolutely essential today. Apply SPF 50+ and reapply every 2 hours!</p>
                 </div>
-                <div class="astro-item">
-                    <span class="emoji">🌇</span>
-                    <span>Sunset: 8:22 PM</span>
+            </div>
+
+            <!-- Getting Around -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4">🚐 Getting Around Siesta Key</h2>
+                <p class="text-gray-700 mb-4">
+                    Planning your Saturday adventure? Understanding <strong>how to get around in Siesta Key</strong> efficiently can make or break your day. With weekend crowds expected, smart transportation choices are key!
+                </p>
+                <p class="text-gray-700 mb-6">
+                    For <strong>free rides on Siesta Key</strong>, Siesta Free Ride has you covered! We offer complimentary transportation around the island—from beach runs to restaurant hops to bar crawls in the Village.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🅿️ Beach Parking</h3>
+                        <p class="text-gray-600 text-sm">The main lot fills up by 10am on Saturdays—arrive early or use our free ride service!</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🍹 Village Nightlife</h3>
+                        <p class="text-gray-600 text-sm">Skip the parking drama and let us drive you to SKOB, Daiquiri Deck, or The Hub</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🍻 Bar Hopping</h3>
+                        <p class="text-gray-600 text-sm">Perfect weather for a Saturday night crawl—we'll be your designated driver!</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">✈️ Airport Runs</h3>
+                        <p class="text-gray-600 text-sm">Flying in or out? We do SRQ airport transfers by appointment</p>
+                    </div>
                 </div>
-                <div class="astro-item">
-                    <span class="emoji">🌙</span>
-                    <span>Moon: 74% Waning Gibbous</span>
-                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4">💡 Tips for Today</h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🧴</span>
+                        <div><strong>Sunscreen is Critical:</strong> UV index hits 9-10—apply SPF 50+ and reapply every 2 hours</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">💧</span>
+                        <div><strong>Stay Hydrated:</strong> With 95°F heat, drink water constantly throughout the day</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🏖️</span>
+                        <div><strong>Arrive Early:</strong> Beach parking fills fast on Saturdays—or call us for a free ride!</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🌅</span>
+                        <div><strong>Sunset Plans:</strong> Sunset at 8:22 PM—perfect for dinner at a waterfront restaurant</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🍹</span>
+                        <div><strong>Saturday Night:</strong> The Village is hopping tonight—let us be your DD!</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="glass-panel p-8 text-center" style="border: 2px solid rgba(0,119,182,0.3);">
+                <h2 class="text-2xl font-bold mb-2">🌴 Need a Ride?</h2>
+                <p class="text-gray-700 mb-4">Skip the parking hassle. We'll get you to the beach, the Village, or anywhere on the Key!</p>
+                <a href="tel:9416008380" class="inline-block bg-brand text-white text-2xl font-bold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors">
+                    941-600-8380
+                </a>
+                <p class="text-gray-600 mt-3">Free Transportation • Tips Appreciated!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer - Same as main site -->
+    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Transportation in Siesta Key, FL.</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
+                    <li><a href="/reviews.html" class="hover:text-white">Reviews</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- Beach Conditions -->
-        <section class="content-section">
-            <h2><span class="emoji">🏖️</span> Beach Conditions</h2>
-            <p>
-                It's Saturday on Siesta Key and the weather is absolutely spectacular! Clear, sunny skies all day with temperatures reaching a sizzling 95°F this afternoon. With humidity around 60%, it'll feel like a true Florida summer day.
-            </p>
-            <p>
-                Gulf water temperatures are a perfect <strong>84°F</strong>—ideal for swimming, snorkeling, or just floating the day away. The east winds at 10 mph provide a nice breeze to keep things comfortable on that famous #1 rated white quartz sand!
-            </p>
-            <p>
-                <strong>UV Index:</strong> 9-10 (Very High) — Sunscreen is absolutely essential today. Apply SPF 50+ and reapply every 2 hours!
-            </p>
-        </section>
-
-        <!-- Getting Around -->
-        <section class="content-section">
-            <h2><span class="emoji">🚐</span> Getting Around Siesta Key</h2>
-            <p>
-                Planning your Saturday adventure? Understanding <span class="highlight">how to get around in Siesta Key</span> efficiently can make or break your day. With weekend crowds expected, smart transportation choices are key!
-            </p>
-            <p>
-                For <span class="highlight">free rides on Siesta Key</span>, Siesta Free Ride has you covered! We offer complimentary transportation around the island—from beach runs to restaurant hops to bar crawls in the Village.
-            </p>
-            <ul>
-                <li><strong>Beach Parking:</strong> The main lot fills up by 10am on Saturdays—arrive early or use our free ride service!</li>
-                <li><strong>Village Nightlife:</strong> Skip the parking drama and let us drive you to SKOB, Daiquiri Deck, or The Hub</li>
-                <li><strong>Bar Hopping:</strong> Perfect weather for a Saturday night crawl—we'll be your designated driver!</li>
-                <li><strong>Airport Runs:</strong> Flying in or out? We do SRQ airport transfers by appointment</li>
-                <li><strong>Off-Key Errands:</strong> Need groceries or supplies? We service Gulf Gate stores too</li>
-            </ul>
-        </section>
-
-        <!-- Tips Section -->
-        <section class="content-section">
-            <h2><span class="emoji">💡</span> Tips for Today</h2>
-            <ul>
-                <li>🧴 <strong>Sunscreen is Critical:</strong> UV index hits 9-10—apply SPF 50+ and reapply every 2 hours</li>
-                <li>💧 <strong>Stay Hydrated:</strong> With 95°F heat, drink water constantly throughout the day</li>
-                <li>🏖️ <strong>Arrive Early:</strong> Beach parking fills fast on Saturdays—or call us for a free ride!</li>
-                <li>🌅 <strong>Sunset Plans:</strong> Sunset at 8:22 PM—perfect for dinner at a waterfront restaurant</li>
-                <li>🍹 <strong>Saturday Night:</strong> The Village is hopping tonight—let us be your DD!</li>
-            </ul>
-        </section>
-
-        <!-- CTA Box -->
-        <div class="cta-box">
-            <h3>🌴 Need a Ride?</h3>
-            <p>Skip the parking hassle. We'll get you to the beach, the Village, or anywhere on the Key!</p>
-            <a href="tel:9416008380" class="cta-phone">941-600-8380</a>
-            <p class="cta-sub">Free Transportation • Tips Appreciated!</p>
+        <!-- Affiliate Sponsors -->
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
+          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
+              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
+              Drive Again Secrets - License Reinstatement Guides
+            </a>
+            <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
+              <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
+              Cash For Keys Properties - We Buy Houses Fast
+            </a>
+          </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <nav class="footer-nav">
-            <a href="/">Home</a>
-            <a href="/blog.html">All Posts</a>
-            <a href="/service-area.html">Service Area</a>
-            <a href="/contact.html">Book a Ride</a>
-            <a href="/reviews.html">Reviews</a>
-        </nav>
-        <p class="footer-copy">© 2026 Siesta Free Ride. All rights reserved.</p>
+        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Daily photo rotation - same as main site
+        const heroPhotos = [
+            '/assets/Siesta Web Photos/siesta-beach1.jpg',
+            '/assets/Siesta Web Photos/siesta-beach2.jpg',
+            '/assets/Siesta Web Photos/siesta-beach3.jpg',
+            '/assets/Siesta Web Photos/siesta-beach4.jpg',
+            '/assets/Siesta Web Photos/siesta-beach5.jpg',
+            '/assets/Siesta Web Photos/siesta-beach6.jpg',
+            '/assets/Siesta Web Photos/siesta-beach7.jpg',
+            '/assets/Siesta Web Photos/siesta-beach8.jpg',
+            '/assets/Siesta Web Photos/siesta-beach9.jpg',
+            '/assets/Siesta Web Photos/siesta-beach10.jpg'
+        ];
+
+        const today = new Date();
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (24 * 60 * 60 * 1000));
+        const photoIndex = dayOfYear % heroPhotos.length;
+        
+        const heroImg = document.getElementById('hero-image');
+        if (heroImg) {
+            heroImg.src = heroPhotos[photoIndex];
+        }
+    </script>
 </body>
 </html>
