@@ -102,6 +102,60 @@
             box-shadow: 0 12px 32px rgba(0,0,0,0.12);
         }
 
+        /* Scrolling reviews ticker */
+        .reviews-ticker {
+            overflow: hidden;
+            background: rgba(255,255,255,0.9);
+            padding: 20px 0;
+            border-top: 1px solid rgba(0,119,182,0.2);
+            border-bottom: 1px solid rgba(0,119,182,0.2);
+        }
+
+        .reviews-track {
+            display: flex;
+            gap: 40px;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+
+        .reviews-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .review-item {
+            flex-shrink: 0;
+            background: rgba(255,255,255,0.95);
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            max-width: 350px;
+            min-width: 300px;
+        }
+
+        .review-stars {
+            color: #FBBC04;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .review-text {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .review-author {
+            color: #666;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
         .review-btn {
             display: inline-flex;
             align-items: center;
@@ -195,6 +249,68 @@
                 <img src="/assets/Venmo.jpeg" alt="Tip us on Venmo @Rooster59" class="mx-auto rounded-xl shadow-lg" style="max-width: 300px; width: 100%;" loading="lazy">
             </a>
             <p class="mt-3 text-sm text-gray-500">Venmo <strong>@Rooster59</strong></p>
+        </div>
+    </section>
+
+    <!-- Scrolling 5-Star Reviews -->
+    <section class="reviews-ticker">
+        <div class="reviews-track">
+            <!-- Review 1 -->
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Best free ride service on the island! Super friendly and always on time. Made our vacation so much easier!"</p>
+                <p class="review-author">— Sarah M.</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Called for a ride to the airport at 5am and they were there right on time. Amazing service, will definitely use again!"</p>
+                <p class="review-author">— Mike T.</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"So convenient! Picked us up from the beach and took us to dinner in the village. Great local tips too!"</p>
+                <p class="review-author">— Jennifer K.</p>
+            </div>
+            <!-- Review 4 -->
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Used them every day of our trip. Can't beat free rides with awesome drivers. Tipped well because they earned it!"</p>
+                <p class="review-author">— David R.</p>
+            </div>
+            <!-- Review 5 -->
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Perfect for bar hopping in the village! No worrying about parking or driving. Highly recommend!"</p>
+                <p class="review-author">— Amanda L.</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Best free ride service on the island! Super friendly and always on time. Made our vacation so much easier!"</p>
+                <p class="review-author">— Sarah M.</p>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Called for a ride to the airport at 5am and they were there right on time. Amazing service, will definitely use again!"</p>
+                <p class="review-author">— Mike T.</p>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"So convenient! Picked us up from the beach and took us to dinner in the village. Great local tips too!"</p>
+                <p class="review-author">— Jennifer K.</p>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Used them every day of our trip. Can't beat free rides with awesome drivers. Tipped well because they earned it!"</p>
+                <p class="review-author">— David R.</p>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Perfect for bar hopping in the village! No worrying about parking or driving. Highly recommend!"</p>
+                <p class="review-author">— Amanda L.</p>
+            </div>
         </div>
     </section>
 
