@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Service Area | Siesta Free Ride - Siesta Key Transportation</title>
+    <meta name="description" content="Siesta Free Ride service area map. Free rides on Siesta Key, SRQ airport transfers, fishing charter drop-offs, Casey Key, Gulf Gate & Sarasota. Tips only!"/>
+    <link rel="canonical" href="https://siestafreeride.com/service-area.html" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: '#0077b6', accent: '#00b4d8' } } } }
+    </script>
+    <style>
+        html, body { margin: 0; padding: 0; }
+        body { background-image: url('/assets/background-photo.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; color: #1f2937; position: relative; }
+        body::before { content: ""; position: fixed; inset: 0; background: rgba(184,221,224,0.25); z-index: -1; }
+        .glass-panel { background: rgba(184,221,224,0.65); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.06); border: 1px solid rgba(255,255,255,0.3); }
+        .glass-card { background: rgba(184,221,224,0.55); border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.2s; }
+        .glass-card:hover { transform: translateY(-2px); }
+        .location-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0,119,182,0.15); color: #0077b6; padding: 0.5rem 1rem; border-radius: 999px; font-weight: 600; margin: 0.25rem; }
+    </style>
+</head>
+<body>
+    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="/"><img src="/assets/logo.png" alt="Siesta Free Ride" class="h-60" loading="eager" style="width: auto;"></a>
+            </div>
+            <nav class="hidden md:flex gap-6 text-lg font-semibold">
+                <a href="/" class="hover:text-brand font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
+                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
+                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
+                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
+                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
+                <a href="/service-area.html" class="text-brand font-medium">Service Area</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
+                <a href="/beaches.html" class="block font-medium">Beaches</a>
+                <a href="/events.html" class="block font-medium">Events</a>
+                <a href="/faq.html" class="block font-medium">FAQ</a>
+                <a href="/blog.html" class="block font-medium">Blog</a>
+                <a href="/service-area.html" class="block text-brand font-medium">Service Area</a>
+                <a href="/contact.html" class="block font-medium">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <div class="glass-panel p-8 md:p-10">
+            <h1 class="text-4xl font-bold text-center mb-4">Our Service Area</h1>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Siesta Free Ride provides free transportation across Siesta Key and surrounding areas. From beach runs to airport transfers—we've got you covered. Tips only!</p>
+
+            <!-- Map Section -->
+            <div class="mb-10">
+                <div class="rounded-xl overflow-hidden shadow-lg" style="height: 450px;">
+                    <iframe 
+                        src="https://www.google.com/maps/d/embed?mid=1_SiestaFreeRide_ServiceArea&z=12&ll=27.2669,-82.5200" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-2">📍 Interactive map showing our full service coverage area</p>
+            </div>
+
+            <!-- Primary Service Area -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 text-brand">🏝️ Primary Service Area: Siesta Key</h2>
+                <div class="glass-card p-6">
+                    <p class="text-gray-700 mb-4">Our core service area covers all of Siesta Key—from Turtle Beach on the south end to Siesta Key Village on the north. This includes:</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="location-badge">🏖️ Siesta Beach</span>
+                        <span class="location-badge">🐢 Turtle Beach</span>
+                        <span class="location-badge">🏘️ Siesta Key Village</span>
+                        <span class="location-badge">🌴 Crescent Beach</span>
+                        <span class="location-badge">🏠 Mid-Key Residential</span>
+                        <span class="location-badge">🌅 Point of Rocks</span>
+                    </div>
+                    <p class="text-gray-700"><strong>Within Siesta Key:</strong> All rides are FREE (tips appreciated!). Whether you need a beach drop-off, restaurant run, or just getting back to your rental—we're here.</p>
+                </div>
+            </div>
+
+            <!-- Extended Service Area -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 text-brand">🚗 Extended Service Area</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="glass-card p-6">
+                        <h3 class="font-bold text-xl mb-3">✈️ SRQ Airport Transfers</h3>
+                        <p class="text-gray-700 mb-3">Need a ride to or from <strong>Sarasota-Bradenton International Airport (SRQ)</strong>? We offer convenient airport drop-offs and pickups.</p>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• ~25 minutes from Siesta Key</li>
+                            <li>• Early morning & late night available</li>
+                            <li>• Luggage friendly</li>
+                            <li>• Call ahead to schedule: <a href="tel:941-600-8380" class="text-brand font-semibold">941-600-8380</a></li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-6">
+                        <h3 class="font-bold text-xl mb-3">🎣 Fishing Charter Drop-Offs</h3>
+                        <p class="text-gray-700 mb-3">Heading out for a fishing charter? We'll get you to the marina on time—no need to worry about parking or logistics.</p>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Marina Jacks</li>
+                            <li>• CB's Saltwater Outfitters</li>
+                            <li>• Flying Fish Fleet</li>
+                            <li>• Sarasota Bay fishing charters</li>
+                            <li>• Early AM pickup available</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-6">
+                        <h3 class="font-bold text-xl mb-3">🏝️ Casey Key</h3>
+                        <p class="text-gray-700 mb-3">Our service extends south to beautiful Casey Key—perfect for beach hopping or visiting friends staying nearby.</p>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Nokomis Beach access</li>
+                            <li>• Casey Key Road</li>
+                            <li>• Blackburn Point</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-6">
+                        <h3 class="font-bold text-xl mb-3">🛒 Gulf Gate & Mainland</h3>
+                        <p class="text-gray-700 mb-3">Need groceries, pharmacy runs, or mainland errands? We service the Gulf Gate area and key Sarasota destinations.</p>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Publix (Gulf Gate & Stickney Point)</li>
+                            <li>• CVS / Walgreens</li>
+                            <li>• Gulf Gate restaurants</li>
+                            <li>• Sarasota Memorial Hospital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Destinations -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 text-brand">📍 Popular Destinations We Service</h2>
+                <div class="glass-card p-6">
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Beaches</h4>
+                            <ul class="text-gray-700 text-sm space-y-1">
+                                <li>• Siesta Beach (Main)</li>
+                                <li>• Siesta Beach Access Points</li>
+                                <li>• Crescent Beach</li>
+                                <li>• Point of Rocks</li>
+                                <li>• Turtle Beach</li>
+                                <li>• Nokomis Beach</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Dining & Nightlife</h4>
+                            <ul class="text-gray-700 text-sm space-y-1">
+                                <li>• Siesta Key Oyster Bar (SKOB)</li>
+                                <li>• Daiquiri Deck</li>
+                                <li>• The Hub Baja Grill</li>
+                                <li>• Blasé Café</li>
+                                <li>• Beach Club</li>
+                                <li>• Captain Curt's</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Activities & Services</h4>
+                            <ul class="text-gray-700 text-sm space-y-1">
+                                <li>• Siesta Key Village shops</li>
+                                <li>• Kayak & paddleboard rentals</li>
+                                <li>• Fishing charter marinas</li>
+                                <li>• Grocery stores</li>
+                                <li>• SRQ Airport</li>
+                                <li>• Medical facilities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 text-brand">💡 How It Works</h2>
+                <div class="glass-card p-6">
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-4xl mb-2">📱</div>
+                            <h4 class="font-bold mb-1">1. Call or Text</h4>
+                            <p class="text-gray-700 text-sm">Reach us at <a href="tel:941-600-8380" class="text-brand font-semibold">941-600-8380</a> to request a ride</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl mb-2">🚗</div>
+                            <h4 class="font-bold mb-1">2. We Pick You Up</h4>
+                            <p class="text-gray-700 text-sm">We'll come to your location anywhere in our service area</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl mb-2">🎉</div>
+                            <h4 class="font-bold mb-1">3. Enjoy the Ride</h4>
+                            <p class="text-gray-700 text-sm">Tips appreciated but never required. That's it!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center glass-card p-8" style="background: linear-gradient(135deg, rgba(0,119,182,0.2) 0%, rgba(0,180,216,0.2) 100%);">
+                <h3 class="text-2xl font-bold mb-3">Ready for a Ride?</h3>
+                <p class="text-gray-700 mb-4">Call or text us anytime. We're here to get you where you need to go!</p>
+                <a href="tel:941-600-8380" class="inline-block bg-brand text-white text-xl font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-accent transition">📞 941-600-8380</a>
+                <p class="text-sm text-gray-500 mt-3">Open daily 10am - 11pm | Later hours available by request</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="backdrop-blur-md py-10 mt-10" style="background:rgba(30,41,59,0.85);">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-gray-200">
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Free transportation on Siesta Key, FL.</p>
+                <p class="mt-2">Tips only—never required!</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p><a href="tel:941-600-8380" class="hover:text-accent">941-600-8380</a></p>
+                <p>Call or Text Anytime</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/siesta-key-guide.html" class="hover:text-white">Guide</a></li>
+                    <li><a href="/beaches.html" class="hover:text-white">Beaches</a></li>
+                    <li><a href="/service-area.html" class="hover:text-white">Service Area</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
+            <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners</p>
+            <div class="flex flex-wrap justify-center gap-6 mb-6">
+                <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1rem;font-weight:700;text-decoration:none;">
+                    Drive Again Secrets — License Reinstatement Guides
+                </a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center text-gray-400">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
