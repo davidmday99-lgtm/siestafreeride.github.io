@@ -46,7 +46,10 @@
       ],
       "serviceType": ["Free Ride Service", "Beach Shuttle", "Airport Transfer", "Island Transportation"],
       "priceRange": "Tips Only",
-      "openingHours": "Mo-Su 10:00-23:00",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "01:00", "validFrom": "2026-10-30", "validThrough": "2027-04-15"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "01:00", "validFrom": "2026-04-16", "validThrough": "2026-10-29"}
+      ],
       "sameAs": [],
       "image": "https://siestafreeride.com/assets/logo.png"
     }
@@ -347,6 +350,9 @@
             <div>
                 <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
                 <p>Transportation in Siesta Key, FL.</p>
+                <p class="mt-4 text-sm"><strong class="text-cyan-400">Business Hours:</strong></p>
+                <p class="text-sm">🌴 <strong>Season</strong> (Oct 30 - Apr 15):<br>9am - 1am Daily</p>
+                <p class="text-sm mt-2">☀️ <strong>Off-Season</strong> (Apr 16 - Oct 29):<br>5pm - 1am Daily</p>
             </div>
 
             <div>
