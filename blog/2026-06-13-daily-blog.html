@@ -20,23 +20,149 @@
         }
     </script>
     <style>
-        html, body { margin: 0; padding: 0; }
-        body { background: rgba(184,221,224,0.55); color: #1f2937; position: relative; }
-        body::before { content: ""; position: fixed; inset: 0; background: rgba(184,221,224,0.55); z-index: -1; }
-        .glass-panel { background: rgba(255, 255, 255, 0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
-        .glass-card { background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 0.75rem; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-        .neon-title { font-family: 'Pacifico', cursive; color: #00d4ff; text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #0099ff, 0 0 40px #0077b6, 0 0 60px #0066cc, 0 0 80px #0055aa; animation: neon-pulse 2s ease-in-out infinite alternate; }
-        @keyframes neon-pulse { from { text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #0099ff, 0 0 40px #0077b6, 0 0 60px #0066cc; } to { text-shadow: 0 0 2px #00d4ff, 0 0 5px #00b4d8, 0 0 15px #0099ff, 0 0 25px #0077b6, 0 0 35px #0066cc; } }
-        .neon-purple { color: #bf5fff; text-shadow: 0 0 5px #bf5fff, 0 0 10px #a855f7, 0 0 20px #9333ea, 0 0 40px #7c3aed, 0 0 60px #6d28d9; }
-        .neon-red { color: #ff4d6d; text-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff3355, 0 0 20px #ef233c, 0 0 40px #d90429, 0 0 60px #c1121f; }
-        .neon-orange { color: #ff9f1c; text-shadow: 0 0 5px #ff9f1c, 0 0 10px #ff8c00, 0 0 20px #f77f00, 0 0 40px #e85d04, 0 0 60px #dc2f02; }
-        .neon-blue { color: #00d4ff; text-shadow: 0 0 5px #00d4ff, 0 0 10px #00b4d8, 0 0 20px #0099ff, 0 0 40px #0077b6, 0 0 60px #0066cc; }
-        .neon-box { background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(20,20,40,0.9) 100%); border: 2px solid #00b4d8; box-shadow: 0 0 10px #00b4d8, 0 0 20px rgba(0,180,216,0.5), inset 0 0 30px rgba(0,180,216,0.1); border-radius: 1rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #00b4d8, 0 0 20px #00b4d8, 0 0 30px #0077b6; }
-        @media (max-width: 768px) { header img { height: 10rem !important; } .neon-title { font-size: 2rem; } }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            background: rgba(184,221,224,0.55);
+            color: #1f2937; 
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(184,221,224,0.55);
+            z-index: -1;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        /* NEON TEXT EFFECTS - Blue, Purple, Red, Orange */
+        .neon-title {
+            font-family: 'Pacifico', cursive;
+            color: #00d4ff;
+            text-shadow:
+                0 0 5px #00d4ff,
+                0 0 10px #00d4ff,
+                0 0 20px #0099ff,
+                0 0 40px #0077b6,
+                0 0 60px #0066cc,
+                0 0 80px #0055aa;
+            animation: neon-pulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon-pulse {
+            from {
+                text-shadow:
+                    0 0 5px #00d4ff,
+                    0 0 10px #00d4ff,
+                    0 0 20px #0099ff,
+                    0 0 40px #0077b6,
+                    0 0 60px #0066cc;
+            }
+            to {
+                text-shadow:
+                    0 0 2px #00d4ff,
+                    0 0 5px #00b4d8,
+                    0 0 15px #0099ff,
+                    0 0 25px #0077b6,
+                    0 0 35px #0066cc;
+            }
+        }
+
+        .neon-purple {
+            color: #bf5fff;
+            text-shadow:
+                0 0 5px #bf5fff,
+                0 0 10px #a855f7,
+                0 0 20px #9333ea,
+                0 0 40px #7c3aed,
+                0 0 60px #6d28d9;
+        }
+
+        .neon-red {
+            color: #ff4d6d;
+            text-shadow:
+                0 0 5px #ff4d6d,
+                0 0 10px #ff3355,
+                0 0 20px #ef233c,
+                0 0 40px #d90429,
+                0 0 60px #c1121f;
+        }
+
+        .neon-orange {
+            color: #ff9f1c;
+            text-shadow:
+                0 0 5px #ff9f1c,
+                0 0 10px #ff8c00,
+                0 0 20px #f77f00,
+                0 0 40px #e85d04,
+                0 0 60px #dc2f02;
+        }
+
+        .neon-blue {
+            color: #00d4ff;
+            text-shadow:
+                0 0 5px #00d4ff,
+                0 0 10px #00b4d8,
+                0 0 20px #0099ff,
+                0 0 40px #0077b6,
+                0 0 60px #0066cc;
+        }
+
+        .neon-box {
+            background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(20,20,40,0.9) 100%);
+            border: 2px solid #00b4d8;
+            box-shadow: 
+                0 0 10px #00b4d8,
+                0 0 20px rgba(0,180,216,0.5),
+                inset 0 0 30px rgba(0,180,216,0.1);
+            border-radius: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #00b4d8,
+                0 0 20px #00b4d8,
+                0 0 30px #0077b6;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                height: 10rem !important;
+            }
+            .neon-title {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Header - Same as main site -->
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -52,7 +178,9 @@
                 <a href="/reviews.html" class="hover:text-brand font-medium">Reviews</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
-            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
         </div>
         <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
             <div class="px-4 py-3 space-y-3">
@@ -68,24 +196,29 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <section class="w-full px-4 py-12" style="background:rgba(184,221,224,0.45);">
         <div class="max-w-4xl mx-auto">
+
+            <!-- Back to Blog Link -->
             <div class="mb-6">
                 <a href="/blog.html" class="text-brand font-medium hover:underline">&larr; Back to All Posts</a>
             </div>
 
+            <!-- NEON Title Section -->
             <div class="neon-box p-10 mb-8 text-center">
                 <p class="text-cyan-300 mb-3 text-lg">Saturday, June 13, 2026</p>
-                <h1 class="neon-title text-4xl md:text-6xl mb-4">Sizzling Saturday Beach Day!</h1>
+                <h1 class="neon-title text-4xl md:text-6xl mb-4">Perfect Saturday Sunshine!</h1>
                 <p class="neon-purple text-xl">Your Daily Siesta Key Guide</p>
             </div>
 
+            <!-- Weather Card with Neon -->
             <div class="neon-box p-8 mb-8">
                 <h2 class="section-title text-center mb-6">🌤️ Today's Beach Weather</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="glass-card p-4 text-center">
                         <p class="text-gray-600 text-sm">Temperature</p>
-                        <p class="text-3xl font-bold text-brand">92°F</p>
+                        <p class="text-3xl font-bold text-brand">88°F</p>
                     </div>
                     <div class="glass-card p-4 text-center">
                         <p class="text-gray-600 text-sm">Water Temp</p>
@@ -97,100 +230,116 @@
                     </div>
                     <div class="glass-card p-4 text-center">
                         <p class="text-gray-600 text-sm">Wind</p>
-                        <p class="text-3xl font-bold text-brand">9 mph</p>
+                        <p class="text-3xl font-bold text-brand">8 mph</p>
                     </div>
                 </div>
                 <div class="flex flex-wrap justify-center gap-6 mt-6 text-cyan-300">
                     <span>🌅 Sunrise: 6:35 AM</span>
-                    <span>🌇 Sunset: 8:25 PM</span>
-                    <span>🌙 Moon: 7%</span>
+                    <span>🌇 Sunset: 8:22 PM</span>
+                    <span>🌙 Moon: 77%</span>
                 </div>
             </div>
 
+            <!-- Beach Conditions -->
             <div class="glass-panel p-8 mb-8">
                 <h2 class="text-2xl font-bold mb-4 neon-blue inline-block bg-gray-900 px-4 py-2 rounded-lg">🏖️ Beach Conditions</h2>
                 <p class="text-gray-700 mb-4 mt-4">
-                    It's Saturday and Siesta Key is ready to shine! Another scorching <strong>92°F</strong> day with brilliant sunshine. The beach will be packed with weekend visitors enjoying the world-famous white quartz sand. West winds at 9 mph provide some relief from the heat.
+                    Saturday is shaping up beautifully on Siesta Key! Brilliant sunshine and clear blue skies dominate the forecast with temperatures reaching a comfortable <strong>88°F</strong>. Unlike some of the hotter beach days, today's weather feels just right—sunny enough for serious tanning, but not scorching hot.
                 </p>
                 <p class="text-gray-700 mb-4">
-                    Gulf waters are perfect at <strong>85°F</strong>—practically bathtub warm! Excellent conditions for swimming, floating, and all water activities. Water clarity is great for snorkeling near the sandbars. The calm seas make it ideal for paddleboarding and kayaking too!
+                    The Gulf is absolutely perfect for swimming today. Water temps sit at <strong>85°F</strong>—warm and inviting without being uncomfortably warm. The breeze from the west at just 8 mph keeps things pleasant without kicking up rough waves. It's an ideal day to enjoy the world-famous white quartz sand and gentle Gulf waters.
                 </p>
-                <div class="glass-card p-4 border-l-4 border-red-400">
-                    <p class="font-semibold text-red-600">🔥 UV Index: 11 (Extreme)</p>
-                    <p class="text-gray-600 text-sm">Maximum sun protection required! SPF 50+, protective clothing, and shade during peak hours.</p>
+                <div class="glass-card p-4 border-l-4 border-yellow-400">
+                    <p class="font-semibold text-yellow-600">☀️ UV Index: 7-8 (High)</p>
+                    <p class="text-gray-600 text-sm">Sunscreen recommended! Apply SPF 30+ and reapply every 2-3 hours for extended beach time.</p>
                 </div>
             </div>
 
+            <!-- Getting Around -->
             <div class="glass-panel p-8 mb-8">
                 <h2 class="text-2xl font-bold mb-4 neon-orange inline-block bg-gray-900 px-4 py-2 rounded-lg">🚐 Getting Around Siesta Key</h2>
                 <p class="text-gray-700 mb-4 mt-4">
-                    Saturday is the busiest day on Siesta Key! <strong>Getting around Siesta Key</strong> means dealing with peak traffic, limited parking, and lots of competition for beach spots. Smart visitors plan ahead!
+                    With perfect weather bringing crowds to Siesta Key, knowing <strong>how to get around in Siesta Key</strong> is essential for a stress-free day. Whether you're just arriving or planning evening activities, transportation logistics matter.
                 </p>
                 <p class="text-gray-700 mb-6">
-                    Beat the crowds with <strong>free rides on Siesta Key</strong>! Our complimentary transportation service gets you where you need to go in air-conditioned comfort. Beach runs, lunch trips, sunset tours, bar crawls—we handle it all. Call <strong>941-600-8380</strong>!
+                    Here's the insider secret: forget the parking struggle. Siesta Free Ride offers <strong>free rides on Siesta Key</strong> that solve your transportation headaches completely. Need a <strong>free shuttle</strong> to the beach? Done. Want to explore the Siesta Village restaurants and bars? We've got you. Planning a bar crawl tonight for Saturday night shenanigans? Perfect—be our designated rider and enjoy <strong>getting around Siesta Key</strong> safely and easily.
                 </p>
+                
                 <div class="grid md:grid-cols-2 gap-4">
                     <div class="glass-card p-4">
-                        <h3 class="font-bold mb-2">🏖️ Beach Express</h3>
-                        <p class="text-gray-600 text-sm">Skip the parking chaos—direct drop-off at the beach!</p>
-                    </div>
-                    <div class="glass-card p-4">
-                        <h3 class="font-bold mb-2">🍹 Saturday Funday</h3>
-                        <p class="text-gray-600 text-sm">Bar hop the Village—we're your designated driver!</p>
+                        <h3 class="font-bold mb-2">🅿️ Beach Access</h3>
+                        <p class="text-gray-600 text-sm">Saturday crowds = packed parking. Our free shuttle gets you beach-side without the hunt!</p>
                     </div>
                     <div class="glass-card p-4">
                         <h3 class="font-bold mb-2">🍽️ Restaurant Runs</h3>
-                        <p class="text-gray-600 text-sm">Saturday dinner plans? Arrive relaxed and on time</p>
+                        <p class="text-gray-600 text-sm">From beach tacos to upscale dining—let us drive while you enjoy the island</p>
                     </div>
                     <div class="glass-card p-4">
-                        <h3 class="font-bold mb-2">🌅 Sunset Tours</h3>
-                        <p class="text-gray-600 text-sm">We know the best spots for that perfect sunset photo!</p>
+                        <h3 class="font-bold mb-2">🍸 Village Nightlife</h3>
+                        <p class="text-gray-600 text-sm">Hit up SKOB, Daiquiri Deck, The Hub, and more—no designated driver needed!</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🎉 Saturday Night Events</h3>
+                        <p class="text-gray-600 text-sm">Live music, events, parties—we'll transport your group safely all night long</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Tips Section -->
             <div class="glass-panel p-8 mb-8">
                 <h2 class="text-2xl font-bold mb-4 neon-red inline-block bg-gray-900 px-4 py-2 rounded-lg">💡 Tips for Today</h2>
                 <ul class="space-y-3 mt-4">
                     <li class="flex items-start gap-3">
-                        <span class="text-xl">⏰</span>
-                        <div><strong>Early Bird Wins:</strong> Beach parking fills by 10am—arrive early or call us!</div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl">🔥</span>
-                        <div><strong>Extreme UV:</strong> Index at 11—maximum protection is non-negotiable today</div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl">🏊</span>
-                        <div><strong>Water is Your Friend:</strong> 85°F Gulf—spend lots of time in the water!</div>
+                        <span class="text-xl">🧴</span>
+                        <div><strong>Smart Sun Protection:</strong> UV is high today—SPF 30+ minimum, reapply every 2-3 hours</div>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-xl">💧</span>
-                        <div><strong>Hydrate Heavy:</strong> Bring a cooler with lots of water and drinks</div>
+                        <div><strong>Stay Hydrated:</strong> Perfect beach weather = easy to forget water breaks. Drink consistently!</div>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="text-xl">🚐</span>
-                        <div><strong>Beat the Crowds:</strong> Free air-conditioned rides—call 941-600-8380</div>
+                        <span class="text-xl">🏖️</span>
+                        <div><strong>Peak Crowd Times:</strong> 11am-3pm is busiest. Either arrive early or call us for a free ride anytime</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🌊</span>
+                        <div><strong>Water Conditions:</strong> Calm Gulf with light wind—perfect for swimming and paddling</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🍹</span>
+                        <div><strong>Evening Plans:</strong> Saturday evening is prime time in the Village—ride with us instead of driving!</div>
                     </li>
                 </ul>
             </div>
 
+            <!-- CTA Section - Neon Style -->
             <div class="neon-box p-8 text-center">
-                <h2 class="neon-title text-3xl mb-4">🌴 Saturday Vibes!</h2>
-                <p class="text-gray-300 mb-6 text-lg">Make the most of your weekend—let us handle the transportation!</p>
+                <h2 class="neon-title text-3xl mb-4">🌴 Free Rides on Siesta Key!</h2>
+                <p class="text-gray-300 mb-6 text-lg">Perfect beach day deserves perfect transportation. Why stress about parking? We've got your ride covered.</p>
                 <a href="tel:9416008380" class="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-3xl font-bold px-10 py-5 rounded-xl hover:from-cyan-300 hover:to-blue-400 transition-all shadow-lg shadow-cyan-500/50">
                     941-600-8380
                 </a>
-                <p class="text-cyan-300 mt-4 text-lg">Free Transportation • Tips Appreciated!</p>
+                <p class="text-cyan-300 mt-4 text-lg">Complimentary Transportation • Available All Day • Tips Appreciated!</p>
             </div>
+
         </div>
     </section>
 
+    <!-- Footer - Same as main site -->
     <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div><h4 class="font-bold text-white mb-4">Siesta Free Ride</h4><p>Transportation in Siesta Key, FL.</p></div>
-            <div><h4 class="font-bold text-white mb-4">Contact</h4><p>941-600-8380</p></div>
-            <div><h4 class="font-bold text-white mb-4">Quick Links</h4>
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Free Transportation in Siesta Key, FL.</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
                 <ul class="space-y-2">
                     <li><a href="/" class="hover:text-white">Home</a></li>
                     <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
@@ -199,19 +348,29 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Affiliate Sponsors -->
         <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
-            <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
-            <div class="flex flex-wrap justify-center gap-6 mb-6">
-                <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;">
-                    <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;" loading="eager">Drive Again Secrets
-                </a>
-                <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;">
-                    <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;" loading="eager">Cash For Keys Properties
-                </a>
-            </div>
+          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
+              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
+              Drive Again Secrets - License Reinstatement Guides
+            </a>
+            <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
+              <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
+              Cash For Keys Properties - We Buy Houses Fast
+            </a>
+          </div>
         </div>
-        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">&copy; <span id="year"></span> Siesta Free Ride. All rights reserved.</div>
+
+        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        </div>
     </footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
