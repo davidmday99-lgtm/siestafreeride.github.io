@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siesta Key Daily Guide - June 20, 2026 | Siesta Free Ride</title>
+    <meta name="description" content="Saturday at Siesta Key: Sunny 89°F, Gulf temps around 84°F, and free rides all weekend long. Your daily guide to weather, beach conditions, and getting around Siesta Key.">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0077b6',
+                        accent: '#00b4d8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            background: rgba(184,221,224,0.55);
+            color: #1f2937; 
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(184,221,224,0.55);
+            z-index: -1;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .neon-title {
+            font-family: 'Pacifico', cursive;
+            color: #00d4ff;
+            text-shadow:
+                0 0 5px #00d4ff,
+                0 0 10px #00d4ff,
+                0 0 20px #0099ff,
+                0 0 40px #0077b6,
+                0 0 60px #0066cc,
+                0 0 80px #0055aa;
+            animation: neon-pulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon-pulse {
+            from {
+                text-shadow:
+                    0 0 5px #00d4ff,
+                    0 0 10px #00d4ff,
+                    0 0 20px #0099ff,
+                    0 0 40px #0077b6,
+                    0 0 60px #0066cc;
+            }
+            to {
+                text-shadow:
+                    0 0 2px #00d4ff,
+                    0 0 5px #00b4d8,
+                    0 0 15px #0099ff,
+                    0 0 25px #0077b6,
+                    0 0 35px #0066cc;
+            }
+        }
+
+        .neon-purple {
+            color: #bf5fff;
+            text-shadow:
+                0 0 5px #bf5fff,
+                0 0 10px #a855f7,
+                0 0 20px #9333ea,
+                0 0 40px #7c3aed,
+                0 0 60px #6d28d9;
+        }
+
+        .neon-red {
+            color: #ff4d6d;
+            text-shadow:
+                0 0 5px #ff4d6d,
+                0 0 10px #ff3355,
+                0 0 20px #ef233c,
+                0 0 40px #d90429,
+                0 0 60px #c1121f;
+        }
+
+        .neon-orange {
+            color: #ff9f1c;
+            text-shadow:
+                0 0 5px #ff9f1c,
+                0 0 10px #ff8c00,
+                0 0 20px #f77f00,
+                0 0 40px #e85d04,
+                0 0 60px #dc2f02;
+        }
+
+        .neon-blue {
+            color: #00d4ff;
+            text-shadow:
+                0 0 5px #00d4ff,
+                0 0 10px #00b4d8,
+                0 0 20px #0099ff,
+                0 0 40px #0077b6,
+                0 0 60px #0066cc;
+        }
+
+        .neon-box {
+            background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(20,20,40,0.9) 100%);
+            border: 2px solid #00b4d8;
+            box-shadow: 
+                0 0 10px #00b4d8,
+                0 0 20px rgba(0,180,216,0.5),
+                inset 0 0 30px rgba(0,180,216,0.1);
+            border-radius: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #00b4d8,
+                0 0 20px #00b4d8,
+                0 0 30px #0077b6;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                height: 10rem !important;
+            }
+            .neon-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - Same as main site -->
+    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background:rgba(184,221,224,0.90);">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="/"><img src="/assets/logo.png" alt="Siesta Free Ride" class="h-52 md:h-60" loading="eager" style="width: auto;"></a>
+            </div>
+            <nav class="hidden md:flex gap-6 text-lg font-semibold">
+                <a href="/" class="hover:text-brand font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
+                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
+                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
+                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
+                <a href="/blog.html" class="text-brand font-medium">Blog</a>
+                <a href="/reviews.html" class="hover:text-brand font-medium">Reviews</a>
+                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                &#9776;
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background:rgba(184,221,224,0.95);">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
+                <a href="/beaches.html" class="block font-medium">Beaches</a>
+                <a href="/events.html" class="block font-medium">Events</a>
+                <a href="/faq.html" class="block font-medium">FAQ</a>
+                <a href="/blog.html" class="block text-brand font-medium">Blog</a>
+                <a href="/reviews.html" class="block font-medium">Reviews</a>
+                <a href="/contact.html" class="block">Book a Ride</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="w-full px-4 py-12" style="background:rgba(184,221,224,0.45);">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Back to Blog Link -->
+            <div class="mb-6">
+                <a href="/blog.html" class="text-brand font-medium hover:underline">&larr; Back to All Posts</a>
+            </div>
+
+            <!-- NEON Title Section -->
+            <div class="neon-box p-10 mb-8 text-center">
+                <p class="text-cyan-300 mb-3 text-lg">Saturday, June 20, 2026</p>
+                <h1 class="neon-title text-4xl md:text-6xl mb-4">Weekend Beach Vibes!</h1>
+                <p class="neon-purple text-xl">Your Daily Siesta Key Guide</p>
+            </div>
+
+            <!-- Weather Card with Neon -->
+            <div class="neon-box p-8 mb-8">
+                <h2 class="section-title text-center mb-6">🌤️ Today's Beach Weather</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">High Temp</p>
+                        <p class="text-3xl font-bold text-brand">89°F</p>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Water Temp</p>
+                        <p class="text-3xl font-bold text-brand">84°F</p>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Conditions</p>
+                        <p class="text-3xl font-bold">☀️</p>
+                    </div>
+                    <div class="glass-card p-4 text-center">
+                        <p class="text-gray-600 text-sm">Wind</p>
+                        <p class="text-3xl font-bold text-brand">12 mph</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 mt-6 text-cyan-300">
+                    <span>🌅 Sunrise: 6:36 AM</span>
+                    <span>🌇 Sunset: 8:27 PM</span>
+                    <span>💧 Humidity: 75%</span>
+                </div>
+            </div>
+
+            <!-- Beach Conditions -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4 neon-blue inline-block bg-gray-900 px-4 py-2 rounded-lg">🏖️ Beach Conditions</h2>
+                <p class="text-gray-700 mb-4 mt-4">
+                    Saturday has arrived and Siesta Key is rolling out the welcome mat! Morning sunshine greets early risers with comfortable temperatures in the low 80s, perfect for those sunrise beach walks. By midday, expect the thermometer to climb to <strong>89°F</strong> with that signature Florida humidity hovering around 75%. The westerly winds at 12 mph will provide just enough breeze to keep things bearable.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    The Gulf is absolutely inviting today with water temperatures holding steady at <strong>84°F</strong>—that sweet spot where the water feels refreshing without any cold shock. These are ideal conditions for swimming, kayaking, paddleboarding, and snorkeling. The morning hours offer the calmest waters, perfect for families with young swimmers.
+                </p>
+                <div class="glass-card p-4 border-l-4 border-yellow-400 mb-4">
+                    <p class="font-semibold text-yellow-600">🌧️ Afternoon Heads Up</p>
+                    <p class="text-gray-600 text-sm">Keep an eye on the sky around 5-7 PM. There's about a 30% chance of those classic Florida pop-up showers. They rarely last long—usually just enough to cool things down!</p>
+                </div>
+                <div class="glass-card p-4 border-l-4 border-orange-400">
+                    <p class="font-semibold text-orange-600">☀️ Sun Alert: UV Index 12 (Extreme)</p>
+                    <p class="text-gray-600 text-sm">Today's UV is extreme! SPF 50+ is strongly recommended. Reapply every 90 minutes, especially after swimming. Seek shade during peak hours (11am-3pm) when possible.</p>
+                </div>
+            </div>
+
+            <!-- Weekend Events & Saturday Vibes -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4 neon-purple inline-block bg-gray-900 px-4 py-2 rounded-lg">🎉 Saturday on the Key</h2>
+                <p class="text-gray-700 mb-4 mt-4">
+                    Saturdays at Siesta Key have an energy all their own! The beach fills up early with families staking out prime spots near the lifeguard stations. If you're heading to the main beach, aim to arrive before 10 AM for easier parking—or better yet, skip the parking hassle entirely with our free shuttle.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    The Village comes alive all day with shops opening by 10 AM and restaurants gearing up for their busiest day. Check out the Siesta Key Farmers Market if you're an early bird (8 AM - 1 PM) for local produce, artisan goods, and fresh baked treats. As the sun starts its descent, the sunset crowd gathers along the shoreline—tonight's golden hour starts around 7:45 PM.
+                </p>
+                <p class="text-gray-700">
+                    Saturday night on the Key means live music at multiple venues. SKOB, Captain Curt's, and Daiquiri Deck all feature bands, and the Village sidewalks buzz with that perfect beach-town nightlife energy. It's the kind of night where you'll want reliable transportation to hit multiple spots!
+                </p>
+            </div>
+
+            <!-- Getting Around -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4 neon-orange inline-block bg-gray-900 px-4 py-2 rounded-lg">🚐 Free Rides on Siesta Key</h2>
+                <p class="text-gray-700 mb-4 mt-4">
+                    Saturday is our busiest day—and for good reason! When you're planning <strong>how to get around in Siesta Key</strong> on the weekend, smart visitors know that parking becomes a real challenge by mid-morning. The main beach lot fills up, side streets get packed, and nobody wants to spend their beach day circling for a spot.
+                </p>
+                <p class="text-gray-700 mb-6">
+                    That's where <strong>free rides on Siesta Key</strong> save the day. Siesta Free Ride picks you up at your rental, hotel, or anywhere on the Key and drops you right at the beach entrance. Heading to the Village for lunch? We've got you. Bar hopping Saturday night? That's what we do best. Our <strong>free shuttle service</strong> means you can focus on enjoying your vacation instead of fighting traffic and hunting for parking.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🏖️ Beach Drop-Off</h3>
+                        <p class="text-gray-600 text-sm">Skip the parking circus! We drop you steps from the sand, coolers, chairs, and all.</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🍽️ Village Hopping</h3>
+                        <p class="text-gray-600 text-sm">Sample multiple restaurants without moving your car. Lunch at one spot, ice cream at another—we connect the dots.</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🍸 Saturday Night Out</h3>
+                        <p class="text-gray-600 text-sm">Hit the live music scene safely. No designated driver drama—just call when you're ready to move.</p>
+                    </div>
+                    <div class="glass-card p-4">
+                        <h3 class="font-bold mb-2">🌅 Sunset Runs</h3>
+                        <p class="text-gray-600 text-sm">We'll get you to Point of Rocks or South Pointe for golden hour. Sunset at 8:27 PM tonight!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="glass-panel p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4 neon-red inline-block bg-gray-900 px-4 py-2 rounded-lg">💡 Saturday Survival Tips</h2>
+                <ul class="space-y-3 mt-4">
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🧴</span>
+                        <div><strong>UV 12 = Maximum Protection:</strong> This is extreme sun. SPF 50+ minimum, wide-brim hats, UV shirts if you have them. No joke today!</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">⏰</span>
+                        <div><strong>Early Bird Strategy:</strong> Beach before 10 AM gets you the best spots and cooler temps. The afternoon heat is real.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">🌧️</span>
+                        <div><strong>Afternoon Shower Watch:</strong> If clouds build around 5-6 PM, don't panic. Grab a drink under cover and wait 30 minutes—usually clears right up.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">💧</span>
+                        <div><strong>Hydration is Key:</strong> 89°F plus humidity means you're sweating more than you realize. Water, water, water. Then more water.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl">📱</span>
+                        <div><strong>Save This Number:</strong> Call 941-600-8380 for your free ride. Saturdays get busy—call 15 minutes ahead to minimize wait times!</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA Section - Neon Style -->
+            <div class="neon-box p-8 text-center">
+                <h2 class="neon-title text-3xl mb-4">🌴 Ready for Saturday Fun?</h2>
+                <p class="text-gray-300 mb-6 text-lg">Your free ride is one call away. Beach, Village, bars—we'll get you there!</p>
+                <a href="tel:9416008380" class="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-3xl font-bold px-10 py-5 rounded-xl hover:from-cyan-300 hover:to-blue-400 transition-all shadow-lg shadow-cyan-500/50">
+                    941-600-8380
+                </a>
+                <p class="text-cyan-300 mt-4 text-lg">Free Rides • No Parking Fees • Tips Appreciated!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer - Same as main site -->
+    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
+                <p>Free Transportation in Siesta Key, FL.</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact</h4>
+                <p>941-600-8380</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
+                    <li><a href="/reviews.html" class="hover:text-white">Reviews</a></li>
+                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Affiliate Sponsors -->
+        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
+          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
+              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
+              Drive Again Secrets - License Reinstatement Guides
+            </a>
+            <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
+              <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
+              Cash For Keys Properties - We Buy Houses Fast
+            </a>
+          </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
+            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
