@@ -19,6 +19,9 @@
         body { background-image: url('/assets/background-photo.jpg'); background-size: cover; background-position: center; background-attachment: fixed; color: #1f2937; }
         body::before { content: ""; position: fixed; inset: 0; background: rgba(184,221,224,0.55); z-index: -1; }
         .glass-panel { background: rgba(255,255,255,0.85); backdrop-filter: blur(10px); border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.06); border: 1px solid rgba(255,255,255,0.3); }
+        .skip-link { position:absolute; left:1rem; top:-4rem; z-index:100; background:#fff; color:#005f73; padding:0.75rem 1rem; border-radius:0.5rem; font-weight:700; box-shadow:0 4px 16px rgba(0,0,0,0.18); transition:top 0.2s ease; }
+        .skip-link:focus { top:1rem; }
+        a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid #ffb703; outline-offset:3px; border-radius:0.35rem; }
     </style>
     <script type="application/ld+json">
     {
@@ -41,6 +44,7 @@
     </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -53,13 +57,32 @@
                 <a href="/events.html" class="hover:text-brand font-medium">Events</a>
                 <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
                 <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
+                <a href="/reviews.html" class="hover:text-brand font-medium">Reviews</a>
                 <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
+            <button class="md:hidden text-2xl min-h-11 min-w-11 flex items-center justify-center" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" onclick="const menu=document.getElementById('mobile-menu'); const expanded=this.getAttribute('aria-expanded') === 'true'; menu.classList.toggle('hidden', expanded); this.setAttribute('aria-expanded', String(!expanded)); this.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');">&#9776;</button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block font-medium">Home</a>
+                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
+                <a href="/beaches.html" class="block font-medium">Beaches</a>
+                <a href="/events.html" class="block font-medium">Events</a>
+                <a href="/faq.html" class="block font-medium">FAQ</a>
+                <a href="/blog.html" class="block font-medium">Blog</a>
+                <a href="/reviews.html" class="block font-medium">Reviews</a>
+                <a href="/srq-airport-shuttle.html" class="block text-brand font-medium">Airport Shuttle</a>
+                <a href="/siesta-key-free-beach-rides.html" class="block font-medium">Beach Rides</a>
+                <a href="/siesta-key-transportation.html" class="block font-medium">Transportation</a>
+                <a href="/service-area.html" class="block font-medium">Service Area</a>
+                <a href="/advertise.html" class="block font-medium">Advertise</a>
+                <a href="/contact.html" class="block">Book Now</a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-12">
+    <main id="main-content" class="max-w-4xl mx-auto px-4 py-12">
         <div class="glass-panel p-8 md:p-12">
             <h1 class="text-4xl font-bold mb-6 text-brand">SRQ Airport Shuttle from Siesta Key</h1>
 
@@ -101,6 +124,11 @@
                 <p class="text-lg mb-4">Call or text to reserve your ride to SRQ.</p>
                 <a href="tel:9416008380" class="inline-block bg-white text-brand font-bold px-8 py-3 rounded-lg text-xl hover:bg-gray-100 transition">&#128222; 941-600-8380</a>
             </div>
+
+            <nav class="grid md:grid-cols-2 gap-4 mt-8" aria-label="Related ride services">
+                <a href="/siesta-key-free-beach-rides.html" class="block bg-white rounded-xl p-4 font-bold text-brand hover:underline">Free Beach Rides on Siesta Key</a>
+                <a href="/siesta-key-transportation.html" class="block bg-white rounded-xl p-4 font-bold text-brand hover:underline">How to Get Around Siesta Key</a>
+            </nav>
         </div>
     </main>
 
@@ -128,6 +156,5 @@
     </footer>
 </body>
 </html>
-
 
 

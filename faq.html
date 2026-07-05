@@ -23,6 +23,9 @@
         summary::after { content: "+"; font-size: 1.4rem; color: #0077b6; font-weight: 700; transition: transform 0.2s; }
         details[open] summary::after { content: "-"; }
         details .answer { padding: 0 0 1rem 0; color: #4b5563; line-height: 1.7; }
+        .skip-link { position:absolute; left:1rem; top:-4rem; z-index:100; background:#fff; color:#005f73; padding:0.75rem 1rem; border-radius:0.5rem; font-weight:700; box-shadow:0 4px 16px rgba(0,0,0,0.18); transition:top 0.2s ease; }
+        .skip-link:focus { top:1rem; }
+        a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid #ffb703; outline-offset:3px; border-radius:0.35rem; }
     </style>
     <script type="application/ld+json">
     {
@@ -38,6 +41,7 @@
     </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -53,7 +57,7 @@
                 <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
-            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+            <button class="md:hidden text-2xl min-h-11 min-w-11 flex items-center justify-center" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" onclick="const menu=document.getElementById('mobile-menu'); const expanded=this.getAttribute('aria-expanded') === 'true'; menu.classList.toggle('hidden', expanded); this.setAttribute('aria-expanded', String(!expanded)); this.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');">&#9776;</button>
         </div>
         <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
             <div class="px-4 py-3 space-y-3">
@@ -63,13 +67,18 @@
                 <a href="/events.html" class="block font-medium">Events</a>
                 <a href="/faq.html" class="block text-brand font-medium">FAQ</a>
                 <a href="/blog.html" class="block font-medium">Blog</a>
+                <a href="/reviews.html" class="block font-medium">Reviews</a>
+                <a href="/srq-airport-shuttle.html" class="block font-medium">Airport Shuttle</a>
+                <a href="/siesta-key-free-beach-rides.html" class="block font-medium">Beach Rides</a>
+                <a href="/siesta-key-transportation.html" class="block font-medium">Transportation</a>
+                <a href="/service-area.html" class="block font-medium">Service Area</a>
                 <a href="/advertise.html" class="block font-medium">Advertise</a>
                 <a href="/contact.html" class="block font-medium">Book Now</a>
             </div>
         </div>
     </header>
 
-    <section class="max-w-6xl mx-auto px-4 py-16">
+    <main id="main-content" class="max-w-6xl mx-auto px-4 py-16">
         <div class="glass-panel p-8 md:p-10">
             <h1 class="text-4xl font-bold text-center mb-4">Siesta Key Frequently Asked Questions</h1>
             <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Everything visitors ask about Siesta Key - answered. Can't find what you're looking for? Call us at <a href="tel:941-600-8380" class="text-brand font-bold">941-600-8380</a>.</p>
@@ -152,7 +161,7 @@
                 <a href="tel:941-600-8380" class="bg-brand text-white px-8 py-3 rounded-md font-bold text-lg inline-block hover:bg-blue-700">Call 941-600-8380</a>
             </div>
         </div>
-    </section>
+    </main>
 
     <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
@@ -216,4 +225,3 @@
     </script>
 </body>
 </html>
-
