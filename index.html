@@ -50,10 +50,7 @@
         {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "01:00", "validFrom": "2026-10-30", "validThrough": "2027-04-15"},
         {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "01:00", "validFrom": "2026-04-16", "validThrough": "2026-10-29"}
       ],
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61591350556761",
-        "https://g.page/r/CZOcRPGBLcloEBI/review"
-      ],
+      "sameAs": [],
       "image": "https://siestafreeride.com/assets/logo.png"
     }
     </script>
@@ -79,32 +76,6 @@
         html, body {
             margin: 0;
             padding: 0;
-        }
-
-        .skip-link {
-            position: absolute;
-            left: 1rem;
-            top: -4rem;
-            z-index: 100;
-            background: #ffffff;
-            color: #005f73;
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-            font-weight: 700;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-            transition: top 0.2s ease;
-        }
-
-        .skip-link:focus {
-            top: 1rem;
-        }
-
-        a:focus-visible,
-        button:focus-visible,
-        summary:focus-visible {
-            outline: 3px solid #ffb703;
-            outline-offset: 3px;
-            border-radius: 0.35rem;
         }
 
         body { 
@@ -141,7 +112,7 @@
         }
 
         .phone-number {
-            color: #005f73;
+            color: #12a5b0;
             text-shadow:
                 -1px -1px 0 #000,
                  1px -1px 0 #000,
@@ -170,7 +141,7 @@
 
         .cursive-text {
             font-family: 'Pacifico', cursive;
-            color: #005f73;
+            color: #00b4d8;
             letter-spacing: 1px;
             line-height: 1;
             white-space: nowrap;
@@ -237,7 +208,6 @@
 
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -251,14 +221,11 @@
                 <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
                 <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
                 <a href="/reviews.html" class="hover:text-brand font-medium">Reviews</a>
-                <a href="/srq-airport-shuttle.html" class="hover:text-brand font-medium">Airport Shuttle</a>
-                <a href="/siesta-key-free-beach-rides.html" class="hover:text-brand font-medium">Beach Rides</a>
-                <a href="/siesta-key-transportation.html" class="hover:text-brand font-medium">Transportation</a>
                 <a href="/service-area.html" class="hover:text-brand font-medium">Service Area</a>
                 <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
                 <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
             </nav>
-            <button class="md:hidden text-2xl min-h-11 min-w-11 flex items-center justify-center" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" onclick="const menu=document.getElementById('mobile-menu'); const expanded=this.getAttribute('aria-expanded') === 'true'; menu.classList.toggle('hidden', expanded); this.setAttribute('aria-expanded', String(!expanded)); this.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');">
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 &#9776;
             </button>
         </div>
@@ -271,17 +238,12 @@
                 <a href="/faq.html" class="block font-medium">FAQ</a>
                 <a href="/blog.html" class="block font-medium">Blog</a>
                 <a href="/reviews.html" class="block font-medium">Reviews</a>
-                <a href="/srq-airport-shuttle.html" class="block font-medium">Airport Shuttle</a>
-                <a href="/siesta-key-free-beach-rides.html" class="block font-medium">Beach Rides</a>
-                <a href="/siesta-key-transportation.html" class="block font-medium">Transportation</a>
                 <a href="/service-area.html" class="block font-medium">Service Area</a>
                 <a href="/advertise.html" class="block font-medium">Advertise</a>
                 <a href="/contact.html" class="block">Book Now</a>
             </div>
         </div>
     </header>
-
-    <main id="main-content">
 
     <section class="hero">
         <img id="hero-image" class="hero-image" src="/assets/Siesta Web Photos/siesta-beach1.jpg" alt="Siesta Key Beach">
@@ -294,8 +256,6 @@
 
     <section class="w-full px-4 py-16" style="background:rgba(184,221,224,0.45);">
         <div class="glass-panel p-8 md:p-10">
-            <h1 class="text-4xl font-bold text-center mb-4 text-brand">Free Ride Siesta Key Transportation & Beach Shuttle</h1>
-            <p class="text-center text-gray-700 mb-10 max-w-3xl mx-auto text-lg">Tip-based local rides, beach shuttles, off-key grocery trips, and airport transportation for Siesta Key, Sarasota, SRQ, Tampa, Punta Gorda, and Ft. Myers.</p>
             <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -305,7 +265,6 @@
                         Reliable pickups and drop-offs to SRQ and beyond. Real-time flight tracking,
                         luggage assistance, and dependable service.
                     </p>
-                    <a href="/srq-airport-shuttle.html" class="inline-block mt-4 text-brand font-bold hover:underline">Airport shuttle details</a>
                 </div>
 
                 <div class="glass-card p-6">
@@ -314,7 +273,6 @@
                         Quick trips around Siesta Key and Sarasota. Beach trips, dinners, shopping,
                         and local transportation when you need it.
                     </p>
-                    <a href="/siesta-key-free-beach-rides.html" class="inline-block mt-4 text-brand font-bold hover:underline">Free beach rides</a>
                 </div>
 
                 <div class="glass-card p-6">
@@ -323,7 +281,6 @@
                         Book a dedicated driver for the day. Great for events, tours, airport pickup
                         coordination, or multiple stops.
                     </p>
-                    <a href="/siesta-key-transportation.html" class="inline-block mt-4 text-brand font-bold hover:underline">Transportation guide</a>
                 </div>
             </div>
 
@@ -387,8 +344,6 @@
             <p class="mt-3 text-sm text-gray-500">Scan or tap to tip via Venmo <strong>@Rooster59</strong></p>
         </div>
     </section>
-
-    </main>
 
     <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
@@ -588,6 +543,7 @@
     </script>
 </body>
 </html>
+
 
 
 
