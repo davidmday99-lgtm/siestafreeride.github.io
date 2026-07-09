@@ -418,7 +418,10 @@
     </footer>
 
     <!-- Sponsor Banner -->
-    <div class="cfk-banner" style="background: #000000; padding: 30px 24px; border-top: 3px solid #ff6700;">
+    <div class="cfk-banner" style="background: #000000; padding: 64px 24px; border-top: 3px solid #ff6700;">
+        <a href="https://homemortgageguys.com/" target="_blank" rel="noopener" class="hmg-sponsor-link" aria-label="Home Mortgage Guys">
+            <img src="/assets/home-mortgage-guys-logo.png" alt="Home Mortgage Guys" class="hmg-sponsor-logo" loading="lazy" width="640" height="320">
+        </a>
         <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" class="cfk-link">
             <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" class="cfk-logo" loading="lazy" width="320" height="320">
             <div class="cfk-text">
@@ -430,42 +433,68 @@
         </a>
     </div>
     <style>
+        .hmg-sponsor-link {
+            display: flex;
+            justify-content: center;
+            width: min(900px, 100%);
+            margin: 0 auto 44px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 18px 50px rgba(255, 103, 0, 0.2);
+        }
+        .hmg-sponsor-logo {
+            display: block;
+            width: min(620px, 100%);
+            height: auto;
+        }
         .cfk-link {
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
-            max-width: 1000px;
+            gap: 56px;
+            max-width: 1500px;
             margin: 0 auto;
         }
         .cfk-logo {
-            width: 320px;
-            height: 320px;
+            width: min(640px, 42vw);
+            height: auto;
+            max-height: 430px;
             flex-shrink: 0;
             border-radius: 8px;
             object-fit: contain;
         }
         .cfk-text { text-align: left; }
-        .cfk-title { color: #ff6700; font-size: 1.8rem; font-weight: 800; letter-spacing: 0.3px; display: block; }
-        .cfk-subtitle { color: #ff6700; font-size: 1.5rem; font-weight: 700; display: block; margin-top: 8px; }
-        .cfk-tagline { color: #ff6700; font-size: 1.2rem; font-weight: 600; display: block; margin-top: 8px; }
-        .cfk-desc { color: #ffffffcc; font-size: 1rem; display: block; margin-top: 6px; }
+        .cfk-title { color: #ff6700; font-size: clamp(2.4rem, 3vw, 3.6rem); font-weight: 800; letter-spacing: 0.3px; display: block; }
+        .cfk-subtitle { color: #ff6700; font-size: clamp(1.8rem, 2.2vw, 2.8rem); font-weight: 700; display: block; margin-top: 16px; line-height: 1.2; }
+        .cfk-tagline { color: #ff6700; font-size: clamp(1.35rem, 1.5vw, 1.8rem); font-weight: 700; display: block; margin-top: 18px; }
+        .cfk-desc { color: #ffffffcc; font-size: clamp(1.1rem, 1.25vw, 1.45rem); display: block; margin-top: 10px; }
         @media (max-width: 768px) {
+            .cfk-banner {
+                padding: 38px 18px !important;
+            }
+            .hmg-sponsor-link {
+                margin-bottom: 28px;
+                padding: 14px;
+            }
+            .hmg-sponsor-logo {
+                width: min(320px, 100%);
+            }
             .cfk-link {
                 flex-direction: column;
-                gap: 16px;
+                gap: 20px;
                 text-align: center;
             }
             .cfk-logo {
-                width: 120px;
-                height: 120px;
+                width: min(320px, 100%);
+                max-height: none;
             }
             .cfk-text { text-align: center; }
-            .cfk-title { font-size: 1.25rem; }
-            .cfk-subtitle { font-size: 1rem; }
-            .cfk-tagline { font-size: 0.95rem; }
-            .cfk-desc { font-size: 0.85rem; }
+            .cfk-title { font-size: 1.75rem; }
+            .cfk-subtitle { font-size: 1.2rem; }
+            .cfk-tagline { font-size: 1.05rem; }
+            .cfk-desc { font-size: 0.95rem; }
         }
     </style>
 
