@@ -1,0 +1,196 @@
+name: Publish July 12-15 Siesta blog posts
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/publish-july-12-15.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create posts and update blog index
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          posts = [
+              {
+                  "slug": "2026-07-12",
+                  "day_date": "Sunday, July 12, 2026",
+                  "title": "Sunday Island Reset and a Fresh Look",
+                  "description": "A relaxed Sunday on Siesta Key, easy free rides, and a special thank-you to Sarasota Wraps for making the Siesta Free Ride buses look fantastic.",
+                  "excerpt": "Sunday brings an easy island reset, simple beach and Village rides, and a special thank-you to Sarasota Wraps for the fantastic work on our buses.",
+                  "intro": "Sunday is a good day to slow the pace, enjoy Siesta Key, and let someone else handle the driving.",
+                  "section_title": "Keep Sunday Simple",
+                  "section_text": "Whether you are heading to the beach, meeting friends in the Village, grabbing groceries, or planning a sunset stop, Siesta Free Ride helps keep the day easy. Call or text ahead so your group can spend more time enjoying the island and less time searching for parking.",
+                  "plan_title": "A Better-Looking Ride Around the Key",
+                  "plan_text": "Our buses are part of the Siesta Key experience, and their fresh wraps make them easier to recognize while adding even more island personality. Watch for the newly wrapped buses while you are out and about."
+              },
+              {
+                  "slug": "2026-07-13",
+                  "day_date": "Monday, July 13, 2026",
+                  "title": "Fresh Week, Fresh Look for Our Buses",
+                  "description": "Start the week with convenient Siesta Key rides and help us thank Sarasota Wraps for doing a great job wrapping the Siesta Free Ride buses.",
+                  "excerpt": "A new week starts with easy rides around Siesta Key and a big thank-you to Sarasota Wraps for giving our buses a sharp new look.",
+                  "intro": "Monday is the perfect time to reset your island plans and start the week with a fresh ride.",
+                  "section_title": "Monday Transportation Made Easy",
+                  "section_text": "From beach drop-offs and Village lunches to grocery runs and airport transportation, our team is ready to help visitors and locals move around without the parking stress. A quick call or text can make the whole day flow better.",
+                  "plan_title": "Rolling Into the Week in Style",
+                  "plan_text": "The updated wraps give our buses a clean, professional look that fits the fun personality of Siesta Free Ride. We are excited for guests to see them around the island this week."
+              },
+              {
+                  "slug": "2026-07-14",
+                  "day_date": "Tuesday, July 14, 2026",
+                  "title": "Wrapped and Ready for Siesta Key",
+                  "description": "Siesta Free Ride is wrapped and ready for Tuesday rides, with special appreciation for Sarasota Wraps and their excellent bus wrap work.",
+                  "excerpt": "Our buses are wrapped and ready for another Siesta Key day, thanks to the excellent craftsmanship and attention to detail from Sarasota Wraps.",
+                  "intro": "Tuesday is a great day to explore the island, and our freshly wrapped buses are ready to help.",
+                  "section_title": "Your Tuesday Ride Plan",
+                  "section_text": "Plan an easy loop between the beach, Siesta Key Village, restaurants, shops, and your rental. Free local rides help keep cars parked and make it easier for everyone to enjoy more stops throughout the day.",
+                  "plan_title": "Easy to Spot, Ready to Ride",
+                  "plan_text": "The new bus wraps help Siesta Free Ride stand out and make our vehicles easier to recognize. We love how the finished buses look and cannot wait for more riders to see them."
+              },
+              {
+                  "slug": "2026-07-15",
+                  "day_date": "Wednesday, July 15, 2026",
+                  "title": "Midweek Rides and a Big Sarasota Wraps Thank-You",
+                  "description": "Make Wednesday easier with Siesta Free Ride and join us in thanking Sarasota Wraps for the outstanding work wrapping our buses.",
+                  "excerpt": "Midweek rides are looking better than ever, and we are thanking Sarasota Wraps for the outstanding job wrapping our Siesta Free Ride buses.",
+                  "intro": "A midweek ride is even better when the bus looks this good.",
+                  "section_title": "Make Wednesday an Island Day",
+                  "section_text": "Use Siesta Free Ride for beach time, Village stops, dinner plans, shopping, and connections beyond the Key. Coordinating your ride early keeps the day flexible and helps your group avoid unnecessary parking headaches.",
+                  "plan_title": "Proud to Show Off the Finished Buses",
+                  "plan_text": "The wraps bring color, polish, and a strong Siesta Free Ride identity to every trip. We are proud of the result and grateful to the local professionals who brought the vision to life."
+              }
+          ]
+
+          base_path = Path("blog/2026-07-11-daily-blog.html")
+          base = base_path.read_text(encoding="utf-8")
+
+          def main_html(post):
+              return """
+              <main class="max-w-4xl mx-auto px-4 py-10">
+                <article>
+                  <div class="mb-6"><a href="/blog.html" class="text-blue-600 font-semibold">← Back to All Posts</a></div>
+                  <section class="neon-box retro-hero p-10 mb-8 text-center">
+                    <p class="text-cyan-300 font-semibold mb-3">{day_date}</p>
+                    <h1 class="neon-title text-4xl mb-4">{title}</h1>
+                    <p class="text-gray-200 text-lg">{intro}</p>
+                  </section>
+
+                  <section class="glass-panel p-8 mb-8">
+                    <h2 class="text-3xl font-bold text-brand mb-4">{section_title}</h2>
+                    <p class="text-lg text-gray-700">{section_text}</p>
+                  </section>
+
+                  <section class="neon-box p-8 mb-8">
+                    <h2 class="section-title mb-4">🚌 A Big Thank You to Sarasota Wraps</h2>
+                    <p class="text-gray-200 text-lg mb-4">We want to thank <a href="https://sarasotawraps.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-300 font-bold">Sarasota Wraps</a> for doing a great job wrapping our buses. Their craftsmanship and attention to detail made the Siesta Free Ride fleet look fantastic.</p>
+                    <p class="text-gray-300">We appreciate the Sarasota Wraps team and are proud to have their work rolling around Siesta Key. Visit <a href="https://sarasotawraps.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-300 font-semibold">sarasotawraps.com</a> to see more of their work.</p>
+                  </section>
+
+                  <section class="glass-panel p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-brand mb-4">{plan_title}</h2>
+                    <p class="text-lg text-gray-700">{plan_text}</p>
+                  </section>
+
+                  <section class="glass-card p-8 text-center">
+                    <h2 class="text-2xl font-bold text-brand mb-3">Need a Ride?</h2>
+                    <p class="text-lg text-gray-700 mb-4">Call or text Siesta Free Ride at <a href="tel:9416008380" class="text-blue-600 font-bold">941-600-8380</a>. Tips are appreciated, and advance planning helps on busy island days.</p>
+                    <a href="/contact.html" class="inline-block bg-brand text-white px-10 py-3 rounded-md font-bold">Plan Your Ride</a>
+                  </section>
+                </article>
+              </main>
+              """.format(**post)
+
+          for post in posts:
+              html = base
+              html = re.sub(r"<title>.*?</title>", "<title>{0} | Siesta Free Ride</title>".format(post["title"]), html, count=1, flags=re.S)
+              html = re.sub(r'<meta name="description" content=".*?">', '<meta name="description" content="{0}">'.format(post["description"]), html, count=1)
+              html = re.sub(r'<link rel="canonical" href=".*?">', '<link rel="canonical" href="https://siestafreeride.com/blog/{0}-daily-blog.html">'.format(post["slug"]), html, count=1)
+              html = re.sub(r'<main class="max-w-4xl.*?</main>', main_html(post), html, count=1, flags=re.S)
+              Path("blog/{0}-daily-blog.html".format(post["slug"])).write_text(html, encoding="utf-8", newline="\n")
+
+          index_path = Path("blog.html")
+          index = index_path.read_text(encoding="utf-8")
+          marker = '<div id="blog-container">'
+          cards = ""
+          for post in reversed(posts):
+              cards += '<article class="blog-card"><div class="post-date">{0}</div><h2><a href="/blog/{1}-daily-blog.html">{2}</a></h2><p class="post-excerpt">{3}</p></article>'.format(
+                  post["day_date"].split(", ", 1)[1], post["slug"], post["title"], post["excerpt"]
+              )
+          if "/blog/2026-07-15-daily-blog.html" not in index:
+              index = index.replace(marker, marker + cards, 1)
+          index_path.write_text(index, encoding="utf-8", newline="\n")
+
+          sitemap_path = Path("sitemap.xml")
+          if sitemap_path.exists():
+              sitemap = sitemap_path.read_text(encoding="utf-8")
+              additions = ""
+              for post in posts:
+                  url = "https://siestafreeride.com/blog/{0}-daily-blog.html".format(post["slug"])
+                  if url not in sitemap:
+                      additions += "  <url><loc>{0}</loc><lastmod>2026-07-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n".format(url)
+              if additions:
+                  sitemap = sitemap.replace("</urlset>", additions + "</urlset>")
+                  sitemap_path.write_text(sitemap, encoding="utf-8", newline="\n")
+
+
+          retro_css = r""":root{--retro-navy:#101b3d;--retro-coral:#ff6b6b;--retro-teal:#20c9c3;--retro-deep-teal:#087f8c;--retro-yellow:#ffd166;--retro-cream:#fff3cf;--retro-peach:#ffecd6;--retro-mint:#dff8f2;--retro-pink:#ffe1eb}
+html{background:var(--retro-cream)}
+body{font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif!important;color:var(--retro-navy)!important;background-color:var(--retro-cream)!important;background-image:radial-gradient(circle at 12% 8%,rgba(255,209,102,.55) 0 2px,transparent 3px),linear-gradient(180deg,#ff9d72 0,#ffba73 15rem,#2bc4c1 15rem,#0b8996 27rem,#fff3cf 27rem)!important;background-size:28px 28px,100% 100%!important;min-height:100vh}
+body::before{display:none!important}
+header{position:relative!important;overflow:hidden!important;background:linear-gradient(180deg,#ff9d72 0%,#ffbd73 54%,#2bc4c1 55%,#087f8c 100%)!important;border-bottom:8px solid var(--retro-navy)!important;box-shadow:0 7px 0 rgba(255,209,102,.9),0 14px 28px rgba(16,27,61,.26)!important}
+header::before,header::after{display:none!important}
+header>div,header nav{position:relative;z-index:2}
+header img{filter:drop-shadow(4px 5px 0 rgba(16,27,61,.35))}
+header a{font-weight:900!important;letter-spacing:.035em;text-shadow:1px 2px 0 rgba(16,27,61,.28)}
+main{max-width:68rem!important;margin:3.2rem auto 5rem!important;padding:2.25rem!important;background:rgba(255,247,212,.97)!important;border:5px solid var(--retro-navy)!important;border-radius:1.25rem!important;box-shadow:11px 13px 0 var(--retro-navy),16px 18px 0 var(--retro-coral)!important;position:relative}
+main article>div:first-child a{display:inline-block;padding:.55rem 1rem;background:var(--retro-yellow)!important;color:var(--retro-navy)!important;border:3px solid var(--retro-navy);border-radius:999px;box-shadow:4px 5px 0 var(--retro-navy);font-weight:900!important;text-decoration:none!important}
+.neon-box,.glass-panel,.glass-card{background:var(--retro-peach)!important;color:var(--retro-navy)!important;border:4px solid var(--retro-navy)!important;border-radius:1rem!important;box-shadow:7px 8px 0 var(--retro-navy)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+article section:nth-of-type(3n+2){background:var(--retro-mint)!important}
+article section:nth-of-type(3n){background:var(--retro-pink)!important}
+.retro-hero{background:linear-gradient(180deg,#fff8db,#ffe9bd)!important;overflow:visible!important;position:relative}
+.retro-hero::after{display:none!important}
+.retro-hero::before{content:"SIESTA KEY • SUN • SAND • FREE RIDES";display:inline-block;margin:-4.2rem auto 1.2rem;padding:.65rem 1.15rem;background:var(--retro-yellow);border:4px solid var(--retro-navy);border-radius:999px;box-shadow:5px 6px 0 var(--retro-navy);font-weight:900;letter-spacing:.13em;color:var(--retro-navy)}
+.neon-title{font-family:Impact,"Arial Black","Trebuchet MS",sans-serif!important;color:var(--retro-navy)!important;text-transform:uppercase;letter-spacing:-.025em;line-height:.98!important;text-shadow:3px 3px 0 var(--retro-yellow),6px 6px 0 var(--retro-coral)!important;animation:none!important}
+.section-title,.neon-purple,.neon-red,.neon-orange,.neon-blue,.neon-green{color:var(--retro-navy)!important;text-shadow:2px 2px 0 var(--retro-yellow)!important}
+.neon-box .text-gray-200,.neon-box .text-gray-300,.neon-box .text-cyan-300,.retro-hero .text-gray-200,.retro-hero .text-cyan-300{color:var(--retro-deep-teal)!important;text-shadow:none!important}
+.neon-box .grid>div,.glass-panel .grid>div,.glass-card .grid>div{background:#fffaf0!important;color:var(--retro-navy)!important;border:3px solid var(--retro-navy)!important;border-radius:.8rem!important;box-shadow:4px 5px 0 var(--retro-navy)!important}
+main h1,main h2,main h3,strong{color:var(--retro-navy)}
+main p{line-height:1.75}
+main a:not([href^="tel:"]){color:var(--retro-deep-teal)}
+main a:hover{text-decoration:underline}
+footer{border-top:7px solid var(--retro-yellow)!important}
+@media(max-width:760px){main{margin:2.5rem 1rem 4rem!important;padding:1.25rem!important;border-width:4px!important;box-shadow:7px 8px 0 var(--retro-navy),11px 12px 0 var(--retro-coral)!important}.neon-box,.glass-panel,.glass-card{padding:1.3rem!important;box-shadow:5px 6px 0 var(--retro-navy)!important}.neon-title{font-size:2.2rem!important}.retro-hero::before{margin:-3.2rem auto 1rem;font-size:.72rem;letter-spacing:.08em}header img{height:10rem!important}}"""
+          theme_path = Path("assets/retro-blog-post.css")
+          theme_path.write_text(retro_css, encoding="utf-8", newline="\n")
+
+          theme_link = '<link rel="stylesheet" href="/assets/retro-blog-post.css">'
+          themed_count = 0
+          for post_path in Path("blog").glob("*.html"):
+              post_html = post_path.read_text(encoding="utf-8")
+              if theme_link not in post_html:
+                  post_html = post_html.replace("</head>", "    " + theme_link + "\n</head>", 1)
+                  post_path.write_text(post_html, encoding="utf-8", newline="\n")
+                  themed_count += 1
+
+          print("Applied the retro theme to {0} blog posts.".format(themed_count))
+
+          print("Created four posts and updated the blog index.")
+          PY
+      - name: Commit the new posts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blog.html sitemap.xml assets/retro-blog-post.css blog/*.html
+          git commit -m "Add July 12-15 blog posts and thank Sarasota Wraps"
+          git push
