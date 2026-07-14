@@ -67,10 +67,6 @@
 body{margin:0;color:var(--retro-ink);font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif;background-color:var(--retro-cream);background-image:radial-gradient(circle at 12% 8%,rgba(255,209,102,.48) 0 2px,transparent 3px),linear-gradient(180deg,#ffbd73 0,#f58b8c 23rem,#65d5d0 23rem,#fff3cf 42rem);background-size:28px 28px,100% 100%;min-height:100vh}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.18;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(20,33,61,.18) 4px)}
 header{position:relative!important;overflow:hidden;background:linear-gradient(180deg,#ff8f70 0%,#ffbf69 58%,#36c9c6 59%,#087f8c 100%)!important;border-bottom:8px solid var(--retro-navy);box-shadow:0 7px 0 rgba(255,209,102,.85),0 14px 28px rgba(20,33,61,.26)!important}
-header:before,header:after{content:"";position:absolute;z-index:0;bottom:-12px;width:clamp(110px,12vw,165px);height:clamp(190px,24vw,320px);background-image:url("/assets/siesta-hero-static.png");background-repeat:no-repeat;background-size:clamp(620px,72vw,980px) auto;filter:drop-shadow(5px 6px 0 rgba(20,33,61,.28));pointer-events:none}
-header:before{left:0;background-position:left top}
-header:after{right:0;background-position:right top}
-header>div,header nav{position:relative;z-index:2}
 header img{filter:drop-shadow(4px 5px 0 rgba(20,33,61,.35))}
 header a{font-weight:900;letter-spacing:.04em;text-shadow:1px 2px 0 rgba(20,33,61,.35)}
 main{position:relative;margin-top:2.2rem!important;margin-bottom:4rem!important;padding:clamp(1.25rem,4vw,3rem)!important;border:5px solid var(--retro-navy);border-radius:28px;background:rgba(255,243,207,.94);box-shadow:12px 12px 0 var(--retro-navy),18px 18px 0 var(--retro-coral)}
@@ -88,7 +84,7 @@ main>p{color:var(--retro-teal)!important;font-size:1.05rem!important;font-weight
 .blog-card h2 a:hover{color:var(--retro-teal)!important;background-size:100% 4px}
 .blog-card .post-excerpt{color:#36566f!important;font-size:1rem!important;line-height:1.65!important}
 footer{border-top:7px solid var(--retro-navy)!important;background:var(--retro-navy)!important;color:var(--retro-cream)!important}
-@media(max-width:760px){header:before,header:after{width:105px;height:160px;background-size:520px auto;opacity:.9}main{margin:2.5rem 1rem 3rem!important;padding:1.4rem!important;border-width:4px;box-shadow:7px 7px 0 var(--retro-navy),11px 11px 0 var(--retro-coral)}main:before{margin-top:-3.5rem;letter-spacing:.07em}#blog-container{grid-template-columns:1fr;gap:1.25rem}.blog-card{padding:1.35rem!important;box-shadow:5px 6px 0 var(--retro-navy)!important}main h1{text-shadow:3px 3px 0 var(--retro-yellow),6px 6px 0 var(--retro-coral)!important}}
+@media(max-width:760px){main{margin:2.5rem 1rem 3rem!important;padding:1.4rem!important;border-width:4px;box-shadow:7px 7px 0 var(--retro-navy),11px 11px 0 var(--retro-coral)}main:before{margin-top:-3.5rem;letter-spacing:.07em}#blog-container{grid-template-columns:1fr;gap:1.25rem}.blog-card{padding:1.35rem!important;box-shadow:5px 6px 0 var(--retro-navy)!important}main h1{text-shadow:3px 3px 0 var(--retro-yellow),6px 6px 0 var(--retro-coral)!important}}
 @media(prefers-reduced-motion:reduce){.blog-card,.blog-card h2 a{transition:none!important}}
 </style>
 <body>
