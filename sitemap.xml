@@ -4,7 +4,7 @@
   <url>     <loc>https://siestafreeride.com/advertise.html</loc>     <lastmod>2026-04-27</lastmod>     <changefreq>monthly</changefreq>     <priority>0.9</priority>   </url>
   <url>     <loc>https://siestafreeride.com/contact.html</loc>     <lastmod>2026-04-27</lastmod>     <changefreq>monthly</changefreq>     <priority>0.8</priority>   </url>
   <url>     <loc>https://siestafreeride.com/photos.html</loc>     <lastmod>2026-04-27</lastmod>     <changefreq>monthly</changefreq>     <priority>0.7</priority>   </url>
-  <url>     <loc>https://siestafreeride.com/blog.html</loc>     <lastmod>2026-07-16</lastmod>     <changefreq>daily</changefreq>     <priority>0.9</priority>   </url>
+  <url>     <loc>https://siestafreeride.com/blog.html</loc>     <lastmod>2026-07-17</lastmod>     <changefreq>daily</changefreq>     <priority>0.9</priority>   </url>
   <url>     <loc>https://siestafreeride.com/blog/easter-spring-events-siesta-key-2026.html</loc>     <lastmod>2026-04-02</lastmod>     <changefreq>yearly</changefreq>     <priority>0.7</priority>   </url>
   <url>     <loc>https://siestafreeride.com/blog/top-5-things-to-do-siesta-key.html</loc>     <lastmod>2026-04-01</lastmod>     <changefreq>yearly</changefreq>     <priority>0.8</priority>   </url>
   <url>     <loc>https://siestafreeride.com/blog/locals-guide-siesta-key-village.html</loc>     <lastmod>2026-04-01</lastmod>     <changefreq>yearly</changefreq>     <priority>0.8</priority>   </url>
@@ -55,4 +55,5 @@
   <url><loc>https://siestafreeride.com/blog/2026-07-14-daily-blog.html</loc><lastmod>2026-07-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siestafreeride.com/blog/2026-07-15-daily-blog.html</loc><lastmod>2026-07-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siestafreeride.com/blog/2026-07-16-daily-blog.html</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://siestafreeride.com/blog/2026-07-17-daily-blog.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
