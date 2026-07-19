@@ -11,9 +11,24 @@
     </script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Leave a Review - Siesta Free Ride | Google Reviews</title>
-    <meta name="description" content="Leave a Google review for Siesta Free Ride! Your feedback helps us provide better free transportation service on Siesta Key. Tips only! Call 941-600-8380."/>
+    <title>47 Five-Star Google Reviews | Free Rides on Siesta Key</title>
+    <meta name="description" content="Siesta Free Ride has earned 47 five-star Google reviews for friendly, free rides on Siesta Key. Read rider feedback or leave a Google review."/>
     <link rel="canonical" href="https://siestafreeride.com/reviews.html" />
+    <meta name="robots" content="index, follow"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://siestafreeride.com/#business",
+      "name": "Siesta Free Ride",
+      "alternateName": "Siesta Key Free Ride",
+      "url": "https://siestafreeride.com/",
+      "telephone": "+1-941-600-8380",
+      "description": "Free rides on Siesta Key for beach trips, Siesta Key Village, dining, groceries, and local transportation. Tips are appreciated.",
+      "areaServed": {"@type": "Place", "name": "Siesta Key, Florida"},
+      "serviceType": ["Free rides on Siesta Key", "Siesta Key transportation", "Beach shuttle service"]
+    }
+    </script>
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
     <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
 
@@ -187,9 +202,86 @@
             box-shadow: 0 6px 20px rgba(0,0,0,0.25);
         }
 
+        .rating-showcase {
+            position: relative;
+            overflow: hidden;
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: clamp(2rem, 5vw, 4rem);
+            border: 5px solid #14213d;
+            border-radius: 28px;
+            background: #fff3cf;
+            box-shadow: 10px 10px 0 #14213d, 16px 16px 0 #ff6b5e;
+            text-align: center;
+        }
+
+        .rating-showcase::before {
+            content: "GOOGLE RIDER REVIEWS";
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            padding: .5rem 1rem;
+            border: 3px solid #14213d;
+            border-radius: 999px;
+            background: #ffd166;
+            color: #14213d;
+            font-size: .78rem;
+            font-weight: 900;
+            letter-spacing: .14em;
+        }
+
+        .rating-number {
+            color: #14213d;
+            font-family: Impact, "Arial Black", sans-serif;
+            font-size: clamp(4rem, 14vw, 8rem);
+            line-height: .8;
+            text-shadow: 4px 4px 0 #ffd166, 8px 8px 0 #ff6b5e;
+        }
+
+        .rating-stars {
+            margin: 1.5rem 0 .75rem;
+            color: #f59e0b;
+            font-size: clamp(1.8rem, 6vw, 3rem);
+            letter-spacing: .08em;
+            text-shadow: 2px 2px 0 #14213d;
+        }
+
+        .rating-headline {
+            color: #14213d;
+            font-family: Impact, "Arial Black", sans-serif;
+            font-size: clamp(2rem, 6vw, 3.75rem);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .rating-points {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .rating-point {
+            padding: 1rem;
+            border: 3px solid #14213d;
+            border-radius: 14px;
+            background: #fffaf0;
+            color: #17324d;
+            font-weight: 800;
+            box-shadow: 4px 4px 0 #14213d;
+        }
+
         @media (max-width: 768px) {
             header img.h-52 {
                 height: 10rem;
+            }
+
+            .rating-showcase {
+                border-width: 4px;
+                box-shadow: 6px 7px 0 #14213d, 10px 11px 0 #ff6b5e;
+            }
+
+            .rating-points {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -238,14 +330,29 @@
     <!-- Main Content -->
     <section class="w-full px-4 py-16" style="background:rgba(184,221,224,0.45);">
         <div class="glass-panel p-8 md:p-10 max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-4">Thank You for Riding with Us! 🚌</h2>
-            <p class="text-center text-gray-600 mb-8 text-lg">Your review helps other visitors discover our free ride service!</p>
+            <h1 class="text-3xl font-bold text-center mb-4">Free Rides on Siesta Key, Rated Five Stars</h1>
+            <p class="text-center text-gray-600 mb-8 text-lg">Your review helps Siesta Key visitors discover our friendly, tips-appreciated ride service.</p>
             
             <!-- Main Google Review Button -->
             <div class="text-center">
                 <a href="https://g.page/r/CZOcRPGBLcloEBI/review" target="_blank" rel="noopener" class="review-btn">
                     ⭐ Leave a Google Review
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Rating Showcase -->
+    <section class="w-full px-4 py-14" style="background:rgba(37,199,201,0.22);">
+        <div class="rating-showcase">
+            <div class="rating-number">5.0</div>
+            <div class="rating-stars" aria-label="Five out of five stars">★★★★★</div>
+            <h2 class="rating-headline">47 Five-Star Google Reviews</h2>
+            <p class="mt-5 text-lg text-gray-700 max-w-2xl mx-auto">Forty-seven riders have given Siesta Free Ride a five-star rating on Google Maps. Thank you for trusting us with beach rides, Village trips, airport transportation, and nights out around Siesta Key.</p>
+            <div class="rating-points" aria-label="What riders appreciate">
+                <div class="rating-point">Friendly, helpful drivers</div>
+                <div class="rating-point">Clean, air-conditioned rides</div>
+                <div class="rating-point">Easy Siesta Key transportation</div>
             </div>
         </div>
     </section>
