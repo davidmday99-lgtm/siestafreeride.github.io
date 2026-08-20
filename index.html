@@ -1,516 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18312065873"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18312065873');
-    </script>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Free Ride Siesta Key | Transportation & Beach Shuttle Service</title>
-    <meta name="description" content="How to get around on Siesta Key? Free ride service - beach transportation, island shuttle, airport runs to SRQ, and Casey Key. Get around Siesta Key free. Tips only! Call 941-600-8380."/>
-    <meta name="keywords" content="how to get around on siesta key, free ride siesta key, siesta key free ride, free beach ride siesta key, siesta key shuttle, siesta key transportation, siesta key taxi, SRQ airport shuttle, siesta key beach shuttle, getting around siesta key, siesta key village shuttle, casey key ride" />
-    <link rel="canonical" href="https://siestafreeride.com/" />
-    <meta name="google-site-verification" content="GgQsefEyzLZ1jWn74BeCAuWtOCAK-arFzdm9XqU-m2M" />
-    <meta property="og:title" content="Things to Do in Siesta Key | Events, Beaches & Free Rides" />
-    <meta property="og:description" content="Siesta Key's free ride service. Beach rides, island shuttle, grocery runs & SRQ airport transfers. Tips only! Call 941-600-8380." />
-    <meta property="og:image" content="https://siestafreeride.com/assets/logo.png" />
-    <meta property="og:url" content="https://siestafreeride.com/" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Free Ride Siesta Key | Siesta Free Ride" />
-    <meta name="twitter:description" content="Free beach rides, shuttle service & SRQ airport transfers on Siesta Key. Tips only! Call 941-600-8380." />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://siestafreeride.com/#business",
-      "name": "Siesta Free Ride",
-      "alternateName": "Siesta Key Free Ride",
-      "description": "Free ride and shuttle service on Siesta Key, Florida. Beach rides, island transportation, grocery runs, Casey Key, Gulf Gate, and SRQ airport transfers.",
-      "url": "https://siestafreeride.com",
-      "telephone": "+1-941-600-8380",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Siesta Key",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 27.2669,
-        "longitude": -82.5487
-      },
-      "areaServed": [
-        {"@type": "Place", "name": "Siesta Key"},
-        {"@type": "Place", "name": "Casey Key"},
-        {"@type": "Place", "name": "Gulf Gate"},
-        {"@type": "Place", "name": "Sarasota-Bradenton International Airport (SRQ)"}
-      ],
-      "serviceType": ["Free rides on Siesta Key", "Siesta Key Free Ride Service", "Beach Shuttle", "Airport Transfer", "Island Transportation"],
-      "priceRange": "Tips Only",
-      "openingHoursSpecification": [
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "01:00", "validFrom": "2026-10-30", "validThrough": "2027-04-15"},
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "01:00", "validFrom": "2026-04-16", "validThrough": "2026-10-29"}
-      ],
-      "sameAs": [
-        "https://www.tiktok.com/@siestafreeride",
-        "https://www.facebook.com/profile.php?id=61591350556761",
-        "https://www.youtube.com/@SiestFreeRide"
-      ],
-      "image": "https://siestafreeride.com/assets/logo.png"
-    }
-    </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#0077b6',
-                        accent: '#00b4d8'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body { 
-            background: rgba(184,221,224,0.55);
-            color: #1f2937; 
-            position: relative;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: rgba(184,221,224,0.55);
-            z-index: -1;
-        }
-
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);
-            overflow: hidden;
-        }
-        
-        .hero-image {
-            height: 100%;
-            width: auto;
-            max-width: none;
-            display: block;
-            object-fit: contain;
-        }
-
-        .phone-number {
-            color: #12a5b0;
-            text-shadow:
-                -1px -1px 0 #000,
-                 1px -1px 0 #000,
-                -1px  1px 0 #000,
-                 1px  1px 0 #000;
-            font-weight: bold;
-            font-size: 3rem;
-            margin-top: 0.25rem;
-            margin-bottom: 0;
-            display: block;
-            line-height: 1;
-        }
-
-        .hero-title,
-        .cursive-text {
-            text-shadow:
-                -2px -2px 0 #000,
-                 2px -2px 0 #000,
-                -2px  2px 0 #000,
-                 2px  2px 0 #000;
-        }
-
-        .hero-title {
-            line-height: 1.05;
-        }
-
-        .cursive-text {
-            font-family: 'Pacifico', cursive;
-            color: #00b4d8;
-            letter-spacing: 1px;
-            line-height: 1;
-            white-space: nowrap;
-        }
-
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.82);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 0.75rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-        }
-
-        @media (max-width: 768px) {
-            .phone-number {
-                font-size: 2.25rem;
-            }
-
-            .hero-title {
-                font-size: 2.5rem;
-            }
-
-            /* Header adjustments */
-            header img.h-80 {
-                height: 10rem; /* Reduced from h-80 (20rem) */
-            }
-
-            header .text-4xl {
-                font-size: 1.875rem; /* text-3xl */
-            }
-
-            /* Hero mobile fix - show full width, no side clipping */
-            .hero {
-                height: auto;
-                min-height: 50vh;
-            }
-
-            .hero-image {
-                width: 100%;
-                height: auto;
-                object-fit: contain;
-            }
-        }
-
-        .air-banner {
-            line-height: 0;
-        }
-        .air-banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free local rides around Siesta Key, Gulf Gate, the beaches, village, airport and local events.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://siestafreeride.com/">
+  <meta property="og:title" content="Free Rides. Island Vibes. | Siesta Free Ride">
+  <meta property="og:description" content="Friendly free local rides around Siesta Key, Gulf Gate, the beaches, village, airport and local events.">
+  <meta property="og:image" content="https://siestafreeride.com/assets/texting-preview.png">
+  <meta property="og:image:alt" content="Siesta Free Ride shuttle against a retro island sunset">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Rides. Island Vibes. | Siesta Free Ride">
+  <meta name="twitter:description" content="Friendly free local rides around Siesta Key, Gulf Gate, the beaches, village, airport and local events.">
+  <meta name="twitter:image" content="https://siestafreeride.com/assets/texting-preview.png">
+  <title>Siesta Free Ride — Free Rides, Island Vibes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-52 md:h-60" loading="eager" style="width: auto;">
-            </div>
-            <nav class="hidden md:flex gap-6 text-lg font-semibold">
-                <a href="/" class="text-brand font-medium">Home</a>
-                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
-                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
-                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
-                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
-                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
-                <a href="/reviews.html" class="hover:text-brand font-medium">Reviews</a>
-                <a href="/service-area.html" class="hover:text-brand font-medium">Service Area</a>
-                <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
-                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
-            </nav>
-            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                &#9776;
-            </button>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
-                        <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block text-brand font-medium">Home</a>
-                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
-                <a href="/beaches.html" class="block font-medium">Beaches</a>
-                <a href="/events.html" class="block font-medium">Events</a>
-                <a href="/faq.html" class="block font-medium">FAQ</a>
-                <a href="/blog.html" class="block font-medium">Blog</a>
-                <a href="/reviews.html" class="block font-medium">Reviews</a>
-                <a href="/service-area.html" class="block font-medium">Service Area</a>
-                <a href="/advertise.html" class="block font-medium">Advertise</a>
-                <a href="/contact.html" class="block">Book Now</a>
-            </div>
-        </div>
-    </header>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://siestafreeride.com/" aria-label="Siesta Free Ride home">
+        <img src="assets/logo.png" alt="Siesta Free Ride">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span><b>Menu</b>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a class="active" href="https://siestafreeride.com/">Home</a>
+        <a href="guide.html">Guide</a>
+        <a href="beaches.html">Beaches</a>
+        <a href="events.html">Events</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="service-area.html">Service Area</a>
+        <a href="photos.html">Photos</a>
+        <a href="advertise.html">Advertise</a>
+        <a class="nav-cta" href="contact.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
     <section class="hero">
-        <img id="hero-image" class="hero-image" src="/assets/siesta-hero-static.png" alt="Siesta Free Ride on Siesta Key">
+      <div class="hero-art">
+        <img src="assets/siesta-hero-static.png" alt="Siesta Free Ride on Siesta Key">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Siesta Key’s free local ride</p>
+        <h1>Free rides.<br><span>Island vibes.</span></h1>
+        <p class="hero-lede">Beach days, village nights, airport runs and everything in between—ride Siesta Key with a friendly local driver.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="contact.html">Book your ride <span>→</span></a>
+          <a class="text-link" href="tel:+19416008380">Call 941-600-8380</a>
+        </div>
+        <div class="hero-notes" aria-label="Service highlights">
+          <span>Free local rides</span><span>Tips appreciated</span><span>Airport by appointment</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Air Conditioned Banner -->
-    <div class="air-banner">
-        <img src="/assets/Air-Banner 1920x400.png" alt="Air Conditioned"loading="eager" width="1920" height="400">
-    </div>
-
-    <section class="w-full px-4 py-16" style="background:rgba(184,221,224,0.45);">
-        <div class="glass-panel p-8 md:p-10">
-            <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-6">
-                    <h3 class="font-bold text-xl mb-2">Airport Runs</h3>
-                    <p class="text-gray-700">
-                        Reliable pickups and drop-offs to SRQ and beyond. Real-time flight tracking,
-                        luggage assistance, and dependable service.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6">
-                    <h3 class="font-bold text-xl mb-2">Local Rides</h3>
-                    <p class="text-gray-700">
-                        Quick trips around Siesta Key and Sarasota. Beach trips, dinners, shopping,
-                        and local transportation when you need it.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6">
-                    <h3 class="font-bold text-xl mb-2">Private Charters</h3>
-                    <p class="text-gray-700">
-                        Book a dedicated driver for the day. Great for events, tours, airport pickup
-                        coordination, or multiple stops.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Intro Section -->
-            <div class="glass-panel p-8 mt-12 mb-8 border-2" style="border-color: rgba(0,119,182,0.3)">
-                <p class="text-gray-700 text-center mb-4 max-w-3xl mx-auto text-lg leading-relaxed">
-                    <strong>How to get around on Siesta Key?</strong> It just got easier. Our free ride service connects you to the island's best beaches, dining, shopping, and attractions. Whether you need a <strong>free ride on Siesta Key</strong> for a beach day, a grocery run, or a trip to SRQ airport, we've got you covered. No surge pricing. No hidden fees. Just genuine Siesta Key hospitality.
-                </p>
-            </div>
-
-            <!-- Explore Siesta Key -->
-            <div class="glass-panel p-8 mt-12">
-                <h2 class="text-2xl font-bold mb-4 text-center">See What's Happening</h2>
-                <p class="text-gray-700 text-center mb-6 max-w-3xl mx-auto">Plan your visit to Siesta Key. From the famous Sunday drum circle to local dining and world-class beaches, discover things to do every day.</p>
-                <div class="grid md:grid-cols-3 gap-6 mb-6">
-                    <div class="text-center">
-                        <h3 class="font-bold mb-2">🏖️ Beaches</h3>
-                        <p class="text-gray-600 text-sm mb-4">Siesta Beach (ranked #1 in USA), Turtle Beach, Crescent Beach & more.</p>
-                        <a href="/siesta-key-beaches-landing.html" class="bg-brand text-white px-6 py-2 rounded-md font-medium inline-block hover:bg-blue-700">Browse Beaches</a>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-bold mb-2">📅 Events & Things To Do</h3>
-                        <p class="text-gray-600 text-sm mb-4">Sunday drum circles, farmers market, live music & seasonal festivals.</p>
-                        <a href="/events.html" class="bg-brand text-white px-6 py-2 rounded-md font-medium inline-block hover:bg-blue-700">See Events</a>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-bold mb-2">🏘️ Village Guide</h3>
-                        <p class="text-gray-600 text-sm mb-4">Shops, restaurants, bars & local favorites in Siesta Key Village.</p>
-                        <a href="/siesta-key-village-landing.html" class="bg-brand text-white px-6 py-2 rounded-md font-medium inline-block hover:bg-blue-700">Explore Village</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="glass-panel p-8 mt-12">
-                <h2 class="text-2xl font-bold mb-4 text-center">Advertise on Our Shuttles & Website</h2>
-                <p class="text-gray-700 text-center mb-6 max-w-3xl mx-auto">Reach thousands of tourists and locals daily with high-visibility advertising on our Siesta Key shuttles and website. Your business can connect with targeted audiences where they're actively exploring the area.</p>
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div class="text-center">
-                        <h3 class="font-bold mb-2">👥 High Foot Traffic</h3>
-                        <p class="text-gray-600 text-sm">Our shuttles service Siesta Key's busiest spots�airport, beaches, resorts, and events.</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-bold mb-2">🎯 Targeted Audiences</h3>
-                        <p class="text-gray-600 text-sm">Connect with tourists, business travelers, and locals.</p>
-                    </div>
-                </div>
-                <p class="text-center"><a href="/advertise.html" class="bg-brand text-white px-8 py-3 rounded-md font-medium inline-block hover:bg-blue-700">Learn More &amp; Get Pricing &rarr;</a></p>
-            </div>
-
-        </div>
+    <section class="air-banner" aria-label="Air conditioned rides">
+      <img src="assets/air-banner.png" alt="Air Conditioned">
     </section>
 
-    <!-- Tips Appreciated Section -->
-    <section class="py-8 text-center" style="background: rgba(0,119,182,0.08);">
-        <div class="max-w-md mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-2">Tips Appreciated! &#128588;</h3>
-            <p class="text-gray-600 mb-4">Our rides are free &#8212; your tips keep us rolling. Thank you for your generosity!</p>
-            <a href="https://venmo.com/u/Rooster59" target="_blank" rel="noopener">
-                <img src="/assets/Venmo.jpeg" alt="Tip us on Venmo @Rooster59" class="mx-auto rounded-xl shadow-lg" style="max-width: 350px; width: 100%;"loading="lazy" width="1080" height="720">
-            </a>
-            <p class="mt-3 text-sm text-gray-500">Scan or tap to tip via Venmo <strong>@Rooster59</strong></p>
-        </div>
-    </section>
-
-    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
-                <p>Transportation in Siesta Key, FL.</p>
-                <p class="mt-4 text-sm"><strong class="text-cyan-400">Business Hours:</strong></p>
-                <p class="text-sm">🌴 <strong>Season</strong> (Oct 30 - Apr 15):<br>9am - 1am Daily</p>
-                <p class="text-sm mt-2">☀️ <strong>Off-Season</strong> (Apr 16 - Oct 29):<br>10am - 1am Daily</p>
-                <p class="text-sm mt-2">✈️ <strong>Airport Rides by Appointment Only</strong><br>365 Days a Year</p>
-                <p class="text-xs mt-2 text-gray-400 italic">*Start and stop times may vary</p>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-white mb-4">Contact</h4>
-                <p>941-600-8380</p>
-                <div class="mt-4 flex flex-wrap gap-3" aria-label="Social media links">
-                    <a href="https://www.tiktok.com/@siestafreeride" target="_blank" rel="noopener" aria-label="Siesta Free Ride on TikTok" title="TikTok" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black p-1 hover:bg-gray-900">
-                        <img src="/tiktok-logo.png" alt="" class="h-7 w-7 object-contain rounded-full"/>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61591350556761" target="_blank" rel="noopener" aria-label="Siesta Free Ride on Facebook" title="Facebook" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1877f2] text-white hover:bg-blue-600 font-bold text-2xl">f</a>
-                    <a href="https://www.youtube.com/@SiestFreeRide" target="_blank" rel="noopener" aria-label="Siesta Free Ride on YouTube" title="YouTube" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white p-1 hover:bg-gray-200">
-                        <img src="/youtube-logo.avif" alt="" class="h-7 w-7 object-contain"/>
-                    </a>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:text-white">Home</a></li>
-                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="/photos.html" class="hover:text-white">Photos</a></li>
-                    <li><a href="/reviews.html" class="hover:text-white">Reviews</a></li>
-                    <li><a href="/advertise.html" class="hover:text-white">Advertise</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Save Contact</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Affiliate Sponsors -->
-        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
-          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
-          <div class="flex flex-wrap justify-center gap-6 mb-6">
-            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
-              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Drive Again Secrets - License Reinstatement Guides
-            </a>
-            <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
-              <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Cash For Keys Properties - We Buy Houses Fast
-            </a>
-            <a href="https://moondoggys.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#FFD700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#FFD700'">
-              &#127769; Moondoggy's Saloon - Gulf Gate's Hottest Nightclub
-              <img src="/assets/buffalo-bills-logo.png" alt="Buffalo Bills" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="40" height="40">
-            </a>
-            <a href="https://detwilermarket.com/clarkroad/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#7cb342;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#7cb342'">
-              <img src="/assets/detwilers-logo.webp" alt="Detwiler's Farm Market" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager">
-              Detwiler's Farm Market - Fresh Produce & Amish Specialties
-            </a>
+    <section class="services section-pad">
+      <div class="section-shell">
+        <div class="section-intro split-intro">
+          <div>
+            <p class="eyebrow">Pick your ride</p>
+            <h2>Get there<br>the easy way.</h2>
           </div>
+          <p>From a quick hop across the island to a planned airport pickup, we make Siesta Key transportation simple, friendly and dependable.</p>
         </div>
-
-        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
-            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        <div class="service-grid">
+          <article class="service-card coral">
+            <span class="number">01</span>
+            <h3>Airport<br>runs</h3>
+            <p>Reliable pickups and drop-offs to SRQ and beyond, with real-time flight tracking and luggage assistance.</p>
+            <span class="card-tag">By appointment</span>
+          </article>
+          <article class="service-card sky">
+            <span class="number">02</span>
+            <h3>Local<br>rides</h3>
+            <p>Quick trips around Siesta Key and Sarasota for the beach, dinner, shopping and everyday island plans.</p>
+            <span class="card-tag">Tips appreciated</span>
+          </article>
+          <article class="service-card teal">
+            <span class="number">03</span>
+            <h3>Private<br>charters</h3>
+            <p>Book a dedicated driver for events, tours, coordinated pickups, or a day with several stops.</p>
+            <span class="card-tag">Built around you</span>
+          </article>
         </div>
-    </footer>
+        <p class="service-statement"><strong>How do you get around on Siesta Key?</strong> It just got easier. No surge pricing. No hidden fees. Just genuine Siesta Key hospitality.</p>
+      </div>
+    </section>
 
-    <!-- Sponsor Banner -->
-    <div class="cfk-banner" style="background: #000000; padding: 64px 24px; border-top: 3px solid #ff6700;">
-        <a href="https://homemortgageguys.com/" target="_blank" rel="noopener" class="hmg-sponsor-link" aria-label="Home Mortgage Guys">
-            <img src="/assets/home-mortgage-guys-logo.png" alt="Home Mortgage Guys" class="hmg-sponsor-logo" loading="lazy" width="640" height="320">
+    <section class="happenings section-pad">
+      <div class="section-shell">
+        <p class="eyebrow">Make a day of it</p>
+        <h2>See what’s<br>happening.</h2>
+        <p class="section-lede">From the famous Sunday drum circle to local dining and world-class beaches, there is always something waiting around the bend.</p>
+        <div class="destination-list">
+          <a href="https://siestafreeride.com/siesta-key-beaches-landing.html">
+            <span class="destination-kicker">01 / Sun + sand</span>
+            <strong>Beaches</strong>
+            <em>Siesta Beach, Turtle Beach, Crescent Beach &amp; more</em>
+            <b>→</b>
+          </a>
+          <a href="https://siestafreeride.com/events.html">
+            <span class="destination-kicker">02 / What’s on</span>
+            <strong>Events</strong>
+            <em>Drum circles, farmers markets, live music &amp; festivals</em>
+            <b>→</b>
+          </a>
+          <a href="https://siestafreeride.com/siesta-key-village-landing.html">
+            <span class="destination-kicker">03 / Local favorites</span>
+            <strong>Village guide</strong>
+            <em>Shops, restaurants, bars &amp; island favorites</em>
+            <b>→</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="advertise section-pad">
+      <div class="section-shell advertise-grid">
+        <div>
+          <p class="eyebrow">Put your brand in motion</p>
+          <h2>Seen by the<br>right crowd.</h2>
+        </div>
+        <div class="advertise-copy">
+          <p>Reach tourists and locals every day with high-visibility advertising on our Siesta Key shuttles and website.</p>
+          <ul>
+            <li><strong>High foot traffic</strong><span>Airport, beaches, resorts and events.</span></li>
+            <li><strong>Targeted audiences</strong><span>Travelers, visitors and Sarasota locals.</span></li>
+          </ul>
+          <a class="button button-dark" href="advertise.html#start">Get pricing <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tip-section section-pad">
+      <div class="section-shell tip-grid">
+        <div class="tip-copy">
+          <p class="eyebrow">Keep the wheels turning</p>
+          <h2>Free ride.<br>Big thanks.</h2>
+          <p>Our local rides are free—your tips keep us rolling. Scan or tap to tip through Venmo at <strong>@Rooster59</strong>.</p>
+          <a class="button button-light" href="https://venmo.com/u/Rooster59">Tip on Venmo <span>→</span></a>
+        </div>
+        <a class="qr-card" href="https://venmo.com/u/Rooster59" aria-label="Tip Siesta Free Ride on Venmo">
+          <img src="assets/venmo.jpeg" alt="Tip us on Venmo @Rooster59">
+          <span>Scan to say thanks</span>
         </a>
-        <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" class="cfk-link">
-            <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" class="cfk-logo" loading="lazy" width="320" height="320">
-            <div class="cfk-text">
-                <span class="cfk-title">Cash For Keys Properties</span>
-                <span class="cfk-subtitle">Sarasota's #1 Home Buyer & Rental Management Company</span>
-                <span class="cfk-tagline">We buy houses fast for cash!</span>
-                <span class="cfk-desc">No repairs, no fees, no hassle. Get a fair offer in 24 hours.</span>
-            </div>
-        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="">
+        <div><strong>Siesta Free Ride</strong><span>Transportation in Siesta Key, Florida</span></div>
+      </div>
+      <div>
+        <p class="footer-label">Business hours</p>
+        <p><strong>Season (Oct 30–Apr 15)</strong><br>9am–1am daily</p>
+        <p><strong>Off-season (Apr 16–Oct 29)</strong><br>10am–1am daily</p>
+        <p><strong>Airport rides by appointment</strong><br>365 days a year</p>
+      </div>
+      <div>
+        <p class="footer-label">Contact</p>
+        <a class="footer-phone" href="tel:+19416008380">941-600-8380</a>
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@siestafreeride"><img src="assets/tiktok-logo.png" alt="TikTok"></a>
+          <a href="https://www.facebook.com/profile.php?id=61591350556761" aria-label="Facebook">f</a>
+          <a href="https://www.youtube.com/@SiestFreeRide"><img src="assets/youtube-logo.avif" alt="YouTube"></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-label">Quick links</p>
+        <a href="https://siestafreeride.com/">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="photos.html">Photos</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="contact.html">Book a Ride</a>
+      </div>
     </div>
-    <style>
-        .hmg-sponsor-link {
-            display: flex;
-            justify-content: center;
-            width: min(900px, 100%);
-            margin: 0 auto 44px;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 18px 50px rgba(255, 103, 0, 0.2);
-        }
-        .hmg-sponsor-logo {
-            display: block;
-            width: min(620px, 100%);
-            height: auto;
-        }
-        .cfk-link {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 56px;
-            max-width: 1500px;
-            margin: 0 auto;
-        }
-        .cfk-logo {
-            width: min(640px, 42vw);
-            height: auto;
-            max-height: 430px;
-            flex-shrink: 0;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-        .cfk-text { text-align: center; }
-        .cfk-title { color: #ff6700; font-size: clamp(2.4rem, 3vw, 3.6rem); font-weight: 800; letter-spacing: 0.3px; display: block; }
-        .cfk-subtitle { color: #ff6700; font-size: clamp(1.8rem, 2.2vw, 2.8rem); font-weight: 700; display: block; margin-top: 16px; line-height: 1.2; }
-        .cfk-tagline { color: #ff6700; font-size: clamp(1.35rem, 1.5vw, 1.8rem); font-weight: 700; display: block; margin-top: 18px; }
-        .cfk-desc { color: #ffffffcc; font-size: clamp(1.1rem, 1.25vw, 1.45rem); display: block; margin-top: 10px; }
-        @media (max-width: 768px) {
-            .cfk-banner {
-                padding: 38px 18px !important;
-            }
-            .hmg-sponsor-link {
-                margin-bottom: 28px;
-                padding: 14px;
-            }
-            .hmg-sponsor-logo {
-                width: min(320px, 100%);
-            }
-            .cfk-link {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            .cfk-logo {
-                width: min(320px, 100%);
-                max-height: none;
-            }
-            .cfk-text { text-align: center; }
-            .cfk-title { font-size: 1.75rem; }
-            .cfk-subtitle { font-size: 1.2rem; }
-            .cfk-tagline { font-size: 1.05rem; }
-            .cfk-desc { font-size: 0.95rem; }
-        }
-    </style>
+    <div class="section-shell partners">
+      <p class="footer-label">Affiliate partners &amp; sponsors</p>
+      <div class="partner-grid">
+        <a href="https://www.driveagainsecrets.com"><img src="assets/das-logo.png" alt="Drive Again Secrets"></a>
+        <a href="https://cashforkeysproperties.com"><img src="assets/cfk-logo.png" alt="Cash For Keys Properties"></a>
+        <a class="moondoggys-card" href="https://moondoggys.com">
+          <span class="moon">🌙</span>
+          <span class="moondoggys-copy">
+            <img class="moondoggys-logo" src="assets/moondoggys-logo.webp" alt="Moondoggy’s Saloon">
+            <small>Gulf Gate’s hottest nightclub • Home of the Buffalo Bills</small>
+          </span>
+          <img class="bills-logo" src="assets/buffalo-bills-logo.webp" alt="Buffalo Bills">
+        </a>
+        <a href="https://detwilermarket.com/clarkroad/"><img src="assets/detwilers-logo.webp" alt="Detwiler's Farm Market"></a>
+        <a href="https://homemortgageguys.com/"><img src="assets/home-mortgage-guys-logo.png" alt="Home Mortgage Guys"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Siesta Free Ride. All rights reserved.</div>
+  </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <script src="script.js?v=footer-links-2"></script>
 </body>
 </html>
-

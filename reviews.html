@@ -1,497 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18312065873"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18312065873');
-    </script>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>47 Five-Star Google Reviews | Free Rides on Siesta Key</title>
-    <meta name="description" content="Siesta Free Ride has earned 47 five-star Google reviews for friendly, free rides on Siesta Key. Read rider feedback or leave a Google review."/>
-    <link rel="canonical" href="https://siestafreeride.com/reviews.html" />
-    <meta name="robots" content="index, follow"/>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://siestafreeride.com/#business",
-      "name": "Siesta Free Ride",
-      "alternateName": "Siesta Key Free Ride",
-      "url": "https://siestafreeride.com/",
-      "telephone": "+1-941-600-8380",
-      "description": "Free rides on Siesta Key for beach trips, Siesta Key Village, dining, groceries, and local transportation. Tips are appreciated.",
-      "areaServed": {"@type": "Place", "name": "Siesta Key, Florida"},
-      "serviceType": ["Free rides on Siesta Key", "Siesta Key transportation", "Beach shuttle service"]
-    }
-    </script>
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#0077b6',
-                        accent: '#00b4d8'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body { 
-            background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);
-            background-attachment: fixed;
-            color: #1f2937; 
-            position: relative;
-            min-height: 100vh;
-        }
-
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 70vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);
-            overflow: hidden;
-        }
-        
-        .hero-image {
-            height: 100%;
-            width: auto;
-            max-width: 100%;
-            display: block;
-            object-fit: contain;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                height: 50vh;
-            }
-            
-            .hero-image {
-                max-width: 95%;
-                height: auto;
-                max-height: 100%;
-            }
-
-            header img.h-52 {
-                height: 8rem;
-            }
-
-            .review-btn {
-                padding: 14px 24px;
-                font-size: 1rem;
-            }
-        }
-
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.82);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 0.75rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
-        }
-
-        /* Scrolling reviews ticker */
-        .reviews-ticker {
-            overflow: hidden;
-            background: rgba(255,255,255,0.9);
-            padding: 20px 0;
-            border-top: 1px solid rgba(0,119,182,0.2);
-            border-bottom: 1px solid rgba(0,119,182,0.2);
-        }
-
-        .reviews-track {
-            display: flex;
-            gap: 40px;
-            animation: scroll 60s linear infinite;
-            width: max-content;
-        }
-
-        .reviews-track:hover {
-            animation-play-state: paused;
-        }
-
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .review-item {
-            flex-shrink: 0;
-            background: rgba(255,255,255,0.95);
-            padding: 16px 24px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            max-width: 350px;
-            min-width: 300px;
-        }
-
-        .review-stars {
-            color: #FBBC04;
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
-
-        .review-text {
-            color: #333;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }
-
-        .review-author {
-            color: #666;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .review-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 16px 32px;
-            background: linear-gradient(135deg, #4285F4, #34A853);
-            color: white;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .review-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-        }
-
-        .rating-showcase {
-            position: relative;
-            overflow: hidden;
-            max-width: 64rem;
-            margin: 0 auto;
-            padding: clamp(2rem, 5vw, 4rem);
-            border: 5px solid #14213d;
-            border-radius: 28px;
-            background: #fff3cf;
-            box-shadow: 10px 10px 0 #14213d, 16px 16px 0 #ff6b5e;
-            text-align: center;
-        }
-
-        .rating-showcase::before {
-            content: "GOOGLE RIDER REVIEWS";
-            display: inline-block;
-            margin-bottom: 1.25rem;
-            padding: .5rem 1rem;
-            border: 3px solid #14213d;
-            border-radius: 999px;
-            background: #ffd166;
-            color: #14213d;
-            font-size: .78rem;
-            font-weight: 900;
-            letter-spacing: .14em;
-        }
-
-        .rating-number {
-            color: #14213d;
-            font-family: Impact, "Arial Black", sans-serif;
-            font-size: clamp(4rem, 14vw, 8rem);
-            line-height: .8;
-            text-shadow: 4px 4px 0 #ffd166, 8px 8px 0 #ff6b5e;
-        }
-
-        .rating-stars {
-            margin: 1.5rem 0 .75rem;
-            color: #f59e0b;
-            font-size: clamp(1.8rem, 6vw, 3rem);
-            letter-spacing: .08em;
-            text-shadow: 2px 2px 0 #14213d;
-        }
-
-        .rating-headline {
-            color: #14213d;
-            font-family: Impact, "Arial Black", sans-serif;
-            font-size: clamp(2rem, 6vw, 3.75rem);
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        .rating-points {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .rating-point {
-            padding: 1rem;
-            border: 3px solid #14213d;
-            border-radius: 14px;
-            background: #fffaf0;
-            color: #17324d;
-            font-weight: 800;
-            box-shadow: 4px 4px 0 #14213d;
-        }
-
-        @media (max-width: 768px) {
-            header img.h-52 {
-                height: 10rem;
-            }
-
-            .rating-showcase {
-                border-width: 4px;
-                box-shadow: 6px 7px 0 #14213d, 10px 11px 0 #ff6b5e;
-            }
-
-            .rating-points {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Five-star Siesta Free Ride reviews from riders around Siesta Key, Florida.">
+  <title>Siesta Free Ride Reviews — Siesta Free Ride</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <a href="/"><img src="/assets/logo.png" alt="Siesta Free Ride" class="h-52 md:h-60" loading="eager" style="width: auto;"></a>
-            </div>
-            <nav class="hidden md:flex gap-6 text-lg font-semibold">
-                <a href="/" class="hover:text-brand font-medium">Home</a>
-                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
-                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
-                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
-                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
-                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
-                <a href="/reviews.html" class="text-brand font-bold">Reviews</a>
-                <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
-                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
-            </nav>
-            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                &#9776;
-            </button>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
-            <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block font-medium">Home</a>
-                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
-                <a href="/beaches.html" class="block font-medium">Beaches</a>
-                <a href="/events.html" class="block font-medium">Events</a>
-                <a href="/faq.html" class="block font-medium">FAQ</a>
-                <a href="/blog.html" class="block font-medium">Blog</a>
-                <a href="/reviews.html" class="block text-brand font-bold">Reviews</a>
-                <a href="/advertise.html" class="block font-medium">Advertise</a>
-                <a href="/contact.html" class="block">Book Now</a>
-            </div>
-        </div>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Siesta Free Ride home"><img src="assets/logo.png" alt="Siesta Free Ride"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><b>Menu</b></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="beaches.html">Beaches</a><a href="events.html">Events</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a class="active" href="reviews.html">Reviews</a><a href="service-area.html">Service Area</a><a href="photos.html">Photos</a><a href="advertise.html">Advertise</a><a class="nav-cta" href="contact.html">Book Now</a></nav>
+    </div>
+  </header>
 
-    <!-- Hero with Review Logo -->
-    <section class="hero">
-        <img class="hero-image" src="/assets/review-logo.png" alt="Leave a Review - Siesta Free Ride">
+  <main id="main" class="reviews-page">
+    <section class="reviews-hero">
+      <div class="section-shell reviews-hero-grid">
+        <div><p class="eyebrow">Free rides on Siesta Key</p><h1>Five-star rides.<br><span>Island-wide trust.</span></h1></div>
+        <div class="rating-panel"><strong>4.9</strong><div class="rating-stars" aria-label="4.9 out of five stars">★★★★★</div><p>46 five-star reviews<br>and one ugly one</p><span>Friendly drivers • Clean rides • Easy island transportation</span></div>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="w-full px-4 py-16" style="background:rgba(184,221,224,0.45);">
-        <div class="glass-panel p-8 md:p-10 max-w-4xl mx-auto">
-            <h1 class="text-3xl font-bold text-center mb-4">Free Rides on Siesta Key, Rated Five Stars</h1>
-            <p class="text-center text-gray-600 mb-8 text-lg">Your review helps Siesta Key visitors discover our friendly, tips-appreciated ride service.</p>
-            
-            <!-- Main Google Review Button -->
-            <div class="text-center">
-                <a href="https://g.page/r/CZOcRPGBLcloEBI/review" target="_blank" rel="noopener" class="review-btn">
-                    ⭐ Leave a Google Review
-                </a>
-            </div>
+    <nav class="reviews-jump" aria-label="Reviews page sections"><div class="section-shell"><a href="#rider-stories">Rider stories</a><a href="#why-five-stars">Why five stars</a><a href="#leave-review">Leave a review</a><a href="#tips">Tips appreciated</a></div></nav>
+
+    <section id="rider-stories" class="reviews-stories section-pad">
+      <div class="section-shell">
+        <div class="reviews-heading"><p class="eyebrow">Real riders. Real words.</p><h2>From the<br>back seat.</h2></div>
+        <div class="reviews-grid">
+          <article class="review-card feature-review"><div class="card-stars">★★★★★</div><blockquote>“I have ridden all the shuttles on Siesta Key, and Siesta Free Ride was by far the most comfortable and cleanest of them all. The air-conditioning works great and the drivers were very helpful getting us around. I will see again in October.”</blockquote><footer>David Day</footer></article>
+          <article class="review-card"><div class="card-stars">★★★★★</div><blockquote>“Had a great experience with Siesta Free Ride. The shuttle was air conditioned, clean and Al is a great guy. I was happy to give him a nice tip and I enjoyed an ice cold complementary beverage as well. I’ll definitely use it again!”</blockquote><footer>Thomas Staigers</footer></article>
+          <article class="review-card"><div class="card-stars">★★★★★</div><blockquote>“I needed someone I could trust to take my daughter to the airport early in the morning. Alan arrived 10 minutes early, car was clean, and Alan was trust worthy. Molly felt safe and at ease. I will be calling him on all my future trips to Siesta Key!”</blockquote><footer>Meredith D</footer></article>
+          <article class="review-card"><div class="card-stars">★★★★★</div><blockquote>“Alan was awesome as we used his ride share 5 or 6 times and he was always there early and followed up to see if we needed a ride later. He took us to the airport at 5:00am in the morning and it was the best. Thanks Alan and will see you in October or early November!”</blockquote><footer>David Chonis</footer></article>
+          <article class="review-card"><div class="card-stars">★★★★★</div><blockquote>“We were in Siesta Key for a wedding. Alan was amazing to work with the entire time we stayed. He was prompt and very knowledgeable about places to eat, shop etc.”</blockquote><footer>Colette Chonis</footer></article>
+          <article class="review-card"><div class="card-stars">★★★★★</div><blockquote>“During recent visit, called Al at Siesta Free Ride a few times to get around. He was prompt and friendly and knows his way around. He recommended some must see destinations that did not disappoint. Highly recommend to get from condo to shopping, restaurants and beaches. Easier than Uber!”</blockquote><footer>Bill Slonski</footer></article>
+          <article class="review-card"><div class="card-stars">★★★★★</div><blockquote>“Excellent service. On time comfortable safe ride. Highly recommend. Al is a personable gentleman providing a great service that can be trusted.”</blockquote><footer>Chris</footer></article>
+          <article class="review-card short-review"><div class="card-stars">★★★★★</div><blockquote>“It’s free—tips only!”</blockquote><footer>Billie Hoover</footer></article>
         </div>
+      </div>
     </section>
 
-    <!-- Google Rating Showcase -->
-    <section class="w-full px-4 py-14" style="background:rgba(37,199,201,0.22);">
-        <div class="rating-showcase">
-            <div class="rating-number">5.0</div>
-            <div class="rating-stars" aria-label="Five out of five stars">★★★★★</div>
-            <h2 class="rating-headline">47 Five-Star Google Reviews</h2>
-            <p class="mt-5 text-lg text-gray-700 max-w-2xl mx-auto">Forty-seven riders have given Siesta Free Ride a five-star rating on Google Maps. Thank you for trusting us with beach rides, Village trips, airport transportation, and nights out around Siesta Key.</p>
-            <div class="rating-points" aria-label="What riders appreciate">
-                <div class="rating-point">Friendly, helpful drivers</div>
-                <div class="rating-point">Clean, air-conditioned rides</div>
-                <div class="rating-point">Easy Siesta Key transportation</div>
-            </div>
-        </div>
+    <section id="why-five-stars" class="reviews-values section-pad">
+      <div class="section-shell">
+        <div class="reviews-heading"><p class="eyebrow">What riders remember</p><h2>The details<br>make the ride.</h2></div>
+        <div class="review-value-grid"><article><span>01</span><h3>Friendly, helpful drivers.</h3><p>Local recommendations, prompt pickups and a person riders feel comfortable calling again.</p></article><article><span>02</span><h3>Clean, air-conditioned rides.</h3><p>A cool, comfortable break between the beach, Village, airport and every island stop.</p></article><article><span>03</span><h3>Easy Siesta Key transportation.</h3><p>No circling for parking, no surge pricing and no stress connecting plans around the Key.</p></article></div>
+      </div>
     </section>
 
-    <!-- Tips Section -->
-    <section class="py-8 text-center" style="background: rgba(0,119,182,0.08);">
-        <div class="max-w-md mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-2">Tips Appreciated! 🙏</h3>
-            <p class="text-gray-600 mb-4">Our rides are free — your tips keep us rolling!</p>
-            <a href="https://venmo.com/u/Rooster59" target="_blank" rel="noopener">
-                <img src="/assets/Venmo.jpeg" alt="Tip us on Venmo @Rooster59" class="mx-auto rounded-xl shadow-lg" style="max-width: 300px; width: 100%;" loading="lazy">
-            </a>
-            <p class="mt-3 text-sm text-gray-500">Venmo <strong>@Rooster59</strong></p>
-        </div>
+    <section id="leave-review" class="leave-review section-pad">
+      <div class="section-shell leave-review-grid">
+        <div class="review-art"><img src="assets/review-logo.png" alt="Leave a Google review for Siesta Free Ride"></div>
+        <div><p class="eyebrow">Help another visitor find us</p><h2>Share your<br>five-star ride.</h2><p>Your review helps Siesta Key visitors discover our friendly, tips-appreciated ride service. Scan the code or use the button to open Google Reviews.</p><a class="button button-dark" href="https://g.page/r/CZOcRPGBLcloEBI/review">Leave a Google review <span>→</span></a><small>Thank you for supporting local.</small></div>
+      </div>
     </section>
 
-    <!-- Scrolling 5-Star Reviews -->
-    <section class="reviews-ticker">
-        <div class="reviews-track">
-            <!-- Review 1 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"I have ridden all the shuttles on Siesta Key, and Siesta Free Ride was by far the most comfortable and cleanest of them all. The air-conditioning works great and the drivers were very helpful getting us around. I will see again in October."</p>
-                <p class="review-author">— David Day</p>
-            </div>
-            <!-- Review 2 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Had a great experience with Siesta Free Ride. The shuttle was air conditioned, clean and Al is a great guy. I was happy to give him a nice tip and I enjoyed an ice cold complementary beverage as well. I'll definitely use it again!"</p>
-                <p class="review-author">— Thomas Staigers</p>
-            </div>
-            <!-- Review 3 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"I needed someone I could trust to take my daughter to the airport early in the morning. Alan arrived 10 minutes early, car was clean, and Alan was trust worthy. Molly felt safe and at ease. I will be calling him on all my future trips to siesta key!"</p>
-                <p class="review-author">— Meredith D</p>
-            </div>
-            <!-- Review 4 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Alan was awesome as we used his ride share 5 or 6 times and he was always there early and followed up to see if we needed a ride later. He took us to the airport at 5:00am in the morning and it was the best. Thanks Alan and will see you in October or early November!"</p>
-                <p class="review-author">— David Chonis</p>
-            </div>
-            <!-- Review 5 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"We were in siesta keys for a wedding. Alan was amazing to work with the entire time we stayed. He was prompt and very knowledgeable about places to eat, shop etc."</p>
-                <p class="review-author">— Colette Chonis</p>
-            </div>
-            <!-- Review 6 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"During recent visit, called Al at Siesta Free Ride a few times to get around. He was prompt and friendly and knows his way around. He recommended some must see destinations that did not disappoint. Highly recommend to get from condo to shopping, restaurants and beaches. Easier than Uber!"</p>
-                <p class="review-author">— Bill Slonski</p>
-            </div>
-            <!-- Review 7 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Excellent service. On time comfortable safe ride. Highly recommend. Al is a personable gentleman providing a great service that can be trusted."</p>
-                <p class="review-author">— Chris</p>
-            </div>
-            <!-- Review 8 -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"It's Free tips Only!!!!"</p>
-                <p class="review-author">— Billie Hoover</p>
-            </div>
-            <!-- Duplicate for seamless loop -->
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"I have ridden all the shuttles on Siesta Key, and Siesta Free Ride was by far the most comfortable and cleanest of them all. The air-conditioning works great and the drivers were very helpful getting us around. I will see again in October."</p>
-                <p class="review-author">— David Day</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Had a great experience with Siesta Free Ride. The shuttle was air conditioned, clean and Al is a great guy. I was happy to give him a nice tip and I enjoyed an ice cold complementary beverage as well. I'll definitely use it again!"</p>
-                <p class="review-author">— Thomas Staigers</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"I needed someone I could trust to take my daughter to the airport early in the morning. Alan arrived 10 minutes early, car was clean, and Alan was trust worthy. Molly felt safe and at ease. I will be calling him on all my future trips to siesta key!"</p>
-                <p class="review-author">— Meredith D</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Alan was awesome as we used his ride share 5 or 6 times and he was always there early and followed up to see if we needed a ride later. He took us to the airport at 5:00am in the morning and it was the best. Thanks Alan and will see you in October or early November!"</p>
-                <p class="review-author">— David Chonis</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"We were in siesta keys for a wedding. Alan was amazing to work with the entire time we stayed. He was prompt and very knowledgeable about places to eat, shop etc."</p>
-                <p class="review-author">— Colette Chonis</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"During recent visit, called Al at Siesta Free Ride a few times to get around. He was prompt and friendly and knows his way around. He recommended some must see destinations that did not disappoint. Highly recommend to get from condo to shopping, restaurants and beaches. Easier than Uber!"</p>
-                <p class="review-author">— Bill Slonski</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Excellent service. On time comfortable safe ride. Highly recommend. Al is a personable gentleman providing a great service that can be trusted."</p>
-                <p class="review-author">— Chris</p>
-            </div>
-            <div class="review-item">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"It's Free tips Only!!!!"</p>
-                <p class="review-author">— Billie Hoover</p>
-            </div>
-        </div>
+    <section id="tips" class="reviews-tips section-pad">
+      <div class="section-shell reviews-tips-grid"><div><p class="eyebrow">Always free • Tips appreciated</p><h2>Your tips keep<br>us rolling.</h2><p>Our rides are free. If a driver made your day easier, a tip helps keep friendly local transportation moving around Siesta Key.</p><a class="button button-dark" href="https://venmo.com/u/Rooster59">Tip via Venmo <span>→</span></a></div><a class="reviews-venmo" href="https://venmo.com/u/Rooster59"><img src="assets/venmo.jpeg" alt="Tip Siesta Free Ride on Venmo at Rooster59"></a></div>
     </section>
+  </main>
 
-    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
-                <p>Transportation in Siesta Key, FL.</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Contact</h4>
-                <p>941-600-8380</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:text-white">Home</a></li>
-                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="/reviews.html" class="text-accent font-bold">Reviews</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Book a Ride</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="max-w-6xl mx-auto px-4 pt-6 mt-6 border-t border-gray-700 text-sm text-center">
-            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <footer class="site-footer">
+    <div class="section-shell footer-top"><div class="footer-brand"><img src="assets/logo.png" alt=""><div><strong>Siesta Free Ride</strong><span>Transportation in Siesta Key, Florida</span></div></div><div><p class="footer-label">Business hours</p><p><strong>Season (Oct 30–Apr 15)</strong><br>9am–1am daily</p><p><strong>Off-season (Apr 16–Oct 29)</strong><br>10am–1am daily</p><p><strong>Airport rides by appointment</strong><br>365 days a year</p></div><div><p class="footer-label">Contact</p><a class="footer-phone" href="tel:+19416008380">941-600-8380</a><div class="social-links"><a href="https://www.tiktok.com/@siestafreeride"><img src="assets/tiktok-logo.png" alt="TikTok"></a><a href="https://www.facebook.com/profile.php?id=61591350556761" aria-label="Facebook">f</a><a href="https://www.youtube.com/@SiestFreeRide"><img src="assets/youtube-logo.avif" alt="YouTube"></a></div></div><div><p class="footer-label">Quick links</p><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="beaches.html">Beaches</a><a href="events.html">Events</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="reviews.html">Reviews</a><a href="https://siestafreeride.com/contact.html">Book a Ride</a></div></div>
+    <div class="section-shell partners"><p class="footer-label">Affiliate partners &amp; sponsors</p><div class="partner-grid"><a href="https://www.driveagainsecrets.com"><img src="assets/das-logo.png" alt="Drive Again Secrets"></a><a href="https://cashforkeysproperties.com"><img src="assets/cfk-logo.png" alt="Cash For Keys Properties"></a><a class="moondoggys-card" href="https://moondoggys.com"><span class="moon">🌙</span><span class="moondoggys-copy"><img class="moondoggys-logo" src="assets/moondoggys-logo.webp" alt="Moondoggy’s Saloon"><small>Gulf Gate’s hottest nightclub • Home of the Buffalo Bills</small></span><img class="bills-logo" src="assets/buffalo-bills-logo.webp" alt="Buffalo Bills"></a><a href="https://detwilermarket.com/clarkroad/"><img src="assets/detwilers-logo.webp" alt="Detwiler's Farm Market"></a><a href="https://homemortgageguys.com/"><img src="assets/home-mortgage-guys-logo.png" alt="Home Mortgage Guys"></a></div></div>
+    <div class="footer-bottom">© 2026 Siesta Free Ride. All rights reserved.</div>
+  </footer>
+  <script src="script.js?v=footer-links-2"></script>
 </body>
 </html>
-
