@@ -928,6 +928,7 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .primary-nav.open { display: flex; }
   .primary-nav a { font-size: 14px; }
   .hero-copy { padding: 64px 24px; }
+  .home-page .hero-copy::after { width: 108px; height: 108px; right: -16px; bottom: -46px; border-width: 18px; }
   .split-intro,.advertise-grid,.tip-grid { grid-template-columns: 1fr; gap: 45px; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 390px; }
