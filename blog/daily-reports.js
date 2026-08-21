@@ -62,6 +62,14 @@ const reports = {
     adviceKicker: "Today’s best window", adviceTitle: "Go early and keep the afternoon flexible.", advice: "Use the morning for swimming and sand time, then plan lunch or an indoor Village stop as clouds build. Leave the water at the first sound of thunder and wait for official guidance before returning.",
     rideTitle: "Change plans without changing the mood.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel when the afternoon forecast changes.",
     source: "High, low and storm chance are today’s National Weather Service forecast. Gulf temperature is a nearby coastal estimate."
+  },
+  "2026-08-21": {
+    display: "Friday, August 21, 2026", headline: "Hot Friday, low storm odds", accent: "and live music after sunset.",
+    intro: "A 91°F high, 87°F Gulf water and a 25% chance of isolated storms set up a flexible beach-to-Village Friday.", high: "91°F", low: "78°F", water: "~87°F",
+    outlook: "The National Weather Service calls for isolated showers and thunderstorms today, with rain chances easing into the evening. The heat index may reach about 100–103°F around midday, so shade, cold water and shorter outdoor stretches matter even when the Gulf breeze feels good.",
+    adviceKicker: "Friday game plan", adviceTitle: "Watch radar early. Save the Village for tonight.", advice: "Keep the beach portion flexible, check the posted flag before swimming and take a real air-conditioned break during the hottest hours. If thunder is heard, leave the water immediately and wait for official guidance before returning.",
+    rideTitle: "Beach now. Village music later. One easy ride.", ride: "Siesta Key Oyster Bar lists live music from late morning through midnight, including the Chris Connolly Band at 8pm. Schedules can change, so confirm with the venue and call us when your group is ready to ride.",
+    source: "High, low, rain chance and hourly outlook are from the National Weather Service Sarasota forecast. Gulf water is an approximately 87°F NOAA-based coastal reading; check the posted beach flag."
   }
 };
 
