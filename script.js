@@ -6,8 +6,14 @@ toggle?.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-nav?.addEventListener('click', () => {
+nav?.addEventListener('click', (event) => {
+  if (!event.target.closest('a')) return;
   nav.classList.remove('open');
+  toggle?.setAttribute('aria-expanded', 'false');
+});
+
+window.addEventListener('pageshow', () => {
+  nav?.classList.remove('open');
   toggle?.setAttribute('aria-expanded', 'false');
 });
 
