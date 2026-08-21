@@ -918,6 +918,88 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .footer-top > .footer-quick-links { grid-column: 2 / 4; }
 }
 
+/* Village guide */
+.village-page { --village-yellow: #f7ad24; --village-orange: #ef5b2a; background: #fff; }
+.village-hero { padding: 82px 0; background: var(--paper); overflow: hidden; }
+.village-hero-grid { display: grid; grid-template-columns: .94fr 1.06fr; gap: 74px; align-items: center; }
+.village-hero-copy { position: relative; z-index: 2; }
+.village-hero-copy::after { content: ""; position: absolute; z-index: -1; width: 145px; height: 145px; right: -35px; bottom: -58px; border: 24px solid var(--teal); border-radius: 50%; opacity: .28; }
+.village-hero h1 { font-size: clamp(82px,8.8vw,130px); }
+.village-hero h1 span { color: var(--village-orange); }
+.village-hero-copy > p:not(.eyebrow) { max-width: 570px; margin: 30px 0 0; color: #3d484d; font-size: 18px; line-height: 1.75; }
+.village-hero-notes { margin-top: 38px; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 12px 24px; border-top: 1px solid var(--line); font-size: 10px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.village-hero-notes span::before { content: "•"; margin-right: 8px; color: var(--deep-teal); }
+.village-hero-photo { position: relative; margin: 0; background: var(--village-yellow); border: 2px solid var(--ink); box-shadow: 16px 16px 0 var(--teal); }
+.village-hero-photo img { width: 100%; min-height: 520px; object-fit: cover; }
+.village-hero-photo figcaption { position: absolute; left: -22px; bottom: 30px; padding: 13px 16px; color: var(--ink); background: var(--village-yellow); border: 2px solid var(--ink); font-size: 11px; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+.village-jump { position: sticky; top: var(--header-height); z-index: 15; background: var(--village-yellow); border-block: 2px solid var(--ink); box-shadow: 0 8px 18px rgba(17,20,22,.12); }
+.village-jump .section-shell { min-height: 66px; display: flex; justify-content: space-between; align-items: center; gap: 28px; overflow-x: auto; }
+.village-jump a { font: 900 17px/1 "Barlow Condensed",sans-serif; letter-spacing: .03em; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+.village-intro { background: #fff; }
+.village-intro-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 100px; align-items: start; }
+.village-intro h2,.village-heading h2,.village-shop h2,.village-market h2,.village-ride h2 { font-size: clamp(78px,8.4vw,122px); }
+.village-lead { color: var(--ink)!important; font-size: 24px!important; font-weight: 700; line-height: 1.5!important; }
+.village-intro-copy > p { color: #455157; font-size: 16px; line-height: 1.8; }
+.village-facts { margin-top: 38px; display: grid; grid-template-columns: repeat(3,1fr); border: 2px solid var(--ink); }
+.village-facts span { min-height: 135px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; color: #3d484d; font-size: 10px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; border-right: 2px solid var(--ink); }
+.village-facts span:last-child { border-right: 0; }
+.village-facts strong { color: var(--ink); font: 900 34px/1 "Barlow Condensed",sans-serif; text-transform: uppercase; }
+.village-eat { color: #fff; background: var(--ink); }
+.village-heading { margin-bottom: 64px; display: grid; grid-template-columns: 1fr .6fr; gap: 50px; align-items: end; }
+.village-heading .eyebrow { grid-column: 1 / -1; color: var(--village-yellow); }
+.village-heading > p:last-child { margin: 0 0 7px; color: rgba(255,255,255,.7); font-size: 17px; line-height: 1.75; }
+.village-heading:not(.light) > p:last-child { color: #455157; }
+.village-place-grid { display: grid; grid-template-columns: repeat(2,1fr); border: 2px solid rgba(255,255,255,.55); }
+.village-place-grid article { min-height: 410px; padding: 35px; display: flex; flex-direction: column; border-right: 1px solid rgba(255,255,255,.3); border-bottom: 1px solid rgba(255,255,255,.3); }
+.village-place-grid article:nth-child(2n) { border-right: 0; }
+.village-place-grid article:nth-child(n+3) { border-bottom: 0; }
+.village-place-grid article > span { color: var(--village-yellow); font: 900 18px/1 "Barlow Condensed",sans-serif; }
+.village-place-grid h3 { margin-top: 70px; font-size: clamp(56px,5.5vw,78px); }
+.village-place-grid p { max-width: 460px; color: rgba(255,255,255,.7); font-size: 14px; line-height: 1.7; }
+.village-place-grid strong { margin-top: auto; padding-top: 22px; color: var(--village-yellow); border-top: 1px solid rgba(255,255,255,.25); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.village-reservation-note { margin: 26px 0 0; color: var(--village-yellow); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.village-shop { background: var(--teal); }
+.village-shop-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
+.village-shop-copy > p:not(.eyebrow) { max-width: 520px; color: #24383a; font-size: 17px; line-height: 1.75; }
+.shop-tags { margin-top: 35px; display: flex; flex-wrap: wrap; gap: 10px; }
+.shop-tags span { padding: 10px 13px; background: var(--paper); border: 2px solid var(--ink); font: 900 15px/1 "Barlow Condensed",sans-serif; letter-spacing: .04em; text-transform: uppercase; box-shadow: 4px 4px 0 var(--village-yellow); }
+.village-shop figure { margin: 0; background: var(--paper); border: 2px solid var(--ink); box-shadow: 14px 14px 0 var(--village-yellow); }
+.village-shop figure img { width: 100%; height: 530px; object-fit: cover; }
+.village-shop figcaption,.village-night-grid figcaption { padding: 16px 18px; background: var(--paper); border-top: 2px solid var(--ink); font: 900 18px/1 "Barlow Condensed",sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+.village-market { background: var(--village-yellow); }
+.village-market-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 90px; align-items: center; }
+.market-time { min-height: 490px; padding: 38px; display: flex; flex-direction: column; justify-content: space-between; background: var(--village-orange); border: 2px solid var(--ink); box-shadow: 14px 14px 0 var(--teal); }
+.market-time span,.market-time small { font-size: 11px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.market-time strong { font: 900 clamp(120px,15vw,205px)/.75 "Barlow Condensed",sans-serif; letter-spacing: -.08em; }
+.village-market h2 { max-width: 720px; }
+.village-market ul { margin: 30px 0 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
+.village-market li { padding: 15px 0 15px 25px; border-bottom: 1px solid rgba(17,20,22,.35); font-size: 14px; font-weight: 700; }
+.village-market li::before { content: "—"; margin-left: -25px; margin-right: 10px; color: var(--deep-teal); }
+.village-music { background: #fff; }
+.village-music .village-heading .eyebrow { color: var(--deep-teal); }
+.village-night-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; align-items: stretch; }
+.village-night-grid figure { margin: 0; background: var(--paper); border: 2px solid var(--ink); box-shadow: 13px 13px 0 var(--village-orange); }
+.village-night-grid figure img { width: 100%; height: 520px; object-fit: cover; }
+.night-plan { border-top: 2px solid var(--ink); }
+.night-plan article { min-height: 170px; padding: 25px 0; display: grid; grid-template-columns: 54px 1fr; gap: 22px; border-bottom: 2px solid var(--ink); }
+.night-plan article > span { width: 44px; height: 44px; display: grid; place-items: center; color: #fff; background: var(--ink); border-radius: 50%; font: 900 16px/1 "Barlow Condensed",sans-serif; }
+.night-plan h3 { font-size: 36px; line-height: .95; }
+.night-plan p { color: #455157; font-size: 14px; line-height: 1.7; }
+.village-ride { background: var(--village-orange); }
+.village-ride-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 90px; align-items: center; }
+.village-ride-card { padding: 43px; background: var(--paper); border: 2px solid var(--ink); box-shadow: 14px 14px 0 var(--teal); }
+.village-phone { display: block; margin: 28px 0; font: 900 clamp(58px,6vw,83px)/1 "Barlow Condensed",sans-serif; text-decoration: none; }
+.village-ride-card small { margin-top: 24px; display: block; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
+@media (max-width: 980px) {
+  .village-hero-grid,.village-intro-grid,.village-shop-grid,.village-market-grid,.village-night-grid,.village-ride-grid { grid-template-columns: 1fr; gap: 52px; }
+  .village-hero-photo img { min-height: 440px; }
+  .village-heading { grid-template-columns: 1fr; gap: 22px; }
+  .village-heading .eyebrow { grid-column: auto; }
+  .village-market-grid { align-items: stretch; }
+  .market-time { min-height: 360px; }
+}
+
 @media (max-width: 860px) {
   :root { --header-height: 132px; }
   .header-inner { width: calc(100% - 28px); }
@@ -973,6 +1055,12 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .contact-jump .section-shell { justify-content: flex-start; }
   .advertise-hero { padding: 80px 0; }
   .advertise-jump .section-shell { justify-content: flex-start; }
+  .village-hero { padding: 80px 0; }
+  .village-jump { top: var(--header-height); }
+  .village-jump .section-shell { justify-content: flex-start; }
+  .village-place-grid { grid-template-columns: 1fr; }
+  .village-place-grid article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.3)!important; }
+  .village-place-grid article:last-child { border-bottom: 0!important; }
   .footer-quick-grid,.footer-quick-row { grid-template-columns: repeat(3,minmax(90px,1fr)); }
 }
 
@@ -1176,4 +1264,25 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .advertise-visual img { max-height: 600px; }
   .advertise-contact-card { padding: 30px 24px; }
   .advertise-contact-card > a:not(.button) { font-size: 49px; }
+  .village-hero h1 { font-size: 66px; }
+  .village-hero-photo { box-shadow: 9px 9px 0 var(--teal); }
+  .village-hero-photo img { min-height: 350px; }
+  .village-hero-photo figcaption { left: 10px; right: 10px; bottom: 12px; text-align: center; }
+  .village-jump .section-shell { width: 100%; min-height: 0; padding: 0; display: grid; grid-template-columns: repeat(2,1fr); gap: 0; overflow: visible; }
+  .village-jump a { padding: 11px 7px; font-size: 14px; text-align: center; }
+  .village-jump a:last-child { grid-column: 1 / -1; }
+  .village-intro h2,.village-heading h2,.village-shop h2,.village-market h2,.village-ride h2 { font-size: 64px; }
+  .village-facts { grid-template-columns: 1fr; }
+  .village-facts span { min-height: 100px; border-right: 0; border-bottom: 2px solid var(--ink); }
+  .village-facts span:last-child { border-bottom: 0; }
+  .village-place-grid article { min-height: 350px; padding: 27px; }
+  .village-place-grid h3 { margin-top: 55px; font-size: 56px; }
+  .village-shop figure img,.village-night-grid figure img { height: 390px; }
+  .market-time { min-height: 300px; padding: 28px; }
+  .market-time strong { font-size: 120px; }
+  .night-plan article { grid-template-columns: 45px 1fr; gap: 15px; }
+  .village-ride-card { padding: 30px 24px; }
+  .village-phone { font-size: 48px; }
 }
+
+

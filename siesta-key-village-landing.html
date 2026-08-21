@@ -1,218 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18312065873"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18312065873');
-    </script>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Siesta Key Village 2026 | Local Guides, Dining & Free Shuttle | Siesta Free Ride</title>
-    <meta name="description" content="Siesta Key Village guide: best shops, restaurants, bars & events. Plan your visit with free local shuttle rides. Discover local favorites. Tips only!"/>
-    <link rel="canonical" href="https://siestafreeride.com/siesta-key-village-landing.html" />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: '#0077b6', accent: '#00b4d8' } } } }</script>
-    <style>
-        html, body { margin: 0; padding: 0; }
-        body { background-image: url('/assets/background-photo.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; color: #1f2937; position: relative; }
-        body::before { content: ""; position: fixed; inset: 0; background: rgba(184,221,224,0.25); z-index: -1; }
-        .glass-panel { background: rgba(184,221,224,0.65); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.06); border: 1px solid rgba(255,255,255,0.3); }
-        .glass-card { background: rgba(184,221,224,0.55); border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.2s; }
-        .glass-card:hover { transform: translateY(-2px); }
-        .cta-button { background: #0077b6; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; text-decoration: none; display: inline-block; margin: 0.5rem 0; transition: background 0.2s; }
-        .cta-button:hover { background: #005a8b; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Siesta Key Village restaurants, bars, shops, live music and the Sunday farmers market—and ride there free with Siesta Free Ride.">
+  <link rel="canonical" href="https://siestafreeride.com/siesta-key-village-landing.html">
+  <title>Siesta Key Village Guide 2026 | Dining, Shops, Music & Free Shuttle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="sticky top-0 z-50 backdrop-blur-md shadow-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="/assets/logo.png" alt="Siesta Free Ride" class="h-60" loading="eager" style="width: auto;">
-            </div>
-            <nav class="hidden md:flex gap-6 text-lg font-semibold">
-                <a href="/" class="hover:text-brand font-medium">Home</a>
-                <a href="/siesta-key-guide.html" class="hover:text-brand font-medium">Guide</a>
-                <a href="/beaches.html" class="hover:text-brand font-medium">Beaches</a>
-                <a href="/events.html" class="hover:text-brand font-medium">Events</a>
-                <a href="/faq.html" class="hover:text-brand font-medium">FAQ</a>
-                <a href="/blog.html" class="hover:text-brand font-medium">Blog</a>
-                <a href="/advertise.html" class="hover:text-brand font-medium">Advertise</a>
-                <a href="/contact.html" class="bg-brand text-white px-4 py-1.5 rounded-md">Book Now</a>
-            </nav>
-            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Siesta Free Ride home"><img src="assets/logo.png" alt="Siesta Free Ride"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><b>Menu</b></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="guide.html">Guide</a>
+        <a href="beaches.html">Beaches</a>
+        <a href="events.html">Events</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="service-area.html">Service Area</a>
+        <a href="photos.html">Photos</a>
+        <a href="advertise.html">Advertise</a>
+        <a class="nav-cta" href="contact.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="village-page">
+    <section class="village-hero">
+      <div class="section-shell village-hero-grid">
+        <div class="village-hero-copy">
+          <p class="eyebrow">The social side of Siesta Key</p>
+          <h1>Meet me in<br>the <span>Village.</span></h1>
+          <p>One walkable neighborhood packed with island restaurants, open-air bars, boutiques, live music and the Sunday farmers market.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="tel:+19416008380">Ride to the Village <span>→</span></a>
+            <a class="text-link" href="#village-plan">Plan your visit</a>
+          </div>
+          <div class="village-hero-notes"><span>Free local rides</span><span>Open day + night</span><span>Tips appreciated</span></div>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden border-t backdrop-blur-md" style="background: linear-gradient(135deg, #f4a460 0%, #87CEEB 50%, #20B2AA 100%);">
-            <div class="px-4 py-3 space-y-3">
-                <a href="/" class="block font-medium">Home</a>
-                <a href="/siesta-key-guide.html" class="block font-medium">Guide</a>
-                <a href="/beaches.html" class="block font-medium">Beaches</a>
-                <a href="/events.html" class="block font-medium">Events</a>
-                <a href="/faq.html" class="block font-medium">FAQ</a>
-                <a href="/blog.html" class="block font-medium">Blog</a>
-                <a href="/advertise.html" class="block font-medium">Advertise</a>
-                <a href="/contact.html" class="block font-medium">Book Now</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="max-w-6xl mx-auto px-4 py-16">
-        <div class="glass-panel p-8 md:p-10">
-            <h1 class="text-4xl font-bold text-center mb-4">Siesta Key Village � Plan Your Free Visit</h1>
-            <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto"><strong>Discover the heart of Siesta Key.</strong> Shops, restaurants, live music & farmers market. We'll get you there � free shuttle rides to the Village. Call <strong>941-600-8380</strong>.</p>
-            
-            <div class="text-center mb-8">
-                <a href="/contact.html" class="cta-button">See What's Happening - Book Free Ride</a>
-            </div>
-
-            <!-- What's in the Village -->
-            <div class="mb-12">
-                <h2 class="text-2xl font-bold mb-6 text-brand">What's in Siesta Key Village?</h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="glass-card p-6">
-                        <h3 class="font-bold text-xl mb-2">??? Best Restaurants & Bars</h3>
-                        <p class="text-gray-700 mb-3">SKOB (The Siesta Key Original Bar), Daiquiri Deck, Gilligan's, The Beach Club, and dozens of dining options. Happy hours, live music Thursday�Sunday.</p>
-                        <p class="text-sm text-gray-600">?? Tip: Make reservations 2�3 days ahead in peak season</p>
-                    </div>
-                    <div class="glass-card p-6">
-                        <h3 class="font-bold text-xl mb-2">??? Shops & Galleries</h3>
-                        <p class="text-gray-700 mb-3">Unique boutiques, art galleries, jewelry stores, and local shops. Browse beachwear, local art, souvenirs, and gifts. Support local businesses.</p>
-                        <p class="text-sm text-gray-600">? Discover hidden gems you won't find online</p>
-                    </div>
-                    <div class="glass-card p-6">
-                        <h3 class="font-bold text-xl mb-2">?? Sunday Farmers Market</h3>
-                        <p class="text-gray-700 mb-3">Every Sunday 8am�1pm. Fresh local produce, baked goods, honey, handmade crafts, and live music. Rain or shine, year-round. A must-do.</p>
-                        <p class="text-sm text-gray-600">?? Live musicians perform throughout the market</p>
-                    </div>
-                    <div class="glass-card p-6">
-                        <h3 class="font-bold text-xl mb-2">?? Live Music Nights</h3>
-                        <p class="text-gray-700 mb-3">Thursday�Sunday: live performers at SKOB, Daiquiri Deck, Gilligan's, Beach Club & more. Jazz, reggae, rock, acoustic. Most venues have no cover charge.</p>
-                        <p class="text-sm text-gray-600">?? Check venue websites for schedules</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="glass-panel p-8 text-center mb-8">
-                <h2 class="text-2xl font-bold mb-4">Plan Your Visit � Free Shuttle Available</h2>
-                <p class="text-gray-700 mb-6">Don't drive to the Village and worry about parking. Our free shuttle gets you there, no stress. Explore shops, grab lunch, catch live music, and enjoy the atmosphere. We'll pick you up whenever you're ready.</p>
-                <div>
-                    <a href="/events.html" class="cta-button">See What's Happening This Week</a>
-                    <a href="/contact.html" class="cta-button" style="margin-left: 0.5rem;">Book Your Free Ride</a>
-                </div>
-            </div>
-
-            <!-- Why Choose Us -->
-            <div class="mb-12">
-                <h2 class="text-2xl font-bold mb-6 text-brand">Why Siesta Free Ride?</h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="glass-card p-6 text-center">
-                        <h3 class="font-bold text-lg mb-2">? Completely Free</h3>
-                        <p class="text-gray-700">No fees. No fuss. Just free rides to the Village. Tips appreciated!</p>
-                    </div>
-                    <div class="glass-card p-6 text-center">
-                        <h3 class="font-bold text-lg mb-2">??? No Parking Hassle</h3>
-                        <p class="text-gray-700">Avoid the Village parking madness. We handle transportation. You explore.</p>
-                    </div>
-                    <div class="glass-card p-6 text-center">
-                        <h3 class="font-bold text-lg mb-2">?? Local Experts</h3>
-                        <p class="text-gray-700">We know every shop, restaurant & spot. Ask for recommendations!</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Visitor Tips -->
-            <div class="glass-panel p-8">
-                <h2 class="text-2xl font-bold mb-6 text-brand">Village Visitor Tips</h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h3 class="font-bold mb-3">?? Best Times to Visit</h3>
-                        <ul class="text-gray-700 space-y-2 text-sm">
-                            <li>� <strong>Sunday mornings:</strong> Farmers market (8am�1pm), less crowded</li>
-                            <li>� <strong>Weekday afternoons:</strong> Peaceful shopping, shorter waits</li>
-                            <li>� <strong>Evenings (Thu�Sun):</strong> Live music, happy hours, vibrant energy</li>
-                            <li>� <strong>Avoid:</strong> Peak lunch (11am�1pm) & 5�7pm dinnertime</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-bold mb-3">?? What to Know</h3>
-                        <ul class="text-gray-700 space-y-2 text-sm">
-                            <li>� Most places accept cards & cash</li>
-                            <li>� Casual beach attire is fine</li>
-                            <li>� Cash tips are appreciated</li>
-                            <li>� Free shuttle back home � no time limits!</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <figure class="village-hero-photo">
+          <img src="assets/siesta-key-village-sign.jpg" alt="Colorful Siesta Key Village surfboard sign">
+          <figcaption>Shops • food • music • island nights</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <!-- Phone CTA -->
-    <section class="py-8 text-center" style="background: rgba(0,119,182,0.08);">
-        <div class="max-w-md mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-2">Ready to Explore? Call Now!</h3>
-            <p class="text-gray-600 mb-4">Book your free Village shuttle in seconds.</p>
-            <a href="tel:941-600-8380" style="font-size: 2.25rem; color: #12a5b0; font-weight: bold; text-decoration: none; display: block; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
-                941-600-8380
-            </a>
-            <p class="mt-3 text-sm text-gray-500">Available 10am � 11pm daily</p>
+    <nav class="village-jump" aria-label="Village guide sections">
+      <div class="section-shell"><a href="#eat-drink">Eat + drink</a><a href="#shop">Shop</a><a href="#market">Sunday market</a><a href="#music">Live music</a><a href="#ride">Free ride</a></div>
+    </nav>
+
+    <section id="village-plan" class="village-intro section-pad">
+      <div class="section-shell village-intro-grid">
+        <div>
+          <p class="eyebrow">The heart of the Key</p>
+          <h2>One strip.<br>All the energy.</h2>
         </div>
+        <div class="village-intro-copy">
+          <p class="village-lead">Siesta Key Village is the island’s walkable center for eating, shopping and nightlife—close enough to explore without ever getting back in the car.</p>
+          <p>Start with coffee or the farmers market, browse local shops in the afternoon, then settle in for seafood, frozen drinks and live music after sunset.</p>
+          <div class="village-facts"><span><strong>8am</strong>Sunday market begins</span><span><strong>Walkable</strong>Food, shops + nightlife</span><span><strong>Free</strong>Local shuttle rides</span></div>
+        </div>
+      </div>
     </section>
 
-    <footer class="bg-gray-900/85 backdrop-blur-md text-gray-200 py-10 mt-10">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold text-white mb-4">Siesta Free Ride</h4>
-                <p>Free rides to Siesta Key Village, beaches & attractions.</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Contact</h4>
-                <p>941-600-8380</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="/siesta-key-guide.html" class="hover:text-white">Guide</a></li>
-                    <li><a href="/events.html" class="hover:text-white">Events</a></li>
-                    <li><a href="/blog.html" class="hover:text-white">Blog</a></li>
-                    <li><a href="/contact.html" class="hover:text-white">Book Now</a></li>
-                </ul>
-            </div>
+    <section id="eat-drink" class="village-eat section-pad">
+      <div class="section-shell">
+        <div class="village-heading light"><p class="eyebrow">Come hungry</p><h2>Eat. Sip.<br>Stay awhile.</h2><p>Casual seafood, cold drinks, patios and the kind of places where lunch easily turns into sunset.</p></div>
+        <div class="village-place-grid">
+          <article><span>01</span><h3>Siesta Key<br>Oyster Bar</h3><p>Fresh oysters, cocktails, live music and a true Village atmosphere.</p><strong>Local favorite • Live music</strong></article>
+          <article><span>02</span><h3>Daiquiri<br>Deck</h3><p>Frozen drinks, pub favorites and a lively open-air stop in the center of the action.</p><strong>Frozen drinks • Rooftop energy</strong></article>
+          <article><span>03</span><h3>Gilligan’s<br>Island Bar</h3><p>Tropical outdoor space, weekend music and an easygoing island-night feel.</p><strong>Tiki atmosphere • Dancing</strong></article>
+          <article><span>04</span><h3>The Beach<br>Club</h3><p>Live bands, DJs and late-night dancing right in the heart of the Village.</p><strong>Nightlife • Live entertainment</strong></article>
         </div>
-        <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-gray-700 text-sm text-center">
-            &copy; <span id="year"></span> Siesta Free Ride. All rights reserved.
+        <p class="village-reservation-note">Peak season tip: dinner tables fill fast. Make reservations two or three days ahead when possible.</p>
+      </div>
+    </section>
+
+    <section id="shop" class="village-shop section-pad">
+      <div class="section-shell village-shop-grid">
+        <div class="village-shop-copy">
+          <p class="eyebrow">Browse the island way</p>
+          <h2>Beach finds.<br>Local flavor.</h2>
+          <p>Look for resort wear, surf gear, jewelry, local art, photography, gifts and Florida-made goods. The best finds are the ones you did not know you were looking for.</p>
+          <div class="shop-tags"><span>Beachwear</span><span>Local art</span><span>Jewelry</span><span>Surf shops</span><span>Island gifts</span><span>Florida-made</span></div>
         </div>
-            <!-- Affiliate Sponsors -->
-        <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-700">
-          <p style="font-size:0.85rem;color:#00b4d8;text-transform:uppercase;letter-spacing:0.14em;text-align:center;margin-bottom:1rem;font-weight:700;">Affiliate Partners &amp; Sponsors</p>
-          <div class="flex flex-wrap justify-center gap-6 mb-6">
-            <a href="https://www.driveagainsecrets.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#00b4d8;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00b4d8'">
-              <img src="/assets/das-logo.png" alt="Drive Again Secrets" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Drive Again Secrets - License Reinstatement Guides
-            </a>
-            <a href="https://cashforkeysproperties.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#ff6700;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6700'">
-              <img src="/assets/cfk-logo.png" alt="Cash For Keys Properties" style="height:40px;width:auto;display:inline-block;vertical-align:middle;" loading="eager" width="200" height="100">
-              Cash For Keys Properties - We Buy Houses Fast
-            </a>
-            <a href="https://moondoggys.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;color:#9333ea;font-size:1.15rem;font-weight:700;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#9333ea'">
-              Moondoggys Saloon - Gulf Gates Hottest Nightclub
-            </a>
+        <figure><img src="assets/island-palm-sunset.jpeg" alt="Palm trees at sunset on Siesta Key"><figcaption>Walk. Browse. Repeat.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="market" class="village-market section-pad">
+      <div class="section-shell village-market-grid">
+        <div class="market-time"><span>Every Sunday</span><strong>8–1</strong><small>Morning to early afternoon</small></div>
+        <div>
+          <p class="eyebrow">Rain or shine • year-round</p>
+          <h2>Sunday farmers market.</h2>
+          <p class="village-lead">Fresh produce, baked goods, local honey, handmade crafts and live music bring the Village to life every Sunday morning.</p>
+          <ul><li>Arrive early for easier browsing</li><li>Bring cash for smaller vendors</li><li>Stay for breakfast or lunch nearby</li><li>Call us when you are ready to head home</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="village-music section-pad">
+      <div class="section-shell">
+        <div class="village-heading"><p class="eyebrow">Thursday through Sunday</p><h2>When the sun drops,<br>the Village turns up.</h2><p>Acoustic sets, reggae, rock, DJs and patio bands fill the neighborhood. Most Village venues do not charge a cover.</p></div>
+        <div class="village-night-grid">
+          <figure><img src="assets/siesta-sunset.png" alt="Brilliant sunset over Siesta Key beach"><figcaption>Sunset first. Village next.</figcaption></figure>
+          <div class="night-plan">
+            <article><span>01</span><div><h3>Start with dinner</h3><p>Arrive before the evening rush and settle into an outdoor table.</p></div></article>
+            <article><span>02</span><div><h3>Follow the music</h3><p>Schedules change, so check venue pages or ask your driver what is happening.</p></div></article>
+            <article><span>03</span><div><h3>Leave the keys home</h3><p>Call Siesta Free Ride for a safe trip to the Village and back.</p></div></article>
           </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <section id="ride" class="village-ride section-pad">
+      <div class="section-shell village-ride-grid">
+        <div><p class="eyebrow">Skip the parking search</p><h2>Go out.<br>Ride back.</h2></div>
+        <div class="village-ride-card">
+          <p class="village-lead">Village parking is limited—especially around dinner and live music. We will pick you up, drop you near the action and bring you home when you are ready.</p>
+          <a class="village-phone" href="tel:+19416008380">941-600-8380</a>
+          <a class="button button-dark" href="contact.html">Book your free ride <span>→</span></a>
+          <small>Free local rides • Air conditioned • Tips appreciated</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top">
+      <div class="footer-brand"><img src="assets/logo.png" alt=""><div><strong>Siesta Free Ride</strong><span>Transportation in Siesta Key, Florida</span></div></div>
+      <div><p class="footer-label">Business hours</p><p><strong>Season (Oct 30–Apr 15)</strong><br>9am–1am daily</p><p><strong>Off-season (Apr 16–Oct 29)</strong><br>10am–1am daily</p><p><strong>Airport rides by appointment</strong><br>365 days a year</p></div>
+      <div><p class="footer-label">Contact</p><a class="footer-phone" href="tel:+19416008380">941-600-8380</a><div class="social-links"><a href="https://www.tiktok.com/@siestafreeride"><img src="assets/tiktok-logo.png" alt="TikTok"></a><a href="https://www.facebook.com/profile.php?id=61591350556761" aria-label="Facebook">f</a><a href="https://www.youtube.com/@SiestFreeRide"><img src="assets/youtube-logo.avif" alt="YouTube"></a></div></div>
+      <div><p class="footer-label">Quick links</p><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="photos.html">Photos</a><a href="reviews.html">Reviews</a><a href="advertise.html">Advertise</a><a href="contact.html">Book a Ride</a></div>
+    </div>
+    <div class="section-shell partners">
+      <p class="footer-label">Affiliate partners &amp; sponsors</p>
+      <div class="partner-grid">
+        <a href="https://www.driveagainsecrets.com"><img src="assets/das-logo.png" alt="Drive Again Secrets"></a>
+        <a href="https://cashforkeysproperties.com"><img src="assets/cfk-logo.png" alt="Cash For Keys Properties"></a>
+        <a class="moondoggys-card" href="https://moondoggys.com"><span class="moon">🌙</span><span class="moondoggys-copy"><img class="moondoggys-logo" src="assets/moondoggys-logo.webp" alt="Moondoggy’s Saloon"><small>Gulf Gate’s hottest nightclub • Home of the Buffalo Bills</small></span><img class="bills-logo" src="assets/buffalo-bills-logo.webp" alt="Buffalo Bills"></a>
+        <a href="https://detwilermarket.com/clarkroad/"><img src="assets/detwilers-logo.webp" alt="Detwiler's Farm Market"></a>
+        <a href="https://homemortgageguys.com/"><img src="assets/home-mortgage-guys-logo.png" alt="Home Mortgage Guys"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Siesta Free Ride. All rights reserved.</div>
+  </footer>
+  <script src="script.js?v=footer-links-2"></script>
 </body>
 </html>
-
 
 
