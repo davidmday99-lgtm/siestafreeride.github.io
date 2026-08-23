@@ -70,6 +70,22 @@ const reports = {
     adviceKicker: "Friday game plan", adviceTitle: "Watch radar early. Save the Village for tonight.", advice: "Keep the beach portion flexible, check the posted flag before swimming and take a real air-conditioned break during the hottest hours. If thunder is heard, leave the water immediately and wait for official guidance before returning.",
     rideTitle: "Beach now. Village music later. One easy ride.", ride: "Siesta Key Oyster Bar lists live music from late morning through midnight, including the Chris Connolly Band at 8pm. Schedules can change, so confirm with the venue and call us when your group is ready to ride.",
     source: "High, low, rain chance and hourly outlook are from the National Weather Service Sarasota forecast. Gulf water is an approximately 87°F NOAA-based coastal reading; check the posted beach flag."
+  },
+  "2026-08-22": {
+    display: "Saturday, August 22, 2026", headline: "Hot, bright Saturday", accent: "with calm Gulf conditions.",
+    intro: "A high around 90°F, upper-80s Gulf water and low rip-current risk favored an early beach start and a cool midday break.", high: "90°F", low: "~80°F", water: "~88°F",
+    outlook: "The National Weather Service beach forecast called for mostly sunny skies, southwest winds around 5–10 mph, 1–2 foot surf and low rip-current risk. The UV index was very high, so shade and hydration mattered even with a comfortable Gulf breeze.",
+    adviceKicker: "Saturday beach plan", adviceTitle: "Go early. Cool down before the dinner rush.", advice: "Use the quieter morning for swimming and sand time, check the posted flag before entering the water and take a real indoor or shaded break when the sun feels strongest. Low risk never means no risk, especially near structures and channels.",
+    rideTitle: "Skip the weekend parking loop.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel so Saturday stays easy from the first stop through dinner.",
+    source: "High, wind, surf, rip-current risk, UV and water range are from the August 22 National Weather Service Tampa Bay surf-zone forecast for Coastal Sarasota."
+  },
+  "2026-08-23": {
+    display: "Sunday, August 23, 2026", headline: "Showery Sunday", accent: "with a very warm Gulf.",
+    intro: "A high near 89°F, showers and storms this afternoon, and roughly 87°F Gulf water call for a flexible beach-to-Village plan.", high: "89°F", low: "77°F", water: "~87°F",
+    outlook: "The afternoon National Weather Service update raised the rain chance to 60%, with showers likely before 5pm and scattered showers and thunderstorms after. The surf-zone forecast kept rip-current risk low with surf around 1 foot or less, but thunder means leaving the water immediately.",
+    adviceKicker: "Sunday weather plan", adviceTitle: "Use clear windows, not a fixed schedule.", advice: "Check live radar and the posted beach flag before swimming, keep an indoor lunch or Village stop ready and leave the water at the first sound of thunder. If skies improve later, regroup for a relaxed sunset rather than rushing the afternoon.",
+    rideTitle: "Move between the beach and dry stops without the parking shuffle.", ride: "Call Siesta Free Ride when the weather changes. We can connect the beach, Village, restaurants and your hotel while your group stays flexible.",
+    source: "High, low and rain chance are from the August 23 National Weather Service Sarasota forecast. Surf and rip-current risk are from the Tampa Bay surf-zone forecast; Gulf water is approximately 87°F from NOAA/COMPS buoy 42013."
   }
 };
 
