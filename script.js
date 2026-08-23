@@ -8,6 +8,19 @@
   y.parentNode.insertBefore(t, y);
 })(window, document, 'clarity', 'script', 'y71ndwnq8q');
 
+// Google Analytics 4 for Siesta Free Ride.
+(function (window, document, measurementId) {
+  const googleTag = document.createElement('script');
+  googleTag.async = true;
+  googleTag.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+  document.head.appendChild(googleTag);
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', measurementId);
+})(window, document, 'G-909TD54W5S');
+
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.primary-nav');
 
