@@ -88,12 +88,12 @@ const reports = {
     source: "Recorded air temperature and conditions are from the August 23 National Weather Service KSRQ observations through publication time. Gulf water is the August 23 average from the available NOAA/NDBC station 42013 readings."
   },
   "2026-08-24": {
-    display: "Monday, August 24, 2026", headline: "Easy Monday reset", accent: "with a flexible island plan.",
-    intro: "Start the week with an early beach visit, a cool midday pause and a simple ride between the Key's favorite stops.", high: "Warm", low: "Mild", water: "Summer-warm",
-    outlook: "Late-summer conditions can change quickly around Siesta Key. Check current radar, posted beach flags and lifeguard guidance before swimming, keep water close and make shade part of the day.",
+    display: "Monday, August 24, 2026", headline: "Mostly sunny Monday", accent: "with an 87.3°F Gulf.",
+    intro: "The National Weather Service forecasts an 89°F high and an overnight low near 79°F, while nearby NOAA buoy 42013 is reading about 87.3°F in the Gulf.", high: "89°F", low: "79°F", water: "87.3°F",
+    outlook: "The official forecast is mostly sunny before isolated afternoon showers and thunderstorms, with a 16% rain chance. Check current radar, posted beach flags and lifeguard guidance before swimming, keep water close and make shade part of the day.",
     adviceKicker: "Monday on the Key", adviceTitle: "Use the calmer morning and keep the afternoon loose.", advice: "Enjoy the beach while the day feels easier, then move to lunch, shops or an air-conditioned stop during the warmest stretch. At the first sound of thunder, leave the water and follow official guidance before returning.",
     rideTitle: "One easy loop from the beach to the Village.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so Monday stays relaxed from the first stop to the last.",
-    source: "General seasonal guidance only. Check official local sources for current weather, water and beach conditions."
+    source: "High, low and rain chance are from the National Weather Service forecast for Siesta Key. Gulf water is the latest August 24 NOAA/NDBC station 42013 reading available at publication time."
   }
 };
 
