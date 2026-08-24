@@ -86,6 +86,14 @@ const reports = {
     adviceKicker: "Sunday weather plan", adviceTitle: "Use clear windows, not a fixed schedule.", advice: "Check live radar and the posted beach flag before swimming, keep an indoor lunch or Village stop ready and leave the water at the first sound of thunder. If skies improve later, regroup for a relaxed sunset rather than rushing the afternoon.",
     rideTitle: "Move between the beach and dry stops without the parking shuffle.", ride: "Call Siesta Free Ride when the weather changes. We can connect the beach, Village, restaurants and your hotel while your group stays flexible.",
     source: "Recorded air temperature and conditions are from the August 23 National Weather Service KSRQ observations through publication time. Gulf water is the August 23 average from the available NOAA/NDBC station 42013 readings."
+  },
+  "2026-08-24": {
+    display: "Monday, August 24, 2026", headline: "Easy Monday reset", accent: "with a flexible island plan.",
+    intro: "Start the week with an early beach visit, a cool midday pause and a simple ride between the Key's favorite stops.", high: "Warm", low: "Mild", water: "Summer-warm",
+    outlook: "Late-summer conditions can change quickly around Siesta Key. Check current radar, posted beach flags and lifeguard guidance before swimming, keep water close and make shade part of the day.",
+    adviceKicker: "Monday on the Key", adviceTitle: "Use the calmer morning and keep the afternoon loose.", advice: "Enjoy the beach while the day feels easier, then move to lunch, shops or an air-conditioned stop during the warmest stretch. At the first sound of thunder, leave the water and follow official guidance before returning.",
+    rideTitle: "One easy loop from the beach to the Village.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so Monday stays relaxed from the first stop to the last.",
+    source: "General seasonal guidance only. Check official local sources for current weather, water and beach conditions."
   }
 };
 
