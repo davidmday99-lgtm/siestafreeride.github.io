@@ -88,12 +88,20 @@ const reports = {
     source: "Recorded air temperature and conditions are from the August 23 National Weather Service KSRQ observations through publication time. Gulf water is the August 23 average from the available NOAA/NDBC station 42013 readings."
   },
   "2026-08-24": {
-    display: "Monday, August 24, 2026", headline: "Mostly sunny Monday", accent: "with an 87.3°F Gulf.",
-    intro: "The National Weather Service forecasts an 89°F high and an overnight low near 79°F, while nearby NOAA buoy 42013 is reading about 87.3°F in the Gulf.", high: "89°F", low: "79°F", water: "87.3°F",
-    outlook: "The official forecast is mostly sunny before isolated afternoon showers and thunderstorms, with a 16% rain chance. Check current radar, posted beach flags and lifeguard guidance before swimming, keep water close and make shade part of the day.",
+    display: "Monday, August 24, 2026", headline: "Sunny Monday", accent: "with an 87.6°F Gulf average.",
+    intro: "Sarasota-Bradenton observations recorded a 90°F high and 75°F low, while nearby NOAA buoy 42013 averaged 87.6°F in the Gulf.", high: "90°F", low: "75°F", water: "87.6°F",
+    outlook: "National Weather Service KSRQ observations ranged from clear to mostly cloudy. Nearby NOAA/NDBC buoy 42013 measured Gulf water from 87.3°F to 88.7°F, averaging 87.6°F across 48 half-hour readings. Check current radar, posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Monday on the Key", adviceTitle: "Use the calmer morning and keep the afternoon loose.", advice: "Enjoy the beach while the day feels easier, then move to lunch, shops or an air-conditioned stop during the warmest stretch. At the first sound of thunder, leave the water and follow official guidance before returning.",
     rideTitle: "One easy loop from the beach to the Village.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so Monday stays relaxed from the first stop to the last.",
-    source: "High, low and rain chance are from the National Weather Service forecast for Siesta Key. Gulf water is the latest August 24 NOAA/NDBC station 42013 reading available at publication time."
+    source: "Recorded air temperature and conditions are from the August 24 National Weather Service KSRQ observations. Gulf water is the August 24 average from 48 NOAA/NDBC station 42013 readings."
+  },
+  "2026-08-25": {
+    display: "Tuesday, August 25, 2026", headline: "Mostly sunny Tuesday", accent: "with an 87.4°F Gulf.",
+    intro: "The National Weather Service forecasts an 89°F high and a 77°F low tonight, while nearby NOAA/NDBC buoy 42013 read 87.4°F in the Gulf at 7:35am EDT.", high: "89°F", low: "77°F", water: "87.4°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for mostly sunny skies, a high near 89°F and a heat index up to 98°F; tonight’s forecast low is 77°F. NOAA/NDBC station 42013 reported 30.8°C (87.4°F) Gulf water at 11:35 UTC (7:35am EDT). Follow posted beach flags and lifeguard guidance before entering the water.",
+    adviceKicker: "Tuesday beach plan", adviceTitle: "Start early and schedule a cool break.", advice: "Use the clearer morning for swimming and sand time, carry water and choose a shaded or air-conditioned stop during the hottest stretch. Leave the water immediately if thunder is heard and wait for official guidance before returning.",
+    rideTitle: "Keep the island loop easy in the heat.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can cool down between stops.",
+    source: "Forecast high and low are from the August 25 National Weather Service Siesta Key point forecast. Gulf water is the 7:35am EDT August 25 NOAA/NDBC station 42013 observation."
   }
 };
 
