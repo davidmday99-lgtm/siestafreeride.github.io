@@ -589,7 +589,8 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
 .daily-weather span { font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
 .daily-weather strong { font: 900 clamp(38px,4vw,58px)/1 "Barlow Condensed",sans-serif; }
 .daily-weather > p { grid-column: 1 / -1; margin: 0; padding: 18px 20px; background: var(--daily-yellow-light); border-top: 2px solid var(--ink); font-size: 10px; font-weight: 700; line-height: 1.55; }
-.daily-photo { height: auto; min-height: 0; position: relative; margin: 0; overflow: hidden; background: var(--ink); border-block: 2px solid var(--ink); }
+.daily-photo { width: min(840px,calc(100% - 48px)); height: auto; min-height: 0; position: relative; margin: clamp(46px,6vw,76px) auto; overflow: hidden; background: var(--ink); border: 2px solid var(--ink); box-shadow: 12px 12px 0 var(--teal); }
+.daily-photo picture,.daily-photo img { display: block; }
 .daily-photo img { width: 100%; height: auto; object-fit: contain; }
 .daily-photo figcaption { position: static; padding: 12px 16px; color: var(--ink); background: var(--daily-yellow); border-top: 2px solid var(--ink); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-align: center; text-transform: uppercase; white-space: nowrap; }
 .daily-advice { background: #fff; }
@@ -1198,8 +1199,7 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .daily-weather { grid-template-columns: 1fr; }
   .daily-weather > div { min-height: 105px; border-right: 0; border-bottom: 2px solid var(--ink); }
   .daily-weather > div:last-of-type { border-bottom: 0; }
-  .daily-photo { height: 480px; min-height: 0; }
-  .daily-photo img { object-position: 62% center; }
+  .daily-photo { width: calc(100% - 32px); height: auto; min-height: 0; margin: 36px auto; box-shadow: 7px 7px 0 var(--teal); }
   .daily-photo figcaption { width: 100%; white-space: normal; }
   .daily-advice-list > section { min-height: 0; padding: 50px 0; }
   .daily-advice-list section > p { font-size: 15px; }
