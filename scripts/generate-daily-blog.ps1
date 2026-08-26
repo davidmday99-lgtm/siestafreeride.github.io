@@ -35,6 +35,7 @@ $html = @"
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>$title | Siesta Free Ride</title>
+    <link rel="canonical" href="https://siestafreeride.com/blog/$dateSlug-daily-blog.html"/>
     <meta name="description" content="Daily update from Siesta Free Ride - your trusted transportation in Siesta Key, FL."/>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
