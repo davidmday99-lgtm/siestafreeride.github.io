@@ -96,12 +96,20 @@ const reports = {
     source: "Recorded air temperature and conditions are from the August 24 National Weather Service KSRQ observations. Gulf water is the August 24 average from 48 NOAA/NDBC station 42013 readings."
   },
   "2026-08-25": {
-    display: "Tuesday, August 25, 2026", headline: "Mostly sunny Tuesday", accent: "with an 87.4°F Gulf.",
-    intro: "The National Weather Service forecasts an 89°F high and a 77°F low tonight, while nearby NOAA/NDBC buoy 42013 read 87.4°F in the Gulf at 7:35am EDT.", high: "89°F", low: "77°F", water: "87.4°F",
-    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for mostly sunny skies, a high near 89°F and a heat index up to 98°F; tonight’s forecast low is 77°F. NOAA/NDBC station 42013 reported 30.8°C (87.4°F) Gulf water at 11:35 UTC (7:35am EDT). Follow posted beach flags and lifeguard guidance before entering the water.",
+    display: "Tuesday, August 25, 2026", headline: "Sunny Tuesday", accent: "with an 87.9°F Gulf average.",
+    intro: "Sarasota-Bradenton observations recorded a 91°F high and 79°F low, while nearby NOAA/NDBC station 42013 averaged 87.9°F in the Gulf.", high: "91°F", low: "79°F", water: "87.9°F",
+    outlook: "National Weather Service KSRQ observations ranged from clear to partly cloudy. Nearby NOAA/NDBC station 42013 measured Gulf water from 87.4°F to 88.7°F, averaging 87.9°F across 48 half-hour readings. The National Weather Service Tampa Bay surf-zone forecast called for low rip-current risk and surf of 1 foot or less; check posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Tuesday beach plan", adviceTitle: "Start early and schedule a cool break.", advice: "Use the clearer morning for swimming and sand time, carry water and choose a shaded or air-conditioned stop during the hottest stretch. Leave the water immediately if thunder is heard and wait for official guidance before returning.",
     rideTitle: "Keep the island loop easy in the heat.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can cool down between stops.",
-    source: "Forecast high and low are from the August 25 National Weather Service Siesta Key point forecast. Gulf water is the 7:35am EDT August 25 NOAA/NDBC station 42013 observation."
+    source: "Recorded air temperature and sky conditions are from the August 25 National Weather Service KSRQ observations. Gulf water is the August 25 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-08-26": {
+    display: "Wednesday, August 26, 2026", headline: "Sunny Wednesday", accent: "with an 87.6°F Gulf.",
+    intro: "Today is in progress: the National Weather Service forecasts an 89°F high and 77°F low, while NOAA/NDBC station 42013 measured 87.6°F Gulf water at 6:35am EDT.", high: "89°F", low: "77°F", water: "87.6°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for sunny skies, then isolated showers and thunderstorms after 2pm, with a forecast high near 89°F and a forecast low near 77°F tonight. National Weather Service KSRQ observed 78.8°F and clear skies at 6:45am EDT. NOAA/NDBC station 42013 reported 30.9°C (87.6°F) Gulf water at 10:35 UTC (6:35am EDT). The National Weather Service Tampa Bay surf-zone forecast calls for low rip-current risk and surf of 1 foot or less; follow posted beach flags and lifeguard guidance.",
+    adviceKicker: "Wednesday beach plan", adviceTitle: "Use the sunny start and watch the afternoon sky.", advice: "Use the cooler morning for swimming and sand time, drink water and plan a shaded or air-conditioned stop during the hottest stretch. If thunder is heard, leave the water immediately and wait for official guidance before returning.",
+    rideTitle: "Keep the island loop easy in the heat.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can cool down between stops.",
+    source: "Forecast high and low are from the August 26 National Weather Service Siesta Key point forecast; the current air observation is from National Weather Service KSRQ at 6:45am EDT. Gulf water is the 6:35am EDT August 26 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 
