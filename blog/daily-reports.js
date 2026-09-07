@@ -184,12 +184,28 @@ const reports = {
     source: "Recorded air temperature is from the September 4 National Weather Service KSRQ observations. Gulf water is the September 4 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   },
   "2026-09-05": {
-    display: "Saturday, September 5, 2026", headline: "Saturday beach window", accent: "with an 88.0°F Gulf reading.",
-    intro: "Today is in progress: the National Weather Service forecasts a 91°F high and 77°F low, while NOAA/NDBC station 42013 measured 88.0°F Gulf water at 6:35am EDT.", high: "91°F", low: "77°F", water: "88.0°F",
-    outlook: "Today is still in progress. The National Weather Service Sarasota point forecast calls for a high near 91°F, a low around 77°F tonight and a 30% chance of showers and thunderstorms. NOAA/NDBC station 42013 reported 31.1°C (88.0°F) Gulf water at 10:35 UTC (6:35am EDT). The National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance remain the beach-hazard references before swimming.",
+    display: "Saturday, September 5, 2026", headline: "Warm Saturday", accent: "with an 88.5°F Gulf average.",
+    intro: "National Weather Service KSRQ observations reached 91°F after an 80°F low, while NOAA/NDBC station 42013 averaged 88.5°F Gulf water.", high: "91°F", low: "80°F", water: "88.5°F",
+    outlook: "Recorded National Weather Service KSRQ observations ranged from 80°F to 91°F. NOAA/NDBC station 42013 measured Gulf water from 88.0°F to 89.6°F, averaging 88.5°F across 48 half-hour readings. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Saturday beach plan", adviceTitle: "Start early and keep the afternoon flexible.", advice: "Use the clearer morning for swimming and sand time, carry water and plan a shaded or air-conditioned stop during the hottest stretch. At the first sound of thunder, leave the water immediately and wait for official guidance before returning.",
     rideTitle: "Keep the island loop easy when skies change.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can pivot easily when a shower moves through.",
-    source: "Forecast high and low are from the September 5 National Weather Service Sarasota point forecast. Gulf water is the 6:35am EDT September 5 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+    source: "Recorded air temperature is from the September 5 National Weather Service KSRQ observations. Gulf water is the September 5 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-09-06": {
+    display: "Sunday, September 6, 2026", headline: "Warm Sunday", accent: "with an 88.5°F Gulf average.",
+    intro: "National Weather Service KSRQ observations reached 90°F after a 79°F low, while NOAA/NDBC station 42013 averaged 88.5°F Gulf water.", high: "90°F", low: "79°F", water: "88.5°F",
+    outlook: "Recorded National Weather Service KSRQ observations ranged from 79°F to 90°F. NOAA/NDBC station 42013 measured Gulf water from 88.2°F to 89.2°F, averaging 88.5°F across 48 half-hour readings. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    adviceKicker: "Sunday beach plan", adviceTitle: "Use the morning beach window and watch the afternoon sky.", advice: "Start with a flexible beach window, carry water and plan a shaded or air-conditioned stop during the hottest stretch. At the first sound of thunder, leave the water and beach immediately and wait for official guidance before returning.",
+    rideTitle: "Keep the island loop easy when skies change.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can pivot easily when a shower moves through.",
+    source: "Recorded air temperature is from the September 6 National Weather Service KSRQ observations. Gulf water is the September 6 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-09-07": {
+    display: "Monday, September 7, 2026", headline: "Labor Day beach window", accent: "with an 88.2°F Gulf reading.",
+    intro: "Today is in progress: the National Weather Service forecasts an 88°F high and 78°F low, while NOAA/NDBC station 42013 measured 88.2°F Gulf water at 6:35am EDT.", high: "88°F", low: "78°F", water: "88.2°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for an 88°F high, a 78°F low tonight and scattered showers and thunderstorms. National Weather Service KSRQ measured 84.2°F and partly cloudy conditions at 7:35am EDT. NOAA/NDBC station 42013 reported 31.2°C (88.2°F) Gulf water at 10:35 UTC (6:35am EDT). The National Weather Service Tampa Bay surf-zone forecast calls for low rip-current risk and surf of 1 foot or less; posted beach flags and lifeguard guidance remain the final beach-hazard references before swimming.",
+    adviceKicker: "Labor Day beach plan", adviceTitle: "Start early and let thunder set the schedule.", advice: "Use the morning for swimming and sand time, carry water and plan a shaded or air-conditioned stop during the hottest stretch. At the first sound of thunder, leave the water and beach immediately and wait for official guidance before returning.",
+    rideTitle: "Keep the island loop easy when skies change.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can pivot easily when a shower moves through.",
+    source: "Forecast high and low are from the September 7 National Weather Service Siesta Key point forecast; the current KSRQ observation is from the National Weather Service. Gulf water is the 6:35am EDT September 7 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 
