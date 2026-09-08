@@ -557,6 +557,16 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
 .archive-months span { font: 900 clamp(30px,3.5vw,45px)/1 "Barlow Condensed",sans-serif; text-transform: uppercase; }
 .archive-months strong { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
 .archive-months b { font: 900 25px/1 "Barlow Condensed",sans-serif; }
+.report-archive-list { grid-column: 1 / -1; margin-top: 38px; border: 2px solid var(--ink); box-shadow: 12px 12px 0 var(--blog-yellow); background: #fff; }
+.report-archive-list details { border-bottom: 2px solid var(--ink); }
+.report-archive-list details:last-child { border-bottom: 0; }
+.report-archive-list summary { min-height: 76px; padding: 18px 24px; display: flex; justify-content: space-between; gap: 20px; align-items: center; cursor: pointer; background: var(--blog-yellow-light); }
+.report-archive-list summary span { font: 900 clamp(25px,3vw,36px)/1 "Barlow Condensed",sans-serif; text-transform: uppercase; }
+.report-archive-list summary strong { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.report-archive-links { padding: 12px 24px 24px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px 18px; }
+.report-archive-links a { padding: 10px 0; color: var(--ink); border-bottom: 1px solid rgba(10,35,44,.18); text-decoration: none; }
+.report-archive-links time { display: block; font-weight: 800; }
+.report-archive-links span { display: block; margin-top: 2px; color: #566269; font-size: 12px; }
 .blog-cta { color: var(--ink); background: var(--teal); }
 .blog-cta-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 90px; align-items: center; }
 .blog-cta h2 { font-size: clamp(78px,8.8vw,126px); }
@@ -574,6 +584,10 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
 .daily-pager span { color: rgba(255,255,255,.55); }
 .daily-hero-grid { position: relative; z-index: 1; margin-top: 85px; display: grid; grid-template-columns: 1.18fr .82fr; gap: 80px; align-items: end; }
 .daily-hero .eyebrow { color: var(--daily-yellow); }
+.daily-fallback { max-width: 760px; margin: 80px auto; padding: 32px; color: var(--ink); font-family: Inter,sans-serif; }
+.daily-fallback h1 { margin: 0 0 18px; font: 900 clamp(42px,7vw,72px)/.92 "Barlow Condensed",sans-serif; text-transform: uppercase; }
+.daily-fallback p { font-size: 18px; line-height: 1.65; }
+.daily-fallback a { color: inherit; font-weight: 800; }
 .daily-hero h1 { font-size: clamp(76px,8.2vw,124px); }
 .daily-hero h1 span { color: var(--daily-yellow); }
 .daily-hero-copy time { display: block; padding-bottom: 22px; border-bottom: 1px solid rgba(255,255,255,.28); color: var(--daily-yellow); font-size: 11px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
@@ -1189,6 +1203,8 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .blog-archive h2,.blog-cta h2 { font-size: 67px; }
   .archive-months a { min-height: 92px; padding: 19px 18px; grid-template-columns: 1fr 72px 22px; gap: 12px; }
   .archive-months span { font-size: 30px; }
+  .report-archive-list summary { padding: 16px 18px; }
+  .report-archive-links { padding: 8px 18px 20px; grid-template-columns: 1fr; }
   .blog-cta-grid > div:last-child { padding: 30px 24px; }
   .daily-hero h1 { font-size: 62px; }
   .daily-pager a,.daily-pager span { font-size: 13px; }
