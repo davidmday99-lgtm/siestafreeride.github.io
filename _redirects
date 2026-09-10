@@ -5,5 +5,11 @@ http://www.siestafreeride.com/* https://siestafreeride.com/:splat 301!
 # Redirect WWW to non-WWW
 https://www.siestafreeride.com/* https://siestafreeride.com/:splat 301!
 
+# Consolidate duplicate internal URL variants
+/index.html / 301!
+/contact /contact.html 301!
+/blog/ /blog.html 301!
+/blog/index.html /blog.html 301!
+
 # Catch-all
 /* /index.html 200
