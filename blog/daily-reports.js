@@ -230,6 +230,14 @@ const reports = {
     adviceKicker: "Thursday beach plan", adviceTitle: "Use the clear morning and let thunder set the schedule.", advice: "Start with a flexible beach window, carry water and plan a shaded or air-conditioned stop during the hottest stretch. At the first sound of thunder, leave the water and beach immediately and wait for official guidance before returning.",
     rideTitle: "Keep the island loop easy when skies change.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can pivot easily when a shower moves through.",
     source: "Forecast high and low are from the September 10 National Weather Service Siesta Key point forecast; the current KSRQ observation is from the National Weather Service. Gulf water is the 6:35am EDT September 10 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-09-11": {
+    display: "Friday, September 11, 2026", headline: "Storm-aware Friday", accent: "with an 88.2°F Gulf reading.",
+    intro: "Today is in progress: the National Weather Service forecasts an 89°F high and 78°F low, while NOAA/NDBC station 42013 measured 88.2°F Gulf water at 6:35am EDT.", high: "89°F", low: "78°F", water: "88.2°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 89°F, a forecast low around 78°F tonight, scattered showers and thunderstorms, and a heat index as high as 100°F. National Weather Service KSRQ measured 77°F and clear conditions at 7:40am EDT. NOAA/NDBC station 42013 reported 31.2°C (88.2°F) Gulf water at 10:35 UTC (6:35am EDT). Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    adviceKicker: "Friday beach plan", adviceTitle: "Use the clear morning and let thunder set the schedule.", advice: "Start with a flexible morning beach window, carry water and plan a shaded or air-conditioned stop during the hottest stretch. At the first sound of thunder, leave the water and beach immediately and wait for official guidance before returning.",
+    rideTitle: "Keep the island loop easy when skies change.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can pivot easily when a shower moves through.",
+    source: "Forecast high and low are from the September 11 National Weather Service Siesta Key point forecast; the current KSRQ observation is from the National Weather Service. Gulf water is the 6:35am EDT September 11 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 
