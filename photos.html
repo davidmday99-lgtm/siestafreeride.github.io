@@ -24,11 +24,15 @@
 
   <main id="main" class="photos-page">
     <section class="photos-hero">
-      <div class="section-shell photos-hero-copy"><p class="eyebrow">Siesta Key through our windshield</p><h1>Good rides.<br><span>Great views.</span></h1><p>A look at the fleet, the island and the people and places that make every ride feel like Siesta Key.</p></div>
+      <div class="section-shell photos-hero-copy"><p class="eyebrow">Siesta Key through our windshield</p><h1>Good rides.<br><span>Great views.</span></h1><p>A look at the fleet, the island and the people and places that make every ride feel like Siesta Key.</p><a class="button button-light photos-share-button" href="share-photos.html">Share your favorite photo <span>→</span></a></div>
       <figure class="photos-hero-image"><img src="assets/siesta-sunset.png" alt="Colorful sunset over Siesta Key beach and a red lifeguard stand"><figcaption>Sunset on Siesta Key</figcaption></figure>
     </section>
 
-    <nav class="photos-jump" aria-label="Photo gallery sections"><div class="section-shell"><a href="#new-fleet">New fleet photos</a><a href="#island">Island views</a><a href="#posters">Posters + moments</a><a href="#originals">Original gallery</a></div></nav>
+    <nav class="photos-jump" aria-label="Photo gallery sections"><div class="section-shell"><a href="#share">Share yours</a><a href="#community">Community favorites</a><a href="#new-fleet">Fleet photos</a><a href="#island">Island views</a><a href="#originals">Original gallery</a></div></nav>
+
+    <section id="share" class="photo-share-teaser section-pad"><div class="section-shell photo-share-teaser-grid"><div><p class="eyebrow">Your camera roll belongs here</p><h2>Post your<br>favorite.</h2></div><div><p>Share a Siesta Key sunset, beach day, family memory or fun ride. Every photo is privately reviewed before it can appear on the website.</p><a class="button button-dark" href="share-photos.html">Upload a photo <span>→</span></a><small>JPEG or PNG • Up to 10 MB • Nothing posts automatically</small></div></div></section>
+
+    <section id="community" class="photo-section community-photo-section section-pad"><div class="section-shell"><div class="photo-heading"><div><p class="eyebrow">Approved by Siesta Free Ride</p><h2>Community<br>favorites.</h2></div><p>Favorite island moments submitted by riders, visitors and locals.</p></div><div class="photo-wall community-photo-grid" data-community-gallery data-empty-message="Be the first to share a favorite Siesta Key moment."></div></div></section>
 
     <section id="new-fleet" class="photo-section section-pad"><div class="section-shell"><div class="photo-heading"><div><p class="eyebrow">Fresh from the camera roll</p><h2>Meet the<br>fleet.</h2></div><p>Our van and trolley are ready for Siesta Key, Gulf Gate, airport runs, events and everything in between.</p></div><div class="photo-wall photo-wall-featured">
       <figure><img src="assets/meet-the-fleet.png" alt="Siesta Free Ride shuttle parked beside the beach at sunset"><figcaption><strong>Meet the fleet</strong><span>Siesta Free Ride shuttle</span></figcaption></figure>
@@ -70,6 +74,7 @@
     <div class="section-shell partners"><p class="footer-label">Affiliate partners &amp; sponsors</p><div class="partner-grid"><a href="https://driveagainsecrets.com" rel="sponsored"><img src="assets/das-logo.png" alt="Drive Again Secrets"></a><a href="https://cashforkeysproperties.com" rel="sponsored"><img src="assets/cfk-logo.png" alt="Cash For Keys Properties"></a><a class="moondoggys-card" href="https://moondoggys.com" rel="sponsored"><span class="moon">🌙</span><span class="moondoggys-copy"><img class="moondoggys-logo" src="assets/moondoggys-logo.webp" alt="Moondoggy’s Saloon"><small>Gulf Gate’s hottest nightclub • Home of the Buffalo Bills</small></span><img class="bills-logo" src="assets/buffalo-bills-logo.webp" alt="Buffalo Bills"></a><a href="https://detwilermarket.com/clarkroad/" rel="sponsored"><img src="assets/detwilers-logo.webp" alt="Detwiler's Farm Market"></a><a href="https://homemortgageguys.com/" rel="sponsored"><img src="assets/home-mortgage-guys-logo.png" alt="Home Mortgage Guys"></a></div></div>
     <div class="footer-bottom">© 2026 Siesta Free Ride. All rights reserved.</div>
   </footer>
+  <script src="community-gallery.js" defer></script>
   <script src="script.js?v=footer-links-2"></script>
 </body>
 </html>

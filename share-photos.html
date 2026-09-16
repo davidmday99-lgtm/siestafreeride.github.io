@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Share your favorite Siesta Key photo with Siesta Free Ride for a chance to be featured in our moderated community gallery.">
+  <title>Share Your Siesta Key Photos | Siesta Free Ride</title>
+  <link rel="canonical" href="https://siestafreeride.com/share-photos.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="meta-pixel.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Siesta Free Ride home"><img src="assets/logo.png" alt="Siesta Free Ride"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><b>Menu</b></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="guide.html">Guide</a><a href="beaches.html">Beaches</a><a href="events.html">Events</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="reviews.html">Reviews</a><a href="service-area.html">Service Area</a><a class="active" href="photos.html">Photos</a><a href="advertise.html">Advertise</a><a class="nav-cta" href="contact.html">Book Now</a></nav>
+    </div>
+  </header>
+
+  <main id="main" class="share-photos-page">
+    <section class="share-photos-hero">
+      <div class="section-shell share-photos-hero-grid">
+        <div><p class="eyebrow">Your view of paradise</p><h1>Share your<br><span>Siesta.</span></h1></div>
+        <div><p>Sunsets, beach days, family moments and fun rides—we would love to see Siesta Key through your camera.</p><div class="share-photo-notes"><span>One photo at a time</span><span>Reviewed before posting</span><span>Credit is your choice</span></div></div>
+      </div>
+    </section>
+
+    <nav class="photos-jump" aria-label="Photo submission sections"><div class="section-shell"><a href="#upload">Upload a photo</a><a href="#how-it-works">How it works</a><a href="#community">Community gallery</a><a href="photos.html">Main gallery</a></div></nav>
+
+    <section id="upload" class="photo-upload-section section-pad">
+      <div class="section-shell photo-upload-layout">
+        <div class="photo-upload-copy">
+          <p class="eyebrow">Post your favorite</p>
+          <h2>Show us<br>your best shot.</h2>
+          <p>Every submission goes into a private review queue. Nothing appears publicly until Siesta Free Ride approves it.</p>
+          <ol id="how-it-works" class="photo-review-steps">
+            <li><strong>Choose one photo</strong><span>JPEG or PNG, up to 10 MB.</span></li>
+            <li><strong>Add the story</strong><span>Tell us where it was taken and what made the moment special.</span></li>
+            <li><strong>We review it</strong><span>Approved photos may be added to the community gallery with your chosen credit.</span></li>
+          </ol>
+          <div class="photo-safety-note"><strong>Please protect everyone pictured.</strong><p>Only upload a photo you took or have permission to share. If a child appears, you must be their parent or legal guardian, or have permission from one.</p></div>
+        </div>
+
+        <form class="photo-upload-form" action="https://formsubmit.co/siestafreeride@gmail.com" method="POST" enctype="multipart/form-data" data-photo-form>
+          <input type="hidden" name="_subject" value="New Siesta Free Ride customer photo awaiting approval">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://siestafreeride.com/share-photos.html?submitted=1#thanks">
+          <input type="hidden" name="_url" value="https://siestafreeride.com/share-photos.html">
+          <input class="photo-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-title"><span>01</span><div><p class="eyebrow">Private submission</p><h2>Upload your photo.</h2></div></div>
+
+          <label for="photo-name">Your name or nickname <small>optional</small></label>
+          <input id="photo-name" name="display_name" type="text" maxlength="60" autocomplete="name" placeholder="How should we credit you?">
+
+          <label for="photo-email">Email address <small>kept private</small></label>
+          <input id="photo-email" name="email" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com" required>
+
+          <label for="photo-location">Where was it taken?</label>
+          <select id="photo-location" name="location" required>
+            <option value="">Choose a general location</option>
+            <option>Siesta Beach</option>
+            <option>Crescent Beach</option>
+            <option>Turtle Beach</option>
+            <option>Siesta Key Village</option>
+            <option>On a Siesta Free Ride</option>
+            <option>Elsewhere on Siesta Key</option>
+          </select>
+
+          <label for="photo-caption">Tell us about the moment</label>
+          <textarea id="photo-caption" name="caption" maxlength="240" rows="4" placeholder="Sunset after a perfect beach day…" required></textarea>
+
+          <label for="photo-file">Choose your photo</label>
+          <div class="photo-file-drop">
+            <input id="photo-file" name="attachment" type="file" accept="image/jpeg,image/png" required data-photo-file>
+            <strong>JPEG or PNG • Maximum 10 MB</strong>
+            <span data-file-name>No photo chosen yet</span>
+          </div>
+          <div class="photo-preview" data-photo-preview hidden><img alt="Preview of the selected photo"></div>
+          <p class="photo-form-error" data-photo-error role="alert" hidden></p>
+
+          <label class="photo-checkbox"><input type="checkbox" name="permission_to_publish" value="I agree" required><span>I took this photo or have permission to share it. Everyone pictured has consented, and I grant Siesta Free Ride a non-exclusive, royalty-free right to display and promote this photo.</span></label>
+          <label class="photo-checkbox"><input type="checkbox" name="show_credit" value="Yes"><span>You may display the name or nickname I entered with the photo.</span></label>
+
+          <button class="button button-dark photo-submit-button" type="submit">Send for approval <span>→</span></button>
+          <small class="photo-form-privacy">Submitting does not guarantee publication. Your email stays private. See our <a href="privacy.html">privacy policy</a>.</small>
+        </form>
+      </div>
+    </section>
+
+    <section id="thanks" class="photo-thanks section-pad" data-photo-thanks hidden>
+      <div class="section-shell"><p class="eyebrow">Photo received</p><h2>Thanks for<br>sharing the view.</h2><p>We will review your photo before it appears anywhere on the website.</p><a class="button button-dark" href="photos.html#community">Visit the gallery <span>→</span></a></div>
+    </section>
+
+    <section id="community" class="community-photo-section section-pad">
+      <div class="section-shell"><div class="photo-heading"><div><p class="eyebrow">Approved by Siesta Free Ride</p><h2>Community<br>favorites.</h2></div><p>Favorite island moments submitted by riders, visitors and locals.</p></div><div class="photo-wall community-photo-grid" data-community-gallery data-empty-message="Your photo could be the first community favorite."></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top"><div class="footer-brand"><img src="assets/logo.png" alt=""><div><strong>Siesta Free Ride</strong><span>Transportation in Siesta Key, Florida</span></div></div><div><p class="footer-label">Business hours</p><p><strong>Season (Oct 30–Apr 15)</strong><br>9am–1am daily</p><p><strong>Off-season (Apr 16–Oct 29)</strong><br>10am–1am daily</p><p><strong>Airport rides by appointment</strong><br>365 days a year</p></div><div><p class="footer-label">Contact</p><a class="footer-phone" href="tel:+19416008380">941-600-8380</a><div class="social-links"><a href="https://www.tiktok.com/@siestafreeride"><img src="assets/tiktok-logo.png" alt="TikTok"></a><a href="https://www.facebook.com/profile.php?id=61591350556761" aria-label="Facebook">f</a><a href="https://www.youtube.com/@SiestFreeRide"><img src="assets/youtube-logo.avif" alt="YouTube"></a></div></div><div><p class="footer-label">Quick links</p><a href="/">Home</a><a href="photos.html">Photos</a><a href="share-photos.html">Share a Photo</a><a href="privacy.html">Privacy</a><a href="contact.html">Book a Ride</a></div></div>
+    <div class="footer-bottom">© 2026 Siesta Free Ride. All rights reserved.</div>
+  </footer>
+  <script src="community-gallery.js" defer></script>
+  <script src="photo-submit.js" defer></script>
+  <script src="script.js?v=footer-links-2"></script>
+</body>
+</html>
