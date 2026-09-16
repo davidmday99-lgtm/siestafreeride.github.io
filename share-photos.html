@@ -41,7 +41,7 @@
           <ol id="how-it-works" class="photo-review-steps">
             <li><strong>Choose one photo</strong><span>iPhone HEIC, JPEG or PNG, up to 10 MB.</span></li>
             <li><strong>Add the story</strong><span>Tell us where it was taken and what made the moment special.</span></li>
-            <li><strong>We review it</strong><span>Approved photos may be added to the community gallery with your chosen credit.</span></li>
+            <li><strong>We review it</strong><span>Once we click Approve, the photo appears in the community gallery automatically.</span></li>
           </ol>
           <div class="photo-safety-note"><strong>Please protect everyone pictured.</strong><p>Only upload a photo you took or have permission to share. If a child appears, you must be their parent or legal guardian, or have permission from one.</p></div>
         </div>
@@ -83,6 +83,7 @@
           </div>
           <div class="photo-preview" data-photo-preview hidden><img alt="Preview of the selected photo"></div>
           <p class="photo-form-error" data-photo-error role="alert" hidden></p>
+          <p class="photo-form-status" data-photo-status role="status" aria-live="polite" hidden></p>
 
           <label class="photo-checkbox"><input type="checkbox" name="permission_to_publish" value="I agree" required><span>I took this photo or have permission to share it. Everyone pictured has consented, and I grant Siesta Free Ride a non-exclusive, royalty-free right to display and promote this photo.</span></label>
           <label class="photo-checkbox"><input type="checkbox" name="show_credit" value="Yes"><span>You may display the name or nickname I entered with the photo.</span></label>
@@ -106,8 +107,8 @@
     <div class="section-shell footer-top"><div class="footer-brand"><img src="assets/logo.png" alt=""><div><strong>Siesta Free Ride</strong><span>Transportation in Siesta Key, Florida</span></div></div><div><p class="footer-label">Business hours</p><p><strong>Season (Oct 30–Apr 15)</strong><br>9am–1am daily</p><p><strong>Off-season (Apr 16–Oct 29)</strong><br>10am–1am daily</p><p><strong>Airport rides by appointment</strong><br>365 days a year</p></div><div><p class="footer-label">Contact</p><a class="footer-phone" href="tel:+19416008380">941-600-8380</a><div class="social-links"><a href="https://www.tiktok.com/@siestafreeride"><img src="assets/tiktok-logo.png" alt="TikTok"></a><a href="https://www.facebook.com/profile.php?id=61591350556761" aria-label="Facebook">f</a><a href="https://www.youtube.com/@SiestFreeRide"><img src="assets/youtube-logo.avif" alt="YouTube"></a></div></div><div><p class="footer-label">Quick links</p><a href="/">Home</a><a href="photos.html">Photos</a><a href="share-photos.html">Share a Photo</a><a href="privacy.html">Privacy</a><a href="contact.html">Book a Ride</a></div></div>
     <div class="footer-bottom"><a class="penguin-credit" href="https://penguindigitalco.com/" aria-label="Designed by Penguin Digital Co"><img src="/assets/penguin-digital-mark.svg" width="48" height="72" alt="" loading="lazy"><span><span class="penguin-credit-label">Designed by</span><strong>Penguin Digital Co</strong></span></a><p class="footer-copyright">© 2026 Siesta Free Ride. All rights reserved.</p></div>
   </footer>
-  <script src="community-gallery.js" defer></script>
-  <script src="photo-submit.js" defer></script>
+  <script src="community-gallery.js?v=cloudinary-1" defer></script>
+  <script src="photo-submit.js?v=cloudinary-1" defer></script>
   <script src="script.js?v=footer-links-2"></script>
 </body>
 </html>
