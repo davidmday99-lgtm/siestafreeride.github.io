@@ -10,7 +10,8 @@
   const submitButton = form.querySelector('.photo-submit-button');
   const thanks = document.querySelector('[data-photo-thanks]');
   const maxBytes = 10 * 1024 * 1024;
-  const allowedTypes = new Set(['image/jpeg', 'image/png']);
+  const allowedTypes = new Set(['image/jpeg', 'image/png', 'image/heic', 'image/heif']);
+  const allowedExtensions = /\.(?:jpe?g|png|heic|heif)$/i;
   let previewUrl = '';
 
   const showError = (message) => {
@@ -34,10 +35,10 @@
       return;
     }
     fileName.textContent = file.name;
-    if (!allowedTypes.has(file.type)) {
+    if (!allowedTypes.has(file.type) && !allowedExtensions.test(file.name)) {
       fileInput.value = '';
       fileName.textContent = 'No photo chosen yet';
-      showError('Please choose a JPEG or PNG image.');
+      showError('Please choose an iPhone HEIC, JPEG or PNG image.');
       return;
     }
     if (file.size > maxBytes) {
@@ -47,16 +48,17 @@
       return;
     }
     previewUrl = URL.createObjectURL(file);
+    previewImage.onload = () => { preview.hidden = false; };
+    previewImage.onerror = () => { preview.hidden = true; };
     previewImage.src = previewUrl;
-    preview.hidden = false;
   });
 
   form.addEventListener('submit', (event) => {
     clearError();
     const file = fileInput.files?.[0];
-    if (!file || !allowedTypes.has(file.type) || file.size > maxBytes) {
+    if (!file || (!allowedTypes.has(file.type) && !allowedExtensions.test(file.name)) || file.size > maxBytes) {
       event.preventDefault();
-      showError('Choose one JPEG or PNG image under 10 MB before submitting.');
+      showError('Choose one iPhone HEIC, JPEG or PNG image under 10 MB before submitting.');
       fileInput.focus();
       return;
     }

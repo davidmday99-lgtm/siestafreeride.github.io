@@ -46,7 +46,7 @@
           <div class="photo-safety-note"><strong>Please protect everyone pictured.</strong><p>Only upload a photo you took or have permission to share. If a child appears, you must be their parent or legal guardian, or have permission from one.</p></div>
         </div>
 
-        <form class="photo-upload-form" action="#upload" method="POST" enctype="multipart/form-data" data-photo-form>
+        <form class="photo-upload-form" action="https://formsubmit.co/siestafreeride@gmail.com" method="POST" enctype="multipart/form-data" data-photo-form>
           <input type="hidden" name="_subject" value="New Siesta Free Ride customer photo awaiting approval">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://siestafreeride.com/share-photos.html?submitted=1#thanks">
@@ -77,8 +77,8 @@
 
           <label for="photo-file">Choose your photo</label>
           <div class="photo-file-drop">
-            <input id="photo-file" name="attachment" type="file" accept="image/jpeg,image/png" required data-photo-file>
-            <strong>JPEG or PNG • Maximum 10 MB</strong>
+            <input id="photo-file" name="attachment" type="file" accept="image/jpeg,image/png,image/heic,image/heif,.heic,.heif" required data-photo-file>
+            <strong>iPhone HEIC, JPEG or PNG • Maximum 10 MB</strong>
             <span data-file-name>No photo chosen yet</span>
           </div>
           <div class="photo-preview" data-photo-preview hidden><img alt="Preview of the selected photo"></div>
@@ -87,8 +87,7 @@
           <label class="photo-checkbox"><input type="checkbox" name="permission_to_publish" value="I agree" required><span>I took this photo or have permission to share it. Everyone pictured has consented, and I grant Siesta Free Ride a non-exclusive, royalty-free right to display and promote this photo.</span></label>
           <label class="photo-checkbox"><input type="checkbox" name="show_credit" value="Yes"><span>You may display the name or nickname I entered with the photo.</span></label>
 
-          <p class="photo-activation-note"><strong>Uploads are being activated.</strong> The form will open as soon as the private moderation inbox is connected.</p>
-          <button class="button button-dark photo-submit-button" type="submit" disabled>Upload activation pending</button>
+          <button class="button button-dark photo-submit-button" type="submit">Send for approval <span>→</span></button>
           <small class="photo-form-privacy">Submitting does not guarantee publication. Your email stays private. See our <a href="privacy.html">privacy policy</a>.</small>
         </form>
       </div>
