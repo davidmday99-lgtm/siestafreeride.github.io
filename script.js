@@ -24,6 +24,46 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.primary-nav');
 
+// Add a consistent Beaches submenu without duplicating markup across every page.
+const beachesLink = nav
+  ? [...nav.children].find((item) => item.matches('a') && item.textContent.trim().toLowerCase() === 'beaches')
+  : null;
+
+if (beachesLink) {
+  const dropdown = document.createElement('div');
+  dropdown.className = 'nav-dropdown';
+  beachesLink.before(dropdown);
+  dropdown.append(beachesLink);
+
+  const dropdownToggle = document.createElement('button');
+  dropdownToggle.className = 'nav-dropdown-toggle';
+  dropdownToggle.type = 'button';
+  dropdownToggle.setAttribute('aria-expanded', 'false');
+  dropdownToggle.setAttribute('aria-label', 'Show Beaches links');
+  dropdownToggle.innerHTML = '<span aria-hidden="true">▾</span>';
+  dropdown.append(dropdownToggle);
+
+  const dropdownMenu = document.createElement('div');
+  dropdownMenu.className = 'nav-dropdown-menu';
+  dropdownMenu.innerHTML = `
+    <a href="${beachesLink.href}"><span>Explore</span>Beach guide</a>
+    <a href="${beachesLink.href.split('#')[0]}#live-views"><span>Watch</span>Live beach views</a>
+  `;
+  dropdown.append(dropdownMenu);
+
+  dropdownToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (event) => {
+    if (dropdown.contains(event.target)) return;
+    dropdown.classList.remove('open');
+    dropdownToggle.setAttribute('aria-expanded', 'false');
+  });
+}
+
 toggle?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(isOpen));
@@ -32,11 +72,15 @@ toggle?.addEventListener('click', () => {
 nav?.addEventListener('click', (event) => {
   if (!event.target.closest('a')) return;
   nav.classList.remove('open');
+  nav.querySelector('.nav-dropdown')?.classList.remove('open');
+  nav.querySelector('.nav-dropdown-toggle')?.setAttribute('aria-expanded', 'false');
   toggle?.setAttribute('aria-expanded', 'false');
 });
 
 window.addEventListener('pageshow', () => {
   nav?.classList.remove('open');
+  nav?.querySelector('.nav-dropdown')?.classList.remove('open');
+  nav?.querySelector('.nav-dropdown-toggle')?.setAttribute('aria-expanded', 'false');
   toggle?.setAttribute('aria-expanded', 'false');
 });
 
