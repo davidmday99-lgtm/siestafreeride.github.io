@@ -51,14 +51,31 @@ if (beachesLink) {
   `;
   dropdown.append(dropdownMenu);
 
+  let dropdownPinned = false;
+  let dropdownCloseTimer;
+
+  dropdown.addEventListener('mouseenter', () => {
+    window.clearTimeout(dropdownCloseTimer);
+    dropdown.classList.add('open');
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    if (dropdownPinned) return;
+    dropdownCloseTimer = window.setTimeout(() => {
+      dropdown.classList.remove('open');
+    }, 250);
+  });
+
   dropdownToggle.addEventListener('click', (event) => {
     event.stopPropagation();
-    const isOpen = dropdown.classList.toggle('open');
-    dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+    dropdownPinned = !dropdownPinned;
+    dropdown.classList.toggle('open', dropdownPinned);
+    dropdownToggle.setAttribute('aria-expanded', String(dropdownPinned));
   });
 
   document.addEventListener('click', (event) => {
     if (dropdown.contains(event.target)) return;
+    dropdownPinned = false;
     dropdown.classList.remove('open');
     dropdownToggle.setAttribute('aria-expanded', 'false');
   });
