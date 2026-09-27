@@ -352,12 +352,20 @@ const reports = {
     source: "Recorded air temperature and conditions are from the September 25 National Weather Service KSRQ observations. Gulf water is the September 25 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   },
   "2026-09-26": {
-    display: "Saturday, September 26, 2026", headline: "Sunny Saturday", accent: "with an 86.5°F Gulf reading.",
-    intro: "Today is in progress: the National Weather Service forecasts an 84°F high and 68°F low, while NOAA/NDBC station 42013 measured 86.5°F Gulf water at 6:35am EDT.", high: "84°F", low: "68°F", water: "86.5°F",
-    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 84°F and a forecast low around 68°F tonight, with sunny skies. National Weather Service KSRQ measured 69.8°F and clear conditions at 7:35am EDT. NOAA/NDBC station 42013 reported 30.3°C (86.5°F) Gulf water at 10:35 UTC (6:35am EDT). Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    display: "Saturday, September 26, 2026", headline: "Sunny Saturday", accent: "with an 86.4°F Gulf average.",
+    intro: "National Weather Service KSRQ observations reached 84.2°F after a 68.0°F low, while NOAA/NDBC station 42013 averaged 86.4°F Gulf water.", high: "84.2°F", low: "68.0°F", water: "86.4°F",
+    outlook: "Recorded National Weather Service KSRQ observations ranged from 68.0°F to 84.2°F under mostly clear to cloudy skies. NOAA/NDBC station 42013 measured Gulf water from 86.2°F to 86.7°F, averaging 86.4°F across 46 half-hour readings. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Saturday beach plan", adviceTitle: "Enjoy the sunny window and the cooler breeze.", advice: "Use the clear part of the day for swimming and sand time, carry water and keep a light layer handy when the north breeze picks up. Check posted beach flags and lifeguard guidance before entering the water.",
     rideTitle: "Keep the island loop easy in the sunshine.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can enjoy the day without circling for a spot.",
-    source: "Forecast high and low are from the September 26 National Weather Service Siesta Key point forecast; the current KSRQ observation is from the National Weather Service. Gulf water is the 6:35am EDT September 26 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+    source: "Recorded air temperature and conditions are from the September 26 National Weather Service KSRQ observations. Gulf water is the September 26 average from 46 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-09-27": {
+    display: "Sunday, September 27, 2026", headline: "Breezy Sunday", accent: "with an 85.8°F Gulf reading.",
+    intro: "Today is in progress: the National Weather Service forecasts an 83°F high and 71°F low, while NOAA/NDBC station 42013 measured 85.8°F Gulf water at 6:35am EDT.", high: "83°F", low: "71°F", water: "85.8°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 83°F and a forecast low around 71°F tonight, with mostly sunny skies and a north wind of 3 to 9 mph. National Weather Service KSRQ measured 68.0°F and clear conditions at 6:45am EDT. NOAA/NDBC station 42013 reported 29.9°C (85.8°F) Gulf water at 10:35 UTC (6:35am EDT). Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    adviceKicker: "Sunday beach plan", adviceTitle: "Use the sunny window and the gentle north breeze.", advice: "Use the clearer part of the day for swimming and sand time, carry water and keep a light layer handy when the breeze picks up. Check posted beach flags and lifeguard guidance before entering the water.",
+    rideTitle: "Keep the island loop easy in the sunshine.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can enjoy the day without circling for a spot.",
+    source: "Forecast high and low are from the September 27 National Weather Service Siesta Key point forecast; the current KSRQ observation is from the National Weather Service. Gulf water is the 6:35am EDT September 27 NOAA/NDBC station 42013 observation; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 
