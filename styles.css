@@ -1341,7 +1341,7 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .faq-answer { padding: 0 10px 28px 46px; font-size: 14px; }
   .faq-cta h2 { font-size: 67px; }
   .faq-cta-grid > div:last-child { padding: 30px 24px; }
-  .blog-hero h1 { font-size: 67px; }
+  .blog-hero h1 { font-size: 48px; }
   .blog-hero::before { width: 130px; height: 130px; right: -78px; top: -118px; border-width: 20px; }
   .blog-hero::after { width: 82px; height: 82px; left: -42px; bottom: -44px; border-width: 14px; }
   .blog-jump .section-shell { width: 100%; padding-inline: 16px; }
@@ -1369,7 +1369,9 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .report-archive-list summary { padding: 16px 18px; }
   .report-archive-links { padding: 8px 18px 20px; grid-template-columns: 1fr; }
   .blog-cta-grid > div:last-child { padding: 30px 24px; }
-  .daily-hero h1 { font-size: 62px; }
+  .daily-hero h1 { font-size: 48px; }
+  .daily-hero-grid > *,.daily-pager > * { min-width: 0; }
+  .daily-hero h1,.daily-hero-copy p { overflow-wrap: anywhere; }
   .daily-pager a,.daily-pager span { font-size: 13px; }
   .daily-hero-grid { margin-top: 62px; }
   .daily-hero::before { width: 130px; height: 130px; right: -78px; top: -150px; border-width: 20px; }
