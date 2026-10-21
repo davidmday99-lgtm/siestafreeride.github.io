@@ -544,12 +544,20 @@ const reports = {
     source: "Recorded air temperature and conditions are from the October 19 National Weather Service KSRQ observations. Gulf water is the October 19 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   },
   "2026-10-20": {
-    display: "Tuesday, October 20, 2026", headline: "Clear Tuesday", accent: "with an 82.3°F Gulf reading.",
-    intro: "Today is in progress: the National Weather Service forecasts an 82°F high and 65°F low, while NOAA/NDBC station 42013 averaged 82.3°F Gulf water through 6:35am EDT.", high: "82°F", low: "65°F", water: "82.3°F",
-    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 82°F with sunny skies and a forecast low around 65°F tonight. National Weather Service KSRQ observations ranged from 64.0°F to 69.8°F through 6:50am EDT under clear skies. NOAA/NDBC station 42013 measured Gulf water from 82.0°F to 82.6°F, averaging 82.3°F across 22 available half-hour readings through 6:35am EDT. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    display: "Tuesday, October 20, 2026", headline: "Clear Tuesday", accent: "with an 82.0°F Gulf average.",
+    intro: "National Weather Service KSRQ observations reached 84.2°F after a 64.4°F low, while NOAA/NDBC station 42013 averaged 82.0°F Gulf water.", high: "84.2°F", low: "64.4°F", water: "82.0°F",
+    outlook: "Recorded National Weather Service KSRQ observations ranged from 64.4°F to 84.2°F under clear skies. NOAA/NDBC station 42013 measured Gulf water from 81.3°F to 82.6°F, averaging 82.0°F across 48 half-hour readings. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Tuesday beach plan", adviceTitle: "Use the sunny morning and stay water-aware.", advice: "Take advantage of the clear morning, carry water and build in a shaded stop during the warmest stretch. Check posted beach flags and lifeguard guidance before entering the water.",
     rideTitle: "Keep the island loop easy in the sunshine.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can enjoy a flexible island day.",
-    source: "Forecast high and low are from the October 20 National Weather Service Siesta Key point forecast; current KSRQ observations are from the National Weather Service. Gulf water is the 6:35am EDT October 20 average from 22 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+    source: "Recorded air temperature and conditions are from the October 20 National Weather Service KSRQ observations. Gulf water is the October 20 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-10-21": {
+    display: "Wednesday, October 21, 2026", headline: "Clear Wednesday", accent: "with an 81.2°F Gulf reading.",
+    intro: "Today is in progress: the National Weather Service forecasts an 82°F high and 65°F low, while NOAA/NDBC station 42013 averaged 81.2°F Gulf water through 6:35am EDT.", high: "82°F", low: "65°F", water: "81.2°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 82°F with sunny skies and a forecast low around 65°F tonight. National Weather Service KSRQ observations ranged from 62.6°F to 69.8°F through 6:45am EDT under clear skies. NOAA/NDBC station 42013 measured Gulf water from 81.1°F to 81.3°F, averaging 81.2°F across 22 available half-hour readings through 6:35am EDT. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    adviceKicker: "Wednesday beach plan", adviceTitle: "Use the sunny morning and stay water-aware.", advice: "Take advantage of the clear morning, carry water and build in a shaded stop during the warmest stretch. Check posted beach flags and lifeguard guidance before entering the water.",
+    rideTitle: "Keep the island loop easy in the sunshine.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can enjoy a flexible island day.",
+    source: "Forecast high and low are from the October 21 National Weather Service Siesta Key point forecast; current KSRQ observations are from the National Weather Service. Gulf water is the 6:35am EDT October 21 average from 22 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 
