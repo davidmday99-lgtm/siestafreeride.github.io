@@ -617,11 +617,19 @@ const reports = {
   },
   "2026-10-29": {
     display: "Thursday, October 29, 2026", headline: "Sunny Thursday", accent: "with a 78.6°F Gulf reading.",
-    intro: "Today is in progress: the National Weather Service forecasts an 85°F high and 72°F low, while NOAA/NDBC station 42013 averaged 78.6°F Gulf water through 3:35pm EDT.", high: "85°F", low: "72°F", water: "78.6°F",
-    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 85°F and a forecast low around 72°F tonight. National Weather Service KSRQ observations ranged from 73.4°F to 89.6°F through 3:35pm EDT. NOAA/NDBC station 42013 measured Gulf water from 78.3°F to 78.8°F, averaging 78.6°F across 30 available half-hour readings through 3:35pm EDT. Check the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    intro: "National Weather Service KSRQ observations reached 89.6°F after a 73.4°F low, while NOAA/NDBC station 42013 averaged 78.6°F Gulf water.", high: "89.6°F", low: "73.4°F", water: "78.6°F",
+    outlook: "Recorded National Weather Service KSRQ observations ranged from 73.4°F to 89.6°F. NOAA/NDBC station 42013 measured Gulf water from 78.3°F to 78.8°F, averaging 78.6°F across 46 half-hour readings. The National Weather Service Tampa Bay surf-zone forecast called for low rip-current risk and surf of 1 foot or less; check posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Thursday beach plan", adviceTitle: "Use the sunny window and respect the breeze.", advice: "Bring water, take a shaded break and check posted beach flags and lifeguard guidance before entering the Gulf.",
     rideTitle: "Keep a breezy beach day easy.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search.",
-    source: "Forecast high and low are from the October 29 National Weather Service Siesta Key point forecast; KSRQ observations through 3:35pm EDT are from the National Weather Service. Gulf water is the 3:35pm EDT October 29 average from 30 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+    source: "Recorded air temperatures are from the October 29 National Weather Service KSRQ observations. Gulf water is the October 29 average from 46 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-10-30": {
+    display: "Friday, October 30, 2026", headline: "Sunny Friday", accent: "with a 78.2°F Gulf reading.",
+    intro: "Today is in progress: the National Weather Service forecasts an 84°F high and 73°F low, while NOAA/NDBC station 42013 averaged 78.2°F Gulf water through 6:35am EDT.", high: "84°F", low: "73°F", water: "78.2°F",
+    outlook: "Today is still in progress. The National Weather Service Siesta Key point forecast calls for a forecast high near 84°F and a forecast low around 73°F tonight. National Weather Service KSRQ observations ranged from 74°F to 75°F through 2:53am EDT. NOAA/NDBC station 42013 measured Gulf water from 78.1°F to 78.3°F, averaging 78.2°F across 14 available half-hour readings through 6:35am EDT. The National Weather Service Tampa Bay surf-zone forecast calls for low rip-current risk and surf of 1 foot or less; check posted beach flags and lifeguard guidance before swimming.",
+    adviceKicker: "Friday beach plan", adviceTitle: "Use the sunny window and respect the breeze.", advice: "Bring water, take a shaded break and check posted beach flags and lifeguard guidance before entering the Gulf.",
+    rideTitle: "Keep a breezy beach day easy.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search.",
+    source: "Forecast high and low are from the October 30 National Weather Service Siesta Key point forecast; KSRQ observations through 2:53am EDT are from the National Weather Service. Gulf water is the 6:35am EDT October 30 average from 14 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 

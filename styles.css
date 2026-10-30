@@ -1344,7 +1344,8 @@ h1,h2,h3 { margin: 0; font-family: "Barlow Condensed", Impact, sans-serif; font-
   .blog-hero h1 { font-size: 48px; }
   .blog-hero::before { width: 130px; height: 130px; right: -78px; top: -118px; border-width: 20px; }
   .blog-hero::after { width: 82px; height: 82px; left: -42px; bottom: -44px; border-width: 14px; }
-  .blog-jump .section-shell { width: 100%; padding-inline: 16px; }
+  .blog-jump .section-shell { width: 100%; min-height: 0; padding: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0; overflow: visible; }
+  .blog-jump a { padding: 11px 7px; font-size: 14px; text-align: center; white-space: normal; }
   .blog-postcard { padding: 16px 0 20px; }
   .blog-postcard img { box-shadow: 7px 7px 0 var(--teal); }
   .blog-section-heading h2 { font-size: 64px; }
