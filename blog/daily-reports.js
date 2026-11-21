@@ -792,12 +792,20 @@ const reports = {
     source: "Recorded air temperatures and conditions are from the November 19 National Weather Service KSRQ observations. Gulf water is the November 19 average from 47 available NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   },
   "2026-11-20": {
-    display: "Friday, November 20, 2026", headline: "Cloudy Friday", accent: "with a 75.9°F Gulf reading so far.",
-    intro: "Today is in progress: the National Weather Service forecasts a 77°F high and 70°F low; KSRQ reported 73.4°F and cloudy skies at 1:30pm EST, while NOAA/NDBC station 42013 averaged 75.9°F Gulf water across 26 readings so far.", high: "77°F", low: "70°F", water: "75.9°F",
-    outlook: "The National Weather Service Siesta Key point forecast calls for mostly cloudy skies today, with a high near 77°F and a low around 70°F tonight. KSRQ reported 73.4°F and cloudy skies at 1:30pm EST; the measured low so far is 69.8°F. NOAA/NDBC station 42013 measured Gulf water from 75.9°F to 76.1°F, averaging 75.9°F across 26 available half-hour readings through 12:35pm EST. Review the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    display: "Friday, November 20, 2026", headline: "Cloudy Friday", accent: "with a 76.0°F Gulf average.",
+    intro: "National Weather Service KSRQ observations reached 73.4°F after a 69.8°F low, while NOAA/NDBC station 42013 averaged 76.0°F Gulf water.", high: "73.4°F", low: "69.8°F", water: "76.0°F",
+    outlook: "Recorded National Weather Service KSRQ observations ranged from 69.8°F to 73.4°F, with fog, light rain and cloudy to clear conditions. NOAA/NDBC station 42013 measured Gulf water from 75.7°F to 76.3°F, averaging 76.0°F across 48 half-hour readings. Review the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
     adviceKicker: "Friday beach plan", adviceTitle: "Enjoy the cloudy beach window.", advice: "Bring water and a light layer for the breeze, and check posted beach flags and lifeguard guidance before entering the Gulf.",
     rideTitle: "Keep the island loop easy.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so Friday stays relaxed from the first stop to the last.",
-    source: "Forecast high and low are from the November 20 National Weather Service Siesta Key point forecast; the 1:30pm EST KSRQ observation and 69.8°F low so far are from National Weather Service KSRQ observations. Gulf water is the November 20 average from 26 available NOAA/NDBC station 42013 readings through 12:35pm EST; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+    source: "Recorded air temperatures and conditions are from the November 20 National Weather Service KSRQ observations. Gulf water is the November 20 average from 48 NOAA/NDBC station 42013 readings; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
+  },
+  "2026-11-21": {
+    display: "Saturday, November 21, 2026", headline: "Showery Saturday", accent: "with a 75.7°F Gulf average so far.",
+    intro: "Today is in progress: the National Weather Service forecasts a 78°F high and 70°F low; KSRQ reported 68.0°F with light rain at 6:53am EST, while NOAA/NDBC station 42013 averaged 75.7°F Gulf water across 24 readings so far.", high: "78°F", low: "70°F", water: "75.7°F",
+    outlook: "The National Weather Service Siesta Key point forecast calls for scattered rain showers today, with a high near 78°F and a low around 70°F tonight. KSRQ reported 68.0°F with light rain at 6:53am EST; the measured low so far is 68.0°F. NOAA/NDBC station 42013 measured Gulf water at 75.7°F across 24 available half-hour readings through 6:35am EST. Review the National Weather Service Tampa Bay surf-zone forecast, posted beach flags and lifeguard guidance before swimming.",
+    adviceKicker: "Saturday beach plan", adviceTitle: "Keep a rain option handy.", advice: "Bring water and a light rain layer, and at the first sound of thunder, leave the water and beach immediately. Check posted beach flags and lifeguard guidance before entering the Gulf.",
+    rideTitle: "Keep the island loop flexible.", ride: "Siesta Free Ride can connect the beach, Village, restaurants and your hotel without another parking search, so your group can adjust plans as conditions change.",
+    source: "Forecast high and low are from the November 21 National Weather Service Siesta Key point forecast; the 6:53am EST KSRQ observation and 68.0°F low so far are from National Weather Service KSRQ observations. Gulf water is the November 21 average from 24 available NOAA/NDBC station 42013 readings through 6:35am EST; beach hazards are from the National Weather Service Tampa Bay surf-zone forecast."
   }
 };
 
